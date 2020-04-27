@@ -11,6 +11,14 @@ The goal of this repository is to:
 1. [Fabric Sample](https://github.com/hyperledger/fabric-samples) - check [prerequisites](https://hyperledger-fabric.readthedocs.io/en/latest/prereqs.html) 
 2. [fabric-chaincode-evm](https://github.com/hyperledger/fabric-chaincode-evm)
 
+## Steps
+1. [Install Chaincode EVM](#install_chaincode_evm)  
+2. [Run Fab3](#run_fab3)
+3. [Deploy Smart Contract](#deploy)  
+4. [Run Web App](#web_app)  
+
+
+<a name="install_chaincode_evm"></a>
 ## 1. Install Chaincode EVM
 
 > After running the first-network 
@@ -22,6 +30,7 @@ Install the **fabric-chaincode-evm**:
 4. run install script `./install_evm.sh`
 5. `exit` 
 
+<a name="run_fab3"></a>
 ## 2. Run Fab3
 
 Now We are going to run the fabproxy in order to allow communication between client and Fabric Network.
@@ -32,6 +41,7 @@ in `script/chaincode/` there's 3 `fab3_run.sh` files, each `.sh` file run an ins
 - `fab3_run2.sh` will run on http://localhost:5001 and will map **User1** of **Org1**
 - `fab3_run3.sh` will run on http://localhost:5002 and will map **User2** of **Org1** 
 
+<a name="deploy"></a>
 ## 3. Deploy the Smart Contract
 
 Next, we'll install the web3 dependency and than we are going to run `install.js` to deploy the BoxPoints smart contract.
@@ -42,11 +52,10 @@ Web3.js is a library that allow to deploy and interact solidity smartcontract.
 
 Build the dependencies including the `web3@0.20.2` by navigating to web-app folder from the root directory and running the `npm install` command:
 
-```
+```bash
 cd web-app
 npm install
 npm list web3 #To check web3 version
-
 ``` 
 ### Deploy Smart Contract
 
@@ -54,12 +63,13 @@ npm list web3 #To check web3 version
 
 To deploy the smart contract we have to run
 
-```
+```bash
 node install.js
 ```
  
 The js file will deploy the contract on the network and return the **`contract address`**. It must be copied and paste in **`dapp.js`**
 
+<a name="web_app"></a>
 ## 4. Run Web Application
 
 ### Set up Folders
@@ -76,7 +86,7 @@ I copied the **`web-app`** folder, in order to create 3 different folder, 1 for 
 
 Once is everything setted up we could run web application
 
-```
+```bash
 cd web-app-admin
 npm start
 ```
