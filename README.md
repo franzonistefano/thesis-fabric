@@ -16,7 +16,7 @@ The goal of this repository is to:
 After running the first-network 
 
 Install the fabric-chaincode-evm:
-1. copy the `script/network/install_evm.sh' in the repository 'go/src/github.com/hyperledger/fabric-samples/first-network/script/`
+1. copy the `script/network/install_evm.sh` in the repository `go/src/github.com/hyperledger/fabric-samples/first-network/script/`
 2. run command `docker exec -it cli bash`
 3. move to script repository `cd script`
 4. run install script `./install_evm.sh`
