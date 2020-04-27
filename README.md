@@ -49,6 +49,40 @@ npm list web3 #To check web3 version
 
 ``` 
 ### Deploy Smart Contract
-  
+
+> First instance of Fab3 that run on PORT:5000 must to be run before to deploy smart contract.
+
+To deploy the smart contract we have to run
+
+```
+node install.js
+```
  
+The js file will deploy the contract on the network and return the **`contract address`**. It must be copied and paste in **`dapp.js`**
+
 ## 4. Run Web Application
+
+### Set up Folders
+
+> Optionally you could follow this tips to test as best the web-app locally
+
+I copied the **`web-app`** folder, in order to create 3 different folder, 1 for each user to be run
+
+1. **`web-app-admin`**, it just match fab3 options
+2. **`web-app-user1`**, you must to change localhost PORT:5001 of Fab3 in *`dapp.js`*, and PORT:8001 of the app running in *`app.js`* at the end of the file
+3. **`web-app-user2`**, you must to change localhost PORT:5002 of Fab3 in *`dapp.js`*, and PORT:8002 of the app running in *`app.js`* at the end of the file
+
+### Run 
+
+Once is everything setted up we could run web application
+
+```
+cd web-app-admin
+npm start
+```
+
+the application will run on **`localhost:8000`**
+
+Repeat the same command for `web-app-user1` and `web-app-user2` that will run respectively on `localhost:8001` and `localhost:8002`
+
+
