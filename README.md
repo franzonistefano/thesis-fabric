@@ -15,8 +15,19 @@ The goal of this repository is to:
 
 After running the first-network 
 
-Install the fabric-chaincode-evm:
+Install the **fabric-chaincode-evm**:
 1. copy the `script/network/install_evm.sh` in the repository `go/src/github.com/hyperledger/fabric-samples/first-network/script/`
 2. run command `docker exec -it cli bash`
 3. move to script repository `cd script`
 4. run install script `./install_evm.sh`
+5. `exit` 
+
+## 2. Run Fab3
+
+Now We are going to run the fabproxy in order to allow communication between client and Fabric Network.
+
+in `script/chaincode/` there's 3 `fab3_run.sh` files, each `.sh` file run an instance of fabproxy on a different * *PORT* * and associated to a different fabric * *USER* * with a different * *ETH ADDRESS* * generated on the fly. 
+
+- `fab3_run.sh` will run on http://localhost:5000 and will map **User1** of **Org2**
+- `fab3_run2.sh` will run on http://localhost:5001 and will map **User1** of **Org1**
+- `fab3_run3.sh` will run on http://localhost:5002 and will map **User2** of **Org1** 
