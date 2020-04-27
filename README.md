@@ -1,6 +1,6 @@
 # ReClothes App
 
-## Overview 
+# Overview 
 The goal of this repository is to:
 1. instantiate and install [fabric-chaincode-evm](https://github.com/hyperledger/fabric-chaincode-evm)
 2. run fabproxy, in order to allow communications between client and fabric network
@@ -11,7 +11,13 @@ The goal of this repository is to:
 1. [Fabric Sample](https://github.com/hyperledger/fabric-samples) - check [prerequisites](https://hyperledger-fabric.readthedocs.io/en/latest/prereqs.html) 
 2. [fabric-chaincode-evm](https://github.com/hyperledger/fabric-chaincode-evm)
 
-## Steps
+## Use Case
+
+<p align="center">
+  <img src="doc/use_case.png">
+</p>
+
+# Steps
 1. [Install Chaincode EVM](#install_chaincode_evm)  
 2. [Run Fab3](#run_fab3)
 3. [Deploy Smart Contract](#deploy)  
