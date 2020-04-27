@@ -1,0 +1,17 @@
+{
+  "name": "box-points",
+  "version": "0.0.1",
+  "description": "User box send and earn points on blockchain",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Stefano Franzoni",
+  "email": "franzoni.stefano93@gmail.com",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "request": "^2.88.0",
+    "web3": "^0.20.2"
+  }
+}
