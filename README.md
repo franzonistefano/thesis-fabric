@@ -31,3 +31,24 @@ in `script/chaincode/` there's 3 `fab3_run.sh` files, each `.sh` file run an ins
 - `fab3_run.sh` will run on http://localhost:5000 and will map **User1** of **Org2**
 - `fab3_run2.sh` will run on http://localhost:5001 and will map **User1** of **Org1**
 - `fab3_run3.sh` will run on http://localhost:5002 and will map **User2** of **Org1** 
+
+## 3. Deploy the Smart Contract
+
+Next, we'll install the web3 dependency and than we are going to run `install.js` to deploy the BoxPoints smart contract.
+
+### Install Web3
+
+Web3.js is a library that allow to deploy and interact solidity smartcontract. 
+
+Build the dependencies including the `web3@0.20.2` by navigating to web-app folder from the root directory and running the `npm install` command:
+
+```
+cd web-app
+npm install
+npm list web3 #To check web3 version
+
+``` 
+### Deploy Smart Contract
+  
+ 
+## 4. Run Web Application
