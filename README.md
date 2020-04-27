@@ -26,7 +26,7 @@ Install the **fabric-chaincode-evm**:
 
 Now We are going to run the fabproxy in order to allow communication between client and Fabric Network.
 
-in `script/chaincode/` there's 3 `fab3_run.sh` files, each `.sh` file run an instance of fabproxy on a different * *PORT* * and associated to a different fabric * *USER* * with a different * *ETH ADDRESS* * generated on the fly. 
+in `script/chaincode/` there's 3 `fab3_run.sh` files, each `.sh` file run an instance of fabproxy on a different *PORT* and associated to a different fabric *USER* with a different *ETH ADDRESS* generated on the fly. 
 
 - `fab3_run.sh` will run on http://localhost:5000 and will map **User1** of **Org2**
 - `fab3_run2.sh` will run on http://localhost:5001 and will map **User1** of **Org1**
