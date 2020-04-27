@@ -13,7 +13,7 @@ The goal of this repository is to:
 
 ## 1. Install Chaincode EVM
 
-After running the first-network 
+> After running the first-network 
 
 Install the **fabric-chaincode-evm**:
 1. copy the `script/network/install_evm.sh` in the repository `go/src/github.com/hyperledger/fabric-samples/first-network/script/`
