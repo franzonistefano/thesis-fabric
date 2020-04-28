@@ -1,15 +1,15 @@
 # ReClothes App
 
 # Overview 
-The goal of this repository is to:
+The goal of this work is to:
 1. instantiate and install [fabric-chaincode-evm](https://github.com/hyperledger/fabric-chaincode-evm)
 2. run fabproxy, in order to allow communications between client and fabric network
 2. run web-app to interact and test smart contract
 
 ## Prerequisite
 
-1. [Fabric Sample](https://github.com/hyperledger/fabric-samples) - check [prerequisites](https://hyperledger-fabric.readthedocs.io/en/latest/prereqs.html) 
-2. [fabric-chaincode-evm](https://github.com/hyperledger/fabric-chaincode-evm)
+- [Fabric Sample](https://github.com/hyperledger/fabric-samples) - check [prerequisites](https://hyperledger-fabric.readthedocs.io/en/latest/prereqs.html) 
+- [fabric-chaincode-evm](https://github.com/hyperledger/fabric-chaincode-evm)
 
 ## Use Case
 
@@ -18,26 +18,54 @@ The goal of this repository is to:
 </p>
 
 # Steps
-1. [Install Chaincode EVM](#install_chaincode_evm)  
-2. [Run Fab3](#run_fab3)
-3. [Deploy Smart Contract](#deploy)  
-4. [Run Web App](#web_app)  
+1. [Modify First Network](#net)
+2. [Install Chaincode EVM](#install_chaincode_evm)  
+3. [Run Fab3](#run_fab3)
+4. [Deploy Smart Contract](#deploy)  
+    - [Install Web3](#web3)
+    - [Deploy Smart Contract](#smart_contract)
+5. [Run Web App](#web_app) 
+    - [Set up Folders](#set_up)
+    - [Run](#run)
 
+<a name="net"></a>
+## 1. Modify First Network
+
+For each user in Fabric it’s generated all cryptographic material to authenticate itself. By default in first-network is generated 1 User for Org1 and 1 Admin for Org2.
+
+To add 1 or more Users we need to modify **crypto-config.yaml** file. 
+
+Go to 
+```
+Org1 -> Users -> Count
+``` 
+and change the number (**set Count label**) of the user accounts that we need to be generate (e.g 2)
+
+> After running the first-network we could check the Users created. Go to repository   
+`crypto-config/peerOrganizations/orgN.example.org/users` and here you can find the repository of the users created for each organization with all the cryptographic material inside
 
 <a name="install_chaincode_evm"></a>
-## 1. Install Chaincode EVM
+## 2. Install Chaincode EVM
 
 > After running the first-network 
 
 Install the **fabric-chaincode-evm**:
 1. copy the `script/network/install_evm.sh` in the repository `go/src/github.com/hyperledger/fabric-samples/first-network/script/`
-2. run command `docker exec -it cli bash`
-3. move to script repository `cd script`
-4. run install script `./install_evm.sh`
-5. `exit` 
+2. 
+```bash
+docker exec -it cli bash
+``` 
+> You should see the following on prompt  
+`root@0d78bb69300d:/opt/gopath/src/github.com/hyperledger/fabric/peer#`
+3.
+```bash
+cd script
+./install_evm.sh
+exit
+``` 
 
 <a name="run_fab3"></a>
-## 2. Run Fab3
+## 3. Run Fab3
 
 Now We are going to run the fabproxy in order to allow communication between client and Fabric Network.
 
@@ -47,11 +75,20 @@ in `script/chaincode/` there's 3 `fab3_run.sh` files, each `.sh` file run an ins
 - `fab3_run2.sh` will run on http://localhost:5001 and will map **User1** of **Org1**
 - `fab3_run3.sh` will run on http://localhost:5002 and will map **User2** of **Org1** 
 
+To run the files 
+
+```shell
+./fab3_run.sh
+./fab3_run2.sh #in a second terminal
+./fab3_run3.sh #in a third terminal
+``` 
+
 <a name="deploy"></a>
-## 3. Deploy the Smart Contract
+## 4. Deploy the Smart Contract
 
 Next, we'll install the web3 dependency and than we are going to run `install.js` to deploy the BoxPoints smart contract.
 
+<a name="web3"></a>
 ### Install Web3
 
 Web3.js is a library that allow to deploy and interact solidity smartcontract. 
@@ -63,9 +100,11 @@ cd web-app
 npm install
 npm list web3 #To check web3 version
 ``` 
+
+<a name="smart_contract"></a>
 ### Deploy Smart Contract
 
-> First instance of Fab3 that run on PORT:5000 must to be run before to deploy smart contract.
+> First instance of Fab3 that run on PORT:5000 must to be in running while the deploying of smart contract.
 
 To deploy the smart contract we have to run
 
@@ -76,8 +115,9 @@ node install.js
 The js file will deploy the contract on the network and return the **`contract address`**. It must be copied and paste in **`dapp.js`**
 
 <a name="web_app"></a>
-## 4. Run Web Application
+## 5. Run Web Application
 
+<a name="set_up"></a>
 ### Set up Folders
 
 > Optionally you could follow this tips to test as best the web-app locally
@@ -88,6 +128,7 @@ I copied the **`web-app`** folder, in order to create 3 different folder, 1 for 
 2. **`web-app-user1`**, you must to change localhost PORT:5001 of Fab3 in *`dapp.js`*, and PORT:8001 of the app running in *`app.js`* at the end of the file
 3. **`web-app-user2`**, you must to change localhost PORT:5002 of Fab3 in *`dapp.js`*, and PORT:8002 of the app running in *`app.js`* at the end of the file
 
+<a name="run"></a>
 ### Run 
 
 Once is everything setted up we could run web application
