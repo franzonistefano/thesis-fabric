@@ -93,7 +93,7 @@ Next, we'll install the web3 dependency and than we are going to run `install.js
 <a name="web3"></a>
 ### Install Web3
 
-Web3.js is a library that allow to deploy and interact solidity smartcontract. 
+Web3.js is a library that allow to deploy and interact with solidity smartcontract. 
 
 Build the dependencies including the `web3@0.20.2` by navigating to web-app folder from the root directory and running the `npm install` command:
 
@@ -127,8 +127,8 @@ The js file will deploy the contract on the network and return the **`contract a
 I copied the **`web-app`** folder, in order to create 3 different folder, 1 for each user to be run
 
 1. **`web-app-admin`**, it just match fab3 options
-2. **`web-app-user1`**, you must to change localhost PORT:5001 of Fab3 in *`dapp.js`*, and PORT:8001 of the app running in *`app.js`* at the end of the file
-3. **`web-app-user2`**, you must to change localhost PORT:5002 of Fab3 in *`dapp.js`*, and PORT:8002 of the app running in *`app.js`* at the end of the file
+2. **`web-app-user1`**, you must to change localhost PORT:5001 of provider in *`dapp.js`*, and PORT:8001 of the app running in *`app.js`* at the end of the file
+3. **`web-app-user2`**, you must to change localhost PORT:5002 of provider in *`dapp.js`*, and PORT:8002 of the app running in *`app.js`* at the end of the file
 
 <a name="run"></a>
 ### Run 
