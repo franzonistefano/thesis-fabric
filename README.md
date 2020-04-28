@@ -1,4 +1,4 @@
-# ReClothes App
+# ReClothes Dapp with Hyperledger Fabric EVM
 
 # Overview 
 The goal of this work is to:
@@ -27,6 +27,7 @@ The goal of this work is to:
 5. [Run Web App](#web_app) 
     - [Set up Folders](#set_up)
     - [Run](#run)
+    - [Views](#views)
 
 <a name="net"></a>
 ## 1. Modify First Network
@@ -144,4 +145,15 @@ the application will run on **`localhost:8000`**
 
 Repeat the same command for `web-app-user1` and `web-app-user2` that will run respectively on `localhost:8001` and `localhost:8002`
 
+### Views
+
+Once the application is in running on **`localhost:8000`** you should see the following view
+
+<p align="center">
+  <img src="doc/homepage.png">
+</p>
+<br>
+<p align="center">
+  <img src="doc/how_to.png">
+</p>
 
