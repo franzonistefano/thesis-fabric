@@ -35,14 +35,16 @@ For each user in Fabric it’s generated all cryptographic material to authentic
 
 To add 1 or more Users we need to modify **crypto-config.yaml** file. 
 
-Go to 
+In crypto-config.yaml go to 
 ```
 Org1 -> Users -> Count
 ``` 
 and change the number (**set Count label**) of the user accounts that we need to be generate (e.g 2)
 
 > After running the first-network we could check the Users created. Go to repository   
-`crypto-config/peerOrganizations/orgN.example.org/users` and here you can find the repository of the users created for each organization with all the cryptographic material inside
+`crypto-config/peerOrganizations/orgN.example.org/users` and here you can find the folder of the users created with all the cryptographic material inside
+
+> Than running the first-network `./byfn.sh up`
 
 <a name="install_chaincode_evm"></a>
 ## 2. Install Chaincode EVM
