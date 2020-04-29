@@ -2,7 +2,7 @@
 
 # Overview 
 
-> Tips: The working directory must be **`~/go/src/github.com/hyperledger/`** and all the below folders must be placed inside that directory
+> Tips: The working directory must be **`~/go/src/github.com/hyperledger/`** and all the folders must be placed inside that directory
 
 The goal of this work is to:
 1. instantiate and install [fabric-chaincode-evm](https://github.com/hyperledger/fabric-chaincode-evm)
