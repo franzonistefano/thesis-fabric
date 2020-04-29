@@ -4,6 +4,8 @@
 
 > Tips: The working directory must be **`~/go/src/github.com/hyperledger/`** and all the folders must be placed inside that directory
 
+<br>
+
 The goal of this work is to:
 1. instantiate and install [fabric-chaincode-evm](https://github.com/hyperledger/fabric-chaincode-evm)
 2. run fabproxy, in order to allow communications between client and fabric network
