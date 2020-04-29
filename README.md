@@ -8,7 +8,16 @@ The goal of this work is to:
 
 ## Prerequisite
 
-- [Fabric Sample](https://github.com/hyperledger/fabric-samples) - check [prerequisites](https://hyperledger-fabric.readthedocs.io/en/latest/prereqs.html) 
+## Requirements
+
+- [Go](https://golang.org/dl/) (version 1.12 or greater - I used v1.14.2)
+- [Docker](https://www.docker.com/) (version 17.06.2-ce or greater - I used v18.09.9)
+- [Node](https://nodejs.org/en/) (version 8.9.x or greater - I used v10.5.2)
+- [npm](https://www.npmjs.com/) (version 5.6.0 or greater - I used 6.13.7)
+
+## Components
+
+- [Fabric Sample](https://github.com/hyperledger/fabric-samples) (**check requirements above**)
 - [fabric-chaincode-evm](https://github.com/hyperledger/fabric-chaincode-evm)
 
 ## Use Case
@@ -20,7 +29,9 @@ The goal of this work is to:
 # Steps
 1. [Modify First Network](#net)
 2. [Install Chaincode EVM](#install_chaincode_evm)  
-3. [Run Fab3](#run_fab3)
+3. [Fab3](#run_fab3)
+    - [Compile Fab3](#compile_fab3)
+    - [Run Fab3](#run_fab3)
 4. [Deploy Smart Contract](#deploy)  
     - [Install Web3](#web3)
     - [Deploy Smart Contract](#smart_contract)
@@ -67,10 +78,16 @@ cd script
 exit
 ``` 
 
-<a name="run_fab3"></a>
-## 3. Run Fab3
+<a name="fab3"></a>
+## 3. Fab3
 
-Now We are going to run the fabproxy in order to allow communication between client and Fabric Network.
+Now We are going to run the fab3 proxy in order to allow communication between client and Fabric Network.
+
+<a name="compile_fab3"></a>
+## Compile Fab3
+
+<a name="run_fab3"></a>
+## Run Fab3
 
 in `script/chaincode/` there's 3 `fab3_run.sh` files, each `.sh` file run an instance of fabproxy on a different *PORT* and associated to a different fabric *USER* with a different *ETH ADDRESS* generated on the fly. 
 
