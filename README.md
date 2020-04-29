@@ -1,6 +1,9 @@
 # ReClothes Dapp with Hyperledger Fabric EVM
 
 # Overview 
+
+> Tips: The working directory must be **`~/go/src/github.com/hyperledger/`** and all the below folders must be placed inside that directory
+
 The goal of this work is to:
 1. instantiate and install [fabric-chaincode-evm](https://github.com/hyperledger/fabric-chaincode-evm)
 2. run fabproxy, in order to allow communications between client and fabric network
@@ -85,6 +88,14 @@ Now We are going to run the fab3 proxy in order to allow communication between c
 
 <a name="compile_fab3"></a>
 ## Compile Fab3
+
+Run the following at the root of this repository `fabrich-chaincode-evm`:
+
+```
+make fab3
+```
+
+A binary named `fab3` will be created in the `bin` directory.
 
 <a name="run_fab3"></a>
 ## Run Fab3
