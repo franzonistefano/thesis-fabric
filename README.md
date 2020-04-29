@@ -50,9 +50,9 @@ The goal of this work is to:
 
 For each user in Fabric it’s generated all cryptographic material to authenticate itself. By default in first-network is generated 1 User for Org1 and 1 Admin for Org2.
 
-To add 1 or more Users we need to modify **crypto-config.yaml** file. 
+To add 1 or more Users we need to modify **`crypto-config.yaml`** file. 
 
-In crypto-config.yaml go to 
+In `crypto-config.yaml` go to 
 ```
 Org1 -> Users -> Count
 ``` 
