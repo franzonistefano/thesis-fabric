@@ -1,7 +1,5 @@
 # ReClothes Dapp with Hyperledger Fabric EVM
 
----
-
 # Table of Contents
 
 - [Before Start](#before)
