@@ -11,7 +11,7 @@ The goal of this work is to:
 2. run fabproxy, in order to allow communications between client and fabric network
 2. run web-app to interact and test smart contract
 
-## Prerequisite
+# Prerequisite
 
 ## Requirements
 
