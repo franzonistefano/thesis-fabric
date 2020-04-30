@@ -1,4 +1,4 @@
-# Usefull Link for Hyperledger Fabric Use
+# Usefull Link for Hyperledger Fabric Development
 
 # Table of Contents
 
@@ -49,7 +49,16 @@
 <a name="erc20"></a>
 ## ERC20 Token on Fabric
 
+- https://medium.com/deqode/erc20-tokens-on-hyperledger-b82399b4b969
+- https://medium.com/coinmonks/erc20-token-as-hyperledger-fabric-golang-chaincode-d09dfd16a339
+- https://gist.github.com/vitiko/2e4882740a7852165d2dee5d3e5c1a4a
+- [Node.js ERC20](https://github.com/grepruby/ERC20-Token-On-Hyperledger)
 
 
 <a name="videos"></a>
 ## Videos
+
+- [What is Hyperledger Fabric](https://www.youtube.com/watch?v=iTV89Tqfmgk&list=PLXNKTVTOspoxg5X9V2vhDdmyV0c52lVTn&index=2&t=267s)
+- [Fabric + evm chaincode example](https://www.youtube.com/watch?v=Rr1Qi-n8vag)
+- [Ethereum smart contract on Fabric](https://www.youtube.com/watch?v=-BKOUb7YkOE)
+
