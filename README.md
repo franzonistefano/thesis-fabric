@@ -1,5 +1,25 @@
 # ReClothes Dapp with Hyperledger Fabric EVM
 
+---
+
+# Table of Contents
+
+- [Before Start](#before)
+- [Overview](#overview)
+- [Prerequisite](#prerequisite)
+- [Use Case](#use_case)
+- [Steps](#steps)
+
+---
+
+<a name="before"></a>
+# Before Start
+
+> Have a Look to my own guide for usefull link and guides to setup environment 
+
+- [Usefull Link for Hyperledger Fabric Development](https://github.com/franzonistefano/thesis-fabric/blob/master/doc/usefull_link.md)
+
+<a name="overview"></a>
 # Overview 
 
 > Tips: The working directory must be **`~/go/src/github.com/hyperledger/`** and all the folders must be placed inside that directory
@@ -11,6 +31,7 @@ The goal of this work is to:
 2. run fabproxy, in order to allow communications between client and fabric network
 2. run web-app to interact and test smart contract
 
+<a name="prerequisite"></a>
 # Prerequisite
 
 ## Requirements
@@ -25,12 +46,16 @@ The goal of this work is to:
 - [Fabric Sample](https://github.com/hyperledger/fabric-samples) (**check requirements above**)
 - [fabric-chaincode-evm](https://github.com/hyperledger/fabric-chaincode-evm)
 
-## Use Case
+<a name="use_case"></a>
+# Use Case
 
 <p align="center">
   <img src="doc/use_case.png">
 </p>
 
+---
+
+<a name="steps"></a>
 # Steps
 1. [Modify First Network](#net)
 2. [Install Chaincode EVM](#install_chaincode_evm)  
