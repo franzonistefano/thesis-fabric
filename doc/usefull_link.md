@@ -11,6 +11,8 @@
 - [ERC20 Token on Fabric](#erc20)
 - [Videos](#videos)
 
+---
+
 <a name="official_doc"></a>
 ## Official Doc 
 
