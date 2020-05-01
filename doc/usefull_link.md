@@ -14,7 +14,7 @@
 <a name="official_doc"></a>
 ## Official Doc 
 
-- https://hyperledger-fabric.readthedocs.io/en/release-1.2/getting_started.html
+- [Getting Started](https://hyperledger-fabric.readthedocs.io/en/release-1.2/getting_started.html)
 
 <a name="architecture"></a>
 ## Architecture 
