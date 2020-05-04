@@ -5,9 +5,10 @@
 - [Official Doc](#official_doc)
 - [Architecture](#architecture)
 - [Installation Guide](#installation)
+- [Chaincode EVM](#evm)
     - [Articles & Example](#articles)
     - [Tool](#tool)
-- [Chaincode EVM](#evm)
+- [Network](#net)
 - [ERC20 Token on Fabric](#erc20)
 - [Videos](#videos)
 
@@ -31,6 +32,13 @@
 
 - [Fabric Installation Linux & Windows](https://hackernoon.com/hyperledger-fabric-installation-guide-74065855eca9
 )
+
+
+<a name="net"></a>
+## Network
+
+- [Demo of Multi-Channel Network - 2 Channel 3 Org](https://medium.com/@kctheservant/demo-of-multi-channel-network-in-hyperledger-fabric-640f7158e2d3)
+- [Test Network](https://medium.com/@kctheservant/from-first-network-to-test-network-a-new-test-network-introduced-in-fabric-v2-0-81faa924ce29)
 
 <a name="evm"></a>
 ## Chaincode EVM 
