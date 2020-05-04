@@ -37,6 +37,8 @@
 <a name="net"></a>
 ## Network
 
+- [Create Channel](https://github.com/rohitadivi/Reconfigure-BYFN/blob/master/Create_channel.md)
+- [How to create a Hyperledger Fabric channel](https://hyperledger.github.io/fabric-sdk-node/release-1.4/tutorial-channel-create.html)
 - [Demo of Multi-Channel Network - 2 Channel 3 Org](https://medium.com/@kctheservant/demo-of-multi-channel-network-in-hyperledger-fabric-640f7158e2d3)
 - [Test Network](https://medium.com/@kctheservant/from-first-network-to-test-network-a-new-test-network-introduced-in-fabric-v2-0-81faa924ce29)
 
@@ -71,4 +73,6 @@
 - [What is Hyperledger Fabric](https://www.youtube.com/watch?v=iTV89Tqfmgk&list=PLXNKTVTOspoxg5X9V2vhDdmyV0c52lVTn&index=2&t=267s)
 - [Fabric + evm chaincode example](https://www.youtube.com/watch?v=Rr1Qi-n8vag)
 - [Ethereum smart contract on Fabric](https://www.youtube.com/watch?v=-BKOUb7YkOE)
+- [Add an Organization to the networl](https://www.youtube.com/watch?v=DKuGU5CYV_E)
+- [Create Channel and Join all Peers - Create Basic Network with Hyperledger Fabric v2.0](https://www.youtube.com/watch?v=5ENJPtocCOM)
 
