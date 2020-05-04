@@ -46,7 +46,7 @@ check it, open `Task Manager » Performance Tab » CPU`
 
 
 <p align="center">
-  <img src="doc/img/installation/virtualization.png" width="500" title="virtualization">
+  <img src="img/installation/virtualization.png" width="500" title="virtualization">
  </p>
 <p align="center"><b>Figure 1</b>: virtualization</p>  
 
@@ -89,7 +89,7 @@ docker run hello-world
 ```
 
 <p align="center">
-  <img src="doc/img/installation/docker_hello.png" width="500" title="docker_hello">
+  <img src="img/installation/docker_hello.png" width="500" title="docker_hello">
  </p>
 <p align="center"><b>Figure 2</b>: docker hello-world</p> 
 
