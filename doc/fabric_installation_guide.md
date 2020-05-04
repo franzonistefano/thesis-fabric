@@ -1,6 +1,6 @@
 # Installation Guide
 
-> For Linux installation follow [this guide](https://hackernoon.com/hyperledger-fabric-installation-guide-74065855eca9) changing the prerequisite version with the below one
+> For Linux installation follow [this guide](https://hackernoon.com/hyperledger-fabric-installation-guide-74065855eca9) changing the prerequisites version with the below one
 
 # Table of Contents
 - [Prerequisite](#prerequisite)
