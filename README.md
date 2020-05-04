@@ -48,7 +48,7 @@ The goal of this work is to:
 # Use Case
 
 <p align="center">
-  <img src="doc/use_case.png">
+  <img src="doc/img/overview/use_case.png">
 </p>
 
 ---
@@ -203,10 +203,10 @@ Repeat the same command for `web-app-user1` and `web-app-user2` that will run re
 Once the application is in running on **`localhost:8000`** you should see the following view
 
 <p align="center">
-  <img src="doc/homepage.png">
+  <img src="doc/img/overview/homepage.png">
 </p>
 <br>
 <p align="center">
-  <img src="doc/how_to.png">
+  <img src="doc/img/overview/how_to.png">
 </p>
 
