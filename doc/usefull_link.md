@@ -39,6 +39,7 @@
 
 - [Create Channel](https://github.com/rohitadivi/Reconfigure-BYFN/blob/master/Create_channel.md)
 - [How to create a Hyperledger Fabric channel](https://hyperledger.github.io/fabric-sdk-node/release-1.4/tutorial-channel-create.html)
+- [Add a new Organization](https://medium.com/@kctheservant/add-a-new-organization-on-existing-hyperledger-fabric-network-2c9e303955b2)
 - [Demo of Multi-Channel Network - 2 Channel 3 Org](https://medium.com/@kctheservant/demo-of-multi-channel-network-in-hyperledger-fabric-640f7158e2d3)
 - [Test Network](https://medium.com/@kctheservant/from-first-network-to-test-network-a-new-test-network-introduced-in-fabric-v2-0-81faa924ce29)
 
