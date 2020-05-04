@@ -16,7 +16,7 @@
     1. [Windows Extra](win_extra)
     2. [Git Configuration](#git)
     3. [Download Binaries Samples](#binaries)
-    4. [Test fabric network](#test_fabric)
+    4. [Test Fabric network](#test_fabric)
 
 
 > I am using Windows 10 Pro and the Fabric v1.4
@@ -156,7 +156,7 @@ python --version
 Python 2.7.16
 ```
 
-<a name="wger"></a>
+<a name="wget"></a>
 ## 6. wget
 
 Please check if wget command is already installed in your PC.
@@ -251,5 +251,65 @@ curl -sSL http://bit.ly/2ysbOFE | bash -s -- 1.4.4 1.4.4 0.4.18
 
 > Note: In the default version `curl -sSL http://bit.ly/2ysbOFE | bash -s` doen’t work the link.
 Check in the [official documentation](https://hyperledger-fabric.readthedocs.io/en/release-1.4/install.html)
+
+It’ll take some time, once it is finished you can see a new directory “fabric-samples”.
+
+
+<p align="center">
+  <img src="img/installation/fabric.png" width="500" title="fabric">
+ </p>
+<p align="center"><b>Figure 6</b>: Fabric Samples</p>
+
+“fabric-samples” come with sample examples to start with Hyperledger Fabric.
+There are many good examples to play within the fabric samples.
+
+
+<a name="test_fabric"></a>
+## Test fabric network
+
+As we have successfully completed the setting up the Fabric environment, it’s time
+to test it. We are going to use the first-network sample from the fabric-samples.
+
+Open the `fabric-samples` and go to `first-network`.
+
+```
+cd fabric-samples/first-network
+```
+<p align="center">
+  <img src="img/installation/first_net.png" width="500" title="first_net">
+ </p>
+<p align="center"><b>Figure 7</b>: first network</p>
+
+
+To test it, run the byfn.sh. It is a test script, it first setup the network with 2 **organizations** Org1 and Org2 with 2 **peers** each and an **orderer**.
+
+```
+./byfn.sh up
+```
+
+<p align="center">
+  <img src="img/installation/first-net-start.png" width="500" title="first-net-start">
+ </p>
+<p align="center"><b>Figure 8</b>: first network start</p>
+
+On successful execution, you’ll see the below message.
+
+
+<p align="center">
+  <img src="img/installation/first-net-end.png" width="500" title="first-net-end">
+ </p>
+<p align="center"><b>Figure 9</b>: first network end</p>
+
+> Note: If there’s already a Compose network up and running you could have error. Use the following command `docker rm $(docker ps -qa)` to shutting down all containers in running and run again `./byfn.sh`
+
+If you reach till this point it means you have successfully setup the fabric network. Now, we have completed the testing of first-network, clean the network.
+
+```
+./byfn.sh down
+```
+
+**Here, we have completed the Hyperledger Fabric installation in the Windows machine.**
+
+
 
 
