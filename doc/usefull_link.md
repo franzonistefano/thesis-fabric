@@ -5,10 +5,10 @@
 - [Official Doc](#official_doc)
 - [Architecture](#architecture)
 - [Installation Guide](#installation)
+- [Network](#net)
 - [Chaincode EVM](#evm)
     - [Articles & Example](#articles)
     - [Tool](#tool)
-- [Network](#net)
 - [ERC20 Token on Fabric](#erc20)
 - [Videos](#videos)
 
