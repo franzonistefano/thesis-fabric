@@ -66,6 +66,12 @@ peer chaincode install -n evmcc -l golang -v 0 -p github.com/hyperledger/fabric-
 ```
 
 
+<p align="center">
+  <img src="img/solidity/install_evm.PNG" width="1000" title="install_evm">
+ </p>
+<p align="center"><b>Figure 1</b>: evm chaincode installation output</p>  
+
+
 
 
 
