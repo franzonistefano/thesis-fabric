@@ -13,11 +13,11 @@
 <a name="before"></a>
 # Before Start
 
-> Have a Look to my own guide for usefull link and guides to setup environment 
+> Have a Look to my own guide for usefull link and guides
 
 - [Usefull Link for Hyperledger Fabric Development](doc/usefull_link.md)
 - [Hyperledger Installation Guide](doc/fabric_installation_guide.md)
-- [Solidity on Fabric](doc/solidity_on_fabric.md)
+- [Solidity Smart Contract over Fabric Network](doc/solidity_on_fabric.md)
 
 <a name="overview"></a>
 # Overview 
