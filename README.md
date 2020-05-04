@@ -69,6 +69,7 @@ The goal of this work is to:
     - [Set up Folders](#set_up)
     - [Run](#run)
     - [Views](#views)
+    - [Transactions Log](#tx_log)
 
 <a name="net"></a>
 ## 1. Modify First Network
@@ -200,6 +201,7 @@ the application will run on **`localhost:8000`**
 
 Repeat the same command for `web-app-user1` and `web-app-user2` that will run respectively on `localhost:8001` and `localhost:8002`
 
+<a name="views"></a>
 ### Views
 
 Once the application is in running on **`localhost:8000`** you should see the following view
@@ -211,4 +213,20 @@ Once the application is in running on **`localhost:8000`** you should see the fo
 <p align="center">
   <img src="doc/img/overview/how_to.png">
 </p>
+
+<a name="tx_log"></a>
+### Transactions Log
+
+When you perform operation over the network you can have look to the transactions log looking inside container logs.
+
+Find `<containerId>` you would like to looking inside
+
+```bash
+docker ps
+```
+Than print `<containerId>` logs
+
+```bash
+docker logs <containerId>
+```
 
