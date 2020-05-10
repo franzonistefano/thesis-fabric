@@ -11,12 +11,13 @@ docker rmi $(docker images dev-* -q)
 docker volume prune
 
 # DELETE OLD DOCKER NETWORKS (OPTIONAL: seems to restart fine without)
-#docker network prune
+docker-compose -f  down --volumes --remove-orphans
+docker network prune
 
 # DELETE SCRIPT-CREATED FILES
-#rm -rf channel-artifacts/*.block channel-artifacts/*.tx crypto-config 
+#rm -rf channel-artifacts/*.block channel-artifacts/*.tx crypto-config
 rm -rf channel-artifacts/*.block channel-artifacts/*.tx crypto-config
-rm -f docker-compose-e2e.yaml
+#rm -f docker-compose-e2e.yaml
 
 # VERIFY RESULTS
 docker ps -a
