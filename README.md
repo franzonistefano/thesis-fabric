@@ -6,7 +6,7 @@ Inside `network` folder there's two script:
   2. Generate channel artifacts
   3. Inizialize Org1 and join to the channel
   4. Instantiate and Install evmm chaincode
-- `shut_down.sh` :
+- `net_down.sh` :
   1. remove all docker containers in running
   2. remove all docker volumes created
 
