@@ -69,7 +69,7 @@ Organizations:
                 Rule: "OR('Org3MSP.admin', 'Org3MSP.client')"
             Admins:
                 Type: Signature
-                Rule: "OR('Org3MSP.admin')" 
+                Rule: "OR('Org3MSP.admin')"
         AnchorPeers:
             - Host: peer0.org3.example.com
               Port: 7051
@@ -164,17 +164,6 @@ Profiles:
                     - *Org1
                     - *Org2
                     - *Org3
-    ChannelAll:
-        Consortium: SampleConsortium
-        <<: *ChannelDefaults
-        Application:
-            <<: *ApplicationDefaults
-            Organizations:
-                - *Org1
-                - *Org2
-                - *Org3
-            Capabilities:
-                <<: *ApplicationCapabilities
     Channel12:
         Consortium: SampleConsortium
         <<: *ChannelDefaults
@@ -183,5 +172,15 @@ Profiles:
             Organizations:
                 - *Org1
                 - *Org2
+            Capabilities:
+                <<: *ApplicationCapabilities
+    Channel23:
+        Consortium: SampleConsortium
+        <<: *ChannelDefaults
+        Application:
+            <<: *ApplicationDefaults
+            Organizations:
+                - *Org2
+                - *Org3
             Capabilities:
                 <<: *ApplicationCapabilities
