@@ -1,5 +1,16 @@
 # Network
 
+# Overall
+
+We are building a network of three organizations, Org1, Org2 and Org3, each of which has one peer Peer0. We have two channels, Channel12 (Org1, Org2) and Channel23 (Org2 and Org3).
+
+<p align="center">
+  <img src="doc/img/net1.png">
+</p>
+
+
+# Table of Contents
+
 Inside `network` folder there's two script:
 - `net_up.sh` : 
   1. Generate crypto materiale for organizations
