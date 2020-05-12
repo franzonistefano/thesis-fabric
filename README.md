@@ -1,11 +1,12 @@
 # Network
 
-# Overall
+# Oveview
 
 We are building a network of three organizations, Org1, Org2 and Org3, each of which has one peer Peer0. We have two channels, Channel12 (Org1, Org2) and Channel23 (Org2 and Org3).
 
 <p align="center">
-  <img src="doc/img/net1.png">
+  <!--img src="doc/img/net1.png" width="400"-->
+  <img src="doc/img/net2.png" width="700">
 </p>
 
 
