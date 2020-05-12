@@ -19,6 +19,9 @@ docker network prune
 rm -rf channel-artifacts/*.block channel-artifacts/*.tx crypto-config
 #rm -f docker-compose-e2e.yaml
 
+# Remove creted folder
+rm -rf channel-artifacts
+
 # VERIFY RESULTS
 docker ps -a
 docker volume ls

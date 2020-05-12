@@ -159,13 +159,16 @@ Profiles:
             Capabilities:
                 <<: *OrdererCapabilities
         Consortiums:
-            SampleConsortium:
+            FirstConsortium:
                 Organizations:
                     - *Org1
                     - *Org2
+            SecondConsortium:
+                Organizations:
+                    - *Org2
                     - *Org3
     Channel12:
-        Consortium: SampleConsortium
+        Consortium: FirstConsortium
         <<: *ChannelDefaults
         Application:
             <<: *ApplicationDefaults
@@ -175,7 +178,7 @@ Profiles:
             Capabilities:
                 <<: *ApplicationCapabilities
     Channel23:
-        Consortium: SampleConsortium
+        Consortium: SecondConsortium
         <<: *ChannelDefaults
         Application:
             <<: *ApplicationDefaults
