@@ -65,7 +65,7 @@ client:
 
   # Root of the MSP directories with keys and certs.
   cryptoconfig:
-    path: ${GOPATH}/src/github.com/hyperledger/fabric-samples/3org2ch_143/crypto-config
+    path: ${GOPATH}/src/github.com/hyperledger/fabric-samples/test-net-3/crypto-config
 
   # Some SDKs support pluggable KV stores, the properties under "credentialStore"
   # are implementation specific
@@ -108,7 +108,7 @@ client:
 #
 channels:
   # name of the channel
-  channelall:
+  channel12:
     # Required. list of orderers designated by the application to use for transactions on this
     # channel. This list can be a result of access control ("org1" can only access "ordererA"), or
     # operational decisions to share loads from applications among the orderers.  The values must
@@ -156,6 +156,19 @@ channels:
         # [Optional]. will this peer be the target of the SDK's listener registration? All peers can
         # produce events but the app typically only needs to connect to one to listen to events.
         # Default: true
+        eventSource: true
+
+  channel23:
+    peers:
+      peer0.org2.example.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+      peer0.org3.example.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
         eventSource: true
 
     # [Optional]. The application can use these options to perform channel operations like retrieving channel
@@ -216,6 +229,20 @@ organizations:
     certificateAuthorities:
       - ca.org2.example.com
 
+  org3:
+    mspid: Org3MSP
+
+    # This org's MSP store (absolute path or relative to client.cryptoconfig)
+    cryptoPath:  peerOrganizations/org3.example.com/users/{username}@org3.example.com/msp
+
+    peers:
+      - peer0.org3.example.com
+
+    certificateAuthorities:
+      - ca.org3.example.com
+
+
+
   # Orderer Org name
   ordererorg:
       # Membership Service Provider ID for this organization
@@ -250,7 +277,7 @@ orderers:
 
     tlsCACerts:
       # Certificate location absolute path
-      path: ${GOPATH}/src/github.com/hyperledger/fabric-samples/3org2ch_143/crypto-config/ordererOrganizations/example.com/tlsca/tlsca.example.com-cert.pem
+      path: ${GOPATH}/src/github.com/hyperledger/fabric-samples/test-net-3/crypto-config/ordererOrganizations/example.com/tlsca/tlsca.example.com-cert.pem
 
 #
 # List of peers to send various requests to, including endorsement, query
@@ -275,10 +302,10 @@ peers:
 
     tlsCACerts:
       # Certificate location absolute path
-      path: ${GOPATH}/src/github.com/hyperledger/fabric-samples/3org2ch_143/crypto-config/peerOrganizations/org1.example.com/tlsca/tlsca.org1.example.com-cert.pem
+      path: ${GOPATH}/src/github.com/hyperledger/fabric-samples/test-net-3/crypto-config/peerOrganizations/org1.example.com/tlsca/tlsca.org1.example.com-cert.pem
 
   peer0.org2.example.com:
-    url: peer0.org2.example.com:9050
+    url: peer0.org2.example.com:8051
     grpcOptions:
       ssl-target-name-override: peer0.org2.example.com
       # These parameters should be set in coordination with the keepalive policy on the server,
@@ -292,7 +319,24 @@ peers:
       allow-insecure: false
 
     tlsCACerts:
-      path: ${GOPATH}/src/github.com/hyperledger/fabric-samples/3org2ch_143/crypto-config/peerOrganizations/org2.example.com/tlsca/tlsca.org2.example.com-cert.pem
+      path: ${GOPATH}/src/github.com/hyperledger/fabric-samples/test-net-3/crypto-config/peerOrganizations/org2.example.com/tlsca/tlsca.org2.example.com-cert.pem
+
+  peer0.org3.example.com:
+    url: peer0.org3.example.com:9051
+    grpcOptions:
+      ssl-target-name-override: peer0.org3.example.com
+      # These parameters should be set in coordination with the keepalive policy on the server,
+      # as incompatible settings can result in closing of connection.
+      # When duration of the 'keep-alive-time' is set to 0 or less the keep alive client parameters are disabled
+      keep-alive-time: 0s
+      keep-alive-timeout: 20s
+      keep-alive-permit: false
+      fail-fast: false
+      # allow-insecure will be taken into consideration if address has no protocol defined, if true then grpc or else grpcs
+      allow-insecure: false
+
+    tlsCACerts:
+      path: ${GOPATH}/src/github.com/hyperledger/fabric-samples/test-net-3/crypto-config/peerOrganizations/org3.example.com/tlsca/tlsca.org3.example.com-cert.pem
 
 entityMatchers:
   peer:
@@ -302,9 +346,15 @@ entityMatchers:
       mappedHost: peer0.org1.example.com
 
     - pattern: peer0.org2.example.(\w+)
-      urlSubstitutionExp: localhost:9051
+      urlSubstitutionExp: localhost:8051
       sslTargetOverrideUrlSubstitutionExp: peer0.org2.example.com
       mappedHost: peer0.org2.example.com
+
+    - pattern: peer0.org3.example.(\w+)
+      urlSubstitutionExp: localhost:9051
+      sslTargetOverrideUrlSubstitutionExp: peer0.org3.example.com
+      mappedHost: peer0.org3.example.com
+
 
     - pattern: (\w+).org1.example.(\w+):(\d+)
       urlSubstitutionExp: localhost:$2
@@ -316,15 +366,26 @@ entityMatchers:
       sslTargetOverrideUrlSubstitutionExp: $1.org2.example.com
       mappedHost: $1.org2.example.com
 
+    - pattern: (\w+).org3.example.(\w+):(\d+)
+      urlSubstitutionExp: localhost:$2
+      sslTargetOverrideUrlSubstitutionExp: $1.org3.example.com
+      mappedHost: $1.org3.example.com
+
+
     - pattern: (\w+):7051
       urlSubstitutionExp: localhost:7051
       sslTargetOverrideUrlSubstitutionExp: peer0.org1.example.com
       mappedHost: peer0.org1.example.com
 
-    - pattern: (\w+):9051
-      urlSubstitutionExp: localhost:9051
+    - pattern: (\w+):8051
+      urlSubstitutionExp: localhost:8051
       sslTargetOverrideUrlSubstitutionExp: peer0.org2.example.com
       mappedHost: peer0.org2.example.com
+
+    - pattern: (\w+):9051
+      urlSubstitutionExp: localhost:9051
+      sslTargetOverrideUrlSubstitutionExp: peer0.org3.example.com
+      mappedHost: peer0.org3.example.com
 
   orderer:
 
