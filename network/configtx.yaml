@@ -54,7 +54,7 @@ Organizations:
                 Rule: "OR('Org2MSP.admin')"
         AnchorPeers:
             - Host: peer0.org2.example.com
-              Port: 7051
+              Port: 8051
 
     - &Org3
         Name: Org3MSP
@@ -72,7 +72,7 @@ Organizations:
                 Rule: "OR('Org3MSP.admin')"
         AnchorPeers:
             - Host: peer0.org3.example.com
-              Port: 7051
+              Port: 9051
 
 Capabilities:
     Channel: &ChannelCapabilities
@@ -159,16 +159,14 @@ Profiles:
             Capabilities:
                 <<: *OrdererCapabilities
         Consortiums:
-            FirstConsortium:
+            SampleConsortium:
                 Organizations:
                     - *Org1
                     - *Org2
-            SecondConsortium:
-                Organizations:
-                    - *Org2
                     - *Org3
+
     Channel12:
-        Consortium: FirstConsortium
+        Consortium: SampleConsortium
         <<: *ChannelDefaults
         Application:
             <<: *ApplicationDefaults
@@ -178,7 +176,7 @@ Profiles:
             Capabilities:
                 <<: *ApplicationCapabilities
     Channel23:
-        Consortium: SecondConsortium
+        Consortium: SampleConsortium
         <<: *ChannelDefaults
         Application:
             <<: *ApplicationDefaults
