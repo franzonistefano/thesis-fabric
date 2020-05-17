@@ -34,9 +34,14 @@ app.get('/registerUser', function(req, res) {
   res.sendFile(path.join(__dirname + '/public/registerUser.html'));
 });
 
-//get partner page
+//get admin page
 app.get('/admin', function(req, res) {
   res.sendFile(path.join(__dirname + '/public/admin.html'));
+});
+
+//get admin-producer page
+app.get('/adminProducer', function(req, res) {
+  res.sendFile(path.join(__dirname + '/public/adminProducer.html'));
 });
 
 //get partner registration page
@@ -651,7 +656,7 @@ app.get('/api/transactionsData', function(req, res) {
 });
 
 //declare port
-var port = process.env.PORT || 8000;
+var port = process.env.PORT || 8001;
 if (process.env.VCAP_APPLICATION) {
   port = process.env.PORT;
 }

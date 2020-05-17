@@ -1,11 +1,524 @@
 //github.com/IBM/hyperledger-fabric-evm-demo/blob/master/src/dapp.js
 const Web3 = require('web3');
-var contractAddress = '0x30E605d1344D9235d402fF8E1d635fce8a88D862';
-var pcontractAddress = '0xC11C331f76b2d3d14b1a15B76b846A797bF61F29';
-var provider = "http://localhost:5002";
+var contractAddress = '0x6f7105039E9Db3fd947B16bB3476C0AB996Bb8ea';
+var pcontractAddress = '0xf12Ec387ed1B9f66E4cAdb6E02D454b7681Fd3F5';
+var provider = "http://localhost:5001";
 
 var myContract;
 var producerContract;
+
+/*********************************************************/
+/*********************** MODULES *************************/
+/*********************************************************/
+//export module
+module.exports = {
+
+  registerUser: function (firstName, lastName, email) {
+    try {
+      var myContract = getContract();
+      var response = myContract.registerUser(firstName, lastName, email);
+      return response;
+    }
+    catch(err) {
+      //print and return error
+      console.log(err);
+      var error = {};
+      error.error = err.message;
+      return error;
+    }
+  },
+
+  registerAdmin: function (name) {
+    try {
+      var uContract = getContract();
+      var pContract = getProducerContract();
+      var response1 = uContract.registerAdmin(name);
+      var response2 = pContract.registerAdmin(name);
+      return response1 + " " + response2;
+    }
+    catch(err) {
+      //print and return error
+      console.log(err);
+      var error = {};
+      error.error = err.message;
+      return error;
+    }
+  },
+
+  userData: function () {
+    try {
+      var myContract = getContract();
+      var accountAddress = getAccountAddress();
+      var userData = myContract.users(accountAddress); //getUserData(accountAddress);
+
+      if(userData[5]) {
+        return userData;
+      } else {
+        throw new Error("User not found");
+      }
+
+    }
+    catch(err) {
+      //print and return error
+      console.log(err);
+      var error = {};
+      error.error = err.message;
+      return error;
+    }
+  },
+
+  adminData: function (proxy) {
+    try {
+      var myContract = getContract();
+      var accountAddress = getAccountAddress();
+      var adminData = myContract.admins(accountAddress);
+
+      if(adminData[2]) {
+        return adminData;
+      } else {
+        throw new Error("Admin not found");
+      }
+    }
+    catch(err) {
+      //print and return error
+      console.log(err);
+      var error = {};
+      error.error = err.message;
+      return error;
+    }
+  },
+
+  userTransactionsData: function (proxy) {
+    try {
+      var myContract = getContract();
+
+      var transactionsLength = myContract.getUserTransactionNum();
+      var transactionsData = [];
+
+      for (var i = 0; i < transactionsLength; i++) {
+      	var tmp = myContract.getTransactionInfo(i);
+      	var array = tmp.toString().split(",");
+        transactionsData.push(array);
+      }
+
+      return transactionsData;
+    }
+    catch(err) {
+      //print and return error
+      console.log(err);
+      var error = {};
+      error.error = err.message;
+      return error;
+    }
+  },
+
+  userBoxRequest: function (proxy) {
+    try {
+      var myContract = getContract();
+
+      var evaluatedLength = myContract.getUserBoxNum();
+      var evaluatedRequests = [];
+
+      for (var i = 0; i < evaluatedLength; i++) {
+        var tmp = myContract.getUserRequest(i);
+        var array = tmp.toString().split(",");
+        evaluatedRequests.push(array);
+      }
+
+      return evaluatedRequests;
+    }
+    catch(err) {
+      //print and return error
+      console.log(err);
+      var error = {};
+      error.error = err.message;
+      return error;
+    }
+  },
+
+  adminTransactionsData: function (proxy) {
+    try {
+      var myContract = getContract();
+
+      var transactionsLength = myContract.getTotTransactionNum();
+      var transactionsData = [];
+
+      for (var i = 0; i < transactionsLength; i++) {
+	var tmp = myContract.getAdminTransactionInfo(i);
+	var array = tmp.toString().split(",");
+        transactionsData.push(array);
+      }
+
+      return transactionsData;
+    }
+    catch(err) {
+      //print and return error
+      console.log(err);
+      var error = {};
+      error.error = err.message;
+      return error;
+    }
+  },
+
+  pendingRequests: function (proxy) {
+    try {
+      var myContract = getContract();
+
+      var pendingLength = myContract.getPendingIndex();
+      var evaluatedLength = myContract.getEvaluatedIndex();
+      var pendingRequests = [];
+
+      for (var i = evaluatedLength; i < pendingLength; i++) {
+        var tmp = myContract.getPendingRequest(i);
+        var array = tmp.toString().split(",");
+        pendingRequests.push(array);
+      }
+
+      return pendingRequests;
+    }
+    catch(err) {
+      //print and return error
+      console.log(err);
+      var error = {};
+      error.error = err.message;
+      return error;
+    }
+  },
+
+  evaluatedRequests: function (proxy) {
+    try {
+      var myContract = getContract();
+
+      var evaluatedLength = myContract.getEvaluatedIndex();
+      var evaluatedRequests = [];
+
+      for (var i = 0; i < evaluatedLength; i++) {
+        var tmp = myContract.getEvaluatedRequest(i);
+        var array = tmp.toString().split(",");
+        evaluatedRequests.push(array);
+      }
+
+      return evaluatedRequests;
+    }
+    catch(err) {
+      //print and return error
+      console.log(err);
+      var error = {};
+      error.error = err.message;
+      return error;
+    }
+  },
+
+  nextPendingRequest: function (proxy) {
+    try {
+      var myContract = getContract();
+
+      var pendingIndex = myContract.getPendingIndex();
+      var evaluatedIndex = myContract.getEvaluatedIndex();
+
+      if(pendingIndex==0){
+        return null;
+      }
+      else{
+      var tmp = myContract.getNextPendingRequest();
+      var nextPendingRequest = tmp.toString().split(",");
+
+      return nextPendingRequest;
+      }
+    }
+    catch(err) {
+      //print and return error
+      console.log(err);
+      var error = {};
+      error.error = err.message;
+      return error;
+    }
+  },
+
+  sendBox: function (tshirt, pants, jackets, other, proxy) {
+    try {
+      var myContract = getContract();
+
+      var response = myContract.sendBox(tshirt, pants, jackets, other);
+
+      return response;
+    }
+    catch(err) {
+      //print and return error
+      console.log(err);
+      var error = {};
+      error.error = err.message;
+      return error;
+    }
+  },
+
+  usePoints: function (points, proxy) {
+    try {
+      var myContract = getContract();
+      var response = myContract.usePoints(points);
+      return response;
+    }
+    catch(err) {
+      //print and return error
+      console.log(err);
+      var error = {};
+      error.error = err.message;
+      return error;
+    }
+  },
+
+  evaluateBox: function (points, proxy) {
+    try {
+      var myContract = getContract();
+      var response = myContract.evaluateBox(points);
+      return response;
+    }
+    catch(err) {
+      //print and return error
+      console.log(err);
+      var error = {};
+      error.error = err.message;
+      return error;
+    }
+  },
+
+  /*****************************/
+  /***** Producer Contract *****/
+  /*****************************/
+
+  registerProducer: function (name) {
+    try {
+      var myContract = getProducerContract();
+      var response = myContract.registerProducer(name);
+      return response;
+    }
+    catch(err) {
+      //print and return error
+      console.log(err);
+      var error = {};
+      error.error = err.message;
+      return error;
+    }
+  },
+
+  producerData: function (proxy) {
+    try {
+      var myContract = getProducerContract();
+      var accountAddress = getAccountAddress();
+      var partnerData = myContract.getProducerData(accountAddress);
+
+      if(partnerData[2]) {
+        return partnerData;
+      } else {
+        throw new Error("Partner not found");
+      }
+    }
+    catch(err) {
+      //print and return error
+      console.log(err);
+      var error = {};
+      error.error = err.message;
+      return error;
+    }
+  },
+
+  producerPendingRequests: function (proxy) {
+    try {
+      var myContract = getProducerContract();
+
+      var pendingLength = myContract.getPendingIndex();
+      var evaluatedLength = myContract.getEvaluatedIndex();
+      var pendingRequests = [];
+
+      for (var i = evaluatedLength; i < pendingLength; i++) {
+        var tmp = myContract.getPendingRequest(i);
+        var array = tmp.toString().split(",");
+        pendingRequests.push(array);
+      }
+
+      return pendingRequests;
+    }
+    catch(err) {
+      //print and return error
+      console.log(err);
+      var error = {};
+      error.error = err.message;
+      return error;
+    }
+  },
+
+  producerEvaluatedRequests: function (proxy) {
+    try {
+      var myContract = getProducerContract();
+
+      var evaluatedLength = myContract.getEvaluatedIndex();
+      var evaluatedRequests = [];
+
+      for (var i = 0; i < evaluatedLength; i++) {
+        var tmp = myContract.getEvaluatedRequest(i);
+        var array = tmp.toString().split(",");
+        evaluatedRequests.push(array);
+      }
+
+      return evaluatedRequests;
+    }
+    catch(err) {
+      //print and return error
+      console.log(err);
+      var error = {};
+      error.error = err.message;
+      return error;
+    }
+  },
+
+  producerUpCycledRequests: function (proxy) {
+    try {
+      var myContract = getProducerContract();
+
+      var upCycledLength = myContract.getUpCycledIndex();
+      var upCycledRequests = [];
+
+      for (var i = 0; i < upCycledLength; i++) {
+        var tmp = myContract.getUpCycledRequest(i);
+        var array = tmp.toString().split(",");
+        upCycledRequests.push(array);
+      }
+
+      return upCycledRequests;
+    }
+    catch(err) {
+      //print and return error
+      console.log(err);
+      var error = {};
+      error.error = err.message;
+      return error;
+    }
+  },
+
+  producerNextPendingRequest: function (proxy) {
+    try {
+      var myContract = getProducerContract();
+
+      var pendingIndex = myContract.getPendingIndex();
+      var evaluatedIndex = myContract.getEvaluatedIndex();
+
+      if(pendingIndex==0){
+        return null;
+      }
+      else{
+      var tmp = myContract.getNextPendingRequest();
+      var nextPendingRequest = tmp.toString().split(",");
+
+      return nextPendingRequest;
+      }
+    }
+    catch(err) {
+      //print and return error
+      console.log(err);
+      var error = {};
+      error.error = err.message;
+      return error;
+    }
+  },
+
+  sendOldBox: function (tshirt, pants, jackets, other, proxy) {
+    try {
+      var myContract = getProducerContract();
+
+      var response = myContract.sendBoxOld(tshirt, pants, jackets, other);
+
+      return response;
+    }
+    catch(err) {
+      //print and return error
+      console.log(err);
+      var error = {};
+      error.error = err.message;
+      return error;
+    }
+  },
+
+  sendNewBox: function (tshirt, pants, jackets, other, points, proxy) {
+    try {
+      var myContract = getProducerContract();
+
+      var response = myContract.sendBoxNew(tshirt, pants, jackets, other, points);
+
+      return response;
+    }
+    catch(err) {
+      //print and return error
+      console.log(err);
+      var error = {};
+      error.error = err.message;
+      return error;
+    }
+  },
+
+  producerEvaluateBox: function (points, proxy) {
+    try {
+      var myContract = getProducerContract();
+      var response = myContract.evaluateBox(points);
+      return response;
+    }
+    catch(err) {
+      //print and return error
+      console.log(err);
+      var error = {};
+      error.error = err.message;
+      return error;
+    }
+  },
+
+  getTotPointsProvided: function (proxy) {
+    try {
+      var myContract = getProducerContract();
+      var points = myContract.getTotPointsProvided();
+
+      return points;
+    }
+    catch(err) {
+      //print and return error
+      console.log(err);
+      var error = {};
+      error.error = err.message;
+      return error;
+    }
+  },
+
+  getTotBoxOld: function (proxy) {
+    try {
+      var myContract = getProducerContract();
+      var boxNum = myContract.getTotBoxOld();
+
+      return boxNum;
+    }
+    catch(err) {
+      //print and return error
+      console.log(err);
+      var error = {};
+      error.error = err.message;
+      return error;
+    }
+  },
+
+  getTotBoxNew: function (proxy) {
+    try {
+      var myContract = getProducerContract();
+      var boxNum = myContract.getTotBoxNew();
+
+      return boxNum;
+    }
+    catch(err) {
+      //print and return error
+      console.log(err);
+      var error = {};
+      error.error = err.message;
+      return error;
+    }
+  }
+
+}
 
 /**************************************************************/
 /********************* Get PRODUCER CONTRACT **********************/
@@ -1193,517 +1706,4 @@ function getAccountAddress() {
 
     //console.log("Account " + account)
     return web3.eth.defaultAccount;
-}
-
-/*********************************************************/
-/*********************** MODULES *************************/
-/*********************************************************/
-//export module
-module.exports = {
-
-  registerUser: function (firstName, lastName, email) {
-    try {
-      var myContract = getContract();
-      var response = myContract.registerUser(firstName, lastName, email);
-      return response;
-    }
-    catch(err) {
-      //print and return error
-      console.log(err);
-      var error = {};
-      error.error = err.message;
-      return error;
-    }
-  },
-
-  registerAdmin: function (name) {
-    try {
-      var uContract = getContract();
-      var pContract = getProducerContract();
-      var response1 = uContract.registerAdmin(name);
-      var response2 = pContract.registerAdmin(name);
-      return response1 + " " + response2;
-    }
-    catch(err) {
-      //print and return error
-      console.log(err);
-      var error = {};
-      error.error = err.message;
-      return error;
-    }
-  },
-
-  userData: function () {
-    try {
-      var myContract = getContract();
-      var accountAddress = getAccountAddress();
-      var userData = myContract.users(accountAddress); //getUserData(accountAddress);
-
-      if(userData[5]) {
-        return userData;
-      } else {
-        throw new Error("User not found");
-      }
-
-    }
-    catch(err) {
-      //print and return error
-      console.log(err);
-      var error = {};
-      error.error = err.message;
-      return error;
-    }
-  },
-
-  adminData: function (proxy) {
-    try {
-      var myContract = getContract();
-      var accountAddress = getAccountAddress();
-      var adminData = myContract.admins(accountAddress);
-
-      if(adminData[2]) {
-        return adminData;
-      } else {
-        throw new Error("Admin not found");
-      }
-    }
-    catch(err) {
-      //print and return error
-      console.log(err);
-      var error = {};
-      error.error = err.message;
-      return error;
-    }
-  },
-
-  userTransactionsData: function (proxy) {
-    try {
-      var myContract = getContract();
-
-      var transactionsLength = myContract.getUserTransactionNum();
-      var transactionsData = [];
-
-      for (var i = 0; i < transactionsLength; i++) {
-      	var tmp = myContract.getTransactionInfo(i);
-      	var array = tmp.toString().split(",");
-        transactionsData.push(array);
-      }
-
-      return transactionsData;
-    }
-    catch(err) {
-      //print and return error
-      console.log(err);
-      var error = {};
-      error.error = err.message;
-      return error;
-    }
-  },
-
-  userBoxRequest: function (proxy) {
-    try {
-      var myContract = getContract();
-
-      var evaluatedLength = myContract.getUserBoxNum();
-      var evaluatedRequests = [];
-
-      for (var i = 0; i < evaluatedLength; i++) {
-        var tmp = myContract.getUserRequest(i);
-        var array = tmp.toString().split(",");
-        evaluatedRequests.push(array);
-      }
-
-      return evaluatedRequests;
-    }
-    catch(err) {
-      //print and return error
-      console.log(err);
-      var error = {};
-      error.error = err.message;
-      return error;
-    }
-  },
-
-  adminTransactionsData: function (proxy) {
-    try {
-      var myContract = getContract();
-
-      var transactionsLength = myContract.getTotTransactionNum();
-      var transactionsData = [];
-
-      for (var i = 0; i < transactionsLength; i++) {
-	var tmp = myContract.getAdminTransactionInfo(i);
-	var array = tmp.toString().split(",");
-        transactionsData.push(array);
-      }
-
-      return transactionsData;
-    }
-    catch(err) {
-      //print and return error
-      console.log(err);
-      var error = {};
-      error.error = err.message;
-      return error;
-    }
-  },
-
-  pendingRequests: function (proxy) {
-    try {
-      var myContract = getContract();
-
-      var pendingLength = myContract.getPendingIndex();
-      var evaluatedLength = myContract.getEvaluatedIndex();
-      var pendingRequests = [];
-
-      for (var i = evaluatedLength; i < pendingLength; i++) {
-        var tmp = myContract.getPendingRequest(i);
-        var array = tmp.toString().split(",");
-        pendingRequests.push(array);
-      }
-
-      return pendingRequests;
-    }
-    catch(err) {
-      //print and return error
-      console.log(err);
-      var error = {};
-      error.error = err.message;
-      return error;
-    }
-  },
-
-  evaluatedRequests: function (proxy) {
-    try {
-      var myContract = getContract();
-
-      var evaluatedLength = myContract.getEvaluatedIndex();
-      var evaluatedRequests = [];
-
-      for (var i = 0; i < evaluatedLength; i++) {
-        var tmp = myContract.getEvaluatedRequest(i);
-        var array = tmp.toString().split(",");
-        evaluatedRequests.push(array);
-      }
-
-      return evaluatedRequests;
-    }
-    catch(err) {
-      //print and return error
-      console.log(err);
-      var error = {};
-      error.error = err.message;
-      return error;
-    }
-  },
-
-  nextPendingRequest: function (proxy) {
-    try {
-      var myContract = getContract();
-
-      var pendingIndex = myContract.getPendingIndex();
-      var evaluatedIndex = myContract.getEvaluatedIndex();
-
-      if(pendingIndex==0){
-        return null;
-      }
-      else{
-      var tmp = myContract.getNextPendingRequest();
-      var nextPendingRequest = tmp.toString().split(",");
-
-      return nextPendingRequest;
-      }
-    }
-    catch(err) {
-      //print and return error
-      console.log(err);
-      var error = {};
-      error.error = err.message;
-      return error;
-    }
-  },
-
-  sendBox: function (tshirt, pants, jackets, other, proxy) {
-    try {
-      var myContract = getContract();
-
-      var response = myContract.sendBox(tshirt, pants, jackets, other);
-
-      return response;
-    }
-    catch(err) {
-      //print and return error
-      console.log(err);
-      var error = {};
-      error.error = err.message;
-      return error;
-    }
-  },
-
-  usePoints: function (points, proxy) {
-    try {
-      var myContract = getContract();
-      var response = myContract.usePoints(points);
-      return response;
-    }
-    catch(err) {
-      //print and return error
-      console.log(err);
-      var error = {};
-      error.error = err.message;
-      return error;
-    }
-  },
-
-  evaluateBox: function (points, proxy) {
-    try {
-      var myContract = getContract();
-      var response = myContract.evaluateBox(points);
-      return response;
-    }
-    catch(err) {
-      //print and return error
-      console.log(err);
-      var error = {};
-      error.error = err.message;
-      return error;
-    }
-  },
-
-  /*****************************/
-  /***** Producer Contract *****/
-  /*****************************/
-
-  registerProducer: function (name) {
-    try {
-      var myContract = getProducerContract();
-      var response = myContract.registerProducer(name);
-      return response;
-    }
-    catch(err) {
-      //print and return error
-      console.log(err);
-      var error = {};
-      error.error = err.message;
-      return error;
-    }
-  },
-
-  producerData: function (proxy) {
-    try {
-      var myContract = getProducerContract();
-      var accountAddress = getAccountAddress();
-      var partnerData = myContract.getProducerData(accountAddress);
-
-      if(partnerData[2]) {
-        return partnerData;
-      } else {
-        throw new Error("Partner not found");
-      }
-    }
-    catch(err) {
-      //print and return error
-      console.log(err);
-      var error = {};
-      error.error = err.message;
-      return error;
-    }
-  },
-
-  producerPendingRequests: function (proxy) {
-    try {
-      var myContract = getProducerContract();
-
-      var pendingLength = myContract.getPendingIndex();
-      var evaluatedLength = myContract.getEvaluatedIndex();
-      var pendingRequests = [];
-
-      for (var i = evaluatedLength; i < pendingLength; i++) {
-        var tmp = myContract.getPendingRequest(i);
-        var array = tmp.toString().split(",");
-        pendingRequests.push(array);
-      }
-
-      return pendingRequests;
-    }
-    catch(err) {
-      //print and return error
-      console.log(err);
-      var error = {};
-      error.error = err.message;
-      return error;
-    }
-  },
-
-  producerEvaluatedRequests: function (proxy) {
-    try {
-      var myContract = getProducerContract();
-
-      var evaluatedLength = myContract.getEvaluatedIndex();
-      var evaluatedRequests = [];
-
-      for (var i = 0; i < evaluatedLength; i++) {
-        var tmp = myContract.getEvaluatedRequest(i);
-        var array = tmp.toString().split(",");
-        evaluatedRequests.push(array);
-      }
-
-      return evaluatedRequests;
-    }
-    catch(err) {
-      //print and return error
-      console.log(err);
-      var error = {};
-      error.error = err.message;
-      return error;
-    }
-  },
-
-  producerUpCycledRequests: function (proxy) {
-    try {
-      var myContract = getProducerContract();
-
-      var upCycledLength = myContract.getUpCycledIndex();
-      var upCycledRequests = [];
-
-      for (var i = 0; i < upCycledLength; i++) {
-        var tmp = myContract.getUpCycledRequest(i);
-        var array = tmp.toString().split(",");
-        upCycledRequests.push(array);
-      }
-
-      return upCycledRequests;
-    }
-    catch(err) {
-      //print and return error
-      console.log(err);
-      var error = {};
-      error.error = err.message;
-      return error;
-    }
-  },
-
-  producerNextPendingRequest: function (proxy) {
-    try {
-      var myContract = getProducerContract();
-
-      var pendingIndex = myContract.getPendingIndex();
-      var evaluatedIndex = myContract.getEvaluatedIndex();
-
-      if(pendingIndex==0){
-        return null;
-      }
-      else{
-      var tmp = myContract.getNextPendingRequest();
-      var nextPendingRequest = tmp.toString().split(",");
-
-      return nextPendingRequest;
-      }
-    }
-    catch(err) {
-      //print and return error
-      console.log(err);
-      var error = {};
-      error.error = err.message;
-      return error;
-    }
-  },
-
-  sendOldBox: function (tshirt, pants, jackets, other, proxy) {
-    try {
-      var myContract = getProducerDataContract();
-
-      var response = myContract.sendBoxOld(tshirt, pants, jackets, other);
-
-      return response;
-    }
-    catch(err) {
-      //print and return error
-      console.log(err);
-      var error = {};
-      error.error = err.message;
-      return error;
-    }
-  },
-
-  sendNewBox: function (tshirt, pants, jackets, other, points, proxy) {
-    try {
-      var myContract = getProducerDataContract();
-
-      var response = myContract.sendBoxNew(tshirt, pants, jackets, other, points);
-
-      return response;
-    }
-    catch(err) {
-      //print and return error
-      console.log(err);
-      var error = {};
-      error.error = err.message;
-      return error;
-    }
-  },
-
-  producerEvaluateBox: function (points, proxy) {
-    try {
-      var myContract = getProducerContract();
-      var response = myContract.evaluateBox(points);
-      return response;
-    }
-    catch(err) {
-      //print and return error
-      console.log(err);
-      var error = {};
-      error.error = err.message;
-      return error;
-    }
-  },
-
-  getTotPointsProvided: function (proxy) {
-    try {
-      var myContract = getProducerContract();
-      var points = myContract.getTotPointsProvided();
-
-      return points;
-    }
-    catch(err) {
-      //print and return error
-      console.log(err);
-      var error = {};
-      error.error = err.message;
-      return error;
-    }
-  },
-
-  getTotBoxOld: function (proxy) {
-    try {
-      var myContract = getProducerContract();
-      var boxNum = myContract.getTotBoxOld();
-
-      return boxNum;
-    }
-    catch(err) {
-      //print and return error
-      console.log(err);
-      var error = {};
-      error.error = err.message;
-      return error;
-    }
-  },
-
-  getTotBoxNew: function (proxy) {
-    try {
-      var myContract = getProducerContract();
-      var boxNum = myContract.getTotBoxNew();
-
-      return boxNum;
-    }
-    catch(err) {
-      //print and return error
-      console.log(err);
-      var error = {};
-      error.error = err.message;
-      return error;
-    }
-  }
-
 }

@@ -14,7 +14,7 @@
 <body id="bootstrap-overrides">
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-green">
-      <a class="navbar-brand" href="/home"><img src="img/logo.png" width="200" height="50"></a>
+      <a class="navbar-brand" href="/home"><img src="img/logo.png" height="50"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -43,7 +43,7 @@
       <div class="container text-center">
         <h1><b>RECYCLE SMART</b></h1>
         <h4></h4>
-        <h3>The web application based on <b>blockchain</b> that allow you to <b>recycle</b> your clothes and earn points</h3>
+        <h3>The web application based on <b>blockchain</b> that allows you to <b>recycle</b> your clothes and earn points</h3>
         <br>
       </div>
 
@@ -62,14 +62,29 @@
     <!--How It Works-->
     <div class="container text-center">
       <h2><b>HOW IT WORKS</b></h2>
-      <div class="row">
-        <div class="col-lg-6 text-center mycontent-left">
+
+      <div class="row center">
+        <div class="text-center">
           <h2><b>USER</b></h2>
           <img src="img/user.png">
         </div>
-        <div class="col-lg-6 text-center mycontent-right">
-          <h2><b>ADMIN</b></h2>
+      </div>
+      <br>
+      <div class="row center">
+        <div class="col-lg-6 text-center mycontent-left">
+          <h2><b>ADMIN FOR USERS</b></h2>
           <img src="img/admin.png">
+        </div>
+        <div class="col-lg-6 text-center mycontent-right">
+          <h2><b>ADMIN FOR PRODUCER</b></h2>
+          <img src="img/admin_producer.png">
+        </div>
+      </div>
+      <br>
+      <div class="row center">
+        <div class="text-center">
+          <h2><b>PRODUCER</b></h2>
+          <img src="img/producer.png">
         </div>
       </div>
 
@@ -84,20 +99,26 @@
     </div>
 
     <div class="row" id="register" style="display:none;">
-      <div class="col-lg-6 text-center mycontent-left">
+      <div class="col-lg-4 text-center mycontent-left">
 
         <h2>User</h2>
-        <p>Customers can register as User to this program. Once registered they can make transactions to sendBox and use points, and view own
-          transactions. </p>
+        <p>Customers can register as User to this program.</p>
         <p>
           <a class="btn btn-secondary" href="/registerUser" role="button">Register &raquo;</a></p>
       </div>
 
-      <div class="col-lg-6 text-center mycontent-right">
+      <div class="col-lg-4 text-center mycontent-right mycontent-left">
         <h2>Admin</h2>
-        <p>Employees can register as Admin on the network. They can view all transactions and evaluate Box received</p>
+        <p>Employees can register as Admin on the network</p>
         <p>
           <a class="btn btn-secondary" href="/registerAdmin" role="button">Register &raquo;</a></p>
+      </div>
+
+      <div class="col-lg-4 text-center mycontent-right">
+        <h2>Producer</h2>
+        <p>Employees can register as Producer on the network</p>
+        <p>
+          <a class="btn btn-secondary" href="/registerProducer" role="button">Register &raquo;</a></p>
       </div>
 
     </div>
