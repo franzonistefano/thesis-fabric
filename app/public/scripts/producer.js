@@ -34,6 +34,10 @@ function updateProducer() {
         var totBoxNew = data.totBoxNew;
         var totPointsProvided = data.totPointsProvided;
 
+        console.log('Tot Box Old: ' + totBoxOld);
+        console.log('Tot Box New: ' + totBoxNew);
+        console.log('Tot Points Provided: ' + totPointsProvided);
+
         str = str + '<h3>' + totPointsProvided + ' </h3>';
         str = str + '<h3>' + totBoxOld + ' </h3>';
         str = str + '<h3>' + totBoxNew + ' </h3>';
@@ -52,26 +56,11 @@ function updateProducer() {
         var str = '';
         var nextRequest = data.nextRequest;
 
-        str = str + '<p><b>User Address</b>: ' + nextRequest[0] + '<br /><b>T-Shirt</b>: ' + nextRequest[1] + '<br /><b>Pants</b>: ' + nextRequest[2] + '<br /><b>Jackets</b>: ' + nextRequest[3];
-        str = str + '<br /><b>Other</b>: ' + nextRequest[4] + '<br /><b>Evaluated</b>: ' + nextRequest[5] + '<br /><b>Points</b>: ' + nextRequest[6] + '</p><br>';
-
-        return str;
-      });
-
-      //update all transactions
-      $('.points-transactions').html(function() {
-        var str = '';
-        var transactionData = data.transactionsData;
-        var transactionType = '';
-
-        for (var i = 0; i < transactionData.length; i++) {
-
-          if(transactionData[i][1] == 0) {
-            transactionType = 'Points Earned';
-          } else if (transactionData[i][1] == 1) {
-            transactionType = 'Points Redeemed';
-          }
-          str = str + '<p><b>Admin Address</b>: ' + transactionData[i][3] + '<br /><b>User Address</b>: ' + transactionData[i][2] + '<br /><b>Transaction Type</b>: ' + transactionType + '<br /><b>Points</b>: ' + transactionData[i][0] + '</p><br>';
+        if(nextRequest != 0){
+          str = str + '<p><b>User Address</b>: ' + nextRequest[0] + '<br /><b>T-Shirt</b>: ' + nextRequest[1] + '<br /><b>Pants</b>: ' + nextRequest[2] + '<br /><b>Jackets</b>: ' + nextRequest[3];
+          str = str + '<br /><b>Other</b>: ' + nextRequest[4] + '<br /><b>Evaluated</b>: ' + nextRequest[5] + '<br /><b>Points</b>: ' + nextRequest[6] + '</p><br>';
+        } else {
+          str = str + '<p>No More Pending Requests to Evaluate</p>'
         }
         return str;
       });
@@ -156,7 +145,7 @@ function updateProducer() {
           return;
         } else {
           //update member page and notify successful transaction
-          updateAdmin();
+          updateProducer();
           alert('Transaction successful');
         }
 
@@ -174,3 +163,63 @@ function updateProducer() {
   }
 
 };
+
+//check user input and call server
+$('.send-box-transaction').click(function() {
+
+  var tshirt = $('.sendTshirt input').val();
+  var pants = $('.sendPants input').val();
+  var jackets = $('.sendJacket input').val();
+  var other = $('.sendOther input').val();
+  var points = $('.sendPoints input').val();
+  sendBox(tshirt, pants, jackets, other, points);
+});
+
+function sendBox(tshirt, pants, jackets, other, points) {
+
+  //get user input data
+  var formProxy = $('.proxy input').val();
+  var formContractAddress = $('.contractAddress input').val();
+
+  //create json data
+  var inputData = '{' + '"proxy" : "' + formProxy + '", ' + '"tshirt" : "' + tshirt + '", ' + '"pants" : "' + pants + '", ' + '"jackets" : "' + jackets + '", ' + '"other" : "' + other + '", ' + '"points" : "' + points + '", ' + '"contractaddress" : "' + formContractAddress +'"}';
+  console.log('Send Box New: ' + inputData);
+
+  //make ajax call
+  $.ajax({
+    type: 'POST',
+    url: apiUrl + 'sendBoxNew',
+    data: inputData,
+    dataType: 'json',
+    contentType: 'application/json',
+    beforeSend: function() {
+      //display loading
+      document.getElementById('loader').style.display = "block";
+      document.getElementById('infoSection').style.display = "none";
+    },
+    success: function(data) {
+      console.log(data);
+      document.getElementById('loader').style.display = "none";
+      document.getElementById('infoSection').style.display = "block";
+
+      //check data for error
+      if (data.error) {
+        alert(data.error);
+        return;
+      } else {
+        //update member page and notify successful transaction
+        updateProducer();
+        alert('Transaction successful');
+      }
+
+
+    },
+    error: function(jqXHR, textStatus, errorThrown) {
+      document.getElementById('loader').style.display = "none";
+      alert("Error: Try again")
+      console.log(errorThrown);
+      console.log(textStatus);
+      console.log(jqXHR);
+    }
+  });
+}

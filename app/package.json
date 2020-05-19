@@ -1,12 +1,12 @@
 {
-  "name": "loyaly-points",
+  "name": "box-points",
   "version": "0.0.1",
-  "description": "Customer loyalty points on blockchain",
+  "description": "User box send and earn points on blockchain",
   "scripts": {
     "start": "node app.js"
   },
-  "author": "Raheel",
-  "email": "raheel.zubairy@ibm.com",
+  "author": "Stefano Franzoni",
+  "email": "franzoni.stefano93@gmail.com",
   "license": "Apache-2.0",
   "devDependencies": {
     "body-parser": "^1.19.0",

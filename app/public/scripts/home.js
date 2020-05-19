@@ -19,7 +19,7 @@ $(document).ready(function() {
 
             document.getElementById('register').style.display = "flex";
             $('.info').html(function() {
-              var str = '<center><h4 align="center">Register as <b>User</b> or <b>Admin</b></h4></br></center>';
+              var str = '<center><h4 align="center">Register as <b>User</b>, <b>Admin</b> or <b>Producer</b></h4></br></center>';
               return str;
             });
             return;
@@ -31,6 +31,7 @@ $(document).ready(function() {
             });
           }
           });
+
         } else {
           $('.info').html(function() {
             var str = '<h4>You are registered as <b>Admin</b> on the network </h4></br>';

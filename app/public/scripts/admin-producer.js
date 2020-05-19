@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 function updateAdmin() {
 
-  $.get(apiUrl + 'adminData', function(data) {
+  $.get(apiUrl + 'adminProducerData', function(data) {
 
     //check data for error
     if (data.error) {
@@ -85,8 +85,10 @@ function updateAdmin() {
       //display transaction section
       document.getElementById('transactionSection').style.display = "block";
     }
-});
-}
+
+  });
+
+};
 
 //check user input and call server
 $('.send-box-transaction').click(function() {
@@ -106,7 +108,7 @@ function sendBox(tshirt, pants, jackets, other) {
 
   //create json data
   var inputData = '{' + '"proxy" : "' + formProxy + '", ' + '"tshirt" : "' + tshirt + '", ' + '"pants" : "' + pants + '", ' + '"jackets" : "' + jackets + '", ' + '"other" : "' + other + '", ' + '"contractaddress" : "' + formContractAddress +'"}';
-  console.log(inputData)
+  console.log('Sending Old Box' + inputData);
 
   //make ajax call
   $.ajax({

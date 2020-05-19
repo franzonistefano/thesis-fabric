@@ -13,7 +13,7 @@
 <body class="bg-light" id="bootstrap-overrides">
 
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-black">
-    <a class="navbar-brand" href="/home"><img src="img/logo_admin.png" width="250" height="50"></a>
+    <a class="navbar-brand" href="/home"><img src="img/logo3.png" height="50"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -79,7 +79,10 @@
 
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item tab-width">
-            <a class="nav-link active" id="evaluate-tab" data-toggle="tab" href="#evaluate" role="tab" aria-controls="evaluate" aria-selected="true">Evaluate Box</a>
+            <a class="nav-link active" id="send-tab" data-toggle="tab" href="#sendBox" role="tab" aria-controls="sendBox" aria-selected="true">Send Box</a>
+          </li>
+          <li class="nav-item tab-width">
+            <a class="nav-link active" id="evaluate-tab" data-toggle="tab" href="#evaluate" role="tab" aria-controls="evaluate" aria-selected="false">Evaluate Box</a>
           </li>
           <li class="nav-item tab-width">
             <a class="nav-link" id="pending-tab" data-toggle="tab" href="#pending-box" role="tab" aria-controls="pending" aria-selected="false">Pending Requests</a>
@@ -87,9 +90,6 @@
           <li class="nav-item tab-width">
             <a class="nav-link" id="evaluated-tab" data-toggle="tab" href="#evaluated-box" role="tab" aria-controls="evaluated" aria-selected="false">Evaluated Requests</a>
           </li>
-          <!--li class="nav-item tab-width">
-            <a class="nav-link" id="dashboard-tab" data-toggle="tab" href="#dashboard" role="tab" aria-controls="earn" aria-selected="false">Dashboard</a>
-          </li-->
           <li class="nav-item tab-width">
             <a class="nav-link" id="upcycled-tab" data-toggle="tab" href="#upcycled-box" role="tab" aria-controls="upcycled" aria-selected="false">Upcycled Box</a>
           </li>
@@ -97,6 +97,51 @@
       </div>
       <div class="row center">
         <div class="tab-content" id="myTabContent">
+
+          <!-- Send Box with New Clothes -->
+          <div class="tab-pane fade show active center" id="sendBox" role="tabpanel" aria-labelledby="send-tab">
+            <br>
+            <h5> Send a Box with New Clothes with upcycled materials </h5>
+            <br>
+            <p><b> Insert the number of the Item inside the Box and related points value</b></p>
+
+            <div class="sendTshirt">
+              <p> T-Shirt
+                <input class="my-input">
+              </p>
+            </div>
+
+            <div class="sendPants">
+              <p> Pants
+                <input class="my-input">
+              </p>
+            </div>
+
+            <div class="sendJacket">
+              <p> Jackets
+                <input class="my-input">
+              </p>
+            </div>
+
+            <div class="sendOther">
+              <p> Other
+                <input class="my-input">
+              </p>
+            </div>
+
+            <div class="sendPoints">
+              <p> Points
+                <input class="my-input">
+              </p>
+            </div>
+
+            <div class="center">
+              <button class="btn btn-secondary send-box-transaction">Send Box</button>
+            </div>
+            <hr class="featurette-divider">
+
+          </div>
+
           <!-- Evaluate Box -->
           <div class="tab-pane fade show active" id="evaluate" role="tabpanel" aria-labelledby="dashboard-tab">
             <br>

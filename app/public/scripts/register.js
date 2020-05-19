@@ -12,7 +12,7 @@ $('.register-user').click(function() {
 
   //create json data
   var inputData = '{' + '"firstname" : "' + formFirstName + '", ' + '"lastname" : "' + formLastName + '", ' + '"email" : "' + formEmail + '"}';
-  console.log(inputData)
+  console.log('Register User ' + inputData)
 
   //make ajax call to the server
   $.ajax({
@@ -68,7 +68,7 @@ $('.register-admin').click(function() {
 
   //create json data
   var inputData = '{' + '"name" : "' + formName + '"}';
-  console.log(inputData);
+  console.log('Register Admin ' + inputData);
 
   //make ajax call to add the dataset
   $.ajax({
@@ -119,7 +119,7 @@ $('.register-producer').click(function() {
 
   //create json data
   var inputData = '{' + '"name" : "' + formName + '"}';
-  console.log(inputData);
+  console.log('Register Producer ' + inputData);
 
   //make ajax call to add the dataset
   $.ajax({
