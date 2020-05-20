@@ -67,6 +67,7 @@
 - https://gist.github.com/vitiko/2e4882740a7852165d2dee5d3e5c1a4a
 - [Node.js ERC20](https://github.com/grepruby/ERC20-Token-On-Hyperledger)
 - [PlasticCoin](https://dl.acm.org/doi/pdf/10.1145/3358695.3361107?download=true)
+- [EcoCoin](https://uploads-ssl.webflow.com/5c1b58255c613376879c2558/5c4970105b4d237571564f43_ECOcoin_white_paper_v1.0.pdf)
 
 
 <a name="videos"></a>
