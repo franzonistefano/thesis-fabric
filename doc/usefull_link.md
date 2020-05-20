@@ -66,6 +66,7 @@
 - https://medium.com/coinmonks/erc20-token-as-hyperledger-fabric-golang-chaincode-d09dfd16a339
 - https://gist.github.com/vitiko/2e4882740a7852165d2dee5d3e5c1a4a
 - [Node.js ERC20](https://github.com/grepruby/ERC20-Token-On-Hyperledger)
+- [PlasticCoin](https://dl.acm.org/doi/pdf/10.1145/3358695.3361107?download=true)
 
 
 <a name="videos"></a>
