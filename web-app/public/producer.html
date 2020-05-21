@@ -13,7 +13,7 @@
 <body class="bg-light" id="bootstrap-overrides">
 
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-black">
-    <a class="navbar-brand" href="/home"><img src="img/logo2.png" height="50"></a>
+    <a class="navbar-brand" href="/home"><img src="img/logo3.png" height="50"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,17 +25,12 @@
 
       <ul class="navbar-nav px-3">
 
-        <li class="nav-item">
-          <a class="nav-link" href="/admin">User</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/admin-producer">Producer</a>
-        </li>
         <li class="nav-item text-nowrap dropdown">
           <a class="nav-link dropdown-toggle " href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sign-in</a>
           <div class="dropdown-menu" aria-labelledby="dropdown01">
             <a class="dropdown-item" href="/user">User</a>
             <a class="dropdown-item" href="/admin">Admin</a>
+            <a class="dropdown-item" href="/producer">Producer</a>
           </div>
         </li>
 
@@ -63,9 +58,10 @@
               <div style="padding-right: 20px">
                 <h3><b>NAME</b>:</h3>
                 <h3><b>ADDRESS</b>:</h3>
-                <h3><b>TOT POINTS EARNED</b>:</h3>
-                <h3><b>TOT BOX SENT</b>:</h3>
-                <h3><b>TOT BOX RECEIVED</b>:</h3>
+                <h3><b>TOT REGENERATION CREDITS SUPPLIED</b>:</h3>
+                <h3><b>REGENERATION CREDITS IN CIRCULATION</b>:</h3>
+                <h3><b>TOT OLD BOX</b>:</h3>
+                <h3><b>TOT NEW BOX</b>:</h3>
               </div>
             </td>
             <td>
@@ -74,15 +70,17 @@
             </td>
           </tr>
         </table>
+        <!--div class="heading"> </div-->
       </div>
     </div>
 
     <div class="container" id="infoSection">
 
       <div class="row">
+
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item tab-width">
-            <a class="nav-link active" id="send-tab" data-toggle="tab" href="#sendBox" role="tab" aria-controls="sendBox" aria-selected="true">Send Box</a>
+            <a class="nav-link active" id="evaluate-tab" data-toggle="tab" href="#evaluate" role="tab" aria-controls="evaluate" aria-selected="false">Evaluate Box</a>
           </li>
           <li class="nav-item tab-width">
             <a class="nav-link" id="pending-tab" data-toggle="tab" href="#pending-box" role="tab" aria-controls="pending" aria-selected="false">Pending Requests</a>
@@ -91,50 +89,30 @@
             <a class="nav-link" id="evaluated-tab" data-toggle="tab" href="#evaluated-box" role="tab" aria-controls="evaluated" aria-selected="false">Evaluated Requests</a>
           </li>
           <li class="nav-item tab-width">
-            <a class="nav-link" id="upcycled-tab" data-toggle="tab" href="#upcycled-box" role="tab" aria-controls="upcycled" aria-selected="false">UpCycled Requests</a>
+            <a class="nav-link" id="upcycled-tab" data-toggle="tab" href="#upcycled-box" role="tab" aria-controls="upcycled" aria-selected="false">Upcycled Box</a>
           </li>
         </ul>
       </div>
-
       <div class="row center">
         <div class="tab-content" id="myTabContent">
 
-          <!-- Send Box with Old Clothes -->
-          <div class="tab-pane fade show active center" id="sendBox" role="tabpanel" aria-labelledby="send-tab">
+          <!-- Evaluate Box -->
+          <div class="tab-pane fade show active" id="evaluate" role="tabpanel" aria-labelledby="dashboard-tab">
             <br>
-            <h5> Send a Box with Old Clothes to upcycle materials </h5>
-            <br>
-            <p><b> Insert the number of the Item inside the Box </b></p>
+            <h3>Box To Be Evaluate</h3>
+            <div class="next-box"> </div>
 
-            <div class="sendTshirt">
-              <p> T-Shirt
-                <input class="my-input">
-              </p>
-            </div>
-
-            <div class="sendPants">
-              <p> Pants
-                <input class="my-input">
-              </p>
-            </div>
-
-            <div class="sendJacket">
-              <p> Jackets
-                <input class="my-input">
-              </p>
-            </div>
-
-            <div class="sendOther">
-              <p> Other
-                <input class="my-input">
+            <div class="boxPoints">
+              <p> Enter the points Amount of the Box
+                <input>
               </p>
             </div>
 
             <div class="center">
-              <button class="btn btn-secondary send-box-transaction">Send Box</button>
+              <button class="btn btn-secondary evaluate-box-transaction">Evaluate Box</button>
             </div>
-            <hr class="featurette-divider">
 
+            <hr class="featurette-divider">
           </div>
 
           <!-- Pending Box -->
@@ -155,7 +133,7 @@
             <hr class="featurette-divider">
           </div>
 
-          <!-- UpCycled Box -->
+          <!-- Evaluated Box -->
           <div class="tab-pane fade show active" id="upcycled-box" role="tabpanel" aria-labelledby="upcycled-tab">
             <br>
             <h3>UpCycled Box</h3>
@@ -164,6 +142,14 @@
             <hr class="featurette-divider">
           </div>
 
+          <!-- Dashboard
+          <div class="tab-pane fade show active" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+            <br>
+            <h3>Points Usage</h3>
+            <div class="dashboards"></div>
+
+            <hr class="featurette-divider">
+          </div> -->
         </div>
       </div>
 
@@ -175,7 +161,7 @@
   <div class="container text-center">
     <br><br>
     <div class="container text-center">
-      <div class="loader" id="loader" style="display:none;"></div>
+      <div class="loader" id="loader" style="display:block;"></div>
     </div>
   </div>
 
@@ -186,4 +172,4 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-<script src="/scripts/admin-producer.js"></script>
+<script src="/scripts/producer.js"></script>

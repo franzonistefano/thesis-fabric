@@ -7,6 +7,9 @@ $(document).ready(function() {
 
 function updateUser() {
 
+  //display loading
+  document.getElementById('loader').style.display = "block";
+
   $.get(apiUrl + 'userData', function(data) {
 
     if (data.error) {
@@ -84,6 +87,9 @@ function updateUser() {
 
       //display member page
       document.getElementById('transactionSection').style.display = "block";
+
+      //hide loading
+      document.getElementById('loader').style.display = "none";
     }
 
   });

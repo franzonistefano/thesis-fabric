@@ -1,5 +1,5 @@
 Web3 = require('web3')
-web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:5002'))
+web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:5001'))
 
 web3.eth.accounts
 console.log(web3.eth.accounts)

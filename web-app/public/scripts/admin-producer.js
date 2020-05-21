@@ -7,6 +7,9 @@ $(document).ready(function() {
 
 function updateAdmin() {
 
+  //display loading
+  document.getElementById('loader').style.display = "block";
+
   $.get(apiUrl + 'adminProducerData', function(data) {
 
     //check data for error
@@ -19,6 +22,7 @@ function updateAdmin() {
       });
       return;
     } else {
+
       //update heading
       $('.heading').html(function() {
         var str = '<h3>' + data.adminData[1] + ' </h3>';
@@ -33,8 +37,14 @@ function updateAdmin() {
         var totPointsProvided = data.totPointsProvided;
         var totBoxOld = data.totBoxOld;
         var totBoxNew = data.totBoxNew;
+        var regenerationCredits = data.totRegenerationCredits;
 
-        str = str + '<h3>' + totPointsProvided + ' </h3>';
+        console.log('Tot Box Old: ' + totBoxOld);
+        console.log('Tot Box New: ' + totBoxNew);
+        console.log('Tot Points Provided: ' + totPointsProvided);
+        console.log('Regeneration Credits: ' + regenerationCredits);
+
+        str = str + '<h3>' + regenerationCredits + ' </h3>';
         str = str + '<h3>' + totBoxOld + ' </h3>';
         str = str + '<h3>' + totBoxNew + ' </h3>';
         return str;
@@ -84,11 +94,89 @@ function updateAdmin() {
 
       //display transaction section
       document.getElementById('transactionSection').style.display = "block";
+      //hide loading
+      document.getElementById('loader').style.display = "none";
     }
 
   });
 
-};
+}
+
+$('.small-box').click(function() {
+  var tshirt = 5;
+  var pants = 5;
+  var jackets = 5;
+  var other = 5;
+  var points = 50;
+  spendRegenerationCredits(tshirt, pants, jackets, other, points);
+});
+
+$('.medium-box').click(function() {
+  var tshirt = 15;
+  var pants = 15;
+  var jackets = 15;
+  var other = 15;
+  var points = 150;
+  spendRegenerationCredits(tshirt, pants, jackets, other, points);
+});
+
+$('.big-box').click(function() {
+  var tshirt = 40;
+  var pants = 40;
+  var jackets = 40;
+  var other = 40;
+  var points = 300;
+  spendRegenerationCredits(tshirt, pants, jackets, other, points);
+});
+
+function spendRegenerationCredits(tshirt, pants, jackets, other, points) {
+
+  //get user input data
+  var formProxy = $('.proxy input').val();
+  var formContractAddress = $('.contractAddress input').val();
+
+  //create json data
+  var inputData = '{' + '"proxy" : "' + formProxy + '", ' + '"tshirt" : "' + tshirt + '", ' + '"pants" : "' + pants + '", ' + '"jackets" : "' + jackets + '", ' + '"other" : "' + other + '", ' + '"points" : "' + points + '", ' + '"contractaddress" : "' + formContractAddress +'"}';
+  console.log('Buy Upcycled Box: ' + inputData);
+
+  //make ajax call
+  $.ajax({
+    type: 'POST',
+    url: apiUrl + 'buyUpcycledBox',
+    data: inputData,
+    dataType: 'json',
+    contentType: 'application/json',
+    beforeSend: function() {
+      //display loading
+      document.getElementById('loader').style.display = "block";
+      document.getElementById('infoSection').style.display = "none";
+    },
+    success: function(data) {
+      console.log(data);
+      document.getElementById('loader').style.display = "none";
+      document.getElementById('infoSection').style.display = "block";
+
+      //check data for error
+      if (data.error) {
+        alert(data.error);
+        return;
+      } else {
+        //update member page and notify successful transaction
+        updateAdmin();
+        alert('Transaction successful');
+      }
+
+
+    },
+    error: function(jqXHR, textStatus, errorThrown) {
+      document.getElementById('loader').style.display = "none";
+      alert("Error: Try again")
+      console.log(errorThrown);
+      console.log(textStatus);
+      console.log(jqXHR);
+    }
+  });
+}
 
 //check user input and call server
 $('.send-box-transaction').click(function() {

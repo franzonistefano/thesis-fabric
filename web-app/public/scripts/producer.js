@@ -7,6 +7,9 @@ $(document).ready(function() {
 
 function updateProducer() {
 
+  //display loading
+  document.getElementById('loader').style.display = "block";
+
   $.get(apiUrl + 'producerData', function(data) {
 
     //check data for error
@@ -33,12 +36,15 @@ function updateProducer() {
         var totBoxOld = data.totBoxOld;
         var totBoxNew = data.totBoxNew;
         var totPointsProvided = data.totPointsProvided;
+        var regenerationCredits = data.totRegenerationCredits;
 
         console.log('Tot Box Old: ' + totBoxOld);
         console.log('Tot Box New: ' + totBoxNew);
         console.log('Tot Points Provided: ' + totPointsProvided);
+        console.log('Regeneration Credits: ' + regenerationCredits);
 
         str = str + '<h3>' + totPointsProvided + ' </h3>';
+        str = str + '<h3>' + regenerationCredits + ' </h3>';
         str = str + '<h3>' + totBoxOld + ' </h3>';
         str = str + '<h3>' + totBoxNew + ' </h3>';
         return str;
@@ -109,6 +115,9 @@ function updateProducer() {
 
   //display transaction section
   document.getElementById('transactionSection').style.display = "block";
+
+  //hide loading
+  document.getElementById('loader').style.display = "none";
 }
 });
 
@@ -162,64 +171,4 @@ function updateProducer() {
 
   }
 
-};
-
-//check user input and call server
-$('.send-box-transaction').click(function() {
-
-  var tshirt = $('.sendTshirt input').val();
-  var pants = $('.sendPants input').val();
-  var jackets = $('.sendJacket input').val();
-  var other = $('.sendOther input').val();
-  var points = $('.sendPoints input').val();
-  sendBox(tshirt, pants, jackets, other, points);
-});
-
-function sendBox(tshirt, pants, jackets, other, points) {
-
-  //get user input data
-  var formProxy = $('.proxy input').val();
-  var formContractAddress = $('.contractAddress input').val();
-
-  //create json data
-  var inputData = '{' + '"proxy" : "' + formProxy + '", ' + '"tshirt" : "' + tshirt + '", ' + '"pants" : "' + pants + '", ' + '"jackets" : "' + jackets + '", ' + '"other" : "' + other + '", ' + '"points" : "' + points + '", ' + '"contractaddress" : "' + formContractAddress +'"}';
-  console.log('Send Box New: ' + inputData);
-
-  //make ajax call
-  $.ajax({
-    type: 'POST',
-    url: apiUrl + 'sendBoxNew',
-    data: inputData,
-    dataType: 'json',
-    contentType: 'application/json',
-    beforeSend: function() {
-      //display loading
-      document.getElementById('loader').style.display = "block";
-      document.getElementById('infoSection').style.display = "none";
-    },
-    success: function(data) {
-      console.log(data);
-      document.getElementById('loader').style.display = "none";
-      document.getElementById('infoSection').style.display = "block";
-
-      //check data for error
-      if (data.error) {
-        alert(data.error);
-        return;
-      } else {
-        //update member page and notify successful transaction
-        updateProducer();
-        alert('Transaction successful');
-      }
-
-
-    },
-    error: function(jqXHR, textStatus, errorThrown) {
-      document.getElementById('loader').style.display = "none";
-      alert("Error: Try again")
-      console.log(errorThrown);
-      console.log(textStatus);
-      console.log(jqXHR);
-    }
-  });
 }

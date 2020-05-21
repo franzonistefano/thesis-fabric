@@ -1,14 +1,48 @@
 const Web3 = require('web3');
-var userContractAddress = '0x6C0dF97C1aD244CD303Ac59E824B40A198877339';
-var producerContractAddress = '0x320585b213ef820976851c3772aac43dee500cf6';
-var provider = "http://localhost:5001";
+var userContractAddress = '0x041bea1227f9b63c58639e84bd60ad8e9e209961';
+var producerContractAddress = '0xef5bc633b13d90263ddd3e7257ba8f1a63bd3cd9';
+var provider = "http://localhost:5000";
 
-var myContract;
+//const myContract = uploadUserContract();            //User Contract
+//const producerContract = uploadProducerContract();  //Producer Contract
+//const ethAccount = uploadAccountAddress();;         //eth Account associated to Fab3 Instance
 
+console.log('===================================');
+console.log('Uploading User Contract');
+//uploadUserContract();
+const myContract = uploadUserContract();            //User Contract
+console.log('Uploaded User Contract ' + myContract.address);
+
+console.log();
+console.log('===================================');
+console.log('Uploading Producer Contract');
+//uploadProducerContract();
+const producerContract = uploadProducerContract();  //Producer Contract
+console.log('Uploaded Producer Contract ' + producerContract.address);
+
+console.log();
+console.log('===================================');
+console.log('Uploading eth address');
+//uploadAccountAddress();
+const ethAccount = uploadAccountAddress();;         //eth Account associated to Fab3 Instance
+console.log('Uploaded eth address ' + ethAccount);
+console.log();
+
+function getUserContract() {
+  return myContract;
+}
+
+function getProducerContract() {
+  return producerContract;
+}
+
+function getAccountAddress(){
+  return ethAccount;
+}
 /**************************************************************/
 /********************* Get USER CONTRACT **********************/
 /**************************************************************/
-function getUserContract() {
+function uploadUserContract() {
     console.log("Getting the Contract");
 
     var web3 = new Web3();
@@ -670,14 +704,14 @@ function getUserContract() {
 	}
 ];
     var LoyaltyContract = web3.eth.contract(loyaltyABI);
-    myContract = LoyaltyContract.at(address);
-    return myContract;
+    var uContract = LoyaltyContract.at(address);
+    return uContract;
 }
 
 /**************************************************************/
 /******************* Get PRODUCER CONTRACT ********************/
 /**************************************************************/
-function getProducerContract() {
+function uploadProducerContract() {
     console.log("Getting the Producer Contract");
 
     var web3 = new Web3();
@@ -787,6 +821,14 @@ function getProducerContract() {
 			{
 				"name": "isRegistered",
 				"type": "bool"
+			},
+			{
+				"name": "numBox",
+				"type": "uint256"
+			},
+			{
+				"name": "creditSpent",
+				"type": "uint256"
 			}
 		],
 		"payable": false,
@@ -921,36 +963,6 @@ function getProducerContract() {
 		],
 		"payable": false,
 		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": false,
-		"inputs": [
-			{
-				"name": "_tshirt",
-				"type": "uint256"
-			},
-			{
-				"name": "_pants",
-				"type": "uint256"
-			},
-			{
-				"name": "_jackets",
-				"type": "uint256"
-			},
-			{
-				"name": "_other",
-				"type": "uint256"
-			},
-			{
-				"name": "_points",
-				"type": "uint256"
-			}
-		],
-		"name": "sendBoxNew",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
@@ -1172,18 +1184,62 @@ function getProducerContract() {
 		"payable": false,
 		"stateMutability": "view",
 		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_tshirt",
+				"type": "uint256"
+			},
+			{
+				"name": "_pants",
+				"type": "uint256"
+			},
+			{
+				"name": "_jackets",
+				"type": "uint256"
+			},
+			{
+				"name": "_other",
+				"type": "uint256"
+			},
+			{
+				"name": "_points",
+				"type": "uint256"
+			}
+		],
+		"name": "buyUpcycledBox",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getRegenerationCredit",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
 	}
 ];
 
     var ProducerContract = web3.eth.contract(producerContractABI);
-    producerContract = ProducerContract.at(address);
-    return producerContract;
+    var pContract = ProducerContract.at(address);
+    return pContract;
 }
 
 /**************************************************************/
 /******************** GET ACCOUNT ADDRESS *********************/
 /**************************************************************/
-function getAccountAddress() {
+function uploadAccountAddress() {
     console.log("Getting the Account Address ");
 
     var web3 = new Web3();
@@ -1194,10 +1250,10 @@ function getAccountAddress() {
     //web3.eth.defaultAccount = '0x' + account;
     web3.eth.defaultAccount = addr; //web3.eth.accounts[0];
 
+    //var eAccount = web3.eth.defaultAccount;
     //console.log("Account " + account)
     return web3.eth.defaultAccount;
 }
-
 
 /*********************************************************/
 /*********************** MODULES *************************/
@@ -1652,11 +1708,11 @@ module.exports = {
     }
   },
 
-  sendNewBox: function (tshirt, pants, jackets, other, points, proxy) {
+  buyUpcycledBox: function (tshirt, pants, jackets, other, points, proxy) {
     try {
       var myContract = getProducerContract();
 
-      var response = myContract.sendBoxNew(tshirt, pants, jackets, other, points);
+      var response = myContract.buyUpcycledBox(tshirt, pants, jackets, other, points);
 
       return response;
     }
@@ -1688,6 +1744,22 @@ module.exports = {
     try {
       var myContract = getProducerContract();
       var points = myContract.getTotPointsProvided();
+
+      return points;
+    }
+    catch(err) {
+      //print and return error
+      console.log(err);
+      var error = {};
+      error.error = err.message;
+      return error;
+    }
+  },
+
+  getCurrentRegenerationCredits: function (proxy) {
+    try {
+      var myContract = getProducerContract();
+      var points = myContract.getRegenerationCredit();
 
       return points;
     }

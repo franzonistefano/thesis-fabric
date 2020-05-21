@@ -12,8 +12,8 @@
 
 <body class="bg-light" id="bootstrap-overrides">
 
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-green">
-    <a class="navbar-brand" href="/home"><img src="img/logo.png" height="50"></a>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-black">
+    <a class="navbar-brand" href="/home"><img src="img/logo2.png" height="50"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,6 +25,12 @@
 
       <ul class="navbar-nav px-3">
 
+        <li class="nav-item">
+          <a class="nav-link" href="/admin">User</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/admin-producer">Producer</a>
+        </li>
         <li class="nav-item text-nowrap dropdown">
           <a class="nav-link dropdown-toggle " href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sign-in</a>
           <div class="dropdown-menu" aria-labelledby="dropdown01">
@@ -41,92 +47,89 @@
     <div class="container">
       <div class="error"> </div>
       <br>
-      <a class="btn btn-primary" href="/home" role="button">HOME &raquo;</a></p>
+      <a class="btn btn-primary" href="/home" role="button">HOME</a></p>
     </div>
   </div>
 
 
   <div id="transactionSection" style="display:none;">
 
+
     <div class="jumbotron page-bg" id="headSection" style="display:block;">
       <div class="container">
-
-        <div class="row center">
-          <h1 class="text-center"><b>INFO</b></h1>
-        </div>
-
         <table>
           <tr>
             <td>
               <div style="padding-right: 20px">
                 <h3><b>NAME</b>:</h3>
                 <h3><b>ADDRESS</b>:</h3>
-                <h3><b>POINTS BALANCE</b>:</h3>
+                <h3><b>REGENERATION CREDITS TO SPEND</b>:</h3>
+                <h3><b>TOT BOX SENT</b>:</h3>
+                <h3><b>TOT BOX RECEIVED</b>:</h3>
               </div>
             </td>
             <td>
               <div class="heading"> </div>
+              <div class="dashboards"> </div>
             </td>
           </tr>
         </table>
-
       </div>
     </div>
 
     <div class="container" id="infoSection">
 
-      <div class="text-center">
-        <h5 class="text-center">Send Box with your old clothes -> Earn points -> Spend it to purchase items -> View own transactions</h5>
-        <br>
-      </div>
-
-
-      <div class="row center">
-
+      <div class="row">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item tab-width">
-            <a class="nav-link active" id="send-tab" data-toggle="tab" href="#sendBox" role="tab" aria-controls="sendBox" aria-selected="true">Send Box & Earn Points</a>
+            <a class="nav-link active" id="send-tab" data-toggle="tab" href="#sendBox" role="tab" aria-controls="sendBox" aria-selected="true">Send Box</a>
           </li>
           <li class="nav-item tab-width">
-            <a class="nav-link" id="redeem-tab" data-toggle="tab" href="#redeem" role="tab" aria-controls="redeem" aria-selected="false">Spend Points</a>
+            <a class="nav-link" id="redeem-tab" data-toggle="tab" href="#redeem" role="tab" aria-controls="redeem" aria-selected="false">Spend Credits</a>
           </li>
           <li class="nav-item tab-width">
-            <a class="nav-link" id="transactions-tab" data-toggle="tab" href="#transactions" role="tab" aria-controls="transactions" aria-selected="false">Transactions</a>
+            <a class="nav-link" id="pending-tab" data-toggle="tab" href="#pending-box" role="tab" aria-controls="pending" aria-selected="false">Pending Requests</a>
           </li>
           <li class="nav-item tab-width">
-            <a class="nav-link" id="box-tab" data-toggle="tab" href="#box" role="tab" aria-controls="box" aria-selected="false">Box Request</a>
+            <a class="nav-link" id="evaluated-tab" data-toggle="tab" href="#evaluated-box" role="tab" aria-controls="evaluated" aria-selected="false">Evaluated Requests</a>
+          </li>
+          <li class="nav-item tab-width">
+            <a class="nav-link" id="upcycled-tab" data-toggle="tab" href="#upcycled-box" role="tab" aria-controls="upcycled" aria-selected="false">UpCycled Requests</a>
           </li>
         </ul>
       </div>
+
       <div class="row center">
         <div class="tab-content" id="myTabContent">
+
+          <!-- Send Box with Old Clothes -->
           <div class="tab-pane fade show active center" id="sendBox" role="tabpanel" aria-labelledby="send-tab">
             <br>
-            <h5> Send a Box and Earn Points </h5>
+            <h5> Send a Box with Old Clothes to upcycle materials </h5>
             <br>
             <p><b> Insert the number of the Item inside the Box </b></p>
 
             <div class="sendTshirt">
               <p> T-Shirt
-                <input>
+                <input class="my-input">
               </p>
             </div>
 
             <div class="sendPants">
               <p> Pants
-                <input>
+                <input class="my-input">
               </p>
             </div>
 
             <div class="sendJacket">
               <p> Jackets
-                <input>
+                <input class="my-input">
               </p>
             </div>
 
             <div class="sendOther">
               <p> Other
-                <input>
+                <input class="my-input">
               </p>
             </div>
 
@@ -137,47 +140,78 @@
 
           </div>
 
+          <!-- Buy Upcycled Box using Regeneration Credits -->
           <div class="tab-pane fade" id="redeem" role="tabpanel" aria-labelledby="redeem-tab">
             <br>
-            <h5> Purchase Items using your points balance </h5>
+            <h5> Purchase Upcycled Box using Regeneration Credits </h5>
 
             <br>
+            <p> <b> Choose item to Purchase and use Regeneration Credits </b></p>
+            <!--p>
+              <button class="btn btn-primary small-box">Get Small Box for 50 Regeneration Credits </button> <br><br>
+              <button class="btn btn-primary medium-box">Get Medium Box for 150 Regeneration Credits </button> <br><br>
+              <button class="btn btn-primary big-box">Get Big Box for 200 Regeneration Credits </button> <br><br>
+            </p-->
+            <div class="row">
+              <div class="wrapper">
+                <div class="clothes-box">
+                  <img src="img/box-icon.png" height="100" alt="">
+                  <h2>Small Box</h2>
+                  <p>Get Small Box for 50 Regeneration Credits</p>
+                  <button class="btn btn-primary small-box">Buy Now</button>
+                </div>
 
-            <p> <b> Choose item to Purchase and use Points </b></p>
-            <p>
-              <button class="btn btn-primary use-points-50">Get Item A for 50 points </button> <br><br>
-              <button class="btn btn-primary use-points-150">Get Item B for 150 points </button> <br><br>
-              <button class="btn btn-primary use-points-200">Get Item C for 200 points </button> <br><br>
-            </p>
+                <div class="clothes-box">
+                  <img src="img/box-icon.png" height="100" alt="">
+                  <h2>Medium Box</h2>
+                  <p>Get Medium Box for 150 Regeneration Credits</p>
+                  <button class="btn btn-primary medium-box">Buy Now</button>
+                </div>
+
+                <div class="clothes-box">
+                  <img src="img/box-icon.png" height="100" alt="">
+                  <h2>Big Box</h2>
+                  <p>Get Big Box for 200 Regeneration Credits</p>
+                  <button class="btn btn-primary big-box">Buy Now</button>
+                </div>
+              </div>
+            </div>
 
             <hr class="featurette-divider">
 
           </div>
 
-          <div class="tab-pane fade" id="transactions" role="tabpanel" aria-labelledby="transactions-tab">
+          <!-- Pending Box -->
+          <div class="tab-pane fade show active" id="pending-box" role="tabpanel" aria-labelledby="pending-tab">
             <br>
-            <h5> View Transactions History </h5>
-
-            <br>
-            <br>
-            <div class="points-transactions"> </div>
+            <h3>Pending Box</h3>
+            <div class="pending-box"></div>
 
             <hr class="featurette-divider">
           </div>
 
-          <div class="tab-pane fade" id="box" role="tabpanel" aria-labelledby="box-tab">
+          <!-- Evaluated Box -->
+          <div class="tab-pane fade show active" id="evaluated-box" role="tabpanel" aria-labelledby="evaluated-tab">
             <br>
-            <h5> View Box Request History </h5>
+            <h3>Evaluated Box</h3>
+            <div class="evaluated-box"></div>
 
+            <hr class="featurette-divider">
+          </div>
+
+          <!-- UpCycled Box -->
+          <div class="tab-pane fade show active" id="upcycled-box" role="tabpanel" aria-labelledby="upcycled-tab">
             <br>
-            <br>
-            <div class="box-request"> </div>
+            <h3>UpCycled Box</h3>
+            <div class="upcycled-box"></div>
 
             <hr class="featurette-divider">
           </div>
 
         </div>
       </div>
+
+
     </div>
 
   </div>
@@ -185,7 +219,7 @@
   <div class="container text-center">
     <br><br>
     <div class="container text-center">
-      <div class="loader" id="loader" style="display:none;"></div>
+      <div class="loader" id="loader" style="display:block;"></div>
     </div>
   </div>
 
@@ -196,4 +230,4 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-<script src="/scripts/user.js"></script>
+<script src="/scripts/admin-producer.js"></script>

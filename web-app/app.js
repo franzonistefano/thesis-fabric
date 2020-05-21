@@ -358,7 +358,7 @@ app.get('/api/transactionsData', function(req, res) {
 });
 
 //declare port
-var port = process.env.PORT || 8000;
+var port = process.env.PORT || 8001;
 if (process.env.VCAP_APPLICATION) {
   port = process.env.PORT;
 }
@@ -473,6 +473,17 @@ app.get('/api/producerData', function(req, res) {
     returnData.totPointsProvided = totPointsProvided;
   }
 
+  // Tot Regeneration Credit
+  var totRegenerationCredits = dapp.getCurrentRegenerationCredits();
+  if(totRegenerationCredits.error != null){
+    res.json({
+      error: totRegenerationCredits.error
+    });
+  } else {
+    returnData.totRegenerationCredits = totRegenerationCredits;
+  }
+  console.log("tot Regeneration Credits: " + totRegenerationCredits)
+
   //Tot Old Box Received
   var totBoxOld = dapp.getTotBoxOld();
   if(totBoxOld.error != null){
@@ -536,7 +547,7 @@ app.post('/api/sendBoxOld', function(req, res) {
 
 
 //post call to perform sendBox New transaction on the network
-app.post('/api/sendBoxNew', function(req, res) {
+app.post('/api/buyUpcycledBox', function(req, res) {
 
   //declare variables to retrieve from request
   var tshirt = req.body.tshirt;
@@ -555,8 +566,8 @@ app.post('/api/sendBoxNew', function(req, res) {
     });
   } else {
 
-    console.log('Sending Box New - tshirt: ' + tshirt + ' pants: ' + pants + ' jackets: ' + jackets + ' other: ' + other + ' points' + points);
-    var response = dapp.sendNewBox(tshirt, pants, jackets, other, points);
+    console.log('Buy UpCycled Box - tshirt: ' + tshirt + ' pants: ' + pants + ' jackets: ' + jackets + ' other: ' + other + ' points' + points);
+    var response = dapp.buyUpcycledBox(tshirt, pants, jackets, other, points);
 
     if (response.error != null) {
       res.json({
@@ -659,6 +670,17 @@ app.get('/api/adminProducerData', function(req, res) {
     returnData.totPointsProvided = totPointsProvided;
   }
   console.log("totPointsProvided: " + totPointsProvided)
+
+  // Tot Regeneration Credit
+  var totRegenerationCredits = dapp.getCurrentRegenerationCredits();
+  if(totRegenerationCredits.error != null){
+    res.json({
+      error: totRegenerationCredits.error
+    });
+  } else {
+    returnData.totRegenerationCredits = totRegenerationCredits;
+  }
+  console.log("tot Regeneration Credits: " + totRegenerationCredits)
 
   //Tot Old Box Received
   var totBoxOld = dapp.getTotBoxOld();
