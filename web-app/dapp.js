@@ -1,6 +1,6 @@
 const Web3 = require('web3');
-var userContractAddress = '0x041bea1227f9b63c58639e84bd60ad8e9e209961';
-var producerContractAddress = '0xef5bc633b13d90263ddd3e7257ba8f1a63bd3cd9';
+var userContractAddress = '0xe89f87fbb5c05f36b6a1ef63f63a7ba4c8d66ec1';
+var producerContractAddress = '0x37f27e9447115e39512aca547907443475cf52cb';
 var provider = "http://localhost:5000";
 
 //const myContract = uploadUserContract();            //User Contract
@@ -161,6 +161,25 @@ function uploadUserContract() {
 			{
 				"name": "",
 				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_adminAddress",
+				"type": "address"
+			}
+		],
+		"name": "adminExits",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
 			}
 		],
 		"payable": false,
@@ -332,6 +351,25 @@ function uploadUserContract() {
 			{
 				"name": "",
 				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_userAddress",
+				"type": "address"
+			}
+		],
+		"name": "userExits",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
 			}
 		],
 		"payable": false,
@@ -724,6 +762,25 @@ function uploadProducerContract() {
 
     var producerContractABI = [
 	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_adminAddress",
+				"type": "address"
+			}
+		],
+		"name": "adminExits",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
 		"constant": false,
 		"inputs": [
 			{
@@ -987,6 +1044,25 @@ function uploadProducerContract() {
 			{
 				"name": "",
 				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_producerAddress",
+				"type": "address"
+			}
+		],
+		"name": "producerExits",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
 			}
 		],
 		"payable": false,
@@ -1261,6 +1337,68 @@ function uploadAccountAddress() {
 
 //export module
 module.exports = {
+
+  userExists: function () {
+    try {
+      var myContract = getUserContract();
+      var response = myContract.userExits(ethAccount);
+      return response;
+    }
+    catch(err) {
+      //print and return error
+      console.log(err);
+      var error = {};
+      error.error = err.message;
+      return error;
+    }
+  },
+
+  uAdminExists: function () {
+    try {
+      var myContract = getUserContract();
+      var response = myContract.adminExits(ethAccount);
+      return response;
+    }
+    catch(err) {
+      //print and return error
+      console.log(err);
+      var error = {};
+      error.error = err.message;
+      return error;
+    }
+  },
+
+  pAdminExists: function () {
+    try {
+      var myContract = getProducerContract();
+      var response = myContract.adminExits(ethAccount);
+      return response;
+    }
+    catch(err) {
+      //print and return error
+      console.log(err);
+      var error = {};
+      error.error = err.message;
+      return error;
+    }
+  },
+
+  producerExists: function () {
+    try {
+      var myContract = getProducerContract();
+      var response = myContract.producerExits(ethAccount);
+      return response;
+    }
+    catch(err) {
+      //print and return error
+      console.log(err);
+      var error = {};
+      error.error = err.message;
+      return error;
+    }
+  },
+
+
 
   registerUser: function (firstName, lastName, email) {
     try {

@@ -63,7 +63,7 @@ function updateProducer() {
         var nextRequest = data.nextRequest;
 
         if(nextRequest != 0){
-          str = str + '<p><b>User Address</b>: ' + nextRequest[0] + '<br /><b>T-Shirt</b>: ' + nextRequest[1] + '<br /><b>Pants</b>: ' + nextRequest[2] + '<br /><b>Jackets</b>: ' + nextRequest[3];
+          str = str + '<p><b>Admin Address</b>: ' + nextRequest[0] + '<br /><b>T-Shirt</b>: ' + nextRequest[1] + '<br /><b>Pants</b>: ' + nextRequest[2] + '<br /><b>Jackets</b>: ' + nextRequest[3];
           str = str + '<br /><b>Other</b>: ' + nextRequest[4] + '<br /><b>Evaluated</b>: ' + nextRequest[5] + '<br /><b>Points</b>: ' + nextRequest[6] + '</p><br>';
         } else {
           str = str + '<p>No More Pending Requests to Evaluate</p>'
@@ -78,7 +78,7 @@ function updateProducer() {
 
         for (var i = 0; i < pendingRequest.length; i++) {
 
-          str = str + '<p><b>User Address</b>: ' + pendingRequest[i][0] + '<br /><b>T-Shirt</b>: ' + pendingRequest[i][1] + '<br /><b>Pants</b>: ' + pendingRequest[i][2] + '<br /><b>Jackets</b>: ' + pendingRequest[i][3];
+          str = str + '<p><b>Admin Address</b>: ' + pendingRequest[i][0] + '<br /><b>T-Shirt</b>: ' + pendingRequest[i][1] + '<br /><b>Pants</b>: ' + pendingRequest[i][2] + '<br /><b>Jackets</b>: ' + pendingRequest[i][3];
           str = str + '<br /><b>Other</b>: ' + pendingRequest[i][4] + '<br /><b>Evaluated</b>: ' + pendingRequest[i][5] + '<br /><b>Points</b>: ' + pendingRequest[i][6] + '</p><br>';
 
         }
@@ -92,7 +92,7 @@ function updateProducer() {
 
         for (var i = 0; i < upCycledRequest.length; i++) {
 
-          str = str + '<p><b>User Address</b>: ' + upCycledRequest[i][0] + '<br /><b>T-Shirt</b>: ' + upCycledRequest[i][1] + '<br /><b>Pants</b>: ' + upCycledRequest[i][2] + '<br /><b>Jackets</b>: ' + upCycledRequest[i][3];
+          str = str + '<p><b>Admin Address</b>: ' + upCycledRequest[i][0] + '<br /><b>T-Shirt</b>: ' + upCycledRequest[i][1] + '<br /><b>Pants</b>: ' + upCycledRequest[i][2] + '<br /><b>Jackets</b>: ' + upCycledRequest[i][3];
           str = str + '<br /><b>Other</b>: ' + upCycledRequest[i][4] + '<br /><b>Evaluated</b>: ' + upCycledRequest[i][5] + '<br /><b>Points</b>: ' + upCycledRequest[i][6] + '</p><br>';
 
         }
@@ -106,7 +106,7 @@ function updateProducer() {
 
     for (var i = 0; i < evaluatedRequest.length; i++) {
 
-      str = str + '<p><b>User Address</b>: ' + evaluatedRequest[i][0] + '<br /><b>T-Shirt</b>: ' + evaluatedRequest[i][1] + '<br /><b>Pants</b>: ' + evaluatedRequest[i][2] + '<br /><b>Jackets</b>: ' + evaluatedRequest[i][3];
+      str = str + '<p><b>Admin Address</b>: ' + evaluatedRequest[i][0] + '<br /><b>T-Shirt</b>: ' + evaluatedRequest[i][1] + '<br /><b>Pants</b>: ' + evaluatedRequest[i][2] + '<br /><b>Jackets</b>: ' + evaluatedRequest[i][3];
       str = str + '<br /><b>Other</b>: ' + evaluatedRequest[i][4] + '<br /><b>Evaluated</b>: ' + evaluatedRequest[i][5] + '<br /><b>Points</b>: ' + evaluatedRequest[i][6] + '</p><br>';
 
     }

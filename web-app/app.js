@@ -68,6 +68,44 @@ app.get('/about', function(req, res) {
 /************ GET & POST API ************/
 /****************************************/
 
+//post call to user exists on the network
+app.get('/api/userExists', function(req, res) {
+
+    var returnData = {};
+
+    var response = dapp.userExists();
+    console.log('User Exists: ' + response );
+
+    if (response.error != null) {
+      res.json({
+        error: response.error
+      });
+    }else{
+      returnData.exists = response;
+    }
+
+    res.json(returnData);
+});
+
+//post call to user admin exists on the network
+app.get('/api/uAdminExists', function(req, res) {
+
+    var returnData = {};
+
+    var response = dapp.uAdminExists();
+    console.log('User Admin Exists: ' + response );
+
+    if (response.error != null) {
+      res.json({
+        error: response.error
+      });
+    }else{
+      returnData.exists = response;
+    }
+
+    res.json(returnData);
+});
+
 //post call to register user on the network
 app.post('/api/registerUser', function(req, res) {
 
@@ -358,7 +396,7 @@ app.get('/api/transactionsData', function(req, res) {
 });
 
 //declare port
-var port = process.env.PORT || 8001;
+var port = process.env.PORT || 8000;
 if (process.env.VCAP_APPLICATION) {
   port = process.env.PORT;
 }
@@ -369,6 +407,44 @@ app.listen(port, function() {
 });
 
 /*********** PRODUCER API *************/
+
+//post call to producer admin exists on the network
+app.get('/api/pAdminExists', function(req, res) {
+
+    var returnData = {};
+
+    var response = dapp.pAdminExists();
+    console.log('Producer Admin Exists: ' + response );
+
+    if (response.error != null) {
+      res.json({
+        error: response.error
+      });
+    }else{
+      returnData.exists = response;
+    }
+
+    res.json(returnData);
+});
+
+//post call to producer exists on the network
+app.get('/api/producerExists', function(req, res) {
+
+    var returnData = {};
+
+    var response = dapp.producerExists();
+    console.log('Producer Exists: ' + response );
+
+    if (response.error != null) {
+      res.json({
+        error: response.error
+      });
+    }else{
+      returnData.exists = response;
+    }
+
+    res.json(returnData);
+});
 
 //post call to register producer on the network
 app.post('/api/registerProducer', function(req, res) {

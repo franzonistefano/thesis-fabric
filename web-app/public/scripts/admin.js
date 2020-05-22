@@ -7,6 +7,9 @@ $(document).ready(function() {
 
 function updateAdmin() {
 
+  //Display loader
+  document.getElementById('loader').style.display = "block";
+
   $.get(apiUrl + 'adminData', function(data) {
 
     //check data for error
@@ -117,6 +120,9 @@ function updateAdmin() {
 
   //display transaction section
   document.getElementById('transactionSection').style.display = "block";
+
+  //Hide loader
+  document.getElementById('loader').style.display = "none";
 }
 });
 
