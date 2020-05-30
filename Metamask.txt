@@ -1,0 +1,33 @@
+
+SMART CONTRACT - ERC20 FRZ (FRANZCOIN)
+
+contractAddress: 0xb25901e0c05a6b3ddc86e7b51611bb9ca1113e29
+
+================================================================================================
+
+METAMASK
+
+password: RootIsImportant
+
+secret: captain banana engage blanket soon letter gap limb universe supply poverty define
+
+================================================================================================
+
+ACCOUNT 1
+
+Public Address: 0xa633AD53b97317FCD7393B14509EB5D9fb19abcA
+
+Private Key: 031FA70A7BB8E1BF7CF6710B7A71AFD7D3C205141B864DF6DF57B2187F8CF1D1
+
+================================================================================================
+
+ACCOUNT 2
+
+Public Address: 0x1433D083c48609862a536b78D3777adFc20601ad
+
+Private Key: 6F5DDEB8190B831E24DB2CD461FCD1003ED30990B38FF145FFA26251C6891438
+
+================================================================================================
+
+
+
