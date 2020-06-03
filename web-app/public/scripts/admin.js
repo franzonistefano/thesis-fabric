@@ -58,7 +58,8 @@ function updateAdmin() {
       $('.evaluate-box-transaction').click(function() {
 
         var points = $('.boxPoints input').val();
-        evaluateBox(points);
+        var token = $('.boxToken input').val();
+        evaluateBox(points, token);
       });
 
       //next box
@@ -126,14 +127,14 @@ function updateAdmin() {
 }
 });
 
-  function evaluateBox(points) {
+  function evaluateBox(points, token) {
 
     //get user input data
     var formProxy = $('.proxy input').val();
     var formContractAddress = $('.contractAddress input').val();
 
     //create json data
-    var inputData = '{' + '"proxy" : "' + formProxy + '", ' + '"points" : "' + points + '"}';
+    var inputData = '{' + '"proxy" : "' + formProxy + '", ' + '"points" : "' + points + '", ' + '"token" : "' + token + '" }';
     console.log(inputData)
 
     //make ajax call

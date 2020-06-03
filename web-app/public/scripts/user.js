@@ -33,6 +33,11 @@ function updateUser() {
         return str;
       });
 
+      //update heading
+      $('.eth-balance').html(function() {
+
+      });
+
       //update partners dropdown for earn points transaction
       $('.earn-user select').html(function() {
         var str = '<option value="" disabled="" selected="">select</option>';
@@ -172,15 +177,15 @@ function sendBox(tshirt, pants, jackets, other) {
 }
 
 $('.use-points-50').click(function() {
-  usePoints(50);
+  usePoints(50, 10);
 });
 
 $('.use-points-150').click(function() {
-  usePoints(100);
+  usePoints(100, 20);
 });
 
 $('.use-points-200').click(function() {
-  usePoints(150);
+  usePoints(150, 30);
 });
 
 
@@ -191,14 +196,14 @@ $('.use-points-transaction').click(function() {
 });
 
 
-function usePoints(formPoints) {
+function usePoints(formPoints, tokenAmount) {
 
   //get user input data
   var formProxy = $('.proxy input').val();
   var formContractAddress = $('.contractAddress input').val();
 
   //create json data
-  var inputData = '{' + '"proxy" : "' + formProxy + '", ' + '"points" : "' + formPoints + '", ' + '"contractaddress" : "' + formContractAddress + '"}';
+  var inputData = '{' + '"proxy" : "' + formProxy + '", ' + '"points" : "' + formPoints + '", ' + '"token" : "' + tokenAmount + '", ' + '"contractaddress" : "' + formContractAddress + '"}';
 
   //make ajax call
   $.ajax({

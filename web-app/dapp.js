@@ -1,7 +1,7 @@
 const Web3 = require('web3');
-var userContractAddress = '0xe89f87fbb5c05f36b6a1ef63f63a7ba4c8d66ec1';
-var producerContractAddress = '0x37f27e9447115e39512aca547907443475cf52cb';
-var provider = "http://localhost:5000";
+var userContractAddress = '0x794fda48d76cdddc40eec1a69bc47985ad3f82c0';
+var producerContractAddress = '0x62920a139e38b1478fe5990430221ab81540e266';
+var provider = "http://localhost:5001";
 
 //const myContract = uploadUserContract();            //User Contract
 //const producerContract = uploadProducerContract();  //Producer Contract
@@ -1335,6 +1335,7 @@ function uploadAccountAddress() {
 /*********************** MODULES *************************/
 /*********************************************************/
 
+var eth = require('../eth/method.js');
 //export module
 module.exports = {
 
@@ -1660,10 +1661,14 @@ module.exports = {
     }
   },
 
-  usePoints: function (points, proxy) {
+  usePoints: function (points, token, proxy) {
     try {
       var myContract = getUserContract();
       var response = myContract.usePoints(points);
+
+      //Transfer over ethereum network
+      eth.transfer("user", "reclothes", token);
+
       return response;
     }
     catch(err) {
@@ -1675,10 +1680,14 @@ module.exports = {
     }
   },
 
-  evaluateBox: function (points, proxy) {
+  evaluateBox: function (points, token, proxy) {
     try {
       var myContract = getUserContract();
       var response = myContract.evaluateBox(points);
+
+      //Transfer over ethereum network
+      eth.transfer("reclothes", "user", token);
+
       return response;
     }
     catch(err) {

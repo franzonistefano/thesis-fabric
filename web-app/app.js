@@ -317,11 +317,14 @@ app.post('/api/usePoints', function(req, res) {
 
   //declare variables to retrieve from request
   var points = req.body.points;
+  var token = req.body.token;
 
   //print variables
   console.log('Use Points - points: ' + points);
+  console.log('Use ERC20 Token - token: ' + token);
 
   var validateResponse = validate.validatePoints(points);
+  var validateResponse = validate.validatePoints(token);
 
   if (validateResponse.error != null) {
     res.json({
@@ -329,7 +332,7 @@ app.post('/api/usePoints', function(req, res) {
     });
   } else {
 
-    var response = dapp.usePoints(points);
+    var response = dapp.usePoints(points, token);
 
     if (response.error != null) {
       res.json({
@@ -349,19 +352,21 @@ app.post('/api/evaluateBox', function(req, res) {
 
   //declare variables to retrieve from request
   var points = req.body.points;
+  var token = req.body.token
 
   //print variables
-  console.log('Evaluate Box - points: ' + points);
+  console.log('Evaluate Box - points: ' + points + " - token: " + token);
 
   var validateResponse = validate.validatePoints(points);
+  var validateResponseToken = validate.validatePoints(token);
 
-  if (validateResponse.error != null) {
+  if (validateResponse.error != null || validateResponseToken.error != null) {
     res.json({
       error: validateResponse.error
     });
   } else {
 
-    var response = dapp.evaluateBox(points);
+    var response = dapp.evaluateBox(points, token);
 
     if (response.error != null) {
       res.json({
