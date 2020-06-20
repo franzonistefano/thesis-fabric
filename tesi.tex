@@ -1,0 +1,98 @@
+\documentclass[
+    % classica,
+    % numerazioneromana,
+    tipotesi = magistrale
+]{toptesi}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage[sorting=none]{biblatex}
+\usepackage{booktabs}
+\usepackage{enumerate}
+\usepackage{float}
+\usepackage{lipsum}	% TODO Eliminare
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{svg}
+\usepackage{url}
+\usepackage{xspace}
+\usepackage{xcolor}
+\usepackage{outlines}
+
+\usepackage{spverbatim}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{flafter} % make sure figures do not appear before their text
+\input{solidity-highlighting.tex}
+
+\hypersetup{
+	pdfpagemode = {UseOutlines},
+	bookmarksopen,
+	pdfstartview = {FitH},
+	colorlinks,
+	linkcolor = blue,
+	citecolor = blue,
+	urlcolor = blue,
+	% Info
+	pdftex,
+	pdfauthor = {Stefano Franzoni},
+	pdftitle = {Crosschain with Hyperledger and Ethereum},
+	% pdfsubject = {},
+	% pdfkeywords = {Politecnico di Torino, Italy}
+}
+
+%%% Paragraph settings
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+
+
+%%% Custom commands
+% HTTP request methods
+\newcommand{\GET}{\texttt{GET}\xspace}
+\newcommand{\POST}{\texttt{POST}\xspace}
+\newcommand{\PUT}{\texttt{PUT}\xspace}
+
+\addbibresource{bibliography.bib}
+
+\begin{document}
+
+\frontmatter
+% \pagenumbering{roman}
+
+\begin{ThesisTitlePage}
+	\candidato{Stefano \textsc{Franzoni}}
+    \relatore{prof.ssa\ Valentina \textsc{Gatteschi}}
+    \tutoreaziendale{dott.\ Alfredo \textsc{Favenza}}
+	\ateneo{Politecnico di Torino}
+	\titolo{Crosschain with Hyperledger Fabric and Ethereum}
+	\sottotitolo{Dapp build using Hyperledger Fabric and Ethereum networks}
+	\corsodilaurea{Ingegneria Informatica (Software Engineering)}
+    \sedutadilaurea{\textsc{Anno accademico} 2019 -- 2020}
+	%\logosede{polito}
+\end{ThesisTitlePage}
+
+\frontmatter
+\pagenumbering{roman}
+
+%\include{abstract}
+%\include{ringraziamenti}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\mainmatter
+\pagenumbering{arabic}
+\include{solution}
+
+%\include{introduzione}
+%\include{tecnologie}
+
+
+\appendix
+
+\backmatter
+%\printbibliography
+
+\end{document}

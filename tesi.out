@@ -1,0 +1,21 @@
+\BOOKMARK [0][]{section*.1}{Elenco delle figure}{}% 1
+\BOOKMARK [0][]{section*.2}{Elenco delle tabelle}{}% 2
+\BOOKMARK [1][]{section.0.1}{Oveview}{section*.2}% 3
+\BOOKMARK [2][]{subsection.0.1.1}{Actors}{section.0.1}% 4
+\BOOKMARK [2][]{subsection.0.1.2}{Token echanged}{section.0.1}% 5
+\BOOKMARK [1][]{section.0.2}{Technologies used to perform crosschain interaction}{section*.2}% 6
+\BOOKMARK [2][]{subsection.0.2.1}{Tool Used}{section.0.2}% 7
+\BOOKMARK [1][]{section.0.3}{Use Cases}{section*.2}% 8
+\BOOKMARK [2][]{subsection.0.3.1}{UseCase 1 - User Side}{section.0.3}% 9
+\BOOKMARK [2][]{subsection.0.3.2}{UseCase 2 - Producer Side}{section.0.3}% 10
+\BOOKMARK [1][]{section.0.4}{Smart Contract}{section*.2}% 11
+\BOOKMARK [2][]{subsection.0.4.1}{User Contract}{section.0.4}% 12
+\BOOKMARK [2][]{subsection.0.4.2}{Producer Contract}{section.0.4}% 13
+\BOOKMARK [2][]{subsection.0.4.3}{ERC20 Contract}{section.0.4}% 14
+\BOOKMARK [1][]{section.0.5}{Network Architecture}{section*.2}% 15
+\BOOKMARK [2][]{subsection.0.5.1}{Fabric Network}{section.0.5}% 16
+\BOOKMARK [2][]{subsection.0.5.2}{Ethereum Network - Ropsten}{section.0.5}% 17
+\BOOKMARK [1][]{section.0.6}{Dapp - Client}{section*.2}% 18
+\BOOKMARK [2][]{subsection.0.6.1}{Thecnologies used}{section.0.6}% 19
+\BOOKMARK [2][]{subsection.0.6.2}{Core part of the web-app}{section.0.6}% 20
+\BOOKMARK [2][]{subsection.0.6.3}{Views}{section.0.6}% 21

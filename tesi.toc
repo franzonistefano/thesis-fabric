@@ -1,0 +1,74 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Elenco delle figure}{ii}{section*.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Elenco delle tabelle}{iii}{section*.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.1}Oveview}{1}{section.0.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.1.1}Actors}{1}{subsection.0.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.1.2}Token echanged}{1}{subsection.0.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.2}Technologies used to perform crosschain interaction}{2}{section.0.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.2.1}Tool Used}{2}{subsection.0.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.3}Use Cases}{2}{section.0.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.3.1}UseCase 1 - User Side}{2}{subsection.0.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Transactions}{3}{section*.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.3.2}UseCase 2 - Producer Side}{4}{subsection.0.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.4}Smart Contract}{5}{section.0.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.4.1}User Contract}{6}{subsection.0.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Data Structure}{6}{section*.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Transactions}{7}{section*.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.4.2}Producer Contract}{8}{subsection.0.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Data Structure}{8}{section*.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Transactions}{9}{section*.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.4.3}ERC20 Contract}{10}{subsection.0.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.5}Network Architecture}{11}{section.0.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.5.1}Fabric Network}{11}{subsection.0.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Config File}{13}{section*.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{End to End Interactions}{14}{section*.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Chaincode Invocations}{15}{section*.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.5.2}Ethereum Network - Ropsten}{15}{subsection.0.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.6}Dapp - Client}{16}{section.0.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.6.1}Thecnologies used}{16}{subsection.0.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.6.2}Core part of the web-app}{16}{subsection.0.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.6.3}Views}{17}{subsection.0.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Homepage}{17}{section*.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{User Page}{18}{section*.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Reclothes Admin Page}{18}{section*.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Admin For Users}{18}{section*.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Admin For Producers}{19}{section*.15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Producer}{19}{section*.16}%
