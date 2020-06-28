@@ -1,7 +1,8 @@
 \documentclass[
     % classica,
-    % numerazioneromana,
-    tipotesi = magistrale
+	% numerazioneromana,
+	tipotesi = magistrale,
+	12pt
 ]{toptesi}
 
 \usepackage[T1]{fontenc}
@@ -20,6 +21,7 @@
 \usepackage{xcolor}
 \usepackage{outlines}
 
+\usepackage{makecell}
 \usepackage{spverbatim}
 \usepackage{listings}
 \usepackage{graphicx}
@@ -69,7 +71,7 @@
 	\sottotitolo{Dapp build using Hyperledger Fabric and Ethereum networks}
 	\corsodilaurea{Ingegneria Informatica (Software Engineering)}
     \sedutadilaurea{\textsc{Anno accademico} 2019 -- 2020}
-	%\logosede{polito}
+	\logosede{logopolito}
 \end{ThesisTitlePage}
 
 \frontmatter
@@ -84,7 +86,10 @@
 
 \mainmatter
 \pagenumbering{arabic}
+\include{intro}
+\include{state-of-art}
 \include{solution}
+\include{results}
 
 %\include{introduzione}
 %\include{tecnologie}
@@ -93,6 +98,6 @@
 \appendix
 
 \backmatter
-%\printbibliography
+\printbibliography
 
 \end{document}

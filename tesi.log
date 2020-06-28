@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.6.9)  20 JUN 2020 20:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.6.9)  28 JUN 2020 18:51
 entering extended mode
 **c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/tesi.tex
 (c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/tesi.tex
@@ -29,8 +29,8 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\report.cls"
 Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
-("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size10.clo"
-File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size12.clo"
+File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
 \c@part=\count171
 \c@chapter=\count172
@@ -601,6 +601,21 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 Package: transparent 2019/11/29 v1.4 Transparency via pdfTeX's color stack (HO)
 ) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/outlines\outlines.sty"
 Package: outlines 2012/1/23 1.1 Ch. Pecheur
+) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/makecell\makecell.sty"
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+ ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\array.sty"
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen172
+\ar@mcellbox=\box58
+\extrarowheight=\dimen173
+\NC@list=\toks28
+\extratabsurround=\skip79
+\backup@length=\skip80
+\ar@cellbox=\box59
+)
+\rotheadsize=\dimen174
+\c@nlinenum=\count422
+\TeXr@lab=\toks29
 ) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/spverbatim\spverbatim.sty"
 Package: spverbatim 2009/08/10 v1.0 Verbatim with breakable spaces
 ) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\flafter.sty"
@@ -608,59 +623,59 @@ Package: flafter 2018/11/28 v1.4d Standard LaTeX floats after reference (FMi)
 Applying: [2015/01/01] float order in 2-column on input line 49.
 Already applied: [0000/00/00] float order in 2-column on input line 151.
 ) (c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solidity-highlighting.tex)
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 43.
-Package hyperref Info: Option `colorlinks' set `true' on input line 43.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 45.
+Package hyperref Info: Option `colorlinks' set `true' on input line 45.
 
 
 Package hyperref Warning: Option `pdftex' has already been used,
-(hyperref)                setting the option has no effect on input line 43.
+(hyperref)                setting the option has no effect on input line 45.
 
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count422
-\@quotereset=\count423
+\@quotelevel=\count423
+\@quotereset=\count424
 (c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\tesi.aux)
 \openout1 = `tesi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Info: Redefining \it@ocap on input line 58.
-LaTeX Info: Redefining \it@ccap on input line 58.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Info: Redefining \it@ocap on input line 60.
+LaTeX Info: Redefining \it@ccap on input line 60.
  ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count424
-\scratchdimen=\dimen172
-\scratchbox=\box58
-\nofMPsegments=\count425
-\nofMParguments=\count426
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count427
-\MPscratchDim=\dimen173
-\MPnumerator=\count428
-\makeMPintoPDFobject=\count429
-\everyMPtoPDFconversion=\toks29
+\scratchcounter=\count425
+\scratchdimen=\dimen175
+\scratchbox=\box60
+\nofMPsegments=\count426
+\nofMParguments=\count427
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count428
+\MPscratchDim=\dimen176
+\MPnumerator=\count429
+\makeMPintoPDFobject=\count430
+\everyMPtoPDFconversion=\toks31
 ) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
 )
-\captionwidth=\dimen174
-\fullwidth=\dimen175
+\captionwidth=\dimen177
+\fullwidth=\dimen178
  ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/toptesi\topcoman.sty"
 Package: topcoman 2020-05-29 v.6.4.04 Additional commands for the TOPtesi bundle
  ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\textcomp.sty"
@@ -685,11 +700,11 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'tesi.bbl' not found.
 
 No file tesi.bbl.
-Package biblatex Info: Reference section=0 on input line 58.
-Package biblatex Info: Reference segment=0 on input line 58.
-\c@lstlisting=\count430
-\AtBeginShipoutBox=\box59
-Package hyperref Info: Link coloring ON on input line 58.
+Package biblatex Info: Reference section=0 on input line 60.
+Package biblatex Info: Reference segment=0 on input line 60.
+\c@lstlisting=\count431
+\AtBeginShipoutBox=\box61
+Package hyperref Info: Link coloring ON on input line 60.
 ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/refcount\refcount.sty"
@@ -697,20 +712,26 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/gettitlestring\gettitlestring.sty"
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count431
+\c@section@level=\count432
 )
-LaTeX Info: Redefining \ref on input line 58.
-LaTeX Info: Redefining \pageref on input line 58.
-LaTeX Info: Redefining \nameref on input line 58.
+LaTeX Info: Redefining \ref on input line 60.
+LaTeX Info: Redefining \pageref on input line 60.
+LaTeX Info: Redefining \nameref on input line 60.
 \@outlinefile=\write5
 \openout5 = `tesi.out'.
 
- (c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\tesi.cfg) [1{C:/Users/franz/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+ (c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\tesi.cfg)
+<logopolito.jpg, id=3, 1129.21875pt x 1129.21875pt>
+File: logopolito.jpg Graphic file (type jpg)
+<use logopolito.jpg>
+Package pdftex.def Info: logopolito.jpg  used on input line 74.
+(pdftex.def)             Requested size: 69.99016pt x 70.00249pt.
+ [1{C:/Users/franz/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 
 
-]
+ <C:/Users/franz/AppData/Local/Programs/MiKTeX 2.9/tex/latex/beamer2thesis/logopolito.jpg>]
 \tf@toc=\write6
 \openout6 = `tesi.toc'.
 
@@ -733,75 +754,176 @@ LaTeX Info: Redefining \nameref on input line 58.
 
 
 ]
-\openout2 = `solution.aux'.
+\openout2 = `intro.aux'.
 
- (c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.tex
-Runaway argument?
-{ 
-c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.tex:2: Paragraph ended before \chapter  was complete.
-<to be read again> 
-                   \par 
-l.2 
-    
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-<img/use-case-schema.png, id=33, 1806.75pt x 803.1606pt>
-File: img/use-case-schema.png Graphic file (type png)
-<use img/use-case-schema.png>
-Package pdftex.def Info: img/use-case-schema.png  used on input line 48.
-(pdftex.def)             Requested size: 384.03268pt x 170.71652pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+ (c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\intro.tex)
+Capitolo 1.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.64     \1 \textbf
-                   {Fabric Chaincode EVM}: It's the EVM chaincode that allow... [1
+l.89 \include{intro}
+                     [1
+
+
+
+
+]
+\openout2 = `state-of-art.aux'.
+
+ (c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\state-of-art.tex
+Capitolo 2.
+[2
+
+
+
+] [3]
+
+c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\state-of-art.tex:76: Package inputenc Error: Unicode character ∗ (U+2217)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 ...niversity of Technology, Tallinn, Estonia}
+                                                  ,
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[4]
+Overfull \hbox (112.3752pt too wide) in paragraph at lines 85--101
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--113
+[][][]\T1/cmr/m/n/10 https://cointelegraph.com/news/blockchain-interoperability-the-holy-grail-for-cross-chain-
+ []
+
+[5]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 169.
+ ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmtt.fd"
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) [6]
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+[][][][][]$\T1/cmtt/m/n/10 https : / / en . bitcoin . it / w / index . php ? title = Hash _ Time _ Locked _ Contracts & source =
+ []
+
+[7]
+c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\state-of-art.tex:212: Misplaced alignment tab character &.
+<argument> Provenance case &
+                             Martine Jarlgaard
+l.212 ...tion{Provenance case & Martine Jarlgaard}
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `alignment tab' on input line 212.
+
+[8]
+c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\state-of-art.tex:237: Misplaced alignment tab character &.
+<argument> Counterfeiting - VeChain &
+                                      BabyGhoast
+l.237 ...on{Counterfeiting - VeChain & BabyGhoast}
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `alignment tab' on input line 237.
+
+[9]) [10]
+\openout2 = `solution.aux'.
+
+ (c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.tex
+Capitolo 3.
+
+LaTeX Warning: Reference `fig:schema' on page 11 undefined on input line 9.
+
+[11
 
 
 
 ]
 
-LaTeX Warning: Reference `architecturalFlow' on page 2 undefined on input line 71.
+LaTeX Warning: Reference `fig:schema' on page 12 undefined on input line 49.
 
-<img/architectural_flow.png, id=55, 2308.7856pt x 1921.6593pt>
+[12]
+
+LaTeX Warning: Reference `use-cases' on page 13 undefined on input line 68.
+
+[13]
+<img/use-case-schema.png, id=165, 1806.75pt x 803.1606pt>
+File: img/use-case-schema.png Graphic file (type png)
+<use img/use-case-schema.png>
+Package pdftex.def Info: img/use-case-schema.png  used on input line 109.
+(pdftex.def)             Requested size: 384.03268pt x 170.71652pt.
+ [14 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/use-case-schema.png (PNG copy)>]
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 122.
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <8> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 122.
+
+
+LaTeX Warning: Reference `erc20' on page 15 undefined on input line 126.
+
+
+LaTeX Warning: Reference `fig:architectural-flow' on page 15 undefined on input line 141.
+
+[15
+
+] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 202--207
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--210
+
+ []
+
+
+LaTeX Warning: Reference `fig:architectural-flow' on page 17 undefined on input line 217.
+
+[17]
+<img/architectural_flow.png, id=192, 2308.7856pt x 1921.6593pt>
 File: img/architectural_flow.png Graphic file (type png)
 <use img/architectural_flow.png>
-Package pdftex.def Info: img/architectural_flow.png  used on input line 75.
-(pdftex.def)             Requested size: 444.38095pt x 369.88582pt.
+Package pdftex.def Info: img/architectural_flow.png  used on input line 239.
+(pdftex.def)             Requested size: 478.5885pt x 398.33858pt.
 
-Overfull \hbox (21.87863pt too wide) in paragraph at lines 75--76
+Overfull \hbox (56.08618pt too wide) in paragraph at lines 239--240
  [][] 
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[2 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/use-case-schema.png (PNG copy)>]
+[18] [19 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/architectural_flow.png (PNG copy)>]
 
-c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.tex:104: LaTeX Error: There's no line here to end.
+LaTeX Warning: Reference `fig:usecase1' on page 20 undefined on input line 257.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.104 
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+[20
 
-[3 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/architectural_flow.png (PNG copy)>]
-<img/use_case1.png, id=78, 1927.2pt x 1755.9201pt>
+] [21] [22]
+<img/use_case1.png, id=227, 1927.2pt x 1755.9201pt>
 File: img/use_case1.png Graphic file (type png)
 <use img/use_case1.png>
-Package pdftex.def Info: img/use_case1.png  used on input line 125.
+Package pdftex.def Info: img/use_case1.png  used on input line 376.
 (pdftex.def)             Requested size: 468.4188pt x 426.79134pt.
 
-Overfull \hbox (45.91647pt too wide) in paragraph at lines 125--126
+Overfull \hbox (45.91647pt too wide) in paragraph at lines 376--377
  [][] 
  []
 
@@ -809,225 +931,547 @@ Overfull \hbox (45.91647pt too wide) in paragraph at lines 125--126
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.tex:136: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.136 \newline
-               \\
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+LaTeX Warning: Reference `fig:schema' on page 23 undefined on input line 384.
 
 
-c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.tex:137: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.137 W
-       e could split the flow into two subflow, the first one from Reclothes...
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+LaTeX Warning: Reference `fig:usecase2' on page 23 undefined on input line 386.
 
 
-c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.tex:141: LaTeX Error: There's no line here to end.
+LaTeX Warning: Reference `fig:usecase2' on page 23 undefined on input line 392.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.141 \newline
-               \\
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.tex:142: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.142 A
-       ll the asset exchange is handle using \textbf{Regeneration Credits} a...
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.tex:146: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.146 \begin
-            {outline}[enumerate]
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-<img/use_case2.png, id=79, 1927.2pt x 1084.05pt>
+LaTeX Font Info:    Font shape `T1/cmtt/bx/it' in size <12> not available
+(Font)              Font shape `T1/cmtt/m/it' tried instead on input line 394.
+[23] [24 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/use_case1.png (PNG copy)>] [25]
+<img/use_case2.png, id=257, 1927.2pt x 1084.05pt>
 File: img/use_case2.png Graphic file (type png)
 <use img/use_case2.png>
-Package pdftex.def Info: img/use_case2.png  used on input line 165.
+Package pdftex.def Info: img/use_case2.png  used on input line 455.
 (pdftex.def)             Requested size: 505.82407pt x 284.52756pt.
 
-Overfull \hbox (83.32175pt too wide) in paragraph at lines 165--166
+Overfull \hbox (83.32175pt too wide) in paragraph at lines 455--456
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 175.
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmtt.fd"
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [5 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/use_case1.png (PNG copy)>]
-Overfull \hbox (10.43819pt too wide) in paragraph at lines 183--185
-[]\T1/cmr/bx/n/10 ERC20 Con-tract\T1/cmr/m/n/10 : it's a stan-dard smart con-tract with a Max Sup-ply fi-xed to 100.000.000
+[26] [27 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/use_case2.png (PNG copy)>] [28]
+Overfull \hbox (20.63791pt too wide) in paragraph at lines 546--547
+[]\T1/cmr/bx/n/12 PointsTransaction\T1/cmr/m/n/12 : Mo-del tran-sac-tions da-ta and in-cor-po-ra-te \T1/cmtt/m/n/12 TransactionType
  []
 
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <8> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 201.
-[6 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/use_case2.png (PNG copy)>] [7] [8] [9] [10]
-<img/fabric_network.png, id=350, 1307.1234pt x 977.3313pt>
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 553.
+[29] [30]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32] [33] [34]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35]
+
+LaTeX Warning: Reference `fig:usecase2' on page 36 undefined on input line 830.
+
+[36] [37] [38]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39] [40]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41] [42] [43] [44]
+c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.tex:1135: Missing $ inserted.
+<inserted text> 
+                $
+l.1135 ...tps://en.wikipedia.org/wiki/Merkle_tree}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.tex:1135: Extra }, or forgotten $.
+\H@@footnotetext ...sep }\ignorespaces #1\strut }}
+                                                  
+l.1135 ...tps://en.wikipedia.org/wiki/Merkle_tree}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.tex:1136: LaTeX Error: Command \end{enumerate} invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1136 \end{outline}
+                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.tex:1136: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1136 \end{outline}
+                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.tex:1136: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1136 \end{outline}
+                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.tex:1136: Missing $ inserted.
+<inserted text> 
+                $
+l.1136 \end{outline}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.tex:1136: Missing } inserted.
+<inserted text> 
+                }
+l.1136 \end{outline}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+LaTeX Warning: Reference `fig:fabric_network' on page 45 undefined on input line 1141.
+
+<img/fabric_network.png, id=774, 1307.1234pt x 977.3313pt>
 File: img/fabric_network.png Graphic file (type png)
 <use img/fabric_network.png>
-Package pdftex.def Info: img/fabric_network.png  used on input line 467.
-(pdftex.def)             Requested size: 304.42162pt x 227.62204pt.
- [11 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/fabric_network.png (PNG copy)>]
-<img/network.png, id=366, 1591.6263pt x 978.7767pt>
+Package pdftex.def Info: img/fabric_network.png  used on input line 1170.
+(pdftex.def)             Requested size: 380.53201pt x 284.52756pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `fig:network' on page 45 undefined on input line 1177.
+
+[45] [46 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/fabric_network.png (PNG copy)>]
+<img/network.png, id=804, 1591.6263pt x 978.7767pt>
 File: img/network.png Graphic file (type png)
 <use img/network.png>
-Package pdftex.def Info: img/network.png  used on input line 494.
+Package pdftex.def Info: img/network.png  used on input line 1197.
 (pdftex.def)             Requested size: 462.67697pt x 284.52756pt.
 
-Overfull \hbox (40.17465pt too wide) in paragraph at lines 494--495
+Overfull \hbox (40.17465pt too wide) in paragraph at lines 1197--1198
  [][] 
  []
 
-[12 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/network.png (PNG copy)>] [13]
-<img/EndToEnd.png, id=436, 546.3612pt x 418.2024pt>
+
+LaTeX Warning: Reference `fig:network' on page 47 undefined on input line 1202.
+
+[47 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/network.png (PNG copy)>] [48]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [49]
+Underfull \vbox (badness 1292) has occurred while \output is active []
+
+ [50]
+
+LaTeX Warning: Reference `fig:docker-run' on page 51 undefined on input line 1375.
+
+
+LaTeX Warning: Reference `fig:init-org' on page 51 undefined on input line 1378.
+
+
+LaTeX Warning: Reference `fig:install-chaincode' on page 51 undefined on input line 1381.
+
+[51]
+<img/network/net-1.png, id=952, 977.15062pt x 411.78844pt>
+File: img/network/net-1.png Graphic file (type png)
+<use img/network/net-1.png>
+Package pdftex.def Info: img/network/net-1.png  used on input line 1394.
+(pdftex.def)             Requested size: 405.09247pt x 170.71652pt.
+<img/network/net-2.png, id=953, 616.55344pt x 524.71031pt>
+File: img/network/net-2.png Graphic file (type png)
+<use img/network/net-2.png>
+Package pdftex.def Info: img/network/net-2.png  used on input line 1401.
+(pdftex.def)             Requested size: 267.46477pt x 227.62204pt.
+<img/network/net-3.png, id=954, 825.83531pt x 359.09157pt>
+File: img/network/net-3.png Graphic file (type png)
+<use img/network/net-3.png>
+Package pdftex.def Info: img/network/net-3.png  used on input line 1408.
+(pdftex.def)             Requested size: 392.61609pt x 170.71652pt.
+ ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+) [52 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/network/net-1.png>] [53 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/network/net-2.png> <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/network/net-3.png>] [54] [55]
+
+LaTeX Warning: Reference `fig:end_to_end' on page 56 undefined on input line 1529.
+
+<img/EndToEnd.png, id=1052, 546.3612pt x 418.2024pt>
 File: img/EndToEnd.png Graphic file (type png)
 <use img/EndToEnd.png>
-Package pdftex.def Info: img/EndToEnd.png  used on input line 632.
+Package pdftex.def Info: img/EndToEnd.png  used on input line 1535.
 (pdftex.def)             Requested size: 278.79892pt x 213.39566pt.
 
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[14]
-<img/sc_invokation.png, id=497, 847.165pt x 371.3875pt>
+
+LaTeX Warning: Reference `fig:sc_invokation' on page 56 undefined on input line 1541.
+
+<img/sc_invokation.png, id=1054, 847.165pt x 371.3875pt>
 File: img/sc_invokation.png Graphic file (type png)
 <use img/sc_invokation.png>
-Package pdftex.def Info: img/sc_invokation.png  used on input line 645.
+Package pdftex.def Info: img/sc_invokation.png  used on input line 1548.
 (pdftex.def)             Requested size: 389.42917pt x 170.71652pt.
- [15 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/EndToEnd.png> <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/sc_invokation.png (PNG copy)>]
-<img/dapp/home1.png, id=508, 965.10562pt x 508.90125pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[56] [57 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/EndToEnd.png> <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/sc_invokation.png (PNG copy)>]
+
+LaTeX Warning: Reference `fig:fab3_flow' on page 58 undefined on input line 1582.
+
+<img/fab3_flow.png, id=1073, 1752.7884pt x 502.0356pt>
+File: img/fab3_flow.png Graphic file (type png)
+<use img/fab3_flow.png>
+Package pdftex.def Info: img/fab3_flow.png  used on input line 1593.
+(pdftex.def)             Requested size: 496.68814pt x 142.26378pt.
+
+Overfull \hbox (74.18582pt too wide) in paragraph at lines 1593--1594
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `fig:fab3_invokation' on page 58 undefined on input line 1598.
+
+
+LaTeX Warning: Reference `fig:sc_invokation' on page 58 undefined on input line 1601.
+
+<img/fab3_invokation.png, id=1074, 791.8383pt x 268.1217pt>
+File: img/fab3_invokation.png Graphic file (type png)
+<use img/fab3_invokation.png>
+Package pdftex.def Info: img/fab3_invokation.png  used on input line 1605.
+(pdftex.def)             Requested size: 420.1556pt x 142.26378pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[58] [59 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/fab3_flow.png (PNG copy)> <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/fab3_invokation.png (PNG copy)>]
+
+LaTeX Warning: Reference `fig:deploy-user-contract' on page 60 undefined on input line 1641.
+
+
+LaTeX Warning: Reference `fig:deploy-user-contract' on page 60 undefined on input line 1644.
+
+<img/app-running/deployUserContract.png, id=1098, 514.92375pt x 178.41656pt>
+File: img/app-running/deployUserContract.png Graphic file (type png)
+<use img/app-running/deployUserContract.png>
+Package pdftex.def Info: img/app-running/deployUserContract.png  used on input line 1652.
+(pdftex.def)             Requested size: 328.46579pt x 113.81102pt.
+
+LaTeX Warning: Reference `fig:app-running' on page 60 undefined on input line 1658.
+
+<img/app-running/app-running.png, id=1099, 596.98032pt x 342.5297pt>
+File: img/app-running/app-running.png Graphic file (type png)
+<use img/app-running/app-running.png>
+Package pdftex.def Info: img/app-running/app-running.png  used on input line 1663.
+(pdftex.def)             Requested size: 297.54207pt x 170.71652pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[60 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/app-running/deployUserContract.png>]
+<img/dapp/home1.png, id=1112, 965.10562pt x 508.90125pt>
 File: img/dapp/home1.png Graphic file (type png)
 <use img/dapp/home1.png>
-Package pdftex.def Info: img/dapp/home1.png  used on input line 704.
+Package pdftex.def Info: img/dapp/home1.png  used on input line 1677.
 (pdftex.def)             Requested size: 404.69365pt x 213.39566pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<img/dapp/home2.png, id=509, 965.85844pt x 510.40688pt>
+<img/dapp/home2.png, id=1113, 965.85844pt x 510.40688pt>
 File: img/dapp/home2.png Graphic file (type png)
 <use img/dapp/home2.png>
-Package pdftex.def Info: img/dapp/home2.png  used on input line 711.
+Package pdftex.def Info: img/dapp/home2.png  used on input line 1684.
 (pdftex.def)             Requested size: 403.81555pt x 213.39566pt.
 
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[61 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/app-running/app-running.png> <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/home1.png>]
 
 LaTeX Warning: The counter will not be printed.
-             The label is: - on input line 720.
+             The label is: - on input line 1694.
 
-[16] [17 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/home1.png> <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/home2.png>]
-<img/dapp/user-info.png, id=531, 963.6pt x 510.40688pt>
+
+LaTeX Warning: Reference `fig:send_box' on page 62 undefined on input line 1700.
+
+
+LaTeX Warning: Reference `fig:purchase_clothes' on page 62 undefined on input line 1704.
+
+<img/dapp/user-info.png, id=1122, 963.6pt x 510.40688pt>
 File: img/dapp/user-info.png Graphic file (type png)
 <use img/dapp/user-info.png>
-Package pdftex.def Info: img/dapp/user-info.png  used on input line 739.
+Package pdftex.def Info: img/dapp/user-info.png  used on input line 1713.
 (pdftex.def)             Requested size: 402.87132pt x 213.39566pt.
-<img/dapp/user-send.png, id=532, 961.34157pt x 507.39563pt>
-File: img/dapp/user-send.png Graphic file (type png)
-<use img/dapp/user-send.png>
-Package pdftex.def Info: img/dapp/user-send.png  used on input line 746.
-(pdftex.def)             Requested size: 404.30345pt x 213.39566pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/dapp/user-buy.png, id=533, 963.6pt x 508.14844pt>
+<img/dapp/user-send.png, id=1123, 961.34157pt x 507.39563pt>
+File: img/dapp/user-send.png Graphic file (type png)
+<use img/dapp/user-send.png>
+Package pdftex.def Info: img/dapp/user-send.png  used on input line 1720.
+(pdftex.def)             Requested size: 404.30345pt x 213.39566pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/dapp/user-buy.png, id=1124, 963.6pt x 508.14844pt>
 File: img/dapp/user-buy.png Graphic file (type png)
 <use img/dapp/user-buy.png>
-Package pdftex.def Info: img/dapp/user-buy.png  used on input line 753.
+Package pdftex.def Info: img/dapp/user-buy.png  used on input line 1727.
 (pdftex.def)             Requested size: 404.66513pt x 213.39566pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/dapp/admin-info.png, id=534, 962.84718pt x 508.90125pt>
+[62 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/home2.png>] [63 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/user-info.png> <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/user-send.png>]
+<img/dapp/admin-info.png, id=1142, 962.84718pt x 508.90125pt>
 File: img/dapp/admin-info.png Graphic file (type png)
 <use img/dapp/admin-info.png>
-Package pdftex.def Info: img/dapp/admin-info.png  used on input line 770.
+Package pdftex.def Info: img/dapp/admin-info.png  used on input line 1745.
 (pdftex.def)             Requested size: 403.74661pt x 213.39566pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<img/dapp/admin-evaluate.png, id=535, 964.35281pt x 507.39563pt>
+<img/dapp/admin-evaluate.png, id=1143, 964.35281pt x 507.39563pt>
 File: img/dapp/admin-evaluate.png Graphic file (type png)
 <use img/dapp/admin-evaluate.png>
-Package pdftex.def Info: img/dapp/admin-evaluate.png  used on input line 777.
+Package pdftex.def Info: img/dapp/admin-evaluate.png  used on input line 1752.
 (pdftex.def)             Requested size: 405.56987pt x 213.39566pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/dapp/admin-tx.png, id=536, 964.35281pt x 510.40688pt>
+<img/dapp/admin-tx.png, id=1144, 964.35281pt x 510.40688pt>
 File: img/dapp/admin-tx.png Graphic file (type png)
 <use img/dapp/admin-tx.png>
-Package pdftex.def Info: img/dapp/admin-tx.png  used on input line 784.
+Package pdftex.def Info: img/dapp/admin-tx.png  used on input line 1759.
 (pdftex.def)             Requested size: 403.18607pt x 213.39566pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/dapp/adminp-info.png, id=537, 962.84718pt x 508.14844pt>
+
+LaTeX Warning: Reference `fig:adminp-info' on page 64 undefined on input line 1766.
+
+<img/dapp/adminp-info.png, id=1145, 962.84718pt x 508.14844pt>
 File: img/dapp/adminp-info.png Graphic file (type png)
 <use img/dapp/adminp-info.png>
-Package pdftex.def Info: img/dapp/adminp-info.png  used on input line 795.
+Package pdftex.def Info: img/dapp/adminp-info.png  used on input line 1771.
 (pdftex.def)             Requested size: 404.34898pt x 213.39566pt.
+[64 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/user-buy.png> <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/admin-info.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/dapp/producer-info.png, id=538, 965.10562pt x 509.65407pt>
+<img/dapp/adminp-buy.png, id=1153, 964.35281pt x 508.14844pt>
+File: img/dapp/adminp-buy.png Graphic file (type png)
+<use img/dapp/adminp-buy.png>
+Package pdftex.def Info: img/dapp/adminp-buy.png  used on input line 1778.
+(pdftex.def)             Requested size: 404.98128pt x 213.39566pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[65 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/admin-evaluate.png> <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/admin-tx.png>]
+<img/dapp/producer-info.png, id=1161, 965.10562pt x 509.65407pt>
 File: img/dapp/producer-info.png Graphic file (type png)
 <use img/dapp/producer-info.png>
-Package pdftex.def Info: img/dapp/producer-info.png  used on input line 806.
+Package pdftex.def Info: img/dapp/producer-info.png  used on input line 1791.
 (pdftex.def)             Requested size: 404.10458pt x 213.39566pt.
-[18 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/user-info.png>]
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.tex:811: Too many }'s.
-l.811 }
-       
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
+) [66 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/adminp-info.png> <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/adminp-buy.png>] [67 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/producer-info.png>]
+\openout2 = `results.aux'.
 
-) [19 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/user-send.png> <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/user-buy.png>] [20 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/admin-info.png> <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/admin-evaluate.png>] [21 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/admin-tx.png> <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/adminp-info.png>] [22 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/producer-info.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 98.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 98.
- (c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\tesi.aux (c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 98.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 98.
+ (c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\results.tex
+Capitolo 4.
+
+c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\results.tex:8: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \newline
+            
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[68
+
+
+
+]
+
+LaTeX Warning: Reference `fig:user-send-box' on page 69 undefined on input line 42.
+
+<img/test/test1/user-send-box.png, id=1182, 593.21625pt x 205.5178pt>
+File: img/test/test1/user-send-box.png Graphic file (type png)
+<use img/test/test1/user-send-box.png>
+Package pdftex.def Info: img/test/test1/user-send-box.png  used on input line 46.
+(pdftex.def)             Requested size: 328.50572pt x 113.81102pt.
+
+LaTeX Warning: Reference `fig:init-tx-reclothes-user' on page 69 undefined on input line 55.
+
+
+LaTeX Warning: Reference `fig:tx-reclothes-user' on page 69 undefined on input line 55.
+
+<img/test/test1/init-tx-RU.png, id=1183, 589.4522pt x 178.41656pt>
+File: img/test/test1/init-tx-RU.png Graphic file (type png)
+<use img/test/test1/init-tx-RU.png>
+Package pdftex.def Info: img/test/test1/init-tx-RU.png  used on input line 62.
+(pdftex.def)             Requested size: 376.00691pt x 113.81102pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/test/test1/performed-tx-RU.png, id=1184, 837.1275pt x 159.59625pt>
+File: img/test/test1/performed-tx-RU.png Graphic file (type png)
+<use img/test/test1/performed-tx-RU.png>
+Package pdftex.def Info: img/test/test1/performed-tx-RU.png  used on input line 69.
+(pdftex.def)             Requested size: 447.72467pt x 85.35826pt.
+
+Overfull \hbox (25.22235pt too wide) in paragraph at lines 69--70
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `fig:fabric-tx' on page 69 undefined on input line 74.
+
+
+LaTeX Warning: Reference `fig:eth-tx' on page 69 undefined on input line 74.
+
+[69 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/test/test1/user-send-box.png>]
+<img/test/test1/fabrix-tx.png, id=1194, 962.84718pt x 513.41812pt>
+File: img/test/test1/fabrix-tx.png Graphic file (type png)
+<use img/test/test1/fabrix-tx.png>
+Package pdftex.def Info: img/test/test1/fabrix-tx.png  used on input line 81.
+(pdftex.def)             Requested size: 373.5108pt x 199.16928pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/test/test1/etherscan.png, id=1195, 977.15062pt x 496.85625pt>
+File: img/test/test1/etherscan.png Graphic file (type png)
+<use img/test/test1/etherscan.png>
+Package pdftex.def Info: img/test/test1/etherscan.png  used on input line 88.
+(pdftex.def)             Requested size: 391.7032pt x 199.16928pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `fig:tx-user-reclothes' on page 70 undefined on input line 97.
+
+<img/test/test2/tx-user-reclothes.png, id=1196, 977.15062pt x 557.83406pt>
+File: img/test/test2/tx-user-reclothes.png Graphic file (type png)
+<use img/test/test2/tx-user-reclothes.png>
+Package pdftex.def Info: img/test/test2/tx-user-reclothes.png  used on input line 105.
+(pdftex.def)             Requested size: 348.8814pt x 199.16928pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[70 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/test/test1/init-tx-RU.png> <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/test/test1/performed-tx-RU.png>] [71 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/test/test1/fabrix-tx.png> <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/test/test1/etherscan.png>]
+
+LaTeX Warning: Reference `fig:send-old-clothes' on page 72 undefined on input line 129.
+
+<img/test/usecase2/0-send-old-clothes.png, id=1212, 450.9347pt x 242.40562pt>
+File: img/test/usecase2/0-send-old-clothes.png Graphic file (type png)
+<use img/test/usecase2/0-send-old-clothes.png>
+Package pdftex.def Info: img/test/usecase2/0-send-old-clothes.png  used on input line 140.
+(pdftex.def)             Requested size: 317.59248pt x 170.71652pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `fig:1-box-tobe-evaluate.png' on page 72 undefined on input line 147.
+
+
+LaTeX Warning: Reference `fig:evaluation-old-clothes' on page 72 undefined on input line 149.
+
+
+LaTeX Warning: Reference `fig:evaluation-old-clothes' on page 72 undefined on input line 152.
+
+<img/test/usecase2/1-box-tobe-evaluate.png, id=1213, 964.35281pt x 532.23843pt>
+File: img/test/usecase2/1-box-tobe-evaluate.png Graphic file (type png)
+<use img/test/usecase2/1-box-tobe-evaluate.png>
+Package pdftex.def Info: img/test/usecase2/1-box-tobe-evaluate.png  used on input line 157.
+(pdftex.def)             Requested size: 360.86624pt x 199.16928pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/test/usecase2/2-evaluation.png, id=1214, 323.70938pt x 97.86563pt>
+File: img/test/usecase2/2-evaluation.png Graphic file (type png)
+<use img/test/usecase2/2-evaluation.png>
+Package pdftex.def Info: img/test/usecase2/2-evaluation.png  used on input line 164.
+(pdftex.def)             Requested size: 376.47127pt x 113.81102pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/test/usecase2/3-credits-received.png, id=1215, 963.6pt x 287.57437pt>
+File: img/test/usecase2/3-credits-received.png Graphic file (type png)
+<use img/test/usecase2/3-credits-received.png>
+Package pdftex.def Info: img/test/usecase2/3-credits-received.png  used on input line 171.
+(pdftex.def)             Requested size: 381.36035pt x 113.81102pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `fig:buy-recycled-clothes' on page 72 undefined on input line 182.
+
+
+LaTeX Warning: Reference `fig:producer-infos' on page 72 undefined on input line 185.
+
+[72 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/test/test2/tx-user-reclothes.png>]
+<img/test/usecase2/4-buy-recycled-clothes.png, id=1222, 539.76656pt x 238.64156pt>
+File: img/test/usecase2/4-buy-recycled-clothes.png Graphic file (type png)
+<use img/test/usecase2/4-buy-recycled-clothes.png>
+Package pdftex.def Info: img/test/usecase2/4-buy-recycled-clothes.png  used on input line 190.
+(pdftex.def)             Requested size: 321.77045pt x 142.26378pt.
+ [73 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/test/usecase2/0-send-old-clothes.png> <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/test/usecase2/1-box-tobe-evaluate.png>]
+<img/test/usecase2/5-producer-info-update.png, id=1230, 965.10562pt x 373.395pt>
+File: img/test/usecase2/5-producer-info-update.png Graphic file (type png)
+<use img/test/usecase2/5-producer-info-update.png>
+Package pdftex.def Info: img/test/usecase2/5-producer-info-update.png  used on input line 197.
+(pdftex.def)             Requested size: 367.70116pt x 142.26378pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [74 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/test/usecase2/2-evaluation.png> <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/test/usecase2/3-credits-received.png> <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/test/usecase2/4-buy-recycled-clothes.png>] [75 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/test/usecase2/5-producer-info-update.png>]
+
+LaTeX Warning: Empty bibliography on input line 101.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 103.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 103.
+(c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\tesi.aux (c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\intro.aux) (c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\state-of-art.aux) (c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.aux) (c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\results.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 103.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 103.
 
 
 Package rerunfilecheck Warning: File `tesi.out' has changed.
@@ -1036,7 +1480,7 @@ Package rerunfilecheck Warning: File `tesi.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `tesi.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  98983B2DEBE3A6EB750EC6021461B242;1392.
+(rerunfilecheck)             After:  AACE57B14D32A4F68716F0705EBD327E;3287.
 
 LaTeX Warning: There were undefined references.
 
@@ -1053,17 +1497,17 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19466 strings out of 481522
- 332176 string characters out of 2912274
- 1251345 words of memory out of 3000000
- 33943 multiletter control sequences out of 15000+200000
- 550709 words of font info for 59 fonts, out of 3000000 for 9000
+ 20522 strings out of 481522
+ 348629 string characters out of 2912274
+ 1232182 words of memory out of 3000000
+ 34495 multiletter control sequences out of 15000+200000
+ 553244 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,13n,75p,1082b,3140s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0800.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl0800.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1000.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk>
-Output written on c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\tesi.pdf (26 pages, 5099305 bytes).
+ 55i,13n,98p,1082b,3135s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecit1200.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0800.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl1000.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1728.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk><C:/Users/franz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/franz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb>
+Output written on c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\tesi.pdf (79 pages, 7181696 bytes).
 PDF statistics:
- 1266 PDF objects out of 1440 (max. 8388607)
- 452 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2238 PDF objects out of 2487 (max. 8388607)
+ 899 named destinations out of 1000 (max. 500000)
+ 196 words of extra memory for PDF output out of 10000 (max. 10000000)
 

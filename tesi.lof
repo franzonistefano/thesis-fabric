@@ -3,38 +3,86 @@
 \babel@toc {italian}{}
 \babel@toc {italian}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces UseCase Overview}}{2}{figure.0.1}%
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2}{\ignorespaces Architectural Flow}}{3}{figure.0.2}%
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3}{\ignorespaces UseCase 1}}{5}{figure.0.3}%
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4}{\ignorespaces UseCase 2}}{6}{figure.0.4}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces UseCase Overview}}{14}{figure.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5}{\ignorespaces Fabric Network}}{11}{figure.0.5}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Architectural Flow}}{19}{figure.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6}{\ignorespaces Fabric Network Components}}{12}{figure.0.6}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces UseCase 1}}{24}{figure.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7}{\ignorespaces End To End}}{15}{figure.0.7}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces UseCase 2}}{27}{figure.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8}{\ignorespaces Smart Contract Invocation Process}}{15}{figure.0.8}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Fabric Network}}{46}{figure.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9}{\ignorespaces Home}}{17}{figure.0.9}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Fabric Network Components}}{47}{figure.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10}{\ignorespaces Registration Phase}}{17}{figure.0.10}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Run of the Docker Containers}}{52}{figure.3.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11}{\ignorespaces User Info}}{18}{figure.0.11}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Orgs initializations and channels join}}{53}{figure.3.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {12}{\ignorespaces Send Box}}{19}{figure.0.12}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Chaincode Installation}}{53}{figure.3.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {13}{\ignorespaces Purchase Clothes}}{19}{figure.0.13}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces End To End}}{57}{figure.3.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {14}{\ignorespaces Admin Info}}{20}{figure.0.14}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Smart Contract Invocation Process}}{57}{figure.3.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {15}{\ignorespaces Evaluate Box}}{20}{figure.0.15}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Fab3 Proxy Flow}}{59}{figure.3.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {16}{\ignorespaces Transactions}}{21}{figure.0.16}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Fab3 Invocation Process}}{59}{figure.3.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {17}{\ignorespaces Admin for Producers Info}}{21}{figure.0.17}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Deploy User Contract}}{60}{figure.3.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {18}{\ignorespaces Producers Info}}{22}{figure.0.18}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces App Running}}{61}{figure.3.15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Home}}{61}{figure.3.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Registration Phase}}{62}{figure.3.17}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.18}{\ignorespaces User Info}}{63}{figure.3.18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Send Box}}{63}{figure.3.19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Purchase Clothes}}{64}{figure.3.20}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Admin Info}}{64}{figure.3.21}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Evaluate Box}}{65}{figure.3.22}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Transactions}}{65}{figure.3.23}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Admin for Producers Info}}{66}{figure.3.24}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.25}{\ignorespaces Admin Spend Regeneration Credits}}{66}{figure.3.25}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.26}{\ignorespaces Producers Info}}{67}{figure.3.26}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces User Send Box}}{69}{figure.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Init Transaction from Reclothes to User}}{70}{figure.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Init Transaction from Reclothes to User}}{70}{figure.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Fabric transaction history}}{71}{figure.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Ethereum transaction over etherscan}}{71}{figure.4.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Transaction from User to Reclothes}}{72}{figure.4.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Admin Send old clothes}}{73}{figure.4.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Box to be evaluated}}{73}{figure.4.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Producer Evaluate old materials}}{74}{figure.4.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Admin Info update}}{74}{figure.4.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Purchase Recycled Clothes}}{74}{figure.4.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Producer Infos Update}}{75}{figure.4.12}%
