@@ -21,9 +21,10 @@
 \usepackage{xcolor}
 \usepackage{outlines}
 
+\usepackage{multirow}
+\usepackage{tabularx}
 \usepackage{makecell}
 \usepackage{spverbatim}
-\usepackage{listings}
 \usepackage{graphicx}
 \usepackage{flafter} % make sure figures do not appear before their text
 \input{solidity-highlighting.tex}
@@ -59,16 +60,19 @@
 
 \begin{document}
 
+\english
+
 \frontmatter
 % \pagenumbering{roman}
 
 \begin{ThesisTitlePage}
 	\candidato{Stefano \textsc{Franzoni}}
-    \relatore{prof.ssa\ Valentina \textsc{Gatteschi}}
+	\relatore{prof.ssa\ Valentina \textsc{Gatteschi}} 
+	\secondorelatore{prof.\ Fabrizio \textsc{Lamberti}}
     \tutoreaziendale{dott.\ Alfredo \textsc{Favenza}}
 	\ateneo{Politecnico di Torino}
-	\titolo{Crosschain with Hyperledger Fabric and Ethereum}
-	\sottotitolo{Dapp build using Hyperledger Fabric and Ethereum networks}
+	\titolo{Blockchain and smart contracts in the Fashion industry}
+	\sottotitolo{A Decentralized Application built on Ethereum and Hyperledger Fabric}
 	\corsodilaurea{Ingegneria Informatica (Software Engineering)}
     \sedutadilaurea{\textsc{Anno accademico} 2019 -- 2020}
 	\logosede{logopolito}
@@ -77,6 +81,8 @@
 \frontmatter
 \pagenumbering{roman}
 
+\ringraziamenti % acknowledgements
+\input{acknowledgements}
 %\include{abstract}
 %\include{ringraziamenti}
 
@@ -90,6 +96,7 @@
 \include{state-of-art}
 \include{solution}
 \include{results}
+\include{conclusion}
 
 %\include{introduzione}
 %\include{tecnologie}

@@ -1,11 +1,11 @@
-\BOOKMARK [0][]{section*.1}{Elenco delle figure}{}% 1
-\BOOKMARK [0][]{section*.2}{Elenco delle tabelle}{}% 2
+\BOOKMARK [0][]{section*.1}{List of Figures}{}% 1
+\BOOKMARK [0][]{section*.2}{List of Tables}{}% 2
 \BOOKMARK [0][]{chapter.1}{Introduction}{}% 3
 \BOOKMARK [0][]{chapter.2}{State of the art}{}% 4
 \BOOKMARK [1][]{section.2.1}{Current state of networks solution}{chapter.2}% 5
-\BOOKMARK [2][]{subsection.2.1.1}{Behind Blockchains}{section.2.1}% 6
+\BOOKMARK [2][]{subsection.2.1.1}{Behind the Blockchains}{section.2.1}% 6
 \BOOKMARK [2][]{subsection.2.1.2}{Overview}{section.2.1}% 7
-\BOOKMARK [2][]{subsection.2.1.3}{Limitation}{section.2.1}% 8
+\BOOKMARK [2][]{subsection.2.1.3}{Limitations}{section.2.1}% 8
 \BOOKMARK [2][]{subsection.2.1.4}{CrossChain Current Solution}{section.2.1}% 9
 \BOOKMARK [2][]{subsection.2.1.5}{Chaincode EVM}{section.2.1}% 10
 \BOOKMARK [1][]{section.2.2}{Blockchain application in Fashion Environment}{chapter.2}% 11
@@ -14,13 +14,13 @@
 \BOOKMARK [1][]{section.2.3}{Use Case asis}{chapter.2}% 14
 \BOOKMARK [2][]{subsection.2.3.1}{Sustainability Token}{section.2.3}% 15
 \BOOKMARK [0][]{chapter.3}{Solution}{}% 16
-\BOOKMARK [1][]{section.3.1}{Oveview}{chapter.3}% 17
+\BOOKMARK [1][]{section.3.1}{Overview}{chapter.3}% 17
 \BOOKMARK [2][]{subsection.3.1.1}{Work Produced}{section.3.1}% 18
 \BOOKMARK [2][]{subsection.3.1.2}{Actors}{section.3.1}% 19
 \BOOKMARK [2][]{subsection.3.1.3}{Application Flow}{section.3.1}% 20
-\BOOKMARK [2][]{subsection.3.1.4}{Token echanged}{section.3.1}% 21
-\BOOKMARK [1][]{section.3.2}{Crosschain interaction}{chapter.3}% 22
-\BOOKMARK [2][]{subsection.3.2.1}{Why needs crosschain solution}{section.3.2}% 23
+\BOOKMARK [2][]{subsection.3.1.4}{Token exchanged}{section.3.1}% 21
+\BOOKMARK [1][]{section.3.2}{CrossChain interaction}{chapter.3}% 22
+\BOOKMARK [2][]{subsection.3.2.1}{Why a cross-chain solution is needed}{section.3.2}% 23
 \BOOKMARK [2][]{subsection.3.2.2}{Technologies Used}{section.3.2}% 24
 \BOOKMARK [1][]{section.3.3}{Use Cases}{chapter.3}% 25
 \BOOKMARK [2][]{subsection.3.3.1}{UseCase 1 - User Side}{section.3.3}% 26
@@ -31,7 +31,7 @@
 \BOOKMARK [2][]{subsection.3.4.3}{ERC20 Contract}{section.3.4}% 31
 \BOOKMARK [1][]{section.3.5}{Network Architecture}{chapter.3}% 32
 \BOOKMARK [2][]{subsection.3.5.1}{Main Components}{section.3.5}% 33
-\BOOKMARK [2][]{subsection.3.5.2}{Own Architecure}{section.3.5}% 34
+\BOOKMARK [2][]{subsection.3.5.2}{Own Architecture}{section.3.5}% 34
 \BOOKMARK [2][]{subsection.3.5.3}{Fabric Network}{section.3.5}% 35
 \BOOKMARK [2][]{subsection.3.5.4}{Ethereum Network - Ropsten}{section.3.5}% 36
 \BOOKMARK [1][]{section.3.6}{Fabric and EVM chaincode interaction}{chapter.3}% 37
@@ -41,9 +41,13 @@
 \BOOKMARK [2][]{subsection.3.7.1}{Technologies used}{section.3.7}% 41
 \BOOKMARK [2][]{subsection.3.7.2}{Core part of the web-app}{section.3.7}% 42
 \BOOKMARK [2][]{subsection.3.7.3}{Views}{section.3.7}% 43
-\BOOKMARK [0][]{chapter.4}{Results}{}% 44
-\BOOKMARK [1][]{section.4.1}{Target archived}{chapter.4}% 45
-\BOOKMARK [1][]{section.4.2}{Use Case Test}{chapter.4}% 46
-\BOOKMARK [2][]{subsection.4.2.1}{Use Case 1 - Unit Test 1}{section.4.2}% 47
-\BOOKMARK [2][]{subsection.4.2.2}{Use Case 1 - Unit Test 2}{section.4.2}% 48
-\BOOKMARK [2][]{subsection.4.2.3}{Use Case 2 - Unit Test 1}{section.4.2}% 49
+\BOOKMARK [1][]{section.3.8}{Cost Analysis}{chapter.3}% 44
+\BOOKMARK [2][]{subsection.3.8.1}{Hyperledger Fabric}{section.3.8}% 45
+\BOOKMARK [2][]{subsection.3.8.2}{Ethereum}{section.3.8}% 46
+\BOOKMARK [0][]{chapter.4}{Results}{}% 47
+\BOOKMARK [1][]{section.4.1}{Target archived}{chapter.4}% 48
+\BOOKMARK [1][]{section.4.2}{Use Case Test}{chapter.4}% 49
+\BOOKMARK [2][]{subsection.4.2.1}{Use Case 1 - Unit Test 1}{section.4.2}% 50
+\BOOKMARK [2][]{subsection.4.2.2}{Use Case 1 - Unit Test 2}{section.4.2}% 51
+\BOOKMARK [2][]{subsection.4.2.3}{Use Case 2 - Unit Test 1}{section.4.2}% 52
+\BOOKMARK [0][]{chapter.5}{Conclusion}{}% 53

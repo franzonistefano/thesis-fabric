@@ -179,10 +179,14 @@ INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\transparent\tra
 INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\transparent\transparent.sty
 INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\outlines\outlines.sty
 INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\outlines\outlines.sty
-INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\makecell\makecell.sty
-INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\makecell\makecell.sty
+INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\multirow.sty
+INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\multirow.sty
+INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\tabularx.sty
+INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\tabularx.sty
 INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.sty
 INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.sty
+INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\makecell\makecell.sty
+INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\makecell\makecell.sty
 INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\spverbatim\spverbatim.sty
 INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\spverbatim\spverbatim.sty
 INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\flafter.sty
@@ -247,38 +251,41 @@ INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecc
 INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1728.tfm
 INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\eccc1728.tfm
 INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
+INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\acknowledgements.tex
+INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\acknowledgements.tex
 OUTPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\tesi.toc
 OUTPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\tesi.lof
 OUTPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\tesi.lot
 OUTPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\intro.aux
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\intro.tex
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\intro.tex
+INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\tcrm1200.tfm
+INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1000.tfm
+INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecsl1000.tfm
 OUTPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\state-of-art.aux
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\state-of-art.tex
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\state-of-art.tex
 INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1728.tfm
-INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm0800.tfm
-INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1000.tfm
-INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm0700.tfm
-INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\tcrm1200.tfm
-INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecsl1000.tfm
-INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1000.tfm
-INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1cmtt.fd
-INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1cmtt.fd
-INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ectt1000.tfm
+INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecti1200.tfm
+INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1095.tfm
+INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\img\crosschain.PNG
+INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\img\crosschain.PNG
+INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\img\crosschain.PNG
+INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\img\crosschain.PNG
+INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\img\crosschain.PNG
 OUTPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.aux
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.tex
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.tex
-INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecti1200.tfm
+INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1cmtt.fd
+INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1cmtt.fd
 INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ectt1200.tfm
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\img\use-case-schema.png
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\img\use-case-schema.png
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\img\use-case-schema.png
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\img\use-case-schema.png
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\img\use-case-schema.png
-INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1095.tfm
 INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ectt0800.tfm
+INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm0800.tfm
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\img\architectural_flow.png
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\img\architectural_flow.png
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\img\architectural_flow.png
@@ -295,6 +302,10 @@ INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\img\use_case2.png
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\img\use_case2.png
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\img\use_case2.png
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\img\use_case2.png
+INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm0700.tfm
+INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ectt1000.tfm
+INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1000.tfm
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\img\fabric_network.png
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\img\fabric_network.png
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\img\fabric_network.png
@@ -472,6 +483,9 @@ INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\img\test\usecase2\5-prod
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\img\test\usecase2\5-producer-info-update.png
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\img\test\usecase2\5-producer-info-update.png
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\img\test\usecase2\5-producer-info-update.png
+OUTPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\conclusion.aux
+INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\conclusion.tex
+INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\conclusion.tex
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\tesi.aux
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\intro.aux
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\intro.aux
@@ -481,36 +495,38 @@ INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.aux
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.aux
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\results.aux
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\results.aux
+INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\conclusion.aux
+INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\conclusion.aux
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\tesi.out
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\tesi.out
 INPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\tesi.run.xml
 OUTPUT c:\Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\tesi.run.xml
-INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecit1200.pk
-INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecit1200.pk
-INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt0800.pk
-INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt0800.pk
-INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk
-INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk
-INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
-INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
-INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk
-INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk
-INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1000.pk
-INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1000.pk
 INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk
 INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk
-INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsl1000.pk
-INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsl1000.pk
+INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1000.pk
+INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1000.pk
 INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
 INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
 INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0700.pk
 INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0700.pk
-INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
-INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
+INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecit1200.pk
+INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecit1200.pk
 INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
 INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
+INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt0800.pk
+INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt0800.pk
+INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
+INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
+INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk
+INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk
+INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk
+INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk
 INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
 INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
+INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsl1000.pk
+INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsl1000.pk
+INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
+INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk
 INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk
 INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1728.pk
@@ -531,7 +547,3 @@ INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
 INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk
 INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm2074.pk
 INPUT C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm2074.pk
-INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
-INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
-INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi7.pfb
-INPUT C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi7.pfb

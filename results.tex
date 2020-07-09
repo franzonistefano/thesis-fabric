@@ -2,32 +2,33 @@
 
 \section{Target archived}
 
-The goal to archive includes logical and technical targets both. 
-The improvements reached by thesis development are the following one
+The goals to archive include both logical and technical target. 
+The improvements reached by thesis development are the following ones:
 
 \newline
-The main target to reach is to improve Value Chain \footnote{This process includes the following phases: design and development of the product,
-raw materials management, production, shipping, selling and final use} value of the overall system.
+The main target to reach is to improve Value Chain \footnote{This process includes the following phases: design and 
+development of the product,raw materials management, production, shipping, selling and final use} value of the 
+overall system.
 \newline
-The goal could be splitted inside \textbf{Technical Goal} and \textbf{Logical Goal}.
+The goal could be split inside \textbf{Technical Goal} and \textbf{Logical Goal}.
 
 \begin{outline}
     \1 \textbf{Technical Goal}
-    \2 \textbf{Crosschain Interaction}: Integrate in the same application both permissioned and permissionless
-    Blockchain networks. The integration was done application side, there's some API endpoints that start
-    transactions in both networks, one over fabric network and the other one over ethereum.
-    \2 \textbf{Traceability}: This goal is archived implementing smart contracts, hyperledger fabric side
-    that track all the clothes box and store the entire transactions passed over the system. 
+    \2 \textbf{CrossChain Interaction}: Integrates into the same application both permissioned and permissionless 
+    Blockchain networks. The integration is done application side. Some API endpoints start transactions in both 
+    networks, one over Fabric network and the other one over Ethereum.
+    \2 \textbf{Traceability}: This goal is archived implementing smart contracts, Hyperledger Fabric side,
+    that tracks all the clothes box and store the entire transactions passed over the system. 
     
     \1 \textbf{Logical Goal}
     \2 \textbf{Supply Chain}: The target is to simplify the supply chain process, all the steps inside the chain
-    is handled as transactions, stored over the ledger and updating world state and smart contract data. 
-    \2 \textbf{Susteinability}: The entire process is aims to support susteinability. Using treacebility feature
-    it's possible to follow the lifetime of the clothes until they finish to Producer, that perform the 
+    are handled as transactions, stored over the ledger and updating world state and smart contract data. 
+    \2 \textbf{Sustainability}: The entire process aims to support sustainability. Thanks to traceability feature,
+    it is possible to follow the lifetime of the clothes until they finish to Producer, that performs the 
     material recycling in order to produce new upcycled clothes.   
-    \2 \textbf{Counterfeiting}: Assign a UID to each clothes produced it's possible to fight the Counterfeiting
-    implementing new feature such us the clothes registrations, we're going to have a secure register contining
-    all the clothes.
+    \2 \textbf{Counterfeiting}: Assign a UID to each clothes produced it is possible to fight the Counterfeiting 
+    implementing new features such as the clothes registrations. In that way it is possible to have a secure register 
+    containing all the clothes.
 \end{outline}
 
 \section{Use Case Test}
@@ -37,9 +38,9 @@ The goal could be splitted inside \textbf{Technical Goal} and \textbf{Logical Go
 \subsubsection{Send Box and Evaluation}
 
 Performing the Test over the Use Case 1 about the send box and evaluation processes. The following
-figures show the results over the call of the related methods and how application works. 
+figures show the results over the call of the related methods and how the application works. 
 
-The \textbf{Figure \ref{fig:user-send-box}} show the log when User Perform the \textit{Send Box} action.
+\textbf{Figure \ref{fig:user-send-box}} shows the log when User performs the \textit{Send Box} action.
 
 \begin{figure}[h!]
 	\centering
@@ -48,14 +49,14 @@ The \textbf{Figure \ref{fig:user-send-box}} show the log when User Perform the \
 	\label{fig:user-send-box}
 \end{figure}
 
-Once the Box Request was successfully send, the smart contract is invoked and the transaction is 
-performed. Admin could see the pending box request to be evaluated. Then the Reclothes Admin UI side
+Once the Box Request was successfully sent, the smart contract is invoked and the transaction is 
+performed. Admin could visualize the pending box requests to be evaluated. Then the Reclothes Admin, UI side,
 insert the value amount of the tokens and start the evaluation process.
 \newline
-The \textbf{Figures \ref{fig:init-tx-reclothes-user}} and \textbf{\ref{fig:tx-reclothes-user}} 
-show the Fabric Transaction performed then the inizialization of the Ethereum Transaction
-and at the end once the eth transaction was performed the etherscan link, associated to the 
-related TransactionHash, that allow to see the transaction history and infos.
+\textbf{Figures \ref{fig:init-tx-reclothes-user}} and \textbf{\ref{fig:tx-reclothes-user}} 
+shows the Fabric Transaction performed then the initialization of the Ethereum transaction. In the end, once 
+the eth transaction was performed, the etherscan link associated with the related TransactionHash, allow the 
+user to see the transaction history and info.
 
 \begin{figure}[h!]
 	\centering
@@ -71,10 +72,10 @@ related TransactionHash, that allow to see the transaction history and infos.
 	\label{fig:tx-reclothes-user}
 \end{figure}
 
-The Figure \ref{fig:fabric-tx} and Figure \ref{fig:eth-tx} shows the proof of the transacactions succed. 
-The first Figure show the User page that could visualize the history of transactions done and all
-related requests. The second one show the etherscan page with all the informations about ethereum
-transaction, in this case from Reclothes eth Account to User Account. 
+Figure \ref{fig:fabric-tx} and Figure \ref{fig:eth-tx} shows the proof of the transactions succeed. 
+The first Figure shows the User page that allows visualizing the history of transactions done and all related 
+requests. The second one shows the etherscan page with all the information about Ethereum's transaction, in 
+this case from Reclothes eth Account to User Account.
 
 \begin{figure}[h!]
 	\centering
@@ -94,11 +95,11 @@ transaction, in this case from Reclothes eth Account to User Account.
 
 \subsubsection{Purchase Item}
 
-The \textbf{Figures \ref{fig:tx-user-reclothes}} shows the Purchase process. As figure shows
-there's first of all the fabric transaction and then the eth transactions, after performed all
-the previous check start the transaction from User account to Reclothes account. Once the 
-transaction is performed the method print the etherscan link to monitor the transaction and
-all related infos. 
+The \textbf{Figures \ref{fig:tx-user-reclothes}} shows the Purchase process. As the figure shows
+there is, first of all, the Fabric transaction and then the Eth transaction. Once all
+the previous checks are performed, the transaction from User account to Reclothes account starts. Once the 
+transaction is performed the method prints the etherscan link to monitor the transaction and
+all the related info. 
 
 \begin{figure}[h!]
 	\centering
@@ -110,24 +111,24 @@ all related infos.
 
 \subsection{Use Case 2 - Unit Test 1}
 
-To test the Use Case 2 we're going to track the behaviour of two process:
+To test the Use Case 2 I decided to track the behaviors of two processes:
 
 \begin{outline}
-    \1 \textbf{Send Old Material and Evaluation}: The Admin for Producer send a box within old materials
-    to be recycled. Once the box arrived to Producer, than it's going to be evaluated and there's a 
+    \1 \textbf{Send Old Material and Evaluation}: The Admin for Producer sends a box with inside the old materials
+    to be recycled. Once the box arrived at Producer, then it is going to be evaluated and starts a 
     Regeneration Credits transaction from Producer to AdminP.
 
-    \1 \textbf{Purchase Upcycled Material}: The Admin for Producer spend the earned Regeneration Credits
+    \1 \textbf{Purchase Upcycled Material}: The Admin for Producer spends the earned Regeneration Credits
     to purchase by Producer recycled materials. The purchase options right now are three:
-    \2 \textbf{Small Box}: for 50 regeneration credits for 5 upcycled items.
-    \2 \textbf{Medium Box}: for 150 regeneration credits for 15 upcycled items.
-    \2 \textbf{Big Box}: for 200 regeneration credits for 40 upcycled items.
+    \2 \textbf{Small Box}: 50 Regeneration Credits for 5 upcycled items.
+    \2 \textbf{Medium Box}: 150 Regeneration Credits for 15 upcycled items.
+    \2 \textbf{Big Box}: 200 Regeneration Credits for 40 upcycled items.
 \end{outline}
 
 \subsubsection{Send Old Material and Evaluation}
 
-The \textbf{Figures \ref{fig:send-old-clothes}} show the log of the send old clothes process.
-In that case we're going to send a box with inside: 
+The \textbf{Figures \ref{fig:send-old-clothes}} shows the log of the send old clothes process.
+In that case is sent a box with inside: 
 \begin{outline}
     \1 \textbf{t-shirt}: 10
     \1 \textbf{pants}: 20
@@ -142,14 +143,14 @@ In that case we're going to send a box with inside:
 	\label{fig:send-old-clothes}
 \end{figure}
 
-Once the box is sent than start the evaluation process. The Producer evaluate materials received
+Once the box is sent, the evaluation process starts. The Producer evaluates materials received
 and issue Regeneration Credits amount that Admins could spend when need, to purchase
 recycled items. The \textbf{Figure \ref{fig:1-box-tobe-evaluate.png}} shows the page used
-to perform evaluation Process by Producer. In that case we set a Regeneration Credits amount
-of 1200, \textbf{Figure \ref{fig:evaluation-old-clothes}} shows the output of the evaluation process.
+to perform evaluation Process by Producer. In that case I set a Regeneration Credits amount
+of 1200. The \textbf{Figure \ref{fig:evaluation-old-clothes}} shows the output of the evaluation process.
 \\
-Once the evaluation process is archived and the Regeneration Credits is section
-from Producer to Admin, \textbf{Figure \ref{fig:evaluation-old-clothes}} show the info update
+Once the evaluation process is archived and the Regeneration Credits is sent
+from Producer to Admin. The \textbf{Figure \ref{fig:evaluation-old-clothes}} shows the info update
 of the Admin for Producer.
 
 \begin{figure}[h!]
@@ -175,15 +176,16 @@ of the Admin for Producer.
 
 \subsubsection{Purchase Upcycled Material}
  
-Once the Admin sent box with old clothes and the evaluation process is archived, Admin has 
-a Regeneration Credits amount to e spend to purchase upcycled clothes to send inside platform store.
-In our test case we purchase a \textbf{Middle Box} going to spend 150 Regeneration Credits.
+Once the Admin sent the box with old clothes and the evaluation process is archived, Admin has a 
+Regeneration Credits amount to spend purchasing upcycled clothes by Producer and then resell them
+inside the platform store. In our test case, we purchase a \textbf{Middle Box} spending an amount 
+of 150 Regeneration Credits.
 \\
-The \textbf{Figure \ref{fig:buy-recycled-clothes}} show the output of purchase process and the 
-Tot Regeneration Credits update after purchase box process is performed.
+The \textbf{Figure \ref{fig:buy-recycled-clothes}} shows the output of the purchase process and the 
+Tot Regeneration Credits update once the purchase box process is performed.
 \\
-The \textbf{Figure \ref{fig:producer-infos}} show the the update of Producer Informations,
-the circulating Regeneration Credits amount is changed and the Tot Box New number too.
+The \textbf{Figure \ref{fig:producer-infos}} shows the update of Producer Information,
+the circulating Regeneration Credits amount is changed and the Tot Box New number is updated.
 
 \begin{figure}[h!]
 	\centering

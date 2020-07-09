@@ -2182,6 +2182,34 @@
     <bcf:datasource type="file" datatype="bibtex">bibliography.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1">private-public</bcf:citekey>
+    <bcf:citekey order="2">blockchain-state</bcf:citekey>
+    <bcf:citekey order="3">interoperability1</bcf:citekey>
+    <bcf:citekey order="4">crosschain-level</bcf:citekey>
+    <bcf:citekey order="5">ark</bcf:citekey>
+    <bcf:citekey order="6">sidechain</bcf:citekey>
+    <bcf:citekey order="7">atomic-crosschain</bcf:citekey>
+    <bcf:citekey order="8">iot-crosschain</bcf:citekey>
+    <bcf:citekey order="9">atomic-swap</bcf:citekey>
+    <bcf:citekey order="10">HTLC</bcf:citekey>
+    <bcf:citekey order="11">lightning</bcf:citekey>
+    <bcf:citekey order="12">relay</bcf:citekey>
+    <bcf:citekey order="13">cosmos</bcf:citekey>
+    <bcf:citekey order="14">eth2</bcf:citekey>
+    <bcf:citekey order="15">evm-chaincode</bcf:citekey>
+    <bcf:citekey order="16">provenance</bcf:citekey>
+    <bcf:citekey order="17">plastic-coin</bcf:citekey>
+    <bcf:citekey order="18">ptwist</bcf:citekey>
+    <bcf:citekey order="19">eco-coin</bcf:citekey>
+    <bcf:citekey order="20">evm-chaincode</bcf:citekey>
+    <bcf:citekey order="21">remix</bcf:citekey>
+    <bcf:citekey order="22">merkle</bcf:citekey>
+    <bcf:citekey order="23">fabric-sample</bcf:citekey>
+    <bcf:citekey order="24">fabric-samples</bcf:citekey>
+    <bcf:citekey order="25">fabric-doc</bcf:citekey>
+    <bcf:citekey order="26">aws</bcf:citekey>
+    <bcf:citekey order="27">gastracker</bcf:citekey>
+    <bcf:citekey order="28">ethgasstation</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

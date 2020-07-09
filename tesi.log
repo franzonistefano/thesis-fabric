@@ -1,13 +1,20 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.6.9)  28 JUN 2020 18:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.6.9)  8 JUL 2020 21:19
 entering extended mode
-**c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/tesi.tex
-(c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/tesi.tex
+**./tesi.tex
+(tesi.tex
 LaTeX2e <2020-02-02> patch level 2
-L3 programming layer <2020-02-14> ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/toptesi\toptesi.cls"
-Document Class: toptesi 2020-05-29 v.6.4.04 Class for typesetting university theses
-("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fancyvrb\fancyvrb.sty"
+L3 programming layer <2020-02-14>
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/toptesi\toptesi.cl
+s"
+Document Class: toptesi 2020-05-29 v.6.4.04 Class for typesetting university th
+eses
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fancyvrb\fancyvrb.
+sty"
 Package: fancyvrb 2020/05/03 v3.6 verbatim text (tvz,hv)
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.st
+y"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
@@ -17,17 +24,25 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \c@FancyVerbLine=\count168
 \FV@StepNumber=\count169
 \FV@OutFile=\write3
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\trace.sty"
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\trace.sty"
 Package: trace 2018/10/13 v1.1e trace LaTeX code
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.sty"
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.st
+y"
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkeyval.tex" ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkvutils.tex"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkeyval.
+tex"
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkvutils
+.tex"
 \XKV@toks=\toks15
 \XKV@tempa@toks=\toks16
 )
 \XKV@depth=\count170
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\report.cls"
+))
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\report.cls"
 Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
 ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size12.clo"
 File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
@@ -44,25 +59,34 @@ File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\iftex.sty"
+) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\iftex.st
+y"
 Package: iftex 2019/11/07 v1.0c TeX engine tests
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.sty"
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.sty"
 Package: babel 2020/02/14 3.40 The Babel package
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\switch.def"
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\switch.def
+"
 File: switch.def 2020/02/14 3.40 Babel switching mechanism
 )
 *************************************
 * Local config file bblopts.cfg used
 *
 ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bblopts.cfg"
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-english\english.ldf"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-english\engl
+ish.ldf"
 Language: english 2017/06/06 v3.3r English support from the babel system
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.def"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.def"
 File: babel.def 2020/02/14 3.40 Babel common definitions
 \babel@savecnt=\count180
 \U@D=\dimen135
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbabel.def")
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbabel.d
+ef")
 \bbl@readstream=\read3
 \bbl@dirlevel=\count181
 )
@@ -72,30 +96,54 @@ Package babel Info: \l@australian = using hyphenrules for ukenglish
 (babel)             (\language76) on input line 105.
 Package babel Info: \l@newzealand = using hyphenrules for ukenglish
 (babel)             (\language76) on input line 108.
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-italian\italian.ldf"
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-italian\ital
+ian.ldf"
 Language: italian 2020/05/21 v.1.4.04 Italian support for the babel system
 \it@lettering=\count182
 \it@doublequoteactive=\count183
 \it@ISOcompliance=\count184
-)) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.sty"
+))
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.
+sty"
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count185
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/toptesi\toptesi.sty"
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/toptesi\toptesi.st
+y"
 Package: toptesi 2020-05-29 v.6.4.04 Extension for toptesi.cls
 \T@Pbinding=\skip49
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrextend.sty"
-Package: scrextend 2020/01/24 v3.29 KOMA-Script package (extend other classes with features of KOMA-Script classes)
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrkbase.sty"
-Package: scrkbase 2020/01/24 v3.29 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrbase.sty"
-Package: scrbase 2020/01/24 v3.29 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrlfile.sty"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrext
+end.sty"
+Package: scrextend 2020/01/24 v3.29 KOMA-Script package (extend other classes w
+ith features of KOMA-Script classes)
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrkba
+se.sty"
+Package: scrkbase 2020/01/24 v3.29 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrbas
+e.sty"
+Package: scrbase 2020/01/24 v3.29 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrlfi
+le.sty"
 Package: scrlfile 2020/01/24 v3.29 KOMA-Script package (loading files)
-)))) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\xspace.sty"
+))))
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\xspace.sty"
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3packages/xparse\xparse.sty" ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\expl3.sty"
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3packages/xparse\
+xparse.sty"
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\expl3.sty
+"
 Package: expl3 2020-02-14 L3 programming layer (loader) 
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backen
+d-pdfmode.def"
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count186
 \l__pdf_internal_box=\box46
@@ -105,17 +153,26 @@ Package: xparse 2020-02-14 L3 Experimental document command parser
 \g__xparse_grabber_int=\count188
 \l__xparse_m_args_int=\count189
 \l__xparse_v_nesting_int=\count190
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.
+sty"
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.
+sty"
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\graph
+ics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdfte
+x.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen136
@@ -133,34 +190,49 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \c@NumberSD=\count193
 LaTeX Font Info:    Redeclaring math symbol \virgola on input line 711.
 LaTeX Font Info:    Redeclaring math symbol \virgoladecimale on input line 712.
+
 \c@tomo=\count194
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/toptesi\toptesi-magistrale.sty"
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/toptesi\toptesi-ma
+gistrale.sty"
 Package: toptesi-magistrale 2020-05-29 v.6.4.04 Master degree title page
 \TPT@logospace=\skip51
 \TPT@logobox=\box50
 \TPT@logoheight=\dimen141
 \T@Tlogoheight=\skip52
- (c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\tesi.cfg))) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.sty"
+ (tesi.cfg)))
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.sty"
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.sty"
+) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.st
+y"
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.st
+y"
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip53
 
 For additional information on amsmath, use the `?' option.
-("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.st
+y"
 Package: amstext 2000/06/29 v2.01 AMS text
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty
+"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
 \ex@=\dimen142
-)) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
+))
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty
+"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen143
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty
+"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count195
@@ -200,28 +272,43 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\biblatex.sty"
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\biblatex.
+sty"
 Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdftexcmds\pdftexcmds.sty"
-Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO)
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/infwarerr\infwarerr.sty"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdftexcmds\pdftexc
+mds.sty"
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/infwarerr\infwar
+err.sty"
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ltxcmds\ltxcmds.sty"
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ltxcmds\ltxcmds.
+sty"
 Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kvoptions\kvoptions.sty"
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kvoptions\kvoption
+s.sty"
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvsetkeys\kvsetkeys.sty"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvsetkeys\kvsetk
+eys.sty"
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-)) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/logreq\logreq.sty"
+))
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/logreq\logreq.sty"
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count273
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/logreq\logreq.def"
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/logreq\logreq.def"
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-)) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.sty"
+)) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.sty
+"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 ) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
 \Urlmuskip=\muskip17
@@ -284,7 +371,9 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \c@mincompwidth=\count317
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\blx-dm.def"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\blx-dm.de
+f"
 File: blx-dm.def 2019/12/01 v3.14 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
@@ -373,12 +462,16 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \localshorteditorwidth=\skip77
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\blx-compat.def"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\blx-compa
+t.def"
 File: blx-compat.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\biblatex.def"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\biblatex.
+def"
 File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
 \c@textcitecount=\count386
 \c@textcitetotal=\count387
@@ -396,18 +489,24 @@ File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/bbx\numeric.bbx"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/bbx\numer
+ic.bbx"
 File: numeric.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/bbx\standard.bbx"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/bbx\stand
+ard.bbx"
 File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count395
 \c@bbx:relatedtotal=\count396
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/cbx\numeric.cbx"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/cbx\numer
+ic.cbx"
 File: numeric.cbx 2019/12/01 v3.14 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
@@ -423,9 +522,13 @@ Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\biblatex.cfg"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\biblatex.
+cfg"
 File: biblatex.cfg 
-)) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/booktabs\booktabs.sty"
+))
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/booktabs\booktabs.
+sty"
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen151
 \lightrulewidth=\dimen152
@@ -444,7 +547,9 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count399
 \@lastruleclass=\count400
 \@thisrulewidth=\dimen163
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\enumerate.sty"
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\enumerate.st
+y"
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks24
 ) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty"
@@ -454,11 +559,16 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box53
 \@float@everytoks=\toks26
 \@floatcapt=\box54
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lipsum\lipsum.sty"
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lipsum\lipsum.sty"
 Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lipsum\lipsum.ltd.tex"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lipsum\lipsum.ltd.
+tex"
 File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
-)) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.sty"
+))
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.
+sty"
 \lst@mode=\count402
 \lst@gtempboxa=\box55
 \lst@token=\toks27
@@ -471,38 +581,60 @@ File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
 \lst@newlines=\count406
 \lst@lineno=\count407
 \lst@maxwidth=\dimen167
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.sty"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.s
+ty"
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
 \c@lstnumber=\count408
 \lst@skipnumbers=\count409
 \lst@framebox=\box56
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.cfg"
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.
+cfg"
 File: listings.cfg 2019/09/10 1.8c listings configuration
 ))
 Package: listings 2019/09/10 1.8c (Carsten Heinz)
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hyperref.sty"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hyperref.
+sty"
 Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvdefinekeys\kvdefinekeys.sty"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvdefinekeys\kvd
+efinekeys.sty"
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pdfescape\pdfescape.sty"
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pdfescape\pdfesc
+ape.sty"
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hycolor\hycolor.sty"
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hycolor\hycolor.st
+y"
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/letltxmacro\letltxmacro.sty"
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/letltxmacro\letltx
+macro.sty"
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/auxhook\auxhook.sty"
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/auxhook\auxhook.st
+y"
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen168
 \Hy@linkcounter=\count410
 \Hy@pagecounter=\count411
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\pd1enc.def"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\pd1enc.de
+f"
 File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/intcalc\intcalc.sty"
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/intcalc\intcalc.
+sty"
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/etexcmds\etexcmds.sty"
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/etexcmds\etexcmd
+s.sty"
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
 \Hy@SavedSpaceFactor=\count412
@@ -516,10 +648,15 @@ Package hyperref Info: Bookmarks ON on input line 4800.
 \c@Hy@tempcnt=\count413
 LaTeX Info: Redefining \url on input line 5159.
 \XeTeXLinkMargin=\dimen169
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/bitset\bitset.sty"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/bitset\bitset.st
+y"
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/bigintcalc\bigintcalc.sty"
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/bigintcalc\bigin
+tcalc.sty"
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
 ))
 \Fld@menulength=\count414
 \Field@Width=\dimen170
@@ -533,7 +670,9 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6455.
 Package hyperref Info: PDF/A mode OFF on input line 6460.
 LaTeX Info: Redefining \ref on input line 6500.
 LaTeX Info: Redefining \pageref on input line 6504.
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/atbegshi\atbegshi.sty"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/atbegshi\atbegsh
+i.sty"
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
 \Hy@abspage=\count415
@@ -541,22 +680,32 @@ Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 \c@Hfootnote=\count417
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hpdftex.def"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hpdftex.d
+ef"
 File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/atveryend\atveryend.sty"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/atveryend\atveryen
+d.sty"
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 )
 \Fld@listcount=\count418
 \c@bookmark@seq@number=\count419
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/rerunfilecheck\rerunfilecheck.sty"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/rerunfilecheck\rer
+unfilecheck.sty"
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/uniquecounter\uniquecounter.sty"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/uniquecounter\un
+iquecounter.sty"
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
 )
 \Hy@SectionHShift=\skip78
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/svg\svg.sty"
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/svg\svg.sty"
 Package: svg 2020/05/07 v2.02f (include SVG pictures)
 
 
@@ -570,21 +719,28 @@ LaTeX Warning: You have requested, on input line 39, version
 LaTeX Warning: You have requested, on input line 40, version
                `2020/04/19' of package scrbase,
                but only version
-               `2020/01/24 v3.29 KOMA-Script package (KOMA-Script-independent basics and keyval usage)'
+               `2020/01/24 v3.29 KOMA-Script package (KOMA-Script-independent b
+asics and keyval usage)'
                is available.
 
-("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\shellesc.sty"
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\shellesc.sty
+"
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 77.
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/trimspaces\trimspaces.sty"
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/trimspaces\trimspa
+ces.sty"
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
 \svg@box=\box57
 \c@svg@param@lastpage=\count420
 \c@svg@param@currpage=\count421
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\xcolor.sty"
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\xcolor.sty"
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\color
+.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -597,98 +753,141 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/transparent\transparent.sty"
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/transparent\transp
+arent.sty"
 Package: transparent 2019/11/29 v1.4 Transparency via pdfTeX's color stack (HO)
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/outlines\outlines.sty"
+
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/outlines\outlines.
+sty"
 Package: outlines 2012/1/23 1.1 Ch. Pecheur
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/makecell\makecell.sty"
-Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/multirow\multirow.
+sty"
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip79
+\multirow@cntb=\count422
+\multirow@dima=\skip80
+\bigstrutjot=\dimen172
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\tabularx.sty
+"
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
  ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\array.sty"
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
-\col@sep=\dimen172
+\col@sep=\dimen173
 \ar@mcellbox=\box58
-\extrarowheight=\dimen173
+\extrarowheight=\dimen174
 \NC@list=\toks28
-\extratabsurround=\skip79
-\backup@length=\skip80
+\extratabsurround=\skip81
+\backup@length=\skip82
 \ar@cellbox=\box59
 )
-\rotheadsize=\dimen174
-\c@nlinenum=\count422
-\TeXr@lab=\toks29
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/spverbatim\spverbatim.sty"
+\TX@col@width=\dimen175
+\TX@old@table=\dimen176
+\TX@old@col=\dimen177
+\TX@target=\dimen178
+\TX@delta=\dimen179
+\TX@cols=\count423
+\TX@ftn=\toks29
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/makecell\makecell.
+sty"
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen180
+\c@nlinenum=\count424
+\TeXr@lab=\toks30
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/spverbatim\spverba
+tim.sty"
 Package: spverbatim 2009/08/10 v1.0 Verbatim with breakable spaces
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\flafter.sty"
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\flafter.sty"
 Package: flafter 2018/11/28 v1.4d Standard LaTeX floats after reference (FMi)
 Applying: [2015/01/01] float order in 2-column on input line 49.
 Already applied: [0000/00/00] float order in 2-column on input line 151.
-) (c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solidity-highlighting.tex)
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 45.
-Package hyperref Info: Option `colorlinks' set `true' on input line 45.
+) (solidity-highlighting.tex)
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 46.
+Package hyperref Info: Option `colorlinks' set `true' on input line 46.
 
 
 Package hyperref Warning: Option `pdftex' has already been used,
-(hyperref)                setting the option has no effect on input line 45.
+(hyperref)                setting the option has no effect on input line 46.
 
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count423
-\@quotereset=\count424
-(c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\tesi.aux)
+\@quotelevel=\count425
+\@quotereset=\count426
+(tesi.aux (intro.aux) (state-of-art.aux) (solution.aux) (results.aux)
+(conclusion.aux))
 \openout1 = `tesi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Info: Redefining \it@ocap on input line 60.
-LaTeX Info: Redefining \it@ccap on input line 60.
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Info: Redefining \it@ocap on input line 61.
+LaTeX Info: Redefining \it@ccap on input line 61.
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-p
+df.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count425
-\scratchdimen=\dimen175
+\scratchcounter=\count427
+\scratchdimen=\dimen181
 \scratchbox=\box60
-\nofMPsegments=\count426
-\nofMParguments=\count427
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count428
-\MPscratchDim=\dimen176
-\MPnumerator=\count429
-\makeMPintoPDFobject=\count430
-\everyMPtoPDFconversion=\toks31
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+\nofMPsegments=\count428
+\nofMParguments=\count429
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count430
+\MPscratchDim=\dimen182
+\MPnumerator=\count431
+\makeMPintoPDFobject=\count432
+\everyMPtoPDFconversion=\toks32
 )
-\captionwidth=\dimen177
-\fullwidth=\dimen178
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/toptesi\topcoman.sty"
-Package: topcoman 2020-05-29 v.6.4.04 Additional commands for the TOPtesi bundle
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\textcomp.sty"
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epsto
+pdf-base.sty"
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+)
+\captionwidth=\dimen183
+\fullwidth=\dimen184
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/toptesi\topcoman.s
+ty"
+Package: topcoman 2020-05-29 v.6.4.04 Additional commands for the TOPtesi bundl
+e
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\textcomp.sty"
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ))
 Package biblatex Info: Trying to load language 'italian'...
 Package biblatex Info: ... file 'italian.lbx' found.
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/lbx\italian.lbx"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/lbx\itali
+an.lbx"
 File: italian.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/lbx\english.lbx"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/lbx\engli
+sh.lbx"
 File: english.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
 )
 Package biblatex Info: Input encoding 'utf8' detected.
@@ -697,207 +896,196 @@ Package biblatex Info: Automatic encoding selection.
 \openout4 = `tesi.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'tesi.bbl' not found.
+Package biblatex Info: ... file 'tesi.bbl' found.
+ (tesi.bbl
 
-No file tesi.bbl.
-Package biblatex Info: Reference section=0 on input line 60.
-Package biblatex Info: Reference segment=0 on input line 60.
-\c@lstlisting=\count431
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                fabric-samples
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
+Package biblatex Info: Reference section=0 on input line 61.
+Package biblatex Info: Reference segment=0 on input line 61.
+\c@lstlisting=\count433
 \AtBeginShipoutBox=\box61
-Package hyperref Info: Link coloring ON on input line 60.
-("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
+Package hyperref Info: Link coloring ON on input line 61.
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.s
+ty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/refcount\refcount.sty"
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/refcount\refcount.
+sty"
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/gettitlestring\gettitlestring.sty"
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/generic/gettitlestring\g
+ettitlestring.sty"
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count432
+\c@section@level=\count434
 )
-LaTeX Info: Redefining \ref on input line 60.
-LaTeX Info: Redefining \pageref on input line 60.
-LaTeX Info: Redefining \nameref on input line 60.
+LaTeX Info: Redefining \ref on input line 61.
+LaTeX Info: Redefining \pageref on input line 61.
+LaTeX Info: Redefining \nameref on input line 61.
+ (tesi.out) (tesi.out)
 \@outlinefile=\write5
 \openout5 = `tesi.out'.
 
- (c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\tesi.cfg)
-<logopolito.jpg, id=3, 1129.21875pt x 1129.21875pt>
+ (tesi.cfg)
+<logopolito.jpg, id=215, 1129.21875pt x 1129.21875pt>
 File: logopolito.jpg Graphic file (type jpg)
 <use logopolito.jpg>
-Package pdftex.def Info: logopolito.jpg  used on input line 74.
+Package pdftex.def Info: logopolito.jpg  used on input line 78.
 (pdftex.def)             Requested size: 69.99016pt x 70.00249pt.
  [1{C:/Users/franz/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 
 
- <C:/Users/franz/AppData/Local/Programs/MiKTeX 2.9/tex/latex/beamer2thesis/logopolito.jpg>]
+ <C:/Users/franz/AppData/Local/Programs/MiKTeX 2.9/tex/latex/beamer2thesis/logo
+polito.jpg>] (acknowledgements.tex)
+[1
+
+
+
+] (tesi.toc
+! Misplaced alignment tab character &.
+<argument> ...\numberline {2.2.1}Provenance case &
+                                                   Martine Jarlgaard}\hyper@...
+l.29 ... & Martine Jarlgaard}{9}{subsection.2.2.1}
+                                                  %
+? 
+! Misplaced alignment tab character &.
+<argument> ...ne {2.2.2}Counterfeiting - VeChain &
+                                                   BabyGhoast}\hyper@linkend 
+l.31 ...eChain & BabyGhoast}{10}{subsection.2.2.2}
+                                                  %
+? 
+[2
+
+] [3])
 \tf@toc=\write6
 \openout6 = `tesi.toc'.
 
- [1
+ [4] (tesi.lof [5
 
 
-
-]
+])
 \tf@lof=\write7
 \openout7 = `tesi.lof'.
 
- [2
-
-
-]
+ [6] (tesi.lot)
 \tf@lot=\write8
 \openout8 = `tesi.lot'.
 
- [3
+ [7
 
 
 ]
 \openout2 = `intro.aux'.
 
- (c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\intro.tex)
-Capitolo 1.
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+ (intro.tex
+Chapter 1.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.89 \include{intro}
-                     [1
+l.30 \end{outline}
+                   [1
 
 
 
 
-]
+]) [2]
 \openout2 = `state-of-art.aux'.
 
- (c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\state-of-art.tex
-Capitolo 2.
-[2
+ (state-of-art.tex
+Chapter 2.
+[3
 
 
 
-] [3]
-
-c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\state-of-art.tex:76: Package inputenc Error: Unicode character ∗ (U+2217)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.76 ...niversity of Technology, Tallinn, Estonia}
-                                                  ,
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-[4]
-Overfull \hbox (112.3752pt too wide) in paragraph at lines 85--101
+] [4]
+Overfull \hbox (47.05345pt too wide) in paragraph at lines 137--143
 [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 113--113
-[][][]\T1/cmr/m/n/10 https://cointelegraph.com/news/blockchain-interoperability-the-holy-grail-for-cross-chain-
+[5] [6]
+<img/crosschain.PNG, id=441, 510.03047pt x 336.50719pt>
+File: img/crosschain.PNG Graphic file (type png)
+<use img/crosschain.PNG>
+Package pdftex.def Info: img/crosschain.PNG  used on input line 200.
+(pdftex.def)             Requested size: 258.75017pt x 170.71652pt.
+ [7 <./img/crosschain.PNG>]
+Overfull \hbox (9.13377pt too wide) in paragraph at lines 221--226
+\T1/cmr/m/n/12 di-rectly in a peer-to-peer trans-ac-tion Hashed Time-Lock Con-t
+racts (HTLCs)[[][]10[][]].
  []
-
-[5]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 169.
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmtt.fd"
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [6]
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
-[][][][][]$\T1/cmtt/m/n/10 https : / / en . bitcoin . it / w / index . php ? title = Hash _ Time _ Locked _ Contracts & source =
- []
-
-[7]
-c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\state-of-art.tex:212: Misplaced alignment tab character &.
-<argument> Provenance case &
-                             Martine Jarlgaard
-l.212 ...tion{Provenance case & Martine Jarlgaard}
-                                                  
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `alignment tab' on input line 212.
 
 [8]
-c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\state-of-art.tex:237: Misplaced alignment tab character &.
-<argument> Counterfeiting - VeChain &
-                                      BabyGhoast
-l.237 ...on{Counterfeiting - VeChain & BabyGhoast}
+! Misplaced alignment tab character &.
+<argument> Provenance case &
+                             Martine Jarlgaard
+l.254 ...tion{Provenance case & Martine Jarlgaard}
                                                   
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
+? 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `alignment tab' on input line 237.
+(hyperref)                removing `alignment tab' on input line 254.
 
-[9]) [10]
+! Misplaced alignment tab character &.
+<argument> Counterfeiting - VeChain &
+                                      BabyGhoast
+l.279 ...on{Counterfeiting - VeChain & BabyGhoast}
+                                                  
+? 
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `alignment tab' on input line 279.
+
+[9] [10]) [11]
 \openout2 = `solution.aux'.
 
- (c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.tex
-Capitolo 3.
-
-LaTeX Warning: Reference `fig:schema' on page 11 undefined on input line 9.
-
-[11
+ (solution.tex
+Chapter 3.
+[12
 
 
 
-]
+] [13]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 8
+9.
 
-LaTeX Warning: Reference `fig:schema' on page 12 undefined on input line 49.
-
-[12]
-
-LaTeX Warning: Reference `use-cases' on page 13 undefined on input line 68.
-
-[13]
-<img/use-case-schema.png, id=165, 1806.75pt x 803.1606pt>
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmtt.fd"
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+[14]
+<img/use-case-schema.png, id=522, 1806.75pt x 803.1606pt>
 File: img/use-case-schema.png Graphic file (type png)
 <use img/use-case-schema.png>
 Package pdftex.def Info: img/use-case-schema.png  used on input line 109.
 (pdftex.def)             Requested size: 384.03268pt x 170.71652pt.
- [14 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/use-case-schema.png (PNG copy)>]
+ [15 <./img/use-case-schema.png (PNG copy)>]
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 122.
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <8> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 122.
+ [16
 
-
-LaTeX Warning: Reference `erc20' on page 15 undefined on input line 126.
-
-
-LaTeX Warning: Reference `fig:architectural-flow' on page 15 undefined on input line 141.
-
-[15
-
-] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 202--207
+] [17]
+Underfull \hbox (badness 10000) in paragraph at lines 201--206
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 208--210
+Underfull \hbox (badness 10000) in paragraph at lines 207--209
 
  []
 
-
-LaTeX Warning: Reference `fig:architectural-flow' on page 17 undefined on input line 217.
-
-[17]
-<img/architectural_flow.png, id=192, 2308.7856pt x 1921.6593pt>
+[18]
+<img/architectural_flow.png, id=548, 2308.7856pt x 1921.6593pt>
 File: img/architectural_flow.png Graphic file (type png)
 <use img/architectural_flow.png>
 Package pdftex.def Info: img/architectural_flow.png  used on input line 239.
@@ -910,14 +1098,10 @@ Overfull \hbox (56.08618pt too wide) in paragraph at lines 239--240
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[18] [19 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/architectural_flow.png (PNG copy)>]
+[19] [20 <./img/architectural_flow.png (PNG copy)>] [21
 
-LaTeX Warning: Reference `fig:usecase1' on page 20 undefined on input line 257.
-
-[20
-
-] [21] [22]
-<img/use_case1.png, id=227, 1927.2pt x 1755.9201pt>
+] [22] [23]
+<img/use_case1.png, id=579, 1927.2pt x 1755.9201pt>
 File: img/use_case1.png Graphic file (type png)
 <use img/use_case1.png>
 Package pdftex.def Info: img/use_case1.png  used on input line 376.
@@ -930,386 +1114,260 @@ Overfull \hbox (45.91647pt too wide) in paragraph at lines 376--377
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Reference `fig:schema' on page 23 undefined on input line 384.
-
-
-LaTeX Warning: Reference `fig:usecase2' on page 23 undefined on input line 386.
-
-
-LaTeX Warning: Reference `fig:usecase2' on page 23 undefined on input line 392.
-
+[24]
 LaTeX Font Info:    Font shape `T1/cmtt/bx/it' in size <12> not available
 (Font)              Font shape `T1/cmtt/m/it' tried instead on input line 394.
-[23] [24 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/use_case1.png (PNG copy)>] [25]
-<img/use_case2.png, id=257, 1927.2pt x 1084.05pt>
+ [25 <./img/use_case1.png (PNG copy)>] [26]
+<img/use_case2.png, id=610, 1927.2pt x 1084.05pt>
 File: img/use_case2.png Graphic file (type png)
 <use img/use_case2.png>
-Package pdftex.def Info: img/use_case2.png  used on input line 455.
+Package pdftex.def Info: img/use_case2.png  used on input line 454.
 (pdftex.def)             Requested size: 505.82407pt x 284.52756pt.
 
-Overfull \hbox (83.32175pt too wide) in paragraph at lines 455--456
+Overfull \hbox (83.32175pt too wide) in paragraph at lines 454--455
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[26] [27 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/use_case2.png (PNG copy)>] [28]
-Overfull \hbox (20.63791pt too wide) in paragraph at lines 546--547
-[]\T1/cmr/bx/n/12 PointsTransaction\T1/cmr/m/n/12 : Mo-del tran-sac-tions da-ta and in-cor-po-ra-te \T1/cmtt/m/n/12 TransactionType
+[27] [28 <./img/use_case2.png (PNG copy)>] [29]
+Overfull \hbox (23.90099pt too wide) in paragraph at lines 544--545
+[]\T1/cmr/bx/n/12 PointsTransaction\T1/cmr/m/n/12 : Model trans-ac-tions data a
+nd in-cor-po-rate \T1/cmtt/m/n/12 TransactionType\T1/cmr/m/n/12 ,
  []
 
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 553.
-[29] [30]
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 551.
+[30] [31] [32]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [31]
+ [33]
+[34] [35]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [32] [33] [34]
+ [36]
+[37] [38] [39]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35]
+ [40]
+[41]
+Overfull \hbox (7.14285pt too wide) in paragraph at lines 1044--1049
+\T1/cmr/m/n/12 ERC-20 is a tech-ni-cal stan-dard used to is-sue and im-ple-ment
+ to-kens over the Ethereum
+ []
 
-LaTeX Warning: Reference `fig:usecase2' on page 36 undefined on input line 830.
 
-[36] [37] [38]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [39] [40]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [41] [42] [43] [44]
-c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.tex:1135: Missing $ inserted.
-<inserted text> 
-                $
-l.1135 ...tps://en.wikipedia.org/wiki/Merkle_tree}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.tex:1135: Extra }, or forgotten $.
-\H@@footnotetext ...sep }\ignorespaces #1\strut }}
-                                                  
-l.1135 ...tps://en.wikipedia.org/wiki/Merkle_tree}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.tex:1136: LaTeX Error: Command \end{enumerate} invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1136 \end{outline}
-                    
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.tex:1136: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1136 \end{outline}
-                    
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.tex:1136: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1136 \end{outline}
-                    
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.tex:1136: Missing $ inserted.
-<inserted text> 
-                $
-l.1136 \end{outline}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.tex:1136: Missing } inserted.
-<inserted text> 
-                }
-l.1136 \end{outline}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-LaTeX Warning: Reference `fig:fabric_network' on page 45 undefined on input line 1141.
-
-<img/fabric_network.png, id=774, 1307.1234pt x 977.3313pt>
+ [42]
+[43] [44] [45]
+<img/fabric_network.png, id=1129, 1307.1234pt x 977.3313pt>
 File: img/fabric_network.png Graphic file (type png)
 <use img/fabric_network.png>
-Package pdftex.def Info: img/fabric_network.png  used on input line 1170.
+Package pdftex.def Info: img/fabric_network.png  used on input line 1176.
 (pdftex.def)             Requested size: 380.53201pt x 284.52756pt.
 
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Reference `fig:network' on page 45 undefined on input line 1177.
-
-[45] [46 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/fabric_network.png (PNG copy)>]
-<img/network.png, id=804, 1591.6263pt x 978.7767pt>
+[46] [47 <./img/fabric_network.png (PNG copy)>]
+<img/network.png, id=1155, 1591.6263pt x 978.7767pt>
 File: img/network.png Graphic file (type png)
 <use img/network.png>
-Package pdftex.def Info: img/network.png  used on input line 1197.
+Package pdftex.def Info: img/network.png  used on input line 1203.
 (pdftex.def)             Requested size: 462.67697pt x 284.52756pt.
 
-Overfull \hbox (40.17465pt too wide) in paragraph at lines 1197--1198
+Overfull \hbox (40.17465pt too wide) in paragraph at lines 1203--1204
  [][] 
  []
 
-
-LaTeX Warning: Reference `fig:network' on page 47 undefined on input line 1202.
-
-[47 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/network.png (PNG copy)>] [48]
+[48 <./img/network.png (PNG copy)>] [49]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [49]
-Underfull \vbox (badness 1292) has occurred while \output is active []
-
  [50]
-
-LaTeX Warning: Reference `fig:docker-run' on page 51 undefined on input line 1375.
-
-
-LaTeX Warning: Reference `fig:init-org' on page 51 undefined on input line 1378.
-
-
-LaTeX Warning: Reference `fig:install-chaincode' on page 51 undefined on input line 1381.
-
-[51]
-<img/network/net-1.png, id=952, 977.15062pt x 411.78844pt>
+[51] [52]
+<img/network/net-1.png, id=1303, 977.15062pt x 411.78844pt>
 File: img/network/net-1.png Graphic file (type png)
 <use img/network/net-1.png>
-Package pdftex.def Info: img/network/net-1.png  used on input line 1394.
+Package pdftex.def Info: img/network/net-1.png  used on input line 1404.
 (pdftex.def)             Requested size: 405.09247pt x 170.71652pt.
-<img/network/net-2.png, id=953, 616.55344pt x 524.71031pt>
+<img/network/net-2.png, id=1304, 616.55344pt x 524.71031pt>
 File: img/network/net-2.png Graphic file (type png)
 <use img/network/net-2.png>
-Package pdftex.def Info: img/network/net-2.png  used on input line 1401.
+Package pdftex.def Info: img/network/net-2.png  used on input line 1411.
 (pdftex.def)             Requested size: 267.46477pt x 227.62204pt.
-<img/network/net-3.png, id=954, 825.83531pt x 359.09157pt>
+<img/network/net-3.png, id=1305, 825.83531pt x 359.09157pt>
 File: img/network/net-3.png Graphic file (type png)
 <use img/network/net-3.png>
-Package pdftex.def Info: img/network/net-3.png  used on input line 1408.
+Package pdftex.def Info: img/network/net-3.png  used on input line 1418.
 (pdftex.def)             Requested size: 392.61609pt x 170.71652pt.
- ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
+ [53 <./img/network/net-1.png>]
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.
+sty"
 File: lstlang1.sty 2019/09/10 1.8c listings language file
-) ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
+)
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.
+sty"
 File: lstlang1.sty 2019/09/10 1.8c listings language file
-) [52 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/network/net-1.png>] [53 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/network/net-2.png> <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/network/net-3.png>] [54] [55]
-
-LaTeX Warning: Reference `fig:end_to_end' on page 56 undefined on input line 1529.
-
-<img/EndToEnd.png, id=1052, 546.3612pt x 418.2024pt>
+) [54 <./img/network/net-2.png> <./img/network/net-3.png>] [55] [56]
+<img/EndToEnd.png, id=1402, 546.3612pt x 418.2024pt>
 File: img/EndToEnd.png Graphic file (type png)
 <use img/EndToEnd.png>
-Package pdftex.def Info: img/EndToEnd.png  used on input line 1535.
+Package pdftex.def Info: img/EndToEnd.png  used on input line 1544.
 (pdftex.def)             Requested size: 278.79892pt x 213.39566pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Reference `fig:sc_invokation' on page 56 undefined on input line 1541.
-
-<img/sc_invokation.png, id=1054, 847.165pt x 371.3875pt>
+<img/sc_invokation.png, id=1404, 847.165pt x 371.3875pt>
 File: img/sc_invokation.png Graphic file (type png)
 <use img/sc_invokation.png>
-Package pdftex.def Info: img/sc_invokation.png  used on input line 1548.
+Package pdftex.def Info: img/sc_invokation.png  used on input line 1557.
 (pdftex.def)             Requested size: 389.42917pt x 170.71652pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[56] [57 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/EndToEnd.png> <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/sc_invokation.png (PNG copy)>]
-
-LaTeX Warning: Reference `fig:fab3_flow' on page 58 undefined on input line 1582.
-
-<img/fab3_flow.png, id=1073, 1752.7884pt x 502.0356pt>
+[57 <./img/EndToEnd.png>] [58 <./img/sc_invokation.png (PNG copy)>]
+<img/fab3_flow.png, id=1421, 1752.7884pt x 502.0356pt>
 File: img/fab3_flow.png Graphic file (type png)
 <use img/fab3_flow.png>
-Package pdftex.def Info: img/fab3_flow.png  used on input line 1593.
+Package pdftex.def Info: img/fab3_flow.png  used on input line 1605.
 (pdftex.def)             Requested size: 496.68814pt x 142.26378pt.
 
-Overfull \hbox (74.18582pt too wide) in paragraph at lines 1593--1594
+Overfull \hbox (74.18582pt too wide) in paragraph at lines 1605--1606
  [][] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Reference `fig:fab3_invokation' on page 58 undefined on input line 1598.
-
-
-LaTeX Warning: Reference `fig:sc_invokation' on page 58 undefined on input line 1601.
-
-<img/fab3_invokation.png, id=1074, 791.8383pt x 268.1217pt>
+<img/fab3_invokation.png, id=1424, 791.8383pt x 268.1217pt>
 File: img/fab3_invokation.png Graphic file (type png)
 <use img/fab3_invokation.png>
-Package pdftex.def Info: img/fab3_invokation.png  used on input line 1605.
+Package pdftex.def Info: img/fab3_invokation.png  used on input line 1617.
 (pdftex.def)             Requested size: 420.1556pt x 142.26378pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[58] [59 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/fab3_flow.png (PNG copy)> <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/fab3_invokation.png (PNG copy)>]
-
-LaTeX Warning: Reference `fig:deploy-user-contract' on page 60 undefined on input line 1641.
-
-
-LaTeX Warning: Reference `fig:deploy-user-contract' on page 60 undefined on input line 1644.
-
-<img/app-running/deployUserContract.png, id=1098, 514.92375pt x 178.41656pt>
+[59 <./img/fab3_flow.png (PNG copy)>] [60 <./img/fab3_invokation.png (PNG copy)
+>]
+<img/app-running/deployUserContract.png, id=1443, 514.92375pt x 178.41656pt>
 File: img/app-running/deployUserContract.png Graphic file (type png)
 <use img/app-running/deployUserContract.png>
-Package pdftex.def Info: img/app-running/deployUserContract.png  used on input line 1652.
+Package pdftex.def Info: img/app-running/deployUserContract.png  used on input 
+line 1665.
 (pdftex.def)             Requested size: 328.46579pt x 113.81102pt.
-
-LaTeX Warning: Reference `fig:app-running' on page 60 undefined on input line 1658.
-
-<img/app-running/app-running.png, id=1099, 596.98032pt x 342.5297pt>
+<img/app-running/app-running.png, id=1445, 596.98032pt x 342.5297pt>
 File: img/app-running/app-running.png Graphic file (type png)
 <use img/app-running/app-running.png>
-Package pdftex.def Info: img/app-running/app-running.png  used on input line 1663.
+Package pdftex.def Info: img/app-running/app-running.png  used on input line 16
+76.
 (pdftex.def)             Requested size: 297.54207pt x 170.71652pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[60 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/app-running/deployUserContract.png>]
-<img/dapp/home1.png, id=1112, 965.10562pt x 508.90125pt>
+[61 <./img/app-running/deployUserContract.png>]
+<img/dapp/home1.png, id=1456, 965.10562pt x 508.90125pt>
 File: img/dapp/home1.png Graphic file (type png)
 <use img/dapp/home1.png>
-Package pdftex.def Info: img/dapp/home1.png  used on input line 1677.
+Package pdftex.def Info: img/dapp/home1.png  used on input line 1690.
 (pdftex.def)             Requested size: 404.69365pt x 213.39566pt.
-<img/dapp/home2.png, id=1113, 965.85844pt x 510.40688pt>
+<img/dapp/home2.png, id=1457, 965.85844pt x 510.40688pt>
 File: img/dapp/home2.png Graphic file (type png)
 <use img/dapp/home2.png>
-Package pdftex.def Info: img/dapp/home2.png  used on input line 1684.
+Package pdftex.def Info: img/dapp/home2.png  used on input line 1697.
 (pdftex.def)             Requested size: 403.81555pt x 213.39566pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[61 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/app-running/app-running.png> <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/home1.png>]
+[62 <./img/app-running/app-running.png> <./img/dapp/home1.png>]
 
 LaTeX Warning: The counter will not be printed.
-             The label is: - on input line 1694.
+             The label is: - on input line 1707.
 
-
-LaTeX Warning: Reference `fig:send_box' on page 62 undefined on input line 1700.
-
-
-LaTeX Warning: Reference `fig:purchase_clothes' on page 62 undefined on input line 1704.
-
-<img/dapp/user-info.png, id=1122, 963.6pt x 510.40688pt>
+<img/dapp/user-info.png, id=1465, 963.6pt x 510.40688pt>
 File: img/dapp/user-info.png Graphic file (type png)
 <use img/dapp/user-info.png>
-Package pdftex.def Info: img/dapp/user-info.png  used on input line 1713.
+Package pdftex.def Info: img/dapp/user-info.png  used on input line 1726.
 (pdftex.def)             Requested size: 402.87132pt x 213.39566pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/dapp/user-send.png, id=1123, 961.34157pt x 507.39563pt>
+<img/dapp/user-send.png, id=1466, 961.34157pt x 507.39563pt>
 File: img/dapp/user-send.png Graphic file (type png)
 <use img/dapp/user-send.png>
-Package pdftex.def Info: img/dapp/user-send.png  used on input line 1720.
+Package pdftex.def Info: img/dapp/user-send.png  used on input line 1733.
 (pdftex.def)             Requested size: 404.30345pt x 213.39566pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/dapp/user-buy.png, id=1124, 963.6pt x 508.14844pt>
+<img/dapp/user-buy.png, id=1467, 963.6pt x 508.14844pt>
 File: img/dapp/user-buy.png Graphic file (type png)
 <use img/dapp/user-buy.png>
-Package pdftex.def Info: img/dapp/user-buy.png  used on input line 1727.
+Package pdftex.def Info: img/dapp/user-buy.png  used on input line 1740.
 (pdftex.def)             Requested size: 404.66513pt x 213.39566pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[62 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/home2.png>] [63 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/user-info.png> <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/user-send.png>]
-<img/dapp/admin-info.png, id=1142, 962.84718pt x 508.90125pt>
+[63 <./img/dapp/home2.png>]
+<img/dapp/admin-info.png, id=1476, 962.84718pt x 508.90125pt>
 File: img/dapp/admin-info.png Graphic file (type png)
 <use img/dapp/admin-info.png>
-Package pdftex.def Info: img/dapp/admin-info.png  used on input line 1745.
+Package pdftex.def Info: img/dapp/admin-info.png  used on input line 1758.
 (pdftex.def)             Requested size: 403.74661pt x 213.39566pt.
-<img/dapp/admin-evaluate.png, id=1143, 964.35281pt x 507.39563pt>
+ [64 <./img/dapp/user-info.png> <./img/dapp/user-send.png>]
+<img/dapp/admin-evaluate.png, id=1482, 964.35281pt x 507.39563pt>
 File: img/dapp/admin-evaluate.png Graphic file (type png)
 <use img/dapp/admin-evaluate.png>
-Package pdftex.def Info: img/dapp/admin-evaluate.png  used on input line 1752.
+Package pdftex.def Info: img/dapp/admin-evaluate.png  used on input line 1765.
 (pdftex.def)             Requested size: 405.56987pt x 213.39566pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/dapp/admin-tx.png, id=1144, 964.35281pt x 510.40688pt>
+<img/dapp/admin-tx.png, id=1483, 964.35281pt x 510.40688pt>
 File: img/dapp/admin-tx.png Graphic file (type png)
 <use img/dapp/admin-tx.png>
-Package pdftex.def Info: img/dapp/admin-tx.png  used on input line 1759.
+Package pdftex.def Info: img/dapp/admin-tx.png  used on input line 1772.
 (pdftex.def)             Requested size: 403.18607pt x 213.39566pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Reference `fig:adminp-info' on page 64 undefined on input line 1766.
-
-<img/dapp/adminp-info.png, id=1145, 962.84718pt x 508.14844pt>
+<img/dapp/adminp-info.png, id=1485, 962.84718pt x 508.14844pt>
 File: img/dapp/adminp-info.png Graphic file (type png)
 <use img/dapp/adminp-info.png>
-Package pdftex.def Info: img/dapp/adminp-info.png  used on input line 1771.
+Package pdftex.def Info: img/dapp/adminp-info.png  used on input line 1784.
 (pdftex.def)             Requested size: 404.34898pt x 213.39566pt.
-[64 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/user-buy.png> <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/admin-info.png>]
+[65 <./img/dapp/user-buy.png> <./img/dapp/admin-info.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/dapp/adminp-buy.png, id=1153, 964.35281pt x 508.14844pt>
+<img/dapp/adminp-buy.png, id=1493, 964.35281pt x 508.14844pt>
 File: img/dapp/adminp-buy.png Graphic file (type png)
 <use img/dapp/adminp-buy.png>
-Package pdftex.def Info: img/dapp/adminp-buy.png  used on input line 1778.
+Package pdftex.def Info: img/dapp/adminp-buy.png  used on input line 1791.
 (pdftex.def)             Requested size: 404.98128pt x 213.39566pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[65 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/admin-evaluate.png> <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/admin-tx.png>]
-<img/dapp/producer-info.png, id=1161, 965.10562pt x 509.65407pt>
+[66 <./img/dapp/admin-evaluate.png> <./img/dapp/admin-tx.png>]
+<img/dapp/producer-info.png, id=1498, 965.10562pt x 509.65407pt>
 File: img/dapp/producer-info.png Graphic file (type png)
 <use img/dapp/producer-info.png>
-Package pdftex.def Info: img/dapp/producer-info.png  used on input line 1791.
+Package pdftex.def Info: img/dapp/producer-info.png  used on input line 1804.
 (pdftex.def)             Requested size: 404.10458pt x 213.39566pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [66 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/adminp-info.png> <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/adminp-buy.png>] [67 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/dapp/producer-info.png>]
+
+Underfull \vbox (badness 4303) has occurred while \output is active []
+
+ [67 <./img/dapp/adminp-info.png> <./img/dapp/adminp-buy.png>] [68 <./img/dapp/
+producer-info.png>]) [69]
 \openout2 = `results.aux'.
 
- (c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\results.tex
-Capitolo 4.
+ (results.tex
+Chapter 4.
 
-c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\results.tex:8: LaTeX Error: There's no line here to end.
+! LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1317,197 +1375,237 @@ Type  H <return>  for immediate help.
                                                   
 l.8 \newline
             
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+? 
 
-[68
+Overfull \hbox (10.87909pt too wide) in paragraph at lines 26--29
+[]\T1/cmr/bx/n/12 Sustainability\T1/cmr/m/n/12 : The en-tire pro-cess aims to s
+up-port sus-tain-abil-ity. Thanks
+ []
+
+[70
 
 
 
 ]
-
-LaTeX Warning: Reference `fig:user-send-box' on page 69 undefined on input line 42.
-
-<img/test/test1/user-send-box.png, id=1182, 593.21625pt x 205.5178pt>
+<img/test/test1/user-send-box.png, id=1525, 593.21625pt x 205.5178pt>
 File: img/test/test1/user-send-box.png Graphic file (type png)
 <use img/test/test1/user-send-box.png>
-Package pdftex.def Info: img/test/test1/user-send-box.png  used on input line 46.
+Package pdftex.def Info: img/test/test1/user-send-box.png  used on input line 4
+7.
 (pdftex.def)             Requested size: 328.50572pt x 113.81102pt.
-
-LaTeX Warning: Reference `fig:init-tx-reclothes-user' on page 69 undefined on input line 55.
-
-
-LaTeX Warning: Reference `fig:tx-reclothes-user' on page 69 undefined on input line 55.
-
-<img/test/test1/init-tx-RU.png, id=1183, 589.4522pt x 178.41656pt>
+<img/test/test1/init-tx-RU.png, id=1528, 589.4522pt x 178.41656pt>
 File: img/test/test1/init-tx-RU.png Graphic file (type png)
 <use img/test/test1/init-tx-RU.png>
-Package pdftex.def Info: img/test/test1/init-tx-RU.png  used on input line 62.
+Package pdftex.def Info: img/test/test1/init-tx-RU.png  used on input line 63.
 (pdftex.def)             Requested size: 376.00691pt x 113.81102pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/test/test1/performed-tx-RU.png, id=1184, 837.1275pt x 159.59625pt>
+<img/test/test1/performed-tx-RU.png, id=1529, 837.1275pt x 159.59625pt>
 File: img/test/test1/performed-tx-RU.png Graphic file (type png)
 <use img/test/test1/performed-tx-RU.png>
-Package pdftex.def Info: img/test/test1/performed-tx-RU.png  used on input line 69.
+Package pdftex.def Info: img/test/test1/performed-tx-RU.png  used on input line
+ 70.
 (pdftex.def)             Requested size: 447.72467pt x 85.35826pt.
 
-Overfull \hbox (25.22235pt too wide) in paragraph at lines 69--70
+Overfull \hbox (25.22235pt too wide) in paragraph at lines 70--71
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Reference `fig:fabric-tx' on page 69 undefined on input line 74.
-
-
-LaTeX Warning: Reference `fig:eth-tx' on page 69 undefined on input line 74.
-
-[69 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/test/test1/user-send-box.png>]
-<img/test/test1/fabrix-tx.png, id=1194, 962.84718pt x 513.41812pt>
+[71 <./img/test/test1/user-send-box.png>]
+<img/test/test1/fabrix-tx.png, id=1538, 962.84718pt x 513.41812pt>
 File: img/test/test1/fabrix-tx.png Graphic file (type png)
 <use img/test/test1/fabrix-tx.png>
-Package pdftex.def Info: img/test/test1/fabrix-tx.png  used on input line 81.
+Package pdftex.def Info: img/test/test1/fabrix-tx.png  used on input line 82.
 (pdftex.def)             Requested size: 373.5108pt x 199.16928pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/test/test1/etherscan.png, id=1195, 977.15062pt x 496.85625pt>
+<img/test/test1/etherscan.png, id=1539, 977.15062pt x 496.85625pt>
 File: img/test/test1/etherscan.png Graphic file (type png)
 <use img/test/test1/etherscan.png>
-Package pdftex.def Info: img/test/test1/etherscan.png  used on input line 88.
+Package pdftex.def Info: img/test/test1/etherscan.png  used on input line 89.
 (pdftex.def)             Requested size: 391.7032pt x 199.16928pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Reference `fig:tx-user-reclothes' on page 70 undefined on input line 97.
-
-<img/test/test2/tx-user-reclothes.png, id=1196, 977.15062pt x 557.83406pt>
+<img/test/test2/tx-user-reclothes.png, id=1541, 977.15062pt x 557.83406pt>
 File: img/test/test2/tx-user-reclothes.png Graphic file (type png)
 <use img/test/test2/tx-user-reclothes.png>
-Package pdftex.def Info: img/test/test2/tx-user-reclothes.png  used on input line 105.
+Package pdftex.def Info: img/test/test2/tx-user-reclothes.png  used on input li
+ne 106.
 (pdftex.def)             Requested size: 348.8814pt x 199.16928pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[70 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/test/test1/init-tx-RU.png> <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/test/test1/performed-tx-RU.png>] [71 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/test/test1/fabrix-tx.png> <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/test/test1/etherscan.png>]
-
-LaTeX Warning: Reference `fig:send-old-clothes' on page 72 undefined on input line 129.
-
-<img/test/usecase2/0-send-old-clothes.png, id=1212, 450.9347pt x 242.40562pt>
+[72 <./img/test/test1/init-tx-RU.png> <./img/test/test1/performed-tx-RU.png>]
+[73 <./img/test/test1/fabrix-tx.png> <./img/test/test1/etherscan.png>]
+<img/test/usecase2/0-send-old-clothes.png, id=1552, 450.9347pt x 242.40562pt>
 File: img/test/usecase2/0-send-old-clothes.png Graphic file (type png)
 <use img/test/usecase2/0-send-old-clothes.png>
-Package pdftex.def Info: img/test/usecase2/0-send-old-clothes.png  used on input line 140.
+Package pdftex.def Info: img/test/usecase2/0-send-old-clothes.png  used on inpu
+t line 141.
 (pdftex.def)             Requested size: 317.59248pt x 170.71652pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Reference `fig:1-box-tobe-evaluate.png' on page 72 undefined on input line 147.
+LaTeX Warning: Reference `fig:1-box-tobe-evaluate.png' on page 74 undefined on 
+input line 148.
 
+<img/test/usecase2/1-box-tobe-evaluate.png, id=1555, 964.35281pt x 532.23843pt>
 
-LaTeX Warning: Reference `fig:evaluation-old-clothes' on page 72 undefined on input line 149.
-
-
-LaTeX Warning: Reference `fig:evaluation-old-clothes' on page 72 undefined on input line 152.
-
-<img/test/usecase2/1-box-tobe-evaluate.png, id=1213, 964.35281pt x 532.23843pt>
 File: img/test/usecase2/1-box-tobe-evaluate.png Graphic file (type png)
 <use img/test/usecase2/1-box-tobe-evaluate.png>
-Package pdftex.def Info: img/test/usecase2/1-box-tobe-evaluate.png  used on input line 157.
+Package pdftex.def Info: img/test/usecase2/1-box-tobe-evaluate.png  used on inp
+ut line 158.
 (pdftex.def)             Requested size: 360.86624pt x 199.16928pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/test/usecase2/2-evaluation.png, id=1214, 323.70938pt x 97.86563pt>
+<img/test/usecase2/2-evaluation.png, id=1556, 323.70938pt x 97.86563pt>
 File: img/test/usecase2/2-evaluation.png Graphic file (type png)
 <use img/test/usecase2/2-evaluation.png>
-Package pdftex.def Info: img/test/usecase2/2-evaluation.png  used on input line 164.
+Package pdftex.def Info: img/test/usecase2/2-evaluation.png  used on input line
+ 165.
 (pdftex.def)             Requested size: 376.47127pt x 113.81102pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/test/usecase2/3-credits-received.png, id=1215, 963.6pt x 287.57437pt>
+<img/test/usecase2/3-credits-received.png, id=1557, 963.6pt x 287.57437pt>
 File: img/test/usecase2/3-credits-received.png Graphic file (type png)
 <use img/test/usecase2/3-credits-received.png>
-Package pdftex.def Info: img/test/usecase2/3-credits-received.png  used on input line 171.
+Package pdftex.def Info: img/test/usecase2/3-credits-received.png  used on inpu
+t line 172.
 (pdftex.def)             Requested size: 381.36035pt x 113.81102pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Reference `fig:buy-recycled-clothes' on page 72 undefined on input line 182.
-
-
-LaTeX Warning: Reference `fig:producer-infos' on page 72 undefined on input line 185.
-
-[72 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/test/test2/tx-user-reclothes.png>]
-<img/test/usecase2/4-buy-recycled-clothes.png, id=1222, 539.76656pt x 238.64156pt>
+[74 <./img/test/test2/tx-user-reclothes.png>]
+<img/test/usecase2/4-buy-recycled-clothes.png, id=1565, 539.76656pt x 238.64156
+pt>
 File: img/test/usecase2/4-buy-recycled-clothes.png Graphic file (type png)
 <use img/test/usecase2/4-buy-recycled-clothes.png>
-Package pdftex.def Info: img/test/usecase2/4-buy-recycled-clothes.png  used on input line 190.
+Package pdftex.def Info: img/test/usecase2/4-buy-recycled-clothes.png  used on 
+input line 192.
 (pdftex.def)             Requested size: 321.77045pt x 142.26378pt.
- [73 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/test/usecase2/0-send-old-clothes.png> <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/test/usecase2/1-box-tobe-evaluate.png>]
-<img/test/usecase2/5-producer-info-update.png, id=1230, 965.10562pt x 373.395pt>
+
+Underfull \vbox (badness 3792) has occurred while \output is active []
+
+ [75 <./img/test/usecase2/0-send-old-clothes.png> <./img/test/usecase2/1-box-to
+be-evaluate.png>]
+<img/test/usecase2/5-producer-info-update.png, id=1571, 965.10562pt x 373.395pt
+>
 File: img/test/usecase2/5-producer-info-update.png Graphic file (type png)
 <use img/test/usecase2/5-producer-info-update.png>
-Package pdftex.def Info: img/test/usecase2/5-producer-info-update.png  used on input line 197.
+Package pdftex.def Info: img/test/usecase2/5-producer-info-update.png  used on 
+input line 199.
 (pdftex.def)             Requested size: 367.70116pt x 142.26378pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [74 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/test/usecase2/2-evaluation.png> <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/test/usecase2/3-credits-received.png> <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/test/usecase2/4-buy-recycled-clothes.png>] [75 <c:/Users/franz/OneDrive/Desktop/POLITO/Tesi/Latex/img/test/usecase2/5-producer-info-update.png>]
+) [76 <./img/test/usecase2/2-evaluation.png> <./img/test/usecase2/3-credits-rec
+eived.png> <./img/test/usecase2/4-buy-recycled-clothes.png>] [77 <./img/test/us
+ecase2/5-producer-info-update.png>]
+\openout2 = `conclusion.aux'.
 
-LaTeX Warning: Empty bibliography on input line 101.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 103.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 103.
-(c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\tesi.aux (c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\intro.aux) (c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\state-of-art.aux) (c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\solution.aux) (c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\results.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 103.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 103.
+ (conclusion.tex
+Chapter 5.
+[78
 
 
-Package rerunfilecheck Warning: File `tesi.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
 
-Package rerunfilecheck Info: Checksums for `tesi.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  AACE57B14D32A4F68716F0705EBD327E;3287.
+]) [79]
+Overfull \hbox (1.71394pt too wide) in paragraph at lines 109--109
+\T1/cmtt/m/n/12 blog . ethereum . org / 2015 / 08 / 07 / on -[] public -[] and 
+-[] private -[] blockchains/$[][]\T1/cmr/m/n/12 . 
+ []
+
+
+Overfull \hbox (16.31532pt too wide) in paragraph at lines 109--109
+\T1/cmr/m/it/12 Contract Ap-pli-ca-tions in the Or-ga-ni-za-tion\T1/cmr/m/n/12 
+. 2018. \T1/cmr/m/sc/12 url\T1/cmr/m/n/12 : [][]$\T1/cmtt/m/n/12 https : / / bl
+og . ethereum .
+ []
+
+[80
+
+
+
+]
+Overfull \hbox (22.33397pt too wide) in paragraph at lines 109--109
+\T1/cmr/m/it/12 as-sets\T1/cmr/m/n/12 . \T1/cmr/m/sc/12 url\T1/cmr/m/n/12 : [][
+]$\T1/cmtt/m/n/12 https : / / uploads -[] ssl . webflow . com / 5c1b58255c61337
+6879c2558 /
+ []
+
+
+Overfull \hbox (36.2031pt too wide) in paragraph at lines 109--109
+[]\T1/cmr/m/it/12 EthGasStation: web-site to track ether and gas prices\T1/cmr/
+m/n/12 . \T1/cmr/m/sc/12 url\T1/cmr/m/n/12 : [][]$\T1/cmtt/m/n/12 https : / / e
+thgasstation .
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
+[81]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
+ (tesi.aux (intro.aux) (state-of-art.aux) (solution.aux) (results.aux)
+(conclusion.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 110.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 110.
+Package rerunfilecheck Info: File `tesi.out' has not changed.
+(rerunfilecheck)             Checksum: E106F6A0C61641BA3D01B080A6FCADBA;3528.
+
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                tesi
-(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'tesi.run.xml'.
 \openout1 = `tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20522 strings out of 481522
- 348629 string characters out of 2912274
- 1232182 words of memory out of 3000000
- 34495 multiletter control sequences out of 15000+200000
- 553244 words of font info for 66 fonts, out of 3000000 for 9000
+ 21015 strings out of 481522
+ 358430 string characters out of 2912274
+ 1255141 words of memory out of 3000000
+ 34925 multiletter control sequences out of 15000+200000
+ 552468 words of font info for 65 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,13n,98p,1082b,3135s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecit1200.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0800.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl1000.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1728.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk><C:/Users/franz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/franz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb>
-Output written on c:/Users\franz\OneDrive\Desktop\POLITO\Tesi\Latex\tesi.pdf (79 pages, 7181696 bytes).
+ 55i,13n,98p,1131b,3625s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
+ectt1000.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/
+ec/dpi600\ecrm1000.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts
+/pk/ljfour/jknappen/ec/dpi600\ecit1200.pk> <C:\Users\franz\AppData\Local\MiKTeX
+\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\franz\AppData\Lo
+cal\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0800.pk> <C:\Users\franz\
+AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Us
+ers\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.
+pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600
+\ecti1200.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen
+/ec/dpi600\ecbx1728.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfou
+r/jknappen/ec/dpi600\ecsl1000.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\font
+s/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\franz\AppData\Local\MiKTe
+X\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\franz\AppData\L
+ocal\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1728.pk> <C:\Users\franz
+\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\U
+sers\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200
+.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ecbx1200.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappe
+n/ec/dpi600\eccc1440.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfo
+ur/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\franz\AppData\Local\MiKT
+eX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\franz\AppData\
+Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk>
+Output written on tesi.pdf (89 pages, 7356258 bytes).
 PDF statistics:
- 2238 PDF objects out of 2487 (max. 8388607)
- 899 named destinations out of 1000 (max. 500000)
- 196 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2639 PDF objects out of 2984 (max. 8388607)
+ 926 named destinations out of 1000 (max. 500000)
+ 625 words of extra memory for PDF output out of 10000 (max. 10000000)
 

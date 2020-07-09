@@ -2,61 +2,81 @@
 
 \section{Current state of networks solution}
 
-There's three main solution about blockchain network\footnote{https://blog.ethereum.org/2015/08/07/on-public-and-private-blockchains/}:
+Starting from the Introduction's consideration, I'm going to list the details of the three main solutions for 
+blockchain networks\cite{private-public}:
 
 \begin{outline}
-    \1 \textbf{Public blockchains}: a public blockchain is a blockchain that anyone in the world can read, anyone in the world can send transactions to and expect to see them included if they are valid, and anyone in the world can participate in the consensus process - the process for determining what blocks get added to the chain and what the current state is. As a substitute for centralized or quasi-centralized trust, public blockchains are secured by cryptoeconomics - the combination of economic incentives and cryptographic verification using mechanisms such as proof of work or proof of stake, following a general principle that the degree to which someone can have an influence in the consensus process is proportional to the quantity of economic resources that they can bring to bear. These blockchains are generally considered to be "fully decentralized".
-    \1 \textbf{Consortium blockchains}: a consortium blockchain is a blockchain where the consensus process is controlled by a pre-selected set of nodes; for example, one might imagine a consortium of 15 financial institutions, each of which operates a node and of which 10 must sign every block in order for the block to be valid. The right to read the blockchain may be public, or restricted to the participants, and there are also hybrid routes such as the root hashes of the blocks being public together with an API that allows members of the public to make a limited number of queries and get back cryptographic proofs of some parts of the blockchain state. These blockchains may be considered "partially decentralized".
-    \1 \textbf{Fully private blockchains}: a fully private blockchain is a blockchain where write permissions are kept centralized to one organization. Read permissions may be public or restricted to an arbitrary extent. Likely applications include database management, auditing, etc internal to a single company, and so public readability may not be necessary in many cases at all, though in other cases public auditability is desired.
+    \1 \textbf{Public blockchains}: they are peer to peer networks in which anyone in the world has read 
+    access to the network, anyone can send transactions over the network, and anyone in the world can 
+    participate in the consensus process. In a public blockchain every node is potentially 
+    untrusted, so the consensus mechanism is developed in order to prevent every malicious node that could 
+    compromise data and transactions performed over the network. The entire architecture and consensus are 
+    distributed in order to minimize the liability of data manipulation. The consensus process defines the blocks that get added to the chain
+    determining the current state of the network. The security issue is solved by a mix of cryptographic algorithms
+    and cryptoeconomics solution. The idea is to combine economic incentives proportional to the resources that
+    the node can bring to bear. The resources targeted depend on the consensus algorithm used. For example proof of work(PoW)
+    involves computational resources into the consensus mechanism. On the other hand, proof of stake(PoS) involve
+    the token amount of the node involved in consensus. These blockchains are generally considered 
+    to be "fully decentralized".
+    \1 \textbf{Consortium blockchains}: The basic idea of the consortium blockchain is that the network is 
+    composed by a set of trusted or semi-trusted nodes, that compose the governance of the network.
+    The consensus mechanism is not as complex as that of public blockchains, because the starting hypothesis is 
+    different and usually it needs to have a good performance and low latency of the transactions.
+    I provide an example to understand how governance's nodes are involved in the consensus process: 
+    One might imagine a consortium of 15 financial institutions, each of them operates a node and 10 of them 
+    must sign every block in order for the block to be valid. The right to read the blockchain may be public, 
+    or restricted to the participants, and there are also hybrid routes such as the root hashes of the blocks 
+    being public together with an API that allows members of the public to make a limited number of queries 
+    and get back cryptographic proofs of some parts of the blockchain state. These blockchains may be 
+    considered "partially decentralized".
+    \1 \textbf{Fully private blockchains}: a fully private blockchain is a blockchain where write permissions 
+    are kept centralized to one organization. Read permissions may be public or restricted to an arbitrary 
+    extent. Likely applications include database management, auditing, etc internal to a single company. Therefore, 
+    public readability may not be necessary at all in many cases, although, in other cases public auditability 
+    is desired.
 \end{outline}
 
-\subsection{Behind Blockchains}
-The ideas behind the born of blockchain technology is to keep informations public and exploit cryptographic
-algorithms to keep identity secret, mantaining authentication to perform the transaction process. That 
-idea found a huge use cases application, in particular amoung the cryptocurrencies environment, that's 
-the area in which the public blockchains found more applications. The main rule of the overall system is 
-\textbf{"keep it transaparent, safe and anonymous"}, It mean that all the transactions processed by the 
-public blockchain networks is \textbf{transaparent} and everyone has read access. The \textbf{Safe}
-concept is the major application of the cryptographic science, for example the bitcoin wallet is based
-on a key pair based on eliptic curve algorithms. \textbf{Anonymous} is strictly correlated to the Safe
-concept, for the same reason that transactions are safe, the identity could be anonymous, if noone share
-the identity associated to wallet public key. There's only a public key that correspond to the owner 
-of a wallet with a balance inside in. 
+\subsection{Behind the Blockchains}
+With the blockchain technology, cryptographic science found the most applications. The concept behind 
+the public blockchain is that all the transaction data are completely public; nevertheless, the identity of the 
+user involved is kept secret. This idea has found a huge application in the cryptocurrencies environment. 
+The \textit{Fintech} is the environment in which the public blockchains has found the most applications. 
+The main rule of the overall system is 
+\textbf{"keep it transparent , safe and anonymous"}, it means that all the transactions processed by the 
+public blockchain networks are \textbf{transparent } and every node has read access. The \textbf{Safe}
+concept is granted by the combination of cryptographic science and economic incentives. \textbf{Anonymous}
+has granted thanks to the cryptographic science applications, for example, the bitcoin wallet is based on a key pair 
+computed on elliptic curve algorithms. If no one shares the identity associated with the wallet public key, or keep 
+the private key public, the user identity continues to be anonymous. 
 \bigskip
 
-On the other hand the majority of the companies, that would like to use blockchains solution for 
-improvement on internal processes, don't want to share and keep own informations public. The goal
-of the main Companies use cases is to handle internal company processes, such as supply chain process,
-using a membership mechanism that allow some nodes of the governance to have read or write access to the 
-ledger. 
 
 \bigskip
-To undestrand the behaviour about public or private blockchains, we are going to list the features
-for both, in order to adapt the choice based of own needs: 
+As explained above the blockchain world is divided between public and private blockchain.  
+To understand the behavior about public or private blockchains, we are going to list the features
+for both, in order to adapt the choice based on own needs: 
 
 \begin{outline}[enumerate]
-    \1 The main advantages of the \textbf{public blockchain} coul be fall into two major categories:
-    \2 Public blockchains provide a way to protect the users of an application from the developers, 
-    establishing that there are certain things that even the developers of an application have no 
-    authority to do. The code is public and everyone could see how it works, on the other hand
-    each identity of the user is protected by cryptographic algorithms.   
-    \2 Public blockchains are open, and therefore are likely to be used by very many entities and gain 
-    some network effects. To give a particular example, consider the case of domain name escrow. 
-    Currently, if A wants to sell a domain to B, there is the standard counterparty risk problem that 
-    needs to be resolved: if A sends first, B may not send the money, and if B sends first then A might 
-    not send the domain.However, if we have a domain name system on a blockchain, and a currency on the 
-    same blockchain, then we can cut costs to near-zero with a smart contract: A can send the domain to 
-    a program which immediately sends it to the first person to send the program money, and the program 
-    is trusted because it runs on a public blockchain.
-    In other work public blockchain fully eliminate intermediary.
+    \1 The main advantages of the \textbf{Public blockchain} could fall into two major categories:
+    \2 Public blockchains provide a way to protect the users of an application from the developers; 
+    the code is public and everyone can see how it works. This solution limits the authority 
+    of the developers over the application. Moreover, the user identity is always kept secret .   
+    \2 Public blockchains are open, and therefore are likely to be used by many entities and gain 
+    some network effects. Besides, the public blockchain fully eliminates intermediaries. Here is an example 
+    of a transfer of ownership case. A wants to sell an item to B. Right now there is a standard risk 
+    problem of the involved counterparty: if A sends first, B may not send money, and if B sends first the 
+    money A might not send the item. All the problems related to these kinds of cases could be resolved using 
+    smart contracts, running over the public blockchain, moreover, the costs is close to zero. 
+    With the smart contract implementations, A can send the item, to be sold, to a program that immediately 
+    sends it to the first person that in the meanwhile sends money to the program. 
+    
+    \1 Compared to the public blockchain, the advantages of a \textbf{Private blockchain} are:
 
-    \1 Compared to the public bloclchain the advantages of a \textbf{private blockchain} are:
-
-    \2 The consortium or company running a private blockchain can easily, if desired, change the rules 
+    \2 The consortium or companies running a private blockchain can easily, if desired, change the rules 
     of a blockchain, revert transactions, modify balances, etc. In some cases, eg. national land 
     registries, this functionality is necessary.
     
-    \2 The validators are known, so any risk of a 51\% attack arising from some miner collusion in China 
+    \2 The validators are known, so any risk of a 51\% attack, arising from some miner collusion in China, 
     does not apply.
 
     \2 Transactions are cheaper, since they only need to be verified by a few nodes that can be trusted 
@@ -70,38 +90,63 @@ for both, in order to adapt the choice based of own needs:
     \2 If read permissions are restricted, private blockchains can provide a greater level of, well, privacy.
 \end{outline}
 
-From several analysis it get out that the 75\% of already implemented projects are designed 
-specifically for private aim\footnote{\textbf{The State of the Art for Blockchain-EnabledSmart-Contract 
-Applications in the Organization} - Chibuzor Udokwu∗, Aleksandr Kormiltsyn, Kondwani Thangalimodzi, 
-Alex Norta - Department of Software Science Tallinn University of Technology, Tallinn, Estonia},
-It means that is growing up the need to improve of the Consortium Blockchains that allow a
-memberships mechanism build for company use cases, it maintain the transactions private in order 
-to grant the privacy of the business process and data.
+From many analysis it gets out that the 75\% of already implemented projects are designed specifically for 
+private aim \cite{blockchain-state},
+which means that a need is growing to improve the Consortium Blockchains that allow a memberships 
+mechanism build for company use cases, which maintains the transactions private to guarantee the privacy of 
+the business process and data.
 \\
-On the other hand in some process is usefull to use public blockchain, so is growing up the need to
-improve the interoperability about consortium and public blockchains into a crosschain solution.
+On the other hand, in some processes it is useful to implements public blockchain solutions, so there is a growing need to 
+improve the interoperability about a consortium and public blockchains into a cross-chain solution.
 
-{\renewcommand{\arraystretch}{2}%
-\begin{tabular}{|l|l|l|l|l|}
-  \hline
-  \textbf{Blockchain Name} & \textbf{Network} & \textbf{Currency} & \textbf{Consensus} & \textbf{Smart Contract} \\
-  \hline
-  \textbf{Bitcoin} & Public & Bitcoin & PoW & Possible but less extendible\\
-  \hline
-  \textbf{Ethereum} & Public & Ether & PoS & Multiple programming languages\\
-  ~ & ~ & ~ & ~ & (Solidity, Vyper)\\
-  \hline
-  \textbf{Hyperledger} & Permissioned - & None & Pluggable or & Multiple programming languages\\
-  ~ & Federal/Private & ~ & PBFT & (Go, Java, Javascript, Solidity)\\ 
-  \hline
+%{\renewcommand{\arraystretch}{2}%
+%\begin{tabular}{|l|l|l|l|l|}
+%  \hline
+%  \textbf{Blockchain Name} & \textbf{Network} & \textbf{Currency} & \textbf{Consensus} & \textbf{Smart Contract} \\
+%  \hline
+%  \textbf{Bitcoin} & Public & Bitcoin & PoW & Possible but less extendible\\
+%  \hline
+%  \textbf{Ethereum} & Public & Ether & PoS & Multiple programming languages\\
+%   ~ & ~ & ~ & ~ & (Solidity, Vyper)\\
+%   \hline
+%   \textbf{Hyperledger} & Permissioned - & None & Pluggable or & Multiple programming languages\\
+%  ~ & Federal/Private & ~ & PBFT & (Go, Java, Javascript, Solidity)\\ 
+%  \hline
   %\textbf{Eos} & No & Yes & Yes\\
   %\hline 
   %\label{table:compare-blockchains}
-\end{tabular}}
+%\end{tabular}}
+
+%\begin{table}[htbp]
+%    \centering
+%    \begin{tabular}{|c|c|c|c|c|p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}|}
+%    \hline
+%    \textbf{Blockchain Name} & \textbf{Network} & \textbf{Currency} & \textbf{Consensus} & \textbf{Smart Contract}  \\ \hline
+%    \textbf{Bitcoin} & Public & Bitcoin & PoW & Possible but less extendible \hline
+%    \multirow{ 2}{*}{1} \textbf{Ethereum} & Public & Ether & PoS & Multiple programming languages \\
+%    ~ & ~ & ~ & ~ & (Solidity, Vyper)\hline
+%    \multirow{ 2}{*}{1} \textbf{Hyperledger} & Permissioned - & None & Pluggable or & Multiple programming languages \\
+%    ~ & Federal/Private & ~ & PBFT & (Go, Java, Javascript, Solidity)\hline
+%    \end{tabular}
+%    \caption{A test caption}
+%    \label{table1}
+%\end{table}
+
+\begin{table}[h]
+    {\renewcommand\arraystretch{1.25}
+    \begin{tabular}{|l|l|l|l|l|} \hline
+    \textbf{Name} & \textbf{Network} & \textbf{Currency} & \textbf{Consensus} & \textbf{Smart Contract}\\ \hline\hline
+    \textbf{Bitcoin} & Public & Bitcoin & PoW & Possible but less extendible\\ \hline
+    \textbf{Ethereum} & Public & Ether & PoS & Solidity, Vyper\\ \hline
+    \textbf{Hyperledger} & Permissioned & None & PBFT & Go, Java, Javascript, Solidity\\ \hline
+    \end{tabular}}
+    \caption{Comparing among blockchains features}
+    \label{table-compare-blockchains}
+\end{table}
 
 \subsection{Overview}
 
-Michael Burgess, chief operating officer of Ren said that \textbf{"All interoperability solutions will 
+Michael Burgess, chief operating officer of Ren states that \textbf{"All interoperability solutions will 
 likely have trade-offs; so it's a matter of designing systems that find a balance between security, 
 governance, adaptability, and economic incentives that suit their target market."}
 \bigskip
@@ -110,88 +155,86 @@ governance, adaptability, and economic incentives that suit their target market.
 and the integrity of the data/assets being transferred from a private, permissioned and centralized 
 chain to a more decentralized chain could be questioned. Overall, there is no one solution that fits 
 all in terms of being public/private, centralized/decentralized — it is a broad spectrum with specific 
-trade-offs."}\footnote{https://cointelegraph.com/news/blockchain-interoperability-the-holy-grail-for-cross-chain-deployment}
+trade-offs."}\cite{interoperability1}
 , quoting the words of Agarwal, CEO of Persistence.
 \bigskip
 
-The main idea of the industry experts is the trade-off concept to obtain a cross-chain interoperability,
-between public and private. To understand it we are going to remind the strong differences in working 
-foundamental of both blockchains:
+What is getting from the point of view of the industry experts; it is a trade-off solution to obtain cross-chain 
+interoperability, between public and private.
 
-\begin{outline}
-    \1 \textbf{Public}: It's a peer to peer network in which every node is potentially untrusted, so
-    the consensus mechanism is developed in order to prevent every malicous node that could compromise
-    data and transactions performed over the network. The entire architecture and consesus are distributed
-    in order to minimize the liability of data manipulation.
+\subsection{Limitations}
 
-    \1 \textbf{Consortium}: The basis idea is that the network is composed by a set of truster or semi-trusted
-    node, that compose the governance of the network. The consensus mechanism is not so stricted beacause 
-    the starting ipothesis is different and usually it need to have a good performance and low latency of
-    the transactions. On the other hand this features could lead to a data manipulation. 
-
-\end{outline}
-
-\subsection{Limitation}
-
-Now that is clead the pros and cons of each networks the interoperability in some cases it could be 
-the solution of many use cases problem, the public could allow an asset transactions amoung users without
-limit and granted security and authentication, on the other hand consortium could allow a set of features
-and informations that users and mostly companies don't want to keep it public. Nevertheless the 
-Achilles heel is:
+Considering the pros and cons of each network listed, interoperability could in some cases be the 
+solution of many cases problem, for example, the public blockchain could allow an asset transaction among 
+users without limit and granted security and authentication. On the other hand, consortium solution could 
+allow companies to set up roles over their own network and to keep information data private. Nevertheless, 
+the integration between the two blockchain solutions has several Achilles heels to be evaluated and managed:
 
 
 \begin{outline}
-    \1 \textbf{Synchronization}: The both network must be synchronize and world state must be the same
-    in each moment. It means that each transactions that involves both blockchains before to be archived
-    the both networks must reach a strong synch amoung the ledgers.  
+    \1 \textbf{Synchronization}: both networks must be synchronized and the world state must be the same in 
+    each moment. This means that each transaction that involves both blockchains, must reach strong synch among 
+    the ledgers, before being archived
 
-    \1 \textbf{Time Effort}: to make it usable it mean that the transactions and synchronization
+    \1 \textbf{Time Effort}: in order for it to be usable, the transactions and synchronization
     must be performed in a reasonable time.
     
-    \1 \textbf{Identity}: over the blockchains network the identity if the user or in other word 
-    the owner of the wallet is handled in several ways. For example Ethereum handle it as a Key pair,
-    private and public, that allow authentication of the wallet owner, on the other hand Hyperledger
-    Fabric the authentication mechanism for the user of the network is implemented with x.509 certificates.
-    So an other problem is the mapping of that different mechanism that blockchains implements to allow
-    authentications. 
+    \1 \textbf{Identity}: each blockchain implementation handles the identity mechanism in a specific way. 
+    This means that the user wallet is implemented using specific cryptographic algorithms and solutions. For 
+    example, Ethereum handles it as a Key pair, private and public, that allow authentication of the wallet 
+    owner, on the other hand, Hyperledger Fabric implements the authentication mechanism for the user of the 
+    network using x.509 certificates. So the other problem is the mapping of these different mechanisms that 
+    blockchains implement to allow authentications. 
 \end{outline}
 
 
 \subsection{CrossChain Current Solution}
 
-This problem and new challenge of crosschain was born a few years ago and there was several solutions
-that try to fix the problem and allow interoperability. The main ideas to perform interoperability is:
+The new challenge of cross-chain was born a few years ago and it has brought many companies and research centers 
+to design solutions to fix the problem and allow interoperability. The \textbf{Figure \ref{fig:crosschain-interaction}} 
+shows the theoretical solution to the interoperability problem between Bitcoin and Ethereum, at each layer of 
+blockchain architecture\cite{crosschain-level}.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[totalheight=6cm]{img/crosschain.PNG}
+	\caption{CrossChain Interactions}
+	\label{fig:crosschain-interaction}
+\end{figure}
+
+The main ideas to perform interoperability is:
 
 \begin{outline}
-    \1 \textbf{New Blockchain}: During the year was born several networks and frameworks that propose
-    to allow the interconnection between public and private blockchains. Many of that solutions
-    are based on new blokchchain networks that are stuctured in order to allow architectural level
-    the interoperability, one of that reality is Ark\footnote{\url{https://ark.io/}}. 
-    But we know that one of the biggest challenge ramain to allow interconnection between the well-known 
-    blockchain networks. 
+    \1 \textbf{New Blockchain}: Over the last few years several networks and frameworks have appeared that propose to 
+    allow the interconnection between public and private blockchains. Many of those solutions are based on new 
+    blockchain networks that are structured in order to allow, architectural level, the interoperability, for 
+    example, Ark\cite{ark} is a blockchain-based platform that allows anyone to customize their own blockchain. But 
+    the biggest challenges still remains to allow interconnection between the well-known blockchain 
+    networks. 
 
-    \1 \textbf{Architectural Framework}: There are thousand of frameworks proposed over the last years,
-    but the cross-chain isn't still a reality. Nevertheless the main idea that shares the majority
-    of proposed idea is the Sidechain. Introducing a new level between the major layer of the mainnet 
-    that allow the mapping, using ad-hoc API, the request from one network to the other one. In a nutshell
-    all the requests from public to private blockchains and vicevere pass by this Sidechain. 
+    \1 \textbf{Architectural Framework}: There are thousands of frameworks proposed over the last few years, but 
+    the cross-chain isn't still a consolidated reality. Nevertheless, most of the solutions share the same idea, a 
+    Sidechain\cite{sidechain} between the two blockchains. Introducing a new layer between the two mainnet that allows 
+    mapping, using ad-hoc API, the requests from one network to the other one. In a nutshell all the requests 
+    from the one to the other blockchain and vice-versa passing by the sidechain.\cite{atomic-crosschain} \cite{iot-crosschain}
 
-    \1 \textbf{Atomic Swaps}: allow users to trade one cryptocurrency for another directly in a peer-to-peer 
-    transaction Hashed TimeLock Contracts (HTLCs)\footnote{\url{https://en.bitcoin.it/w/index.php?title=Hash_Time_Locked_Contracts&source=post_page}}. Atomic swaps are not a true form of cross-chain 
+    \1 \textbf{Atomic Swaps}\cite{atomic-swap}: it allows users to trade one cryptocurrencies for another directly in a peer-to-peer 
+    transaction Hashed TimeLock Contracts (HTLCs)\cite{HTLC}. Atomic swaps are not a true form of cross-chain 
     communication (as the two chains do not communicate), but a mechanism that allows two parties to 
-    coordinate transactions across chains. Atomic swaps can be effective if used correctly and are the 
-    mechanism that enables the Lightning Network\footnote{\url{https://lightning.network/}}.
+    coordinate transactions across chains. Atomic swaps can be effective if used correctly and are they are the 
+    mechanism that enables the Lightning Network\cite{lightning}.
 
-    \1 \textbf{Relay}: llow a contract to verify block headers and events on another chain. Several 
+    \1 \textbf{Relay}: it allows a contract to verify block headers and events on another chain. Several 
     approaches to relays exist, ranging from verifying the entire history of a chain to verifying specific 
     headers on-demand. Each method has trade-offs between the cost of operation and the security of the relay. 
-    Relays are often quite expensive to operate, as we saw first-hand with BTCRelay\footnote{\url{http://btcrelay.org/}}.
+    Relays are often quite expensive to operate, as we saw first-hand with BTCRelay\cite{relay}.
 
-    \1 \textbf{Merged Consensus}: allow for two-way interoperability between chains through the use of a relay 
+    \1 \textbf{Merged Consensus}: it allows for two-way interoperability between chains through the use of a relay 
     chain. Merged consensus can be quite powerful, but generally must be built into the chain from the ground 
-    up. Projects like Cosmos\footnote{\url{https://cosmos.network/}} and ETH2.0\footnote{\url{https://github.com/ethereum/eth2.0-specs}} use merged consensus.
+    up. Projects like Cosmos\cite{cosmos} and ETH2.0\cite{eth2} 
+    use merged consensus.
 
-    \1 \textbf{Federations}: allow a selected group of trusted parties to confirm the events of one chain on 
+    \1 \textbf{Federations}: it allows a selected group of trusted parties to confirm the events of one chain on 
     another. While federations are powerful, their obvious limitation lies in the requirement to trust a 
     third party.
 
@@ -199,78 +242,83 @@ that try to fix the problem and allow interoperability. The main ideas to perfor
 
 \subsection{Chaincode EVM}
 
-In our analysis we spend a great attention around Hyperledger and Ethereum, two of the main blockchain
-solutions used in the world, the first one for permissioned use cases and the second one for public
-processes. In the last year IBM technical ambassador developed an \textbf{EVM chaincode}\footnote{https://github.com/hyperledger/fabric-chaincode-evm} able to run
-bytecode of Solidity smart contract over the Hyperledger Fabric network. It isn't a real cross-chain solution 
-but it's a step forward interoperability amoung blockchains. Of course it still have many limit 
-for the use, in particolar for the identity mapping from eth address to fabric identity and vice-versa. 
-
+In the thesis work, I focused my attention on Hyperledger and Ethereum, two of the main blockchain 
+solutions used in the world, the former for permissioned cases, the latter one for public processes. 
+In the last year, IBM technical ambassador developed an \textbf{EVM chaincode}\cite{evm-chaincode} 
+able to run bytecode of Solidity smart contract over the Hyperledger Fabric network. It is not a real 
+cross-chain solution but it is a step forward interoperability among blockchains. It still has many limits, 
+for example, there isn't a real identity mapping mechanism from eth address to fabric identity and vice-versa. 
 
 \section{Blockchain application in Fashion Environment}
 
 \subsection{Provenance case & Martine Jarlgaard}
 
-Thanks to the blckchain behaviour that allow an immutable record registered for each transaction 
-performed over the supply chain of the items productions.
-One of the first fashion house that start to use the blockchain technology for own company is 
-Martine Jarlgaard that in 2017, made a partnership with Provenance\footnote{Provenance withepaper (2015) Blockchain: the solution for transparency in product supply chains. https://www.provenance.org/whitepaper} 
-producing clothes with digital tag: The tag could be a QRCode od an RFID readed using NFC technology.
-That tag provide the entire history of the related clothes, providing each step of the producing process.
-\\
+Thanks to the blockchain feature it is possible to store in an immutable way the record associated with each 
+transaction performed over the supply chain.  One of the first fashion houses that started to use the blockchain 
+technology for its own company is Martine Jarlgaard that in 2017, the fashion company made a partnership with Provenance\cite{provenance} 
+producing clothes with digital tag: The tag could be a QRCode od an RFID reader using NFC technology.
+That tag provides the entire history of the related clothes, providing each step of the producing process.
+\bigskip
+
 The actors of the supply chain process are:
 
 \begin{outline}
     \1 \textbf{British Alpaca Fashion Farm}: It cares about alpacas livestock and shearing.
     \1 \textbf{Two Rivers Mill}: It cares about wool spinning.
     \1 \textbf{Knitster LDN}: It cares about the knitting process.
-    \1 \textbf{Martine Jarlgaard}: It cares about design of the clothes an final work.
+    \1 \textbf{Martine Jarlgaard}: It cares about the design of the clothes and the final work.
 \end{outline}
 
-Each actors of the supply chain is a blockchain node that take part at the supply chain pipe through
-the transactions of the exchanged assets, such as wool, cloth and so on. each transaction is registered
-over the blockchain and visible at each node. 
+Each actor of the supply chain is a blockchain node that takes part in the supply chain pipe through 
+the transactions of the exchanged assets, such as wool, cloth, and so on. Each transaction is registered over the 
+blockchain and visible at each node. 
 
 Customer side the user has a clear vision of the entire production process, from the material used to the 
-item produced. It allow the company to gain in credibility and transparency of the products sell. 
+item produced. It allows the company to gain credibility and transparency of the products sale. 
 
 \subsection{Counterfeiting - VeChain & BabyGhoast}
 
+BabyGhoast by combining blockchain technology with NFC chips, it creates a digital identity for each cloth 
+produced. It improved the tracking process over the supply chain. Moreover, it allows protecting the brand 
+and the users against counterfeit items. In order to implement the solution it is used VeChain technology, that includes 
+inside BabyGhoast clothes an RFID/NFC chip or QRCode, that allows identification of the item thanks to a 
+unique ID VeChain. Moreover, by scanning the chip or QRCode using the VeChain Pro application, it is possible to 
+access the data related to the item and the production process. 
 
 \section{Use Case asis}
 
-Armadio Verde is an Italian community was born with the aim to share childrens clothes and than once it 
-growing up, it allow to share adult clothes too. The working model is based on the share principle. Every 
-user after is sign up to the platform could book a pick up of own old clothes. The clothes must be in a 
-good state, clean and put in a box. Once the box arrive to Armadio Verde, the clothes going to be checked 
-and evaluated, for each approved clothes is created a dedicated form with all the related information. 
-After the upcycling process the clothes going to be shared over the platform store. The user that send 
-the clothes earn an amount of "star"(the money used over the platform). The star coul be used to purchase 
-other clothes adding a few euro for each item. The clothes that couldn't share over the platform for 
-reselling process, is sent to a certified Onlus.
+Armadio Verde is an Italian community that was born to share children's clothes. Once it grew up, it allows 
+adult clothes sharing too. The working model is based on the sharing principle. Every user, after is signing up 
+to the platform, can book a pick up of their old clothes. The clothes must be in a good state, clean and 
+put in a box. Once the box arrives at Armadio Verde, the clothes are going to be checked and evaluated. For each 
+approved clothes, a dedicated form  is created with all the related information. After the upcycling process, 
+the clothes are shared over the platform store. The user that sent the clothes earns an amount of 
+"star"(the money used over the platform). The star could be used to purchase other clothes adding a few euros 
+for each item. The clothes that could not be shared on the platform for the reselling process, are sent to a 
+certified Onlus.
 
 \subsection{Sustainability Token}
 
 \subsubsection{PlasticToken}
 
-It's an ERC20 chaincode that run over the hyperledger fabric network\footnote{https://ptwist.eu/}. It provides functionalities to read
+Plastic Token is an ERC20 chaincode that runs over the Hyperledger Fabric network\cite{plastic-coin}. It provides functionalities to read
 and write, with access and rights control, into the distributed ledger. The ERC20 chaincode is the software 
-handling the PlasticTokens in a secure manner. These tokens are up to the ERC20 standard, meaning a fixed 
-amount of tokens will be minted when the chaincode is deployed. This amount is called “TotalSupply”, and 
-will be assigned to a special user, called “centralbank” in the current implementation.
-Once the original PlasticToken supply is minted, users can interact with it via a “transfer” functionality. It
+securely handling the PlasticTokens. These tokens are up to the ERC20 standard, meaning a fixed 
+amount of tokens will be minted when the chaincode is deployed. This amount is called “TotalSupply” and 
+will be assigned to a special user, called “central bank” in the current implementation.
+Once the original PlasticToken\cite{ptwist} supply is minted, users can interact with it via a “transfer” functionality. It
 allows the central bank to send tokens to any previously enrolled user, then each user can use this same
 function to transfer tokens between each other
 
-It run over the Plastic Twist project. 
+It runs over the Plastic Twist project. 
 
 \subsubsection{ECOCoin}
 
-The ECO coin is a new cryptocurrency that is earned through sustainable action. The ECO coin
+The ECO coin\cite{eco-coin} is a new cryptocurrency that is earned through sustainable action. The ECO coin
 aims to reward anyone, anywhere in the world carrying out sustainable actions. Eating meat-free
 meals, switching to a green energy provider or riding a bike to work can earn you ECOs which
-user could spend in ECO new sustainable marketplace to buy ecological experiences, services and
+users could spend in ECO new sustainable marketplace to buy ecological experiences, services and
 goods. 
 
-It's based on consortium blockchain architecture anche each marketplace that want to involve their
-business in ECO environment it must be accepted as governance member of the network. 
+It is based on consortium blockchain architecture and each marketplace that want to involve their 
+business in ECO environment must be accepted as a governance member of the network. 
