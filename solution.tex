@@ -3,16 +3,47 @@
 
 \section{Overview} 
 
+The goal of the thesis is to develop a software application, blockchain-based, for a Fashion company. The fashion 
+company wants a blockchain solution to handle the internal processes with a tracking mechanism of the clothes over 
+the supply chain. There are many actors involved in the system, therefore, the software has to implement a membership 
+mechanism to handle access over the network. Moreover, for the sustainability issue, the company wants to introduce an 
+asset token exchanged with the clothes, which represents the CO\textsubscript{2} emission saved. Therefore the token 
+must be run over a public blockchain in order to be detached by own use.   
+\bigskip
+
+Below there is the thesis work overview. I listed the technologies used for the solution, the work produced and the main
+processes of the thesis. 
+
+\subsection{Actors}
+
+The main \textbf{actors} involved in the system are three:
+
+\begin{outline}
+    \1 \textbf{User}: It is the \textit{end-user}. It uses the web-app to \textit{send old clothes} and \textit{purchase items} from Reclothes store.
+    The User is the actor that starts the entire process flow, sending the clothes. This action is mandatory for the whole process. 
+    \1 \textbf{Reclothes Admin}: It is the \textit{system admin}, it performs the actions in order to handle the system.
+    The Reclothes Admin handles both parts, User Side and Producer Side. About User Side, it performs a set of actions
+    in order to \textit{handle} in the best way \textit{the clothes arrived and the tokens provided}. On the other hand, Producer Side, the Admin
+    cares about to \textit{handling the recycling and upcycling process}, providing the old materials to the Producer
+    and spend, when the platform needs, the token received to order recycled clothes.  
+    \1 \textbf{Producer}: It is part of the upcycling process. It receives the materials to \textit{perform the recycling process}.
+    In the test case, I consider just one Producer, that receives the entire old materials to be recycled.
+    However, the system is developed in order to allow a set of Producers registered. It allows the Reclothes Admin,
+    during the Send Old Clothes process, to choose the Producer toward which ship the material. 
+\end{outline}
 
 \subsection{Work Produced}
 
 \textbf{Figure \ref{fig:schema}} shows the overview and the main flow of the overall application.
-The Overall System and the thesis work produced to create the application is composed of the following parts:
+The overall system and the thesis work produced to create the application is composed of the following parts:
 \begin{outline}
     \1 \textbf{Networks}: They are the networks over which the blockchains run. The project involves two kinds of networks:
-    \2 \textbf{Hyperledger Fabric Network}: the main network.
-    \2 \textbf{Ethereum Network}: the side network used for token exchanged for own use. In this thesis work
-    is used the testnet Ropsten.    
+    \2 \textbf{Hyperledger Fabric Network}: the main network. I choose Hyperledger Fabric because it has a highly modular 
+    architecture and it implements a well-defined membership mechanism. Fabric is a solid network and provides at the 
+    developers a lot of instruments that simplify the implementation process.  
+    \2 \textbf{Ethereum Network}: the side network used for token exchanged for own use. The Ethereum is a strong 
+    reality and widely used to develop solutions applied to the public blockchain. It provides huge tools and instruments 
+    that allow the developers to develop contracts easily. In this thesis work is used the Ropsten testnet.    
     \1 \textbf{Shell Scripts}: to set up everything in the best way, it is produced a set of 
     shell scripts that run network or shut it down, install chaincode, and run part of the system mandatory 
     for the application use. 
@@ -22,24 +53,6 @@ The Overall System and the thesis work produced to create the application is com
     \1 \textbf{Dapp}: It is the web application, it allows the actors to interact with the system. It is a 
     decentralized application that communicates with the blockchain networks. Once the user is logged in, 
     with related rights, he can perform smart contracts invocation using the web-app.
-\end{outline}
-
-\subsection{Actors}
-
-The main \textbf{actors} involved in the system are three:
-
-\begin{outline}
-    \1 \textbf{User}: It is the \textit{end-user}. It uses the web-app to send old clothes and purchase items from Reclothes store.
-    The User is the actor that starts the entire process flow, \textit{sending the clothes}, mandatory for the entire process. 
-    \1 \textbf{Reclothes Admin}: It is the \textit{system admin}, it performs the actions in order to handle the system.
-    The Reclothes Admin handles both parts, User Side and Producer Side. About User Side, it performs a set of actions
-    in order to handle in the best way the clothes arrived and the tokens provided. On the other hand, Producer Side, the Admin
-    cares about to handling the recycling and upcycling process, providing the old materials to the Producer
-    and spend, when the platform needs, the token received to order recycled clothes.  
-    \1 \textbf{Producer}: It is part of the upcycling process. It receives the materials to perform the recycling process.
-    In the test case, I consider just one Producer, that receives the entire old materials to be recycled.
-    However, the system is developed in order to allow a set of Producers registered. It allows the Reclothes Admin,
-    during the \textit{Send Old Clothes} process, to choose the Producer toward which ship the material. 
 \end{outline}
 
 \subsection{Application Flow}
@@ -67,6 +80,13 @@ ledgers in an immutable way, adding a new block to the chains. The main processe
 
 these processes are described in detail in the \ref{use-cases} section, which analyzes 
 deeper the transactions process. 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[totalheight=6cm]{img/use-case-schema.png}
+	\caption{UseCase Overview}
+	\label{fig:schema}
+\end{figure}
 
 \subsection{Token exchanged}
 
@@ -104,13 +124,6 @@ To clarify the tokens exchanged over the thesis work and their behavior, here is
 \end{outline}
 
 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[totalheight=6cm]{img/use-case-schema.png}
-	\caption{UseCase Overview}
-	\label{fig:schema}
-\end{figure}
-
 %CROSSCHAIN
 \clearpage
 \section{CrossChain interaction}
@@ -141,6 +154,11 @@ Below there are all the main technologies used, involved in the application, and
 interact with each other. 
 
 \begin{outline}
+    \1 \textbf{Hyperledger Fabric}: Hyperledger Fabric is a modular blockchain framework that acts as a foundation for 
+    developing blockchain-based products, solutions, and applications using plug-and-play components that are aimed for 
+    use within private enterprises. 
+    \1 \textbf{Ethereum}: Ethereum is an open-source, blockchain-based, decentralized software platform. It enables 
+    to build and run smart contracts and distributed applications (DApps).
     \1 \textbf{Metamask}: It is used as Ethereum wallet to perform and sign the transactions started by dapp.
     Exploiting Metamask API, a high level of security is granted to perform transactions over the Ethereum network. 
     It is integrated into the thesis work Application side; for the right usage of the entire application is
@@ -172,6 +190,7 @@ interact with each other.
     for Fabric network blockchains, each peer(node) of the network run inside a specific and 
     dedicated container. It allows being monitored and analyzed independently. 
 \end{outline}
+\bigskip
 
 Thanks to the introduction of the EVM chaincode developed by the IBM technical ambassadors,
 it is possible to run Solidity bytecode over the Fabric network. It allows the possibility to joint 
@@ -179,8 +198,8 @@ Ethereum technologies over Hyperledger Fabric Network.
 That innovation doesn't improve only the integration network side but developing side too. With the 
 \texttt{fabric-chaincode-evm} a new communication way from dapp/client side is open to the network side.
 For example, that integration allows to use Web3.js library to invoke smart contracts running over Fabric. 
-Moreover, most of the improvements done in the Ethereum environment could be used to interact with the 
-Hyperledger Fabric world. It means languages, API, libraries, and tools are finding a huge application 
+Moreover, most of the improvements done in the Ethereum environment can be used to interact with the 
+Hyperledger Fabric world. It means languages, API, libraries, and tools that are finding a huge application 
 in the Ethereum world, so far. 
 \bigskip
 
@@ -189,7 +208,7 @@ the Application level, the Ethereum wallet with Hyperledger Fabric identity. Onc
 association, is used the eth wallet for transactions over Ethereum network and the related Fabric 
 identity over Fabric network. Exploiting Web3.js API we invoke Ethereum or Fabric smart contracts, by using 
 this solution all the invocation processes are forward, to the corresponding network, starting from Dapp 
-side. 
+API. 
 \bigskip
 
 The authentication mechanism doesn't change and the security continues to be ensured, Fabric side, using 
@@ -202,30 +221,19 @@ On the other hand, Ethereum side, the user Ethereum public address is specified
 during the registration phase and saved over Fabric chaincode to the corresponding User data structure.
 When the user is involved inside transaction processes, all the transactions refer to the public Ethereum
 address reported during the registration phase. 
-\newline 
+\bigskip
 
 Therefore when there is an incoming transaction the tokens will be sent to the public address reported in User Data info. 
-\newline
-
 When an outgoing transaction occurs, the security is granted thanks to the Metamask integration in the 
 transaction process. The transaction's sign, that allows performing operation, is performed by Metamask side, 
 in that way only the real owner of the Ethereum account could sign and approve the transaction. The private 
 key is stored over Metamask wallet and just the real owner, that is logged in to the account, can perform 
 the sign of the transaction. 
-\bigskip
+\bigskip  
 
-\textbf{Figure \ref{fig:architectural-flow}} shows The Architectural Flow and how the technologies are used 
-and interact with each other.
-
-Metamask is used as Ethereum wallet to sign transaction over Ethereum network, In the entire thesis work we 
-suppose that each actor is logged in over the Metamask account reported during the registration phase. It is 
-linked to the Browser layer of the architectural flow.  
-
-Furthermore, Fabric side the actor is logged over Fabric network using standard Fabric authentication
-process, spending the x.509 certificate. Therefore, the Dapp client shows access to the actor page.
-The dapp client uses Fab3 Proxy to map the identity from Ethereum address to Fabric
+Furthermore, the dapp client uses Fab3 Proxy to map the identity from Ethereum address to Fabric
 identity x.509 certificate and forward request to Fabric network. That process is independent by the Ethereum address
-specified during the registration phase and doesn't interact with that. Fab3 allows to use \texttt{fabric-chaincode-evm} 
+specified during the registration phase and does not interact with that. Fab3 allows to use \texttt{fabric-chaincode-evm} 
 and run solidity code over Fabric network, It performs a mapping process among the received requests dapp side.
 Fab3 receives the Web3 request and map it using the GO SDK to forward, in the right way, all the request
 to the Fabric peers. 
@@ -240,14 +248,27 @@ For some kind of actions performed over the platform, part of the request is for
 	\caption{Architectural Flow}
     \label{fig:architectural-flow}
 \end{figure}
+\bigskip
+
+\textbf{Figure \ref{fig:keys}} shows where the private keys are stored. The Hyperledger wallet could be stored in many 
+ways, into a FileSystem, in memory, using a HSM or a Database\cite{fabric-wallet}. For the thesis work, I consider
+the device filesystem storage, containing the Hyperledger wallet with the certificate and both private and public keys.
+Always on the device used, it is stored the private key of the Ethereum wallet, in fact, Metamask store on the device
+the private key of the associated Ethereum account\cite{metamask}.  
  
+\begin{figure}[h]
+	\centering
+	\includegraphics[totalheight=8cm]{img/keys.png}
+	\caption{Where keys are stored}
+    \label{fig:keys}
+\end{figure}
 
 %USE CASES
 \clearpage
 \section{Use Cases}
 \label{use-cases}
 
-As explained in the previous sections, for a better outline, the used cases are splint inside the 
+As explained in the previous sections, for a better outline, the use cases are splint inside the 
 \textbf{User Side} and the \textbf{Producer Side}. The main actor of the system is still Reclothes Admin, 
 that is linked to both side and interacts with all the other actors in order to supply the management 
 supports that allow the entire system works.
@@ -255,7 +276,7 @@ supports that allow the entire system works.
 \subsection{UseCase 1 - User Side}
 
 As shown in \textbf{Figure \ref{fig:usecase1}} both actors User and Reclothes Admin, once logged in, have access to a set
-of features. The Use case diagram shows all the actions that both users can perform over the networks and
+of features. The use case diagram shows all the actions that both users can perform over the networks and
 the flows that each action follows. The features are split over the two networks, the Fabric one and the 
 Ethereum one. All the flows start from one of the two actors involved and in the end it merges to one 
 of the two blockchain networks. Each actor has a dedicated Ethereum wallet used for Ethereum token
@@ -319,13 +340,13 @@ process, and what that process belongs to, is the following one:
 
 \subsubsection{Transactions}
 
-In the first Use Case both the blockchain networks are involved in. The main part of the flow and the most critical one is the 
+In the first use case both the blockchain networks are involved in. The main part of the flow and the most critical one is the 
 transaction process. Considering always \textit{Reclothes Admin} the main actor of the system, there are two kinds 
 of transactions in which Admin is involved. 
-The \texttt{outgoing} transaction, that starting by \texttt{Evaluation} process, performed by the Reclothes Admin once 
-it receives the clothes box, is sent by the User. The other one is the \texttt{incoming} transaction, in that case, the 
+The \texttt{outgoing} transaction, that starting by \texttt{Evaluation} process, it is performed by the Reclothes Admin once 
+it receives the clothes box sent by the User. The other one is the \texttt{incoming} transaction, in that case, the 
 token is exchanged from the User to Reclothes Admin. The action that starts the incoming transaction process is the 
-\texttt{Purchase Item} performed by the Users over the platform store.
+\texttt{Purchase Item}, performed by the Users over the platform store.
 \bigskip
 
 The outgoing and incoming transactions are strictly correlated due to the token flow. As explained in the previous 
@@ -334,7 +355,7 @@ The Evaluation is the first outgoing transaction process performed over the syst
 Reclothes Admin, the User is allowed to use applications and purchase items over it.
 
 \begin{outline}[enumerate]
-    \1 The \textit{\bf{Evaluation}} process works in the following way:
+    \1 \textbf{Figure \ref{fig:evaluation}} shows the \textit{\bf{Evaluation}} process, which works in the following way:
     \2 Reclothes Admin visualizes the next pending request to be evaluated. The Admin visualizes all the related information
     associated to the box request: \texttt{userAddress} it's the Ethereum user address of the sender, 
     \texttt{t-shirt, pants, jacket, other} with the related number of items associated to the request,
@@ -356,7 +377,7 @@ Reclothes Admin, the User is allowed to use applications and purchase items over
     information about balances are updated. From that moment the User can spend the received
     tokens over the platform store, performing purchasing. 
 
-    \1 The \textit{\bf{Purchase Items}} process works in a similar way, but inverting the previous flow:
+    \1 \textbf{Figure \ref{fig:purchase}} shows the \textit{\bf{Purchase Items}} process, which works in a similar way, but inverting the previous flow:
     \2 The User chooses the items to purchase over the web-app store. The items (t-shirt, pants, jacket, or other) 
     are represented with the related form, which shows all the relevant information. Over the chaincode the smart 
     contract store a dedicated data structure for clothes data information. The related price is expressed through 
@@ -378,13 +399,27 @@ Reclothes Admin, the User is allowed to use applications and purchase items over
 	\label{fig:usecase1}
 \end{figure}
 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[totalheight=10cm]{img/evaluation.png}
+	\caption{Evaluation Process}
+	\label{fig:evaluation}
+\end{figure}
 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[totalheight=8cm]{img/purchase.png}
+	\caption{Purchase Process}
+	\label{fig:purchase}
+\end{figure}
+
+\clearpage
 \subsection{UseCase 2 - Producer Side}
 
-Use Case 2 is related to the right side of the overall flow schema shown in Figure \ref{fig:schema}.
+Use case 2 is related to the right side of the overall flow schema shown in Figure \ref{fig:schema}.
 It shapes the interactions between Reclothes Admin and Producers. For a better understanding of the 
 process involved in that interaction, the use case 2 diagram is shown in \textbf{Figure \ref{fig:usecase2}}.
-In that case, all the features are performed over the Hyperledger Fabric network, so there isn't a cross-chain 
+In that case, all the features are performed over the Hyperledger Fabric network, so there is not a cross-chain 
 part. The token exchanged, \texttt{Regeneration Credit}, is based over Fabric smart contract and it is point-based, 
 without the need to involve the Ethereum blockchain.
 
@@ -414,8 +449,8 @@ more clients.
     \3 The Reclothes Admin after has performed the filtering process over the clothes box received by the Users. 
     Then all the clothes in a bad status, that could not be resold inside the platform store, are sent to the 
     Producer in order to recycle the material and produce upcycled clothes. The Admin performs the Send Box 
-    operation, like the Send Box performed in the Use Case 1, it contains the same data inside the request 
-    (\texttt{t-shirt, pants, jacket, other} with the related number of items).  the box is sent to the Producer 
+    operation, like the Send Box performed in the use case 1, it contains the same data inside the request 
+    (\texttt{t-shirt, pants, jacket, other} with the related number of items). The box is sent to the Producer 
     Company. In the case of more Producers, the send box request includes the selected Producer Company chosen.
     \3 Once the Producer performed the \textit{\texttt{Evaluation}} process over the sent clothes box, 
     The Reclothes Account gain the corresponding amount of \textbf{Regeneration Credits} based on the 
@@ -432,14 +467,14 @@ more clients.
     \3 Once that the Reclothes Admin chooses the box size to purchase, the transaction process starts and the 
     chaincode is invoked. Before is performed a previous check, to control if the Reclothes's wallet, containing the 
     Regeneration Credits, is enough. Then is invoked the transfer method of the smart contract, the Regeneration Credits are 
-    redeemed to the Producer account and the shipping of the Box start with inside the recycled clothes.       
+    redeemed to the Producer account and the shipping of the Box start, with inside the recycled clothes.       
 
     \1 \textbf{from Producer to Reclothes}
     \2 \textbf{Evaluate Material}
     \3 Once the box sent by the Reclothes Admin arrives, it must be evaluated. The Evaluation process
     consists to evaluate all the materials related to the clothes received. To obtain a standard evaluation
     there is a reference table listing a fixed amount of Regeneration Credits provided for
-    each clothes based one \textit{material} and \textit{weight}. Once the Producer Admin performed 
+    each clothes based on \textit{material} and \textit{weight}. Once the Producer Admin performed 
     the evaluation of the materials for each clothes, and the total amount of Regeneration Credit is fixed,
     the transaction process starts. The chaincode is invoked and the transaction is performed from Producer account
     to Reclothes account over Fabric network. Producer side, there are two parameters to analyze:
@@ -470,7 +505,7 @@ development of the smart contract in Solidity or Vyper programming languages.
 
 For the development it is used \textbf{Remix}\cite{remix}, it is an online
 editor that allows us to write and compile Solidity smart contracts code, providing all the Solidity 
-ersion compiler. Once that the smart contract code is written and the \texttt{.sol} file is produced, 
+version compiler. Once that the smart contract code is written and the \texttt{.sol} file is produced, 
 the compiling process produces two files mandatory for the deployment and uses of the smart contract over 
 Fabric network. 
 The two file produced are: 
@@ -502,20 +537,20 @@ testnet. The access to the contract, in that case, is provided by the contract a
 phase. 
 \bigskip
 
-For a better view, you can find below all the contracts involved in the system:
+For a better view, below are reported all the contracts involved in the system:
 \begin{outline}[enumerate]
     \1 \textbf{Hyperledger Fabric}
     \2 \textbf{User Contract}: It handles the User side, registration, and interaction phase. That contract shapes 
-    the Use Case 1 functionalities. There are the dedicated data structures that care about storing data of actors 
+    the use case 1 functionalities. There are the dedicated data structures that care about storing data of actors 
     involved( \texttt{User} and \texttt{Admin} ). It provides a set of getter and setter methods and it has a couple 
     of functions that lead to a transaction process.    
     \2 \textbf{Producer Contract}: It handles the interaction from Reclothes to Producers. That contract shapes the 
-    Use Case 2 behaviors. There are the dedicated data structures that care about storing data of actors  
+    use case 2 behaviors. There are the dedicated data structures that care about storing data of actors  
     involved( \texttt{Admin} and \texttt{Producer} ). It provides a set of getter and setter methods and it includes 
     a couple of function that leads to a transaction process.  
 
     \1 \textbf{Ethereum}
-    \2 \textbf{ERC20 Contract}: It is a standard smart contract with a max Supply fixed to 1.000.000.
+    \2 \textbf{ERC20 Contract}: It is a standard smart contract with a max Supply fixed to 1,000,000,000.
     The contract is structured following the ERC20 standard. It is not strictly correlated to the thesis application and
     it is exchangeable among each user that owns an Ethereum wallet. The Contract is deployed over the Ropsten network 
     and is accessible using the public contract address. The access to the contract is performed using an Infura node 
@@ -524,7 +559,7 @@ For a better view, you can find below all the contracts involved in the system:
 
 \subsection{User Contract} 
 
-The User Contract contains all the features described in the Hyperledger Fabric side of Use Case 1. 
+The User Contract contains all the features described in the Hyperledger Fabric side of use case 1. 
 
 \subsubsection{Data Structure}
 
@@ -604,15 +639,8 @@ handled using the modifier method that performs a filtering process of the funct
     /***********************************************/
     /***************** Users Data ******************/
     /***********************************************/
-    //get User eth public address
-    function getUserEthAddress() onlyUser() public view returns(address ethAddress){
-        return users[msg.sender].publicAddress;
-    }
-
-    //get Reclothes Admin eth public address
-    function getAdminEthAddress() onlyAdmin() public view returns(address ethAddress){
-        return admins[msg.sender].publicAddress;
-    }
+                           ....
+                           ....
 
     /****************************************************/
     /*** All Box Requests -> Old, Evaluated, UpCycled ***/
@@ -627,14 +655,6 @@ handled using the modifier method that performs a filtering process of the funct
         require(_pendingIndex<pendingIndex, "Wrong index");
 
         return (pendingBox[_pendingIndex].userAddress, pendingBox[_pendingIndex].tshirt, pendingBox[_pendingIndex].pants, pendingBox[_pendingIndex].jacket, pendingBox[_pendingIndex].other, pendingBox[_pendingIndex].isEvaluated, pendingBox[_pendingIndex].points);
-    }
-
-    //Get Next Pending Request
-    function getNextPendingRequest() onlyAdmin(msg.sender) public view returns(address, uint, uint, uint, uint, bool, uint) {
-        //check index
-        require(evaluatedIndex<pendingIndex, "No More Pending Request");
-
-        return (pendingBox[evaluatedIndex].userAddress, pendingBox[evaluatedIndex].tshirt, pendingBox[evaluatedIndex].pants, pendingBox[evaluatedIndex].jacket, pendingBox[evaluatedIndex].other, pendingBox[evaluatedIndex].isEvaluated, pendingBox[evaluatedIndex].points);
     }
 
     //Get EvaluatedBox by index
@@ -654,33 +674,8 @@ handled using the modifier method that performs a filtering process of the funct
 
         return (users[msg.sender].userTransactions[_transactionIndex].points, uint(users[msg.sender].userTransactions[_transactionIndex].transactionType), users[msg.sender].userTransactions[_transactionIndex].userAddress, users[msg.sender].userTransactions[_transactionIndex].adminAddress);
     }
-
-    //return box requests number
-    function getUserBoxNum() onlyUser(msg.sender) public view returns(uint) {
-        return users[msg.sender].numBox;
-    }
-
-    //Get UserBox by index
-    function getUserRequest(uint _index) onlyUser(msg.sender) public view returns(address, uint, uint, uint, uint, bool, uint) {
-        //check index
-        require(_index<users[msg.sender].numBox, "Wrong index");
-
-        ClothesBox memory box = users[msg.sender].box[_index];
-
-        return (box.userAddress, box.tshirt, box.pants, box.jacket, box.other, box.isEvaluated, box.points);
-    }
-
-    function getAdminTransactionInfo(uint _transactionIndex) onlyAdmin(msg.sender) public view returns(uint, uint, address, address) {
-        //require index exists
-        require(totTx > _transactionIndex && _transactionIndex >= 0, "Wrong transaction index");
-
-        return (usersTransactions[_transactionIndex].points, uint(usersTransactions[_transactionIndex].transactionType), usersTransactions[_transactionIndex].userAddress, usersTransactions[_transactionIndex].adminAddress);
-    }
-
-    //return tot transaction number
-    function getTotTransactionNum() onlyAdmin(msg.sender) public view returns(uint) {
-        return totTx;
-    }
+                            ....
+                            ....
 
 \end{lstlisting}
 
@@ -821,7 +816,7 @@ these are :
 %% producer contract 
 \subsection{Producer Contract}
 
-The Producer Contract contains all the features described in the Use Case 2 diagram shown in 
+The Producer Contract contains all the features described in the use case 2 diagram shown in 
 the Figure \ref{fig:usecase2}.
 
 \subsubsection{Data Structure}
@@ -1062,7 +1057,7 @@ The main information associated to the created token are:
 \begin{outline}
     \1 \textbf{Symbol}: CO2, it is used to identify a token, this is a three or four letter abbreviation of the token.
     \1 \textbf{Name}: CarbonToken, it able to identify them.
-    \1 \textbf{Total supply}: 100000000, it is the max supply of the token.
+    \1 \textbf{Total supply}: 1,000,000,000, it is the max supply of the token.
     \1 \textbf{Decimals}: 18, it is used to determine what decimal place the amount of the token will be calculated. 
     The most common number of decimals to consider is 18. 
 \end{outline}
@@ -1231,123 +1226,16 @@ In other words, all the MSP works are handled by fabric-samples tools.
 The most useful thing about the Hyperledger network is that the components could be added or removed in an easy way.
 To design and set up network components and rules, it is has been written the \texttt{config.yaml} file.
 
-\bigskip
-The network is structured into the following lines of code:
+The \texttt{config.yaml} is structured in the following way:
+\begin{outline}
+    \1 \textbf{Organizations}: here must be listed all the organizations involved in the network, specifying the MSP and
+    the policies of each Org. 
+    \1 \textbf{Consortium}: once the organizations are specified, the file defines the consortiums involved in the network.
+    The consortium will be joint to specific channels. 
+    \1 \textbf{Channels}: in the last section must be specified the channels of the networks, specifying the consortium
+    and the related organizations allowed over the channel. 
 
-\begin{lstlisting}
-    Organizations:
-    - &OrdererOrg
-        Name: OrdererOrg
-        ID: OrdererMSP
-        MSPDir: crypto-config/ordererOrganizations/example.com/msp
-        Policies:
-            Readers:
-                Type: Signature
-                Rule: "OR('OrdererMSP.member')"
-            Writers:
-                Type: Signature
-                Rule: "OR('OrdererMSP.member')"
-            Admins:
-                Type: Signature
-                Rule: "OR('OrdererMSP.admin')"
-
-    - &Org1
-        Name: Org1MSP
-        ID: Org1MSP
-        MSPDir: crypto-config/peerOrganizations/org1.example.com/msp
-        Policies:
-            Readers:
-                Type: Signature
-                Rule: "OR('Org1MSP.admin', 'Org1MSP.peer', 'Org1MSP.client')"
-            Writers:
-                Type: Signature
-                Rule: "OR('Org1MSP.admin', 'Org1MSP.client')"
-            Admins:
-                Type: Signature
-                Rule: "OR('Org1MSP.admin')"
-        AnchorPeers:
-            - Host: peer0.org1.example.com
-              Port: 7051
-
-    - &Org2
-        Name: Org2MSP
-        ID: Org2MSP
-        MSPDir: crypto-config/peerOrganizations/org2.example.com/msp
-        Policies:
-            Readers:
-                Type: Signature
-                Rule: "OR('Org2MSP.admin', 'Org2MSP.peer', 'Org2MSP.client')"
-            Writers:
-                Type: Signature
-                Rule: "OR('Org2MSP.admin', 'Org2MSP.client')"
-            Admins:
-                Type: Signature
-                Rule: "OR('Org2MSP.admin')"
-        AnchorPeers:
-            - Host: peer0.org2.example.com
-              Port: 8051
-
-    - &Org3
-        Name: Org3MSP
-        ID: Org3MSP
-        MSPDir: crypto-config/peerOrganizations/org3.example.com/msp
-        Policies:
-            Readers:
-                Type: Signature
-                Rule: "OR('Org3MSP.admin', 'Org3MSP.peer', 'Org3MSP.client')"
-            Writers:
-                Type: Signature
-                Rule: "OR('Org3MSP.admin', 'Org3MSP.client')"
-            Admins:
-                Type: Signature
-                Rule: "OR('Org3MSP.admin')"
-        AnchorPeers:
-            - Host: peer0.org3.example.com
-              Port: 9051
-
-
-                                        ...
-                                        ...
-                                        ...
-
-Profiles:
-
-    OrdererGenesis:
-        <<: *ChannelDefaults
-        Orderer:
-            <<: *OrdererDefaults
-            Organizations:
-                - *OrdererOrg
-            Capabilities:
-                <<: *OrdererCapabilities
-        Consortiums:
-            SampleConsortium:
-                Organizations:
-                    - *Org1
-                    - *Org2
-                    - *Org3
-
-    Channel12:
-        Consortium: SampleConsortium
-        <<: *ChannelDefaults
-        Application:
-            <<: *ApplicationDefaults
-            Organizations:
-                - *Org1
-                - *Org2
-            Capabilities:
-                <<: *ApplicationCapabilities
-    Channel23:
-        Consortium: SampleConsortium
-        <<: *ChannelDefaults
-        Application:
-            <<: *ApplicationDefaults
-            Organizations:
-                - *Org2
-                - *Org3
-            Capabilities:
-                <<: *ApplicationCapabilities    
-\end{lstlisting}
+\end{outline}
 
 \subsubsection{Run of the network}
 
@@ -1356,7 +1244,7 @@ in the best way, are created.
 
 The macro process flow of the network running is:
 \begin{outline}[enumerate]
-    \1 \textbf{Check Prerequisite}: using the \texttt{fabric-samples}\cite{fabric-samples} there is
+    \1 \textbf{Check Prerequisite}: using the \texttt{fabric-samples}\cite{fabric-sample} there is
     some prerequisite to check, to run all the materials in the correct way. Check the prerequisite looking at fabric 
     documentations\cite{fabric-doc}.
     \1 \textbf{Run Network}: Once the \texttt{config} file is designed and developed, we need to include evm chaincode 
@@ -1367,7 +1255,7 @@ The macro process flow of the network running is:
     possible to install the chaincode over the peers that we want to use. 
 \end{outline}
 
-The Hyperledger Fabric network runs inside \textbf{Docker containers}. To automatize the running 
+The Hyperledger Fabric network runs inside \textbf{docker containers}. To automatize the running 
 of the network I created scripts that setup Fabric locally using docker containers, install the EVM chaincode (EVMCC) 
 and instantiate the EVMCC over the Fabric peers. All that thesis steps use the Hyperledger \texttt{fabric-sample} 
 repository to deploy Fabric locally and the \texttt{fabric-chaincode-evm} repo for the EVMCC.
@@ -1432,54 +1320,28 @@ allow the network running.
 \begin{lstlisting}[language=bash]
     #!/bin/bash
 
-    #Generate crypto material for organizations
-    echo "######################################################"
-    echo "##### Generate Crypto Material for Organizations #####"
-    echo "######################################################"
+    ##### Generate Crypto Material for Organizations #####
     ../bin/cryptogen generate --config=./crypto-config.yaml
 
-    # Build channel artifact
-    echo "######################################################"
-    echo "##### Build Channel Artifact #####"
-    echo "######################################################"
+    ##### Build Channel Artifact #####
     ./channel_artifact.sh
 
-
-    # Run up docker containers
-    echo
-    echo "######################################################"
-    echo "##### Run docker containers #####"
-    echo "######################################################"
+    ##### Run docker containers #####
     docker-compose up -d
 
-    echo "######################################################"
-    echo "##### Docker containers in running #####"
-    echo "######################################################"
+    ##### Docker containers in running #####
     docker ps
 
-    # Org1 Initialization and join channels
-    echo "######################################################"
-    echo "##### Init Org1 and join to the Channels #####"
-    echo "######################################################"
+    ##### Init Org1 and join to the Channels #####
     docker exec cli scripts/org1_init.sh
 
-    # Org2 Initialization and join channels
-    echo "######################################################"
-    echo "##### Init Org2 and join to the Channels #####"
-    echo "######################################################"
+    ##### Init Org2 and join to the Channels #####
     docker exec cli scripts/org2_init.sh
 
-    # Org3 Initialization and join channels
-    echo "######################################################"
-    echo "##### Init Org3 and join to the Channels #####"
-    echo "######################################################"
+    ##### Init Org3 and join to the Channels #####
     docker exec cli scripts/org3_init.sh
 
-    # Install and Instantiate evmcc
-    echo
-    echo "######################################################"
-    echo "##### Install Chanicode evm over the peers #####"
-    echo "######################################################"
+    ##### Install Chanicode evm over the peers #####
     docker exec cli scripts/install.sh
 \end{lstlisting}
 
@@ -1505,7 +1367,7 @@ allow the network running.
     # DELETE SCRIPT-CREATED FILES
     rm -rf channel-artifacts/*.block channel-artifacts/*.tx crypto-config
 
-    # Remove creted folder
+    # Remove created folder
     rm -rf channel-artifacts
 
     # VERIFY RESULTS
@@ -1555,7 +1417,7 @@ as intermediary.
 \begin{figure}[h!]
     \centering
     \includegraphics[totalheight=6cm]{img/sc_invokation.png}
-    \caption{Smart Contract Invocation Process}
+    \caption{Smart Contract Invocation Process. Source: \url{https://hyperledger-fabric.readthedocs.io/en/release-1.4/peers/peers.html}}
     \label{fig:sc_invokation}
 \end{figure}
 
@@ -1644,20 +1506,31 @@ or \textbf{Producer}.
 
 \subsection{Core part of the web-app}
 
+Figure \ref{fig:directory-tree} the directory tree of the web app folder. 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[totalheight=8cm]{img/directory_tree.png}
+    \caption{DApp directory tree}
+    \label{fig:directory-tree}
+\end{figure}
+
 The technical files and flow that dapp follows to run up it is the following one.
 
 \begin{outline}[enumerate]
     \1 \textbf{Contract Address Generation}:
     \2 This step is in charge to run a script that deploys the contract addresses to be refereed during the 
     app running.
-    \3 \textbf{UserContract.js}: running the script using \texttt{node .js file}, it returns the address of the 
-    deployed contract. The \textbf{Figure \ref{fig:deploy-user-contract}} show the related output and the Contract 
+    \3 \textbf{deployUserContract.js}: running the script using \texttt{node .js file}, it returns the address of the 
+    deployed contract. \textbf{Figure \ref{fig:deploy-user-contract}} shows the related output and the Contract 
     Address printed. 
-    \3 \textbf{ProducerContract.js}: running the script using \texttt{node .js file}, it returns the address of 
+    \3 \textbf{deployProducerContract.js}: running the script using \texttt{node .js file}, it returns the address of 
     the deployed contract. The deployed process and output is similar to Figure \ref{fig:deploy-user-contract}.
     \1  \textbf{dapp.js}: It is the core file that handles the contracts invocations, it set up the contract address 
     reference, and connect to a specific Fab3 instance.
     \1 \textbf{app.js}: It set up the API called by the web-app, it maps the request and forwards to \texttt{dapp.js}.
+    \1 \textbf{method.js}: here there are all the Ethereum API endpoints. It is called by the web-app to perform 
+    calls over Ethereum network. 
 \end{outline}
 
 \begin{figure}[h!]
@@ -1680,6 +1553,9 @@ shows the output.
 
 \newpage
 \subsection{Views}
+
+Below I list all the views produced in the thesis work. For a better usability and understand of application behaviors,
+I care about the UI too. 
 
 \subsubsection{Homepage}
 
@@ -1719,7 +1595,8 @@ the platform starts the transaction process.
 
 There is another section about info that the user is allowed to see. \textbf{Transactions} performed over the 
 Fabric network and \textbf{Box Requests}, there is all the history about the box sent and received with all 
-the related information's data. 
+the related information's data.  
+\clearpage
 
 \begin{figure}[h!]
     \centering
@@ -1751,7 +1628,9 @@ Users and Producers.
 
 \paragraph{Admin For Users}
 
-This section shows the views of the Admins that handle User side.
+This section shows the views of the Admins that handle User side. Figure \ref{fig:evaluate_box} shows the field 
+to compile in order to perform the evaluation, meanwhile, Figure \ref{fig:admin-tx} shows the transactions records.
+Here a \href{https://ropsten.etherscan.io/tx/0x6688afff4f6adb7e334b87a2f078608ba11b0e0d884f54b52eac1cdde100a12e}{link} to a ropsten transaction.
 
 \begin{figure}[h!]
     \centering
@@ -1849,10 +1728,22 @@ The following price analysis is related to the current value of the ether that i
     {\renewcommand\arraystretch{1.25}
     \begin{tabular}{|l|l|l|} \hline
     \textbf{Gas Price} & \textbf{Confirmation Time} & \textbf{Transfer Price}\\ \hline\hline
-    1 gwei & 128 secs ~ 2 minutes & \$0.005 \\ \hline
-    34 gwei & 85 secs ~ 1 minutes 25 secs & \$0.17\\ \hline
+    1 gwei & 128 secs \~ 2 minutes & \$0.005 \\ \hline
+    34 gwei & 85 secs \~ 1 minutes 25 secs & \$0.17\\ \hline
     66 gwei & 13 secs & \$0.33\\ \hline
     \end{tabular}}
     \caption{Comparing among Ethereum transactions price}
     \label{table-compare-eth-price}
 \end{table}
+
+Considering 100.000 active Users. Each User on average sends 2 boxes with old clothes per year.
+Therefore, Reclothes Side, the application performs 200.000 evaluation processes that belong to \textbf{200k} 
+of incoming transactions per year. The incoming transaction number, multiplied for the minimum transaction cost, 
+belongs to an overall cost of 200.000x\$0,005, which is \textbf{\$1000}.
+
+Since there are just 70\% of active users, and considering an average of 10 purchasing per User every year. The 
+Ethereum network has to process 70.000x10 = 700.000 transactions. Therefore as the above hypothesis to get the 
+less cost per transaction; the overall costs of the outcome transaction is of 700.000x0,005 = \$3500.
+
+In the end, the Ethereum network's overall cost is \$4500 per year. 
+

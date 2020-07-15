@@ -1,35 +1,36 @@
 \chapter{Introduction}
 
-Over the last few years, the Blockchain technology has been living an era of growth, with  many different applications for 
-it being found in several different fields. 
+Over the last few years, the Blockchain technology has been living an era of growth, many different applications for 
+it being found in several different fields. The first application of blockchain was in finance with the Bitcoin, right
+after many environments such as logistics, law and administration found huge applications in it. 
 \bigskip
 
 This kind of technology is based on a peer to peer network that allows to transfer assets among users involved in the 
 network, without the need for a third party. The overall network and the transactions, performed by the joint nodes, 
 are handled by a consensus algorithm that performs the validation of the transactions and updates the ledger by adding 
-the transactions block to the chain. All the nodes involved in the network share the same ledger that contains the 
-state of the overall network. 
-The most significant use of the blockchain technology is in the finance environment, which founds a great instrument 
-in cryptocurrencies, exploiting the decentralized architecture and the security advantages.
+the transactions block to the chain. The ledger is a file containing a set of records, each record is a transaction 
+processed by the network. Moreover, all the nodes involved in the network share the same ledger that contains the state 
+of the overall network. The most significant use of the blockchain technology is in the finance environment, which founds 
+a great instrument in cryptocurrencies, exploiting the decentralized architecture, the security advantages and the 
+transparency. In fact, everyone has read access over the network and he can visualize the data of the transactions processed.
 \bigskip
 
 In the last few years, many companies have been getting interested in the blockchain applications. Since, in many cases, 
-the data that they share are sensitive information and companies don't want to keep them public. Therefore, 
-Recently, this interest has resulted in the first permissioned blockchain solutions, maintained by a consortium 
-system of nodes.
+the data that they share are sensitive information and companies don't want to keep them public, the companies need for 
+a solution a little bit different. Therefore, recently, this interest has resulted in the first permissioned blockchain 
+solutions, maintained by a consortium system of nodes.
 \bigskip
 
-The blockchain world nowadays are split between permissioned and permissionless blockchains:
+In fact, the blockchain world nowadays are split between permissioned and permissionless blockchains:
 \begin{outline}
-    \1 \textbf{Permissionless Blockchain}: The permissionless or public blockchain is a fully decentralized network where anyone in the
-    world can read or send transactions, as well as participate in the consensus process.
+    \1 \textbf{Permissionless Blockchain}: The permissionless blockchain is a fully decentralized network where anyone in the world can read or send transactions, as well as participate in the consensus process.
 
     \1 \textbf{Permissioned Blockchain}: the permissioned solution is a blockchain where the consensus process is controlled by a 
     pre-selected set of nodes, which could be defined as a "partially decentralized" network. Moreover, a membership mechanism could 
     be implemented, in order to to handle the read and write access over the network. 
 \end{outline}
 
-Based on the above considerations, the two main challenges, faced during the thesis work will be:
+Based on the above considerations, the two main objectives of this thesis work are:
 \begin{outline}
     \1 \textbf{Blockchain and supply chain management}: The goal is to create a blockchain solution for the 
     management of the supply chain process of a Fashion Company. In particular, the thesis addresses the 
@@ -37,7 +38,7 @@ Based on the above considerations, the two main challenges, faced during the the
     different actors. The goal of the blockchain-based solution devised is to track the items over the flow 
     more clearly and transparently as possible.
 
-    \1 \textbf{Cross-chain solution}: The solution implements a cross-chain interaction between Hyperledger 
+    \1 \textbf{Cross-chain solution}: The goal is to implement a cross-chain interaction between Hyperledger 
     Fabric and Ethereum network. Fabric manages all the aspects related to the supply chain (orders, 
     production, part of sale process). Ethereum instead is only used to the end-user sell process of 
     the items. The goal is to reach the interoperability between public and private blockchains. 
@@ -45,17 +46,35 @@ Based on the above considerations, the two main challenges, faced during the the
 
 \bigskip
 
-The target to be reached at the end of the developed thesis work would conceivably be:
+The target reached at the end of the developed thesis work would conceivably be:
 
 \begin{outline}
-    \1 \textbf{Simple management process}: The Fashion Company side, whose goal required at the end of the work is to
-    reach a simplified model of the overall management process of the transactions and users involved into the system.
+    \1 \textbf{Simple management process}: It is to reach a simplified model of the overall management process of the 
+    transactions and users involved into the system. 
 
-    \1 \textbf{Supply Chain}: A simplified handling process of the supply chain. The goal is to make as
+    \1 \textbf{Supply Chain increased transparency}: A simplified handling process of the supply chain. The goal is to make as
     clear as possible the tracking process of the clothes over the actors involved, from the producing of the items
     to the selling process. 
 
     \1 \textbf{Technology improvements and modular solutions}: A cross-chain technology means to generalize a 
-    solution that could be applied to other use cases. The integration, among more blockchains networks,
-    is a big challenge nowadays.
+    solution that could be applied to other use cases. The integration among more blockchains networks,
+    is a big challenge nowadays, in the following chapter I described in details the current situation and 
+    the solution chosen. 
+\end{outline}
+
+\bigskip
+
+The rest of the document is structured as follows:
+\begin{outline}
+    \1 \textbf{Chapter 2 - State of the art}: focuses on previous studies in this field. It gives an overview of the 
+    current solutions to the issue faced in the thesis work. 
+
+    \1 \textbf{Chapter 3 - Solution}: explains how the problem at hand was solved using the method and theory. It 
+    shows all the technologies used to implement the chosen solution and how they interact with each other describing 
+    the implementation details. 
+
+    \1 \textbf{Chapter 4 - Results}: describes the outcome of the tests done. It is tested different subprocess.
+
+    \1 \textbf{Chapter 5 - Conclusion}: handles the conclusion, I summarize the overall conclusions.
+    
 \end{outline}

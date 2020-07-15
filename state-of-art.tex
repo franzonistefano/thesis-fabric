@@ -1,8 +1,91 @@
 \chapter{State of the art}
 
+This chapter gives an overview of the current solutions and technologies used during the thesis work.
+
+\section{What is Blockchain}
+
+In the previous chapter, I briefly described the Blockchain behaviors. Blockchain is a growing list of records, called 
+blocks, that are linked. Each block contains a cryptographic hash of the previous block, a timestamp, and transaction 
+data.\cite{blockchain-definition}
+
+By design, a blockchain is immutable and resistant to data modification. It runs over a peer to peer network and each
+node of the network maintains a copy of the \textit{distributed ledger}. Therefore, exploiting the peer to peer network 
+architecture and the cryptographic science, it is obtained a distributed data storage, immutable, secure, and continuously 
+synchronized among network nodes. The other core part of the Blockchain is the \textit{consensus} mechanism, it is the 
+algorithm that handles the consensus process in charge of validate transactions and add it to the chain of blocks, 
+performing the ledger update.
+
+\subsection{Consensus mechanism}
+
+The main consensus algorithms are:
+\begin{outline}
+    \1 \textbf{Byzantine fault tolerance - BFT}: The concept of Byzantine Fault Tolerance in Blockchain is the 
+    feature of reaching an agreement or consensus about particular blocks based on the proof of work, even when some 
+    nodes are failing to respond or giving out malicious values to misguide the network. The main objective of BFT is 
+    to safeguard the system even when there are some faulty nodes. This will also help to reduce the influence of faulty 
+    nodes.\cite{bft}
+    \2 \textbf{Proof of work - PoW}: it deters \textit{denial-of-service} attacks. A proof of work is a piece of data 
+    which is difficult to produce but easy for others to verify and which satisfies certain requirements. Producing a 
+    proof of work can be a random process with low probability so that a lot of trial and error is required on average 
+    before a valid proof of work is generated. In other words, it is like a problem to solve spending a lot of computing 
+    power to validate transactions and create new blocks.\cite{pow}
+    
+    
+
+    \1 \textbf{Proof of stake - PoS}: it uses a pseudo-random election process to select a node to be the validator of 
+    the next block, based on a combination of factors that could include the staking age, randomization, and the node’s 
+    wealth. The size of the stake determines the chances for a node to be selected as the next validator to forge the 
+    next block - the bigger the stake, the bigger the chances. Where in Proof of Work-based systems more and more 
+    cryptocurrency is created as rewards for miners, the Proof-of-Stake system usually uses transaction fees as a 
+    reward.\cite{pos}
+\end{outline}
+
+Usually, over the network, there are specific nodes, called \textit{miners} with huge computational power, which handles
+the transactions in exchange for \textit{transaction fees} and they have a reward for each block created. 
+
+Figure \ref{fig:pow-work} shows an example of how the PoW algorithm works. 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[totalheight=5cm]{img/puzzle.PNG}
+    \caption{How PoW works}
+    \label{fig:pow-work}
+\end{figure}
+
+\subsection{51\% attack}
+It can be performed when a group of miners controlling more than 50\% of the network's mining hash rate or computing power.
+The attackers would be able to prevent new transactions from gaining confirmations, allowing them to halt payments between 
+some or all users
+It bring to a network's fork. Figure \ref{fig:attack} shows the attack situation, considering that in the blockchain is 
+kept just the longer branch, meanwhile, the shorter one is discarded.\cite{attack}
+ 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[totalheight=5cm]{img/51attack.jpg}
+    \caption{51\% attack}
+    \label{fig:attack}
+\end{figure}
+
+Nevertheless, the 51\% attack does not pay, because it needs a huge computational power to be performed, and once the 
+network is compromised, no one continues to use it. It brings everybody to play by the rules. 
+
+\subsection{Bitcoin}
+It is a digital currency and there is no central bank controlling it. It is created by an unknown person or group of 
+people under the name \textit{Satoshi Nakamoto}. At the end of 2008, he releases the whitepaper, a manifesto where 
+Satoshi explained all the technology behind Bitcoin, introducing the Blockchain. In 2009 he releases the open-source 
+software and Bitcoin become reality. 
+
+\subsection{Smart Contract}
+
+The smart contract concept was introduced by computer scientist \textit{Nick Szabo}. It is a computer program or a 
+transaction protocol which is intended to automatically execute, control or document legally relevant events and 
+actions according to the terms of a contract or an agreement.\cite{sc-def}. Since the integration of the smart
+contract inside Blockchain, it is possible to exploit the network to transfer each kind of asset described by the 
+contract. 
+
+
 \section{Current state of networks solution}
 
-Starting from the Introduction's consideration, I'm going to list the details of the three main solutions for 
+Starting from the Introduction's consideration, below I listed the details of the three main solutions for 
 blockchain networks\cite{private-public}:
 
 \begin{outline}
@@ -15,7 +98,7 @@ blockchain networks\cite{private-public}:
     determining the current state of the network. The security issue is solved by a mix of cryptographic algorithms
     and cryptoeconomics solution. The idea is to combine economic incentives proportional to the resources that
     the node can bring to bear. The resources targeted depend on the consensus algorithm used. For example proof of work(PoW)
-    involves computational resources into the consensus mechanism. On the other hand, proof of stake(PoS) involve
+    involves computational resources into the consensus mechanism. On the other hand, proof of stake(PoS) involves
     the token amount of the node involved in consensus. These blockchains are generally considered 
     to be "fully decentralized".
     \1 \textbf{Consortium blockchains}: The basic idea of the consortium blockchain is that the network is 
@@ -29,8 +112,8 @@ blockchain networks\cite{private-public}:
     being public together with an API that allows members of the public to make a limited number of queries 
     and get back cryptographic proofs of some parts of the blockchain state. These blockchains may be 
     considered "partially decentralized".
-    \1 \textbf{Fully private blockchains}: a fully private blockchain is a blockchain where write permissions 
-    are kept centralized to one organization. Read permissions may be public or restricted to an arbitrary 
+    \2 \textbf{Fully private blockchains}: a fully private blockchain is a consortium blockchain where write permissions 
+    are kept centralized to just one organization. Read permissions may be public or restricted to an arbitrary 
     extent. Likely applications include database management, auditing, etc internal to a single company. Therefore, 
     public readability may not be necessary at all in many cases, although, in other cases public auditability 
     is desired.
@@ -40,8 +123,8 @@ blockchain networks\cite{private-public}:
 With the blockchain technology, cryptographic science found the most applications. The concept behind 
 the public blockchain is that all the transaction data are completely public; nevertheless, the identity of the 
 user involved is kept secret. This idea has found a huge application in the cryptocurrencies environment. 
-The \textit{Fintech} is the environment in which the public blockchains has found the most applications. 
-The main rule of the overall system is 
+The \textit{Fintech}\footnote{It is the technology and innovation that aims to compete with traditional financial methods in the delivery of financial services.} 
+is the environment in which the public blockchains has found the most applications. The main rule of the overall system is 
 \textbf{"keep it transparent , safe and anonymous"}, it means that all the transactions processed by the 
 public blockchain networks are \textbf{transparent } and every node has read access. The \textbf{Safe}
 concept is granted by the combination of cryptographic science and economic incentives. \textbf{Anonymous}
@@ -50,8 +133,6 @@ computed on elliptic curve algorithms. If no one shares the identity associated 
 the private key public, the user identity continues to be anonymous. 
 \bigskip
 
-
-\bigskip
 As explained above the blockchain world is divided between public and private blockchain.  
 To understand the behavior about public or private blockchains, we are going to list the features
 for both, in order to adapt the choice based on own needs: 
@@ -60,7 +141,7 @@ for both, in order to adapt the choice based on own needs:
     \1 The main advantages of the \textbf{Public blockchain} could fall into two major categories:
     \2 Public blockchains provide a way to protect the users of an application from the developers; 
     the code is public and everyone can see how it works. This solution limits the authority 
-    of the developers over the application. Moreover, the user identity is always kept secret .   
+    of the developers over the application. Moreover, the user identity is always mapped into a wallet address.   
     \2 Public blockchains are open, and therefore are likely to be used by many entities and gain 
     some network effects. Besides, the public blockchain fully eliminates intermediaries. Here is an example 
     of a transfer of ownership case. A wants to sell an item to B. Right now there is a standard risk 
@@ -76,7 +157,7 @@ for both, in order to adapt the choice based on own needs:
     of a blockchain, revert transactions, modify balances, etc. In some cases, eg. national land 
     registries, this functionality is necessary.
     
-    \2 The validators are known, so any risk of a 51\% attack, arising from some miner collusion in China, 
+    \2 The validators are known, so any risk of a 51\% attack\footnote{ It is a potential attack on a blockchain network, where a single entity or organization is able to control the majority of the hash rate, potentially causing a network disruption.\url{https://academy.binance.com/security/what-is-a-51-percent-attack}}, arising from some miner collusion in China, 
     does not apply.
 
     \2 Transactions are cheaper, since they only need to be verified by a few nodes that can be trusted 
@@ -132,6 +213,12 @@ improve the interoperability about a consortium and public blockchains into a cr
 %    \label{table1}
 %\end{table}
 
+\bigskip
+
+Table \ref{table-compare-blockchains} shows a comparing among three of the main blockchain networks. The comparison
+is based on the kind of the \textbf{network}, the \textbf{currency} that runs over each network, the \textbf{consensus} 
+algorithm used and the possibility to develop and run \textbf{smart contract} over that. 
+
 \begin{table}[h]
     {\renewcommand\arraystretch{1.25}
     \begin{tabular}{|l|l|l|l|l|} \hline
@@ -144,7 +231,7 @@ improve the interoperability about a consortium and public blockchains into a cr
     \label{table-compare-blockchains}
 \end{table}
 
-\subsection{Overview}
+\subsection{CrossChain and interoperability}
 
 Michael Burgess, chief operating officer of Ren states that \textbf{"All interoperability solutions will 
 likely have trade-offs; so it's a matter of designing systems that find a balance between security, 
@@ -162,9 +249,9 @@ trade-offs."}\cite{interoperability1}
 What is getting from the point of view of the industry experts; it is a trade-off solution to obtain cross-chain 
 interoperability, between public and private.
 
-\subsection{Limitations}
+\subsubsection{Limitations}
 
-Considering the pros and cons of each network listed, interoperability could in some cases be the 
+Considering the pros and cons of each network listed, interoperability could, in some cases, be the 
 solution of many cases problem, for example, the public blockchain could allow an asset transaction among 
 users without limit and granted security and authentication. On the other hand, consortium solution could 
 allow companies to set up roles over their own network and to keep information data private. Nevertheless, 
@@ -174,24 +261,24 @@ the integration between the two blockchain solutions has several Achilles heels 
 \begin{outline}
     \1 \textbf{Synchronization}: both networks must be synchronized and the world state must be the same in 
     each moment. This means that each transaction that involves both blockchains, must reach strong synch among 
-    the ledgers, before being archived
+    the ledgers, before being validated. 
 
-    \1 \textbf{Time Effort}: in order for it to be usable, the transactions and synchronization
+    \1 \textbf{Time}: in order for it to be usable, the transactions and synchronization
     must be performed in a reasonable time.
     
     \1 \textbf{Identity}: each blockchain implementation handles the identity mechanism in a specific way. 
     This means that the user wallet is implemented using specific cryptographic algorithms and solutions. For 
     example, Ethereum handles it as a Key pair, private and public, that allow authentication of the wallet 
-    owner, on the other hand, Hyperledger Fabric implements the authentication mechanism for the user of the 
+    owner. On the other hand, Hyperledger Fabric implements the authentication mechanism for the user of the 
     network using x.509 certificates. So the other problem is the mapping of these different mechanisms that 
     blockchains implement to allow authentications. 
 \end{outline}
 
 
-\subsection{CrossChain Current Solution}
+\subsubsection{Current solution}
 
 The new challenge of cross-chain was born a few years ago and it has brought many companies and research centers 
-to design solutions to fix the problem and allow interoperability. The \textbf{Figure \ref{fig:crosschain-interaction}} 
+to design solutions to fix the problem and allow interoperability. \textbf{Figure \ref{fig:crosschain-interaction}} 
 shows the theoretical solution to the interoperability problem between Bitcoin and Ethereum, at each layer of 
 blockchain architecture\cite{crosschain-level}.
 
@@ -238,25 +325,29 @@ The main ideas to perform interoperability is:
     another. While federations are powerful, their obvious limitation lies in the requirement to trust a 
     third party.
 
+    \1 \textbf{Chaincode EVM}: In the last year, IBM technical ambassador developed an \textbf{EVM chaincode}\cite{evm-chaincode} 
+    able to run bytecode of Solidity smart contract over the Hyperledger Fabric network. It is not a real 
+    cross-chain solution but it is a step forward interoperability among blockchains. It still has many limits, 
+    for example, there is not a real identity mapping mechanism from eth address to fabric identity and vice-versa.
+
 \end{outline}
 
-\subsection{Chaincode EVM}
-
 In the thesis work, I focused my attention on Hyperledger and Ethereum, two of the main blockchain 
-solutions used in the world, the former for permissioned cases, the latter one for public processes. 
-In the last year, IBM technical ambassador developed an \textbf{EVM chaincode}\cite{evm-chaincode} 
-able to run bytecode of Solidity smart contract over the Hyperledger Fabric network. It is not a real 
-cross-chain solution but it is a step forward interoperability among blockchains. It still has many limits, 
-for example, there isn't a real identity mapping mechanism from eth address to fabric identity and vice-versa. 
+solutions used in the world, the former for permissioned cases, the latter one for public processes. For that reason 
+I choose to exploit the \textit{Chaincode EVM} to implements the thesis work solution. 
+ 
 
 \section{Blockchain application in Fashion Environment}
+
+In the last few years, many Fashion companies have been getting interested in the blockchain for tracking and 
+counterfeiting issues.
 
 \subsection{Provenance case & Martine Jarlgaard}
 
 Thanks to the blockchain feature it is possible to store in an immutable way the record associated with each 
 transaction performed over the supply chain.  One of the first fashion houses that started to use the blockchain 
 technology for its own company is Martine Jarlgaard that in 2017, the fashion company made a partnership with Provenance\cite{provenance} 
-producing clothes with digital tag: The tag could be a QRCode od an RFID reader using NFC technology.
+producing clothes with digital tag: The tag could be a QRCode or an RFID reader using NFC technology.
 That tag provides the entire history of the related clothes, providing each step of the producing process.
 \bigskip
 
@@ -285,7 +376,7 @@ inside BabyGhoast clothes an RFID/NFC chip or QRCode, that allows identification
 unique ID VeChain. Moreover, by scanning the chip or QRCode using the VeChain Pro application, it is possible to 
 access the data related to the item and the production process. 
 
-\section{Use Case asis}
+\section{ASIS model}
 
 Armadio Verde is an Italian community that was born to share children's clothes. Once it grew up, it allows 
 adult clothes sharing too. The working model is based on the sharing principle. Every user, after is signing up 
@@ -297,7 +388,7 @@ the clothes are shared over the platform store. The user that sent the clothes e
 for each item. The clothes that could not be shared on the platform for the reselling process, are sent to a 
 certified Onlus.
 
-\subsection{Sustainability Token}
+\section{Sustainability Token}
 
 \subsubsection{PlasticToken}
 
@@ -322,3 +413,16 @@ goods.
 
 It is based on consortium blockchain architecture and each marketplace that want to involve their 
 business in ECO environment must be accepted as a governance member of the network. 
+
+\subsection{Solution}
+
+As explained before, the Fashion environment has several advantages to exploit transparency and traceability of the 
+blockchain solution. Nevertheless, right now the current solutions are based on consortium blockchains, that allow 
+handling the internal process in a better way, but it is less useful if applied to the end-user. For that reason, in 
+the thesis work, I developed the interoperability between the two networks. The internal processes are still managed 
+by the consortium blockchain, exploiting all the membership's advantages and maintaining transparency. On the other 
+hand parts of the end-user side, are handled by using a public blockchain, in order to detach as much as possible by own 
+case, the token involved, considering the token used as a reference asset and not just for own use. Moreover, there 
+is no concept for the interoperability implementation between Hyperledger Fabric and Ethereum blockchains, as specified 
+there are many architectural differences between the two networks. Therefore, in the thesis work, I proposed an API 
+based solution, at Application layer, that performs the cross-chain between the two networks.

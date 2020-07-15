@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.6.9)  8 JUL 2020 21:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.6.9)  14 JUL 2020 21:05
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -897,15 +897,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'tesi.bbl' found.
- (tesi.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                fabric-samples
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+ (tesi.bbl)
 Package biblatex Info: Reference section=0 on input line 61.
 Package biblatex Info: Reference segment=0 on input line 61.
 \c@lstlisting=\count433
@@ -934,7 +926,7 @@ LaTeX Info: Redefining \nameref on input line 61.
 \openout5 = `tesi.out'.
 
  (tesi.cfg)
-<logopolito.jpg, id=215, 1129.21875pt x 1129.21875pt>
+<logopolito.jpg, id=227, 1129.21875pt x 1129.21875pt>
 File: logopolito.jpg Graphic file (type jpg)
 <use logopolito.jpg>
 Package pdftex.def Info: logopolito.jpg  used on input line 78.
@@ -952,15 +944,15 @@ polito.jpg>] (acknowledgements.tex)
 
 ] (tesi.toc
 ! Misplaced alignment tab character &.
-<argument> ...\numberline {2.2.1}Provenance case &
+<argument> ...\numberline {2.3.1}Provenance case &
                                                    Martine Jarlgaard}\hyper@...
-l.29 ... & Martine Jarlgaard}{9}{subsection.2.2.1}
+l.37 ...& Martine Jarlgaard}{13}{subsection.2.3.1}
                                                   %
 ? 
 ! Misplaced alignment tab character &.
-<argument> ...ne {2.2.2}Counterfeiting - VeChain &
+<argument> ...ne {2.3.2}Counterfeiting - VeChain &
                                                    BabyGhoast}\hyper@linkend 
-l.31 ...eChain & BabyGhoast}{10}{subsection.2.2.2}
+l.39 ...eChain & BabyGhoast}{14}{subsection.2.3.2}
                                                   %
 ? 
 [2
@@ -969,7 +961,19 @@ l.31 ...eChain & BabyGhoast}{10}{subsection.2.2.2}
 \tf@toc=\write6
 \openout6 = `tesi.toc'.
 
- [4] (tesi.lof [5
+ [4] (tesi.lof
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 4
+5.
+
+("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmtt.fd"
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Overfull \hbox (45.91344pt too wide) in paragraph at lines 45--45
+ [][] [][][]\T1/cmr/m/n/12 Smart Con-tract In-vo-ca-tion Pro-cess. Source: [][]
+$\T1/cmtt/m/n/12 https : / / hyperledger-[]fabric . 
+ []
+
+[5
 
 
 ])
@@ -992,217 +996,235 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.30 \end{outline}
-                   [1
+l.27 
+      [1
 
 
 
 
-]) [2]
+] [2]) [3]
 \openout2 = `state-of-art.aux'.
 
  (state-of-art.tex
 Chapter 2.
-[3
+[4
 
 
 
-] [4]
-Overfull \hbox (47.05345pt too wide) in paragraph at lines 137--143
+]
+<img/puzzle.PNG, id=452, 1029.8475pt x 397.8614pt>
+File: img/puzzle.PNG Graphic file (type png)
+<use img/puzzle.PNG>
+Package pdftex.def Info: img/puzzle.PNG  used on input line 49.
+(pdftex.def)             Requested size: 368.23055pt x 142.26378pt.
+ [5 <./img/puzzle.PNG>]
+<img/51attack.jpg, id=465, 1455.4375pt x 562.1pt>
+File: img/51attack.jpg Graphic file (type jpg)
+<use img/51attack.jpg>
+Package pdftex.def Info: img/51attack.jpg  used on input line 63.
+(pdftex.def)             Requested size: 368.34453pt x 142.26378pt.
+ [6 <./img/51attack.jpg>] [7] [8]
+Overfull \hbox (47.05345pt too wide) in paragraph at lines 224--230
 [][] 
  []
 
-[5] [6]
-<img/crosschain.PNG, id=441, 510.03047pt x 336.50719pt>
+[9] [10]
+<img/crosschain.PNG, id=518, 510.03047pt x 336.50719pt>
 File: img/crosschain.PNG Graphic file (type png)
 <use img/crosschain.PNG>
-Package pdftex.def Info: img/crosschain.PNG  used on input line 200.
+Package pdftex.def Info: img/crosschain.PNG  used on input line 287.
 (pdftex.def)             Requested size: 258.75017pt x 170.71652pt.
- [7 <./img/crosschain.PNG>]
-Overfull \hbox (9.13377pt too wide) in paragraph at lines 221--226
+ [11 <./img/crosschain.PNG>]
+Overfull \hbox (9.13377pt too wide) in paragraph at lines 308--313
 \T1/cmr/m/n/12 di-rectly in a peer-to-peer trans-ac-tion Hashed Time-Lock Con-t
-racts (HTLCs)[[][]10[][]].
+racts (HTLCs)[[][]16[][]].
  []
 
-[8]
+[12]
 ! Misplaced alignment tab character &.
 <argument> Provenance case &
                              Martine Jarlgaard
-l.254 ...tion{Provenance case & Martine Jarlgaard}
+l.345 ...tion{Provenance case & Martine Jarlgaard}
                                                   
 ? 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `alignment tab' on input line 254.
+(hyperref)                removing `alignment tab' on input line 345.
 
 ! Misplaced alignment tab character &.
 <argument> Counterfeiting - VeChain &
                                       BabyGhoast
-l.279 ...on{Counterfeiting - VeChain & BabyGhoast}
+l.370 ...on{Counterfeiting - VeChain & BabyGhoast}
                                                   
 ? 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `alignment tab' on input line 279.
+(hyperref)                removing `alignment tab' on input line 370.
 
-[9] [10]) [11]
+[13] [14]) [15]
 \openout2 = `solution.aux'.
 
  (solution.tex
 Chapter 3.
-[12
+[16
 
 
-
-] [13]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 8
-9.
-
-("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmtt.fd"
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-[14]
-<img/use-case-schema.png, id=522, 1806.75pt x 803.1606pt>
-File: img/use-case-schema.png Graphic file (type png)
-<use img/use-case-schema.png>
-Package pdftex.def Info: img/use-case-schema.png  used on input line 109.
-(pdftex.def)             Requested size: 384.03268pt x 170.71652pt.
- [15 <./img/use-case-schema.png (PNG copy)>]
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 122.
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <8> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 122.
- [16
 
 ] [17]
-Underfull \hbox (badness 10000) in paragraph at lines 201--206
+<img/use-case-schema.png, id=587, 1806.75pt x 803.1606pt>
+File: img/use-case-schema.png Graphic file (type png)
+<use img/use-case-schema.png>
+Package pdftex.def Info: img/use-case-schema.png  used on input line 86.
+(pdftex.def)             Requested size: 384.03268pt x 170.71652pt.
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[18] [19 <./img/use-case-schema.png (PNG copy)>]
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 135.
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <8> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 135.
+ [20
+
+] [21]
+Overfull \hbox (11.92726pt too wide) in paragraph at lines 234--241
+\T1/cmr/m/n/12 tion phase and does not in-ter-act with that. Fab3 al-lows to us
+e \T1/cmtt/m/n/12 fabric-chaincode-evm
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 207--209
-
- []
-
-[18]
-<img/architectural_flow.png, id=548, 2308.7856pt x 1921.6593pt>
+[22]
+<img/architectural_flow.png, id=622, 2308.7856pt x 1921.6593pt>
 File: img/architectural_flow.png Graphic file (type png)
 <use img/architectural_flow.png>
-Package pdftex.def Info: img/architectural_flow.png  used on input line 239.
+Package pdftex.def Info: img/architectural_flow.png  used on input line 247.
 (pdftex.def)             Requested size: 478.5885pt x 398.33858pt.
 
-Overfull \hbox (56.08618pt too wide) in paragraph at lines 239--240
+Overfull \hbox (56.08618pt too wide) in paragraph at lines 247--248
  [][] 
  []
 
+[23 <./img/architectural_flow.png (PNG copy)>]
+<img/keys.png, id=631, 1696.6587pt x 964.8045pt>
+File: img/keys.png Graphic file (type png)
+<use img/keys.png>
+Package pdftex.def Info: img/keys.png  used on input line 261.
+(pdftex.def)             Requested size: 400.26819pt x 227.62204pt.
+ [24 <./img/keys.png (PNG copy)>] [25
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[19] [20 <./img/architectural_flow.png (PNG copy)>] [21
-
-] [22] [23]
-<img/use_case1.png, id=579, 1927.2pt x 1755.9201pt>
+] [26] [27]
+<img/use_case1.png, id=661, 1927.2pt x 1755.9201pt>
 File: img/use_case1.png Graphic file (type png)
 <use img/use_case1.png>
-Package pdftex.def Info: img/use_case1.png  used on input line 376.
+Package pdftex.def Info: img/use_case1.png  used on input line 397.
 (pdftex.def)             Requested size: 468.4188pt x 426.79134pt.
 
-Overfull \hbox (45.91647pt too wide) in paragraph at lines 376--377
+Overfull \hbox (45.91647pt too wide) in paragraph at lines 397--398
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[24]
+<img/evaluation.png, id=662, 1555.7322pt x 1085.9772pt>
+File: img/evaluation.png Graphic file (type png)
+<use img/evaluation.png>
+Package pdftex.def Info: img/evaluation.png  used on input line 404.
+(pdftex.def)             Requested size: 407.59058pt x 284.52756pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/purchase.png, id=663, 1455.5178pt x 818.3373pt>
+File: img/purchase.png Graphic file (type png)
+<use img/purchase.png>
+Package pdftex.def Info: img/purchase.png  used on input line 411.
+(pdftex.def)             Requested size: 404.85487pt x 227.62204pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[28] [29 <./img/use_case1.png (PNG copy)>] [30 <./img/evaluation.png (PNG copy)
+> <./img/purchase.png (PNG copy)>]
 LaTeX Font Info:    Font shape `T1/cmtt/bx/it' in size <12> not available
-(Font)              Font shape `T1/cmtt/m/it' tried instead on input line 394.
- [25 <./img/use_case1.png (PNG copy)>] [26]
-<img/use_case2.png, id=610, 1927.2pt x 1084.05pt>
+(Font)              Font shape `T1/cmtt/m/it' tried instead on input line 429.
+ [31
+
+]
+<img/use_case2.png, id=695, 1927.2pt x 1084.05pt>
 File: img/use_case2.png Graphic file (type png)
 <use img/use_case2.png>
-Package pdftex.def Info: img/use_case2.png  used on input line 454.
+Package pdftex.def Info: img/use_case2.png  used on input line 489.
 (pdftex.def)             Requested size: 505.82407pt x 284.52756pt.
 
-Overfull \hbox (83.32175pt too wide) in paragraph at lines 454--455
+Overfull \hbox (83.32175pt too wide) in paragraph at lines 489--490
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[27] [28 <./img/use_case2.png (PNG copy)>] [29]
-Overfull \hbox (23.90099pt too wide) in paragraph at lines 544--545
+[32] [33 <./img/use_case2.png (PNG copy)>] [34]
+Overfull \hbox (23.90099pt too wide) in paragraph at lines 579--580
 []\T1/cmr/bx/n/12 PointsTransaction\T1/cmr/m/n/12 : Model trans-ac-tions data a
 nd in-cor-po-rate \T1/cmtt/m/n/12 TransactionType\T1/cmr/m/n/12 ,
  []
 
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 551.
-[30] [31] [32]
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 586.
+[35] [36] [37] [38]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33]
-[34] [35]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [36]
-[37] [38] [39]
+ [39]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [40]
-[41]
-Overfull \hbox (7.14285pt too wide) in paragraph at lines 1044--1049
+[41] [42] [43]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [44]
+[45]
+Overfull \hbox (7.14285pt too wide) in paragraph at lines 1039--1044
 \T1/cmr/m/n/12 ERC-20 is a tech-ni-cal stan-dard used to is-sue and im-ple-ment
  to-kens over the Ethereum
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [42]
-[43] [44] [45]
-<img/fabric_network.png, id=1129, 1307.1234pt x 977.3313pt>
+[46] [47] [48] [49]
+<img/fabric_network.png, id=1171, 1307.1234pt x 977.3313pt>
 File: img/fabric_network.png Graphic file (type png)
 <use img/fabric_network.png>
-Package pdftex.def Info: img/fabric_network.png  used on input line 1176.
+Package pdftex.def Info: img/fabric_network.png  used on input line 1171.
 (pdftex.def)             Requested size: 380.53201pt x 284.52756pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[46] [47 <./img/fabric_network.png (PNG copy)>]
-<img/network.png, id=1155, 1591.6263pt x 978.7767pt>
+[50] [51 <./img/fabric_network.png (PNG copy)>]
+<img/network.png, id=1196, 1591.6263pt x 978.7767pt>
 File: img/network.png Graphic file (type png)
 <use img/network.png>
-Package pdftex.def Info: img/network.png  used on input line 1203.
+Package pdftex.def Info: img/network.png  used on input line 1198.
 (pdftex.def)             Requested size: 462.67697pt x 284.52756pt.
 
-Overfull \hbox (40.17465pt too wide) in paragraph at lines 1203--1204
+Overfull \hbox (40.17465pt too wide) in paragraph at lines 1198--1199
  [][] 
  []
 
-[48 <./img/network.png (PNG copy)>] [49]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [50]
-[51] [52]
-<img/network/net-1.png, id=1303, 977.15062pt x 411.78844pt>
+[52 <./img/network.png (PNG copy)>] [53]
+<img/network/net-1.png, id=1220, 977.15062pt x 411.78844pt>
 File: img/network/net-1.png Graphic file (type png)
 <use img/network/net-1.png>
-Package pdftex.def Info: img/network/net-1.png  used on input line 1404.
+Package pdftex.def Info: img/network/net-1.png  used on input line 1292.
 (pdftex.def)             Requested size: 405.09247pt x 170.71652pt.
-<img/network/net-2.png, id=1304, 616.55344pt x 524.71031pt>
+<img/network/net-2.png, id=1221, 616.55344pt x 524.71031pt>
 File: img/network/net-2.png Graphic file (type png)
 <use img/network/net-2.png>
-Package pdftex.def Info: img/network/net-2.png  used on input line 1411.
+Package pdftex.def Info: img/network/net-2.png  used on input line 1299.
 (pdftex.def)             Requested size: 267.46477pt x 227.62204pt.
-<img/network/net-3.png, id=1305, 825.83531pt x 359.09157pt>
+<img/network/net-3.png, id=1222, 825.83531pt x 359.09157pt>
 File: img/network/net-3.png Graphic file (type png)
 <use img/network/net-3.png>
-Package pdftex.def Info: img/network/net-3.png  used on input line 1418.
+Package pdftex.def Info: img/network/net-3.png  used on input line 1306.
 (pdftex.def)             Requested size: 392.61609pt x 170.71652pt.
- [53 <./img/network/net-1.png>]
+ [54]
 ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.
 sty"
 File: lstlang1.sty 2019/09/10 1.8c listings language file
@@ -1210,148 +1232,176 @@ File: lstlang1.sty 2019/09/10 1.8c listings language file
 ("C:\Users\franz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.
 sty"
 File: lstlang1.sty 2019/09/10 1.8c listings language file
-) [54 <./img/network/net-2.png> <./img/network/net-3.png>] [55] [56]
-<img/EndToEnd.png, id=1402, 546.3612pt x 418.2024pt>
+) [55 <./img/network/net-1.png> <./img/network/net-2.png>] [56 <./img/network/n
+et-3.png>] [57]
+<img/EndToEnd.png, id=1293, 546.3612pt x 418.2024pt>
 File: img/EndToEnd.png Graphic file (type png)
 <use img/EndToEnd.png>
-Package pdftex.def Info: img/EndToEnd.png  used on input line 1544.
+Package pdftex.def Info: img/EndToEnd.png  used on input line 1406.
 (pdftex.def)             Requested size: 278.79892pt x 213.39566pt.
-<img/sc_invokation.png, id=1404, 847.165pt x 371.3875pt>
+<img/sc_invokation.png, id=1295, 847.165pt x 371.3875pt>
 File: img/sc_invokation.png Graphic file (type png)
 <use img/sc_invokation.png>
-Package pdftex.def Info: img/sc_invokation.png  used on input line 1557.
+Package pdftex.def Info: img/sc_invokation.png  used on input line 1419.
 (pdftex.def)             Requested size: 389.42917pt x 170.71652pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1420--1420
+[]\T1/cmr/m/n/10.95 Figure 3.14. []Smart Con-tract In-vo-ca-tion Pro-cess. Sour
+ce:
+ []
+
+
+Overfull \hbox (24.2224pt too wide) in paragraph at lines 1420--1420
+[][]$\T1/cmtt/m/n/10.95 https : / / hyperledger-[]fabric . readthedocs . io / e
+n / release-[]1 . 4 / peers / peers . html$[][] 
+ []
+
+
+Overfull \hbox (24.2224pt too wide) detected at line 1420
+[][]$\T1/cmtt/m/n/10.95 https : / / hyperledger-[]fabric . readthedocs . io / e
+n / release-[]1 . 4 / peers / peers . html$[][]  
+ []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[57 <./img/EndToEnd.png>] [58 <./img/sc_invokation.png (PNG copy)>]
-<img/fab3_flow.png, id=1421, 1752.7884pt x 502.0356pt>
+[58 <./img/EndToEnd.png>] [59 <./img/sc_invokation.png (PNG copy)>]
+<img/fab3_flow.png, id=1314, 1752.7884pt x 502.0356pt>
 File: img/fab3_flow.png Graphic file (type png)
 <use img/fab3_flow.png>
-Package pdftex.def Info: img/fab3_flow.png  used on input line 1605.
+Package pdftex.def Info: img/fab3_flow.png  used on input line 1467.
 (pdftex.def)             Requested size: 496.68814pt x 142.26378pt.
 
-Overfull \hbox (74.18582pt too wide) in paragraph at lines 1605--1606
+Overfull \hbox (74.18582pt too wide) in paragraph at lines 1467--1468
  [][] 
  []
 
-<img/fab3_invokation.png, id=1424, 791.8383pt x 268.1217pt>
+<img/fab3_invokation.png, id=1317, 791.8383pt x 268.1217pt>
 File: img/fab3_invokation.png Graphic file (type png)
 <use img/fab3_invokation.png>
-Package pdftex.def Info: img/fab3_invokation.png  used on input line 1617.
+Package pdftex.def Info: img/fab3_invokation.png  used on input line 1479.
 (pdftex.def)             Requested size: 420.1556pt x 142.26378pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[59 <./img/fab3_flow.png (PNG copy)>] [60 <./img/fab3_invokation.png (PNG copy)
->]
-<img/app-running/deployUserContract.png, id=1443, 514.92375pt x 178.41656pt>
-File: img/app-running/deployUserContract.png Graphic file (type png)
-<use img/app-running/deployUserContract.png>
-Package pdftex.def Info: img/app-running/deployUserContract.png  used on input 
-line 1665.
-(pdftex.def)             Requested size: 328.46579pt x 113.81102pt.
-<img/app-running/app-running.png, id=1445, 596.98032pt x 342.5297pt>
-File: img/app-running/app-running.png Graphic file (type png)
-<use img/app-running/app-running.png>
-Package pdftex.def Info: img/app-running/app-running.png  used on input line 16
-76.
-(pdftex.def)             Requested size: 297.54207pt x 170.71652pt.
+[60 <./img/fab3_flow.png (PNG copy)>]
+<img/directory_tree.png, id=1331, 557.2017pt x 1039.4835pt>
+File: img/directory_tree.png Graphic file (type png)
+<use img/directory_tree.png>
+Package pdftex.def Info: img/directory_tree.png  used on input line 1513.
+(pdftex.def)             Requested size: 122.01509pt x 227.62204pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[61 <./img/app-running/deployUserContract.png>]
-<img/dapp/home1.png, id=1456, 965.10562pt x 508.90125pt>
+[61 <./img/fab3_invokation.png (PNG copy)>]
+<img/app-running/deployUserContract.png, id=1338, 514.92375pt x 178.41656pt>
+File: img/app-running/deployUserContract.png Graphic file (type png)
+<use img/app-running/deployUserContract.png>
+Package pdftex.def Info: img/app-running/deployUserContract.png  used on input 
+line 1538.
+(pdftex.def)             Requested size: 328.46579pt x 113.81102pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[62 <./img/directory_tree.png (PNG copy)>]
+<img/app-running/app-running.png, id=1351, 596.98032pt x 342.5297pt>
+File: img/app-running/app-running.png Graphic file (type png)
+<use img/app-running/app-running.png>
+Package pdftex.def Info: img/app-running/app-running.png  used on input line 15
+49.
+(pdftex.def)             Requested size: 297.54207pt x 170.71652pt.
+ [63 <./img/app-running/deployUserContract.png> <./img/app-running/app-running.
+png>]
+<img/dapp/home1.png, id=1356, 965.10562pt x 508.90125pt>
 File: img/dapp/home1.png Graphic file (type png)
 <use img/dapp/home1.png>
-Package pdftex.def Info: img/dapp/home1.png  used on input line 1690.
+Package pdftex.def Info: img/dapp/home1.png  used on input line 1566.
 (pdftex.def)             Requested size: 404.69365pt x 213.39566pt.
-<img/dapp/home2.png, id=1457, 965.85844pt x 510.40688pt>
+<img/dapp/home2.png, id=1357, 965.85844pt x 510.40688pt>
 File: img/dapp/home2.png Graphic file (type png)
 <use img/dapp/home2.png>
-Package pdftex.def Info: img/dapp/home2.png  used on input line 1697.
+Package pdftex.def Info: img/dapp/home2.png  used on input line 1573.
 (pdftex.def)             Requested size: 403.81555pt x 213.39566pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[62 <./img/app-running/app-running.png> <./img/dapp/home1.png>]
+[64 <./img/dapp/home1.png>]
 
 LaTeX Warning: The counter will not be printed.
-             The label is: - on input line 1707.
+             The label is: - on input line 1583.
 
-<img/dapp/user-info.png, id=1465, 963.6pt x 510.40688pt>
+[65 <./img/dapp/home2.png>]
+<img/dapp/user-info.png, id=1374, 963.6pt x 510.40688pt>
 File: img/dapp/user-info.png Graphic file (type png)
 <use img/dapp/user-info.png>
-Package pdftex.def Info: img/dapp/user-info.png  used on input line 1726.
+Package pdftex.def Info: img/dapp/user-info.png  used on input line 1603.
 (pdftex.def)             Requested size: 402.87132pt x 213.39566pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<img/dapp/user-send.png, id=1466, 961.34157pt x 507.39563pt>
+<img/dapp/user-send.png, id=1375, 961.34157pt x 507.39563pt>
 File: img/dapp/user-send.png Graphic file (type png)
 <use img/dapp/user-send.png>
-Package pdftex.def Info: img/dapp/user-send.png  used on input line 1733.
+Package pdftex.def Info: img/dapp/user-send.png  used on input line 1610.
 (pdftex.def)             Requested size: 404.30345pt x 213.39566pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<img/dapp/user-buy.png, id=1467, 963.6pt x 508.14844pt>
+<img/dapp/user-buy.png, id=1376, 963.6pt x 508.14844pt>
 File: img/dapp/user-buy.png Graphic file (type png)
 <use img/dapp/user-buy.png>
-Package pdftex.def Info: img/dapp/user-buy.png  used on input line 1740.
+Package pdftex.def Info: img/dapp/user-buy.png  used on input line 1617.
 (pdftex.def)             Requested size: 404.66513pt x 213.39566pt.
 
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[63 <./img/dapp/home2.png>]
-<img/dapp/admin-info.png, id=1476, 962.84718pt x 508.90125pt>
+[66
+
+ <./img/dapp/user-info.png> <./img/dapp/user-send.png>]
+<img/dapp/admin-info.png, id=1384, 962.84718pt x 508.90125pt>
 File: img/dapp/admin-info.png Graphic file (type png)
 <use img/dapp/admin-info.png>
-Package pdftex.def Info: img/dapp/admin-info.png  used on input line 1758.
+Package pdftex.def Info: img/dapp/admin-info.png  used on input line 1637.
 (pdftex.def)             Requested size: 403.74661pt x 213.39566pt.
- [64 <./img/dapp/user-info.png> <./img/dapp/user-send.png>]
-<img/dapp/admin-evaluate.png, id=1482, 964.35281pt x 507.39563pt>
-File: img/dapp/admin-evaluate.png Graphic file (type png)
-<use img/dapp/admin-evaluate.png>
-Package pdftex.def Info: img/dapp/admin-evaluate.png  used on input line 1765.
-(pdftex.def)             Requested size: 405.56987pt x 213.39566pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/dapp/admin-tx.png, id=1483, 964.35281pt x 510.40688pt>
+<img/dapp/admin-evaluate.png, id=1385, 964.35281pt x 507.39563pt>
+File: img/dapp/admin-evaluate.png Graphic file (type png)
+<use img/dapp/admin-evaluate.png>
+Package pdftex.def Info: img/dapp/admin-evaluate.png  used on input line 1644.
+(pdftex.def)             Requested size: 405.56987pt x 213.39566pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/dapp/admin-tx.png, id=1386, 964.35281pt x 510.40688pt>
 File: img/dapp/admin-tx.png Graphic file (type png)
 <use img/dapp/admin-tx.png>
-Package pdftex.def Info: img/dapp/admin-tx.png  used on input line 1772.
+Package pdftex.def Info: img/dapp/admin-tx.png  used on input line 1651.
 (pdftex.def)             Requested size: 403.18607pt x 213.39566pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/dapp/adminp-info.png, id=1485, 962.84718pt x 508.14844pt>
+<img/dapp/adminp-info.png, id=1388, 962.84718pt x 508.14844pt>
 File: img/dapp/adminp-info.png Graphic file (type png)
 <use img/dapp/adminp-info.png>
-Package pdftex.def Info: img/dapp/adminp-info.png  used on input line 1784.
+Package pdftex.def Info: img/dapp/adminp-info.png  used on input line 1663.
 (pdftex.def)             Requested size: 404.34898pt x 213.39566pt.
-[65 <./img/dapp/user-buy.png> <./img/dapp/admin-info.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/dapp/adminp-buy.png, id=1493, 964.35281pt x 508.14844pt>
+<img/dapp/adminp-buy.png, id=1389, 964.35281pt x 508.14844pt>
 File: img/dapp/adminp-buy.png Graphic file (type png)
 <use img/dapp/adminp-buy.png>
-Package pdftex.def Info: img/dapp/adminp-buy.png  used on input line 1791.
+Package pdftex.def Info: img/dapp/adminp-buy.png  used on input line 1670.
 (pdftex.def)             Requested size: 404.98128pt x 213.39566pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[66 <./img/dapp/admin-evaluate.png> <./img/dapp/admin-tx.png>]
-<img/dapp/producer-info.png, id=1498, 965.10562pt x 509.65407pt>
+[67 <./img/dapp/user-buy.png>]
+<img/dapp/producer-info.png, id=1397, 965.10562pt x 509.65407pt>
 File: img/dapp/producer-info.png Graphic file (type png)
 <use img/dapp/producer-info.png>
-Package pdftex.def Info: img/dapp/producer-info.png  used on input line 1804.
+Package pdftex.def Info: img/dapp/producer-info.png  used on input line 1683.
 (pdftex.def)             Requested size: 404.10458pt x 213.39566pt.
 
 
@@ -1360,8 +1410,15 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Underfull \vbox (badness 4303) has occurred while \output is active []
 
- [67 <./img/dapp/adminp-info.png> <./img/dapp/adminp-buy.png>] [68 <./img/dapp/
-producer-info.png>]) [69]
+ [68 <./img/dapp/admin-info.png> <./img/dapp/admin-evaluate.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [69 <./img/dapp/admin-tx.png> <./img/dapp/adminp-info.png>] [70 <./img/dapp/ad
+minp-buy.png> <./img/dapp/producer-info.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[71]) [72]
 \openout2 = `results.aux'.
 
  (results.tex
@@ -1382,18 +1439,18 @@ Overfull \hbox (10.87909pt too wide) in paragraph at lines 26--29
 up-port sus-tain-abil-ity. Thanks
  []
 
-[70
+[73
 
 
 
 ]
-<img/test/test1/user-send-box.png, id=1525, 593.21625pt x 205.5178pt>
+<img/test/test1/user-send-box.png, id=1433, 593.21625pt x 205.5178pt>
 File: img/test/test1/user-send-box.png Graphic file (type png)
 <use img/test/test1/user-send-box.png>
 Package pdftex.def Info: img/test/test1/user-send-box.png  used on input line 4
 7.
 (pdftex.def)             Requested size: 328.50572pt x 113.81102pt.
-<img/test/test1/init-tx-RU.png, id=1528, 589.4522pt x 178.41656pt>
+<img/test/test1/init-tx-RU.png, id=1436, 589.4522pt x 178.41656pt>
 File: img/test/test1/init-tx-RU.png Graphic file (type png)
 <use img/test/test1/init-tx-RU.png>
 Package pdftex.def Info: img/test/test1/init-tx-RU.png  used on input line 63.
@@ -1402,7 +1459,7 @@ Package pdftex.def Info: img/test/test1/init-tx-RU.png  used on input line 63.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/test/test1/performed-tx-RU.png, id=1529, 837.1275pt x 159.59625pt>
+<img/test/test1/performed-tx-RU.png, id=1437, 837.1275pt x 159.59625pt>
 File: img/test/test1/performed-tx-RU.png Graphic file (type png)
 <use img/test/test1/performed-tx-RU.png>
 Package pdftex.def Info: img/test/test1/performed-tx-RU.png  used on input line
@@ -1416,8 +1473,8 @@ Overfull \hbox (25.22235pt too wide) in paragraph at lines 70--71
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[71 <./img/test/test1/user-send-box.png>]
-<img/test/test1/fabrix-tx.png, id=1538, 962.84718pt x 513.41812pt>
+[74 <./img/test/test1/user-send-box.png>]
+<img/test/test1/fabrix-tx.png, id=1446, 962.84718pt x 513.41812pt>
 File: img/test/test1/fabrix-tx.png Graphic file (type png)
 <use img/test/test1/fabrix-tx.png>
 Package pdftex.def Info: img/test/test1/fabrix-tx.png  used on input line 82.
@@ -1426,7 +1483,7 @@ Package pdftex.def Info: img/test/test1/fabrix-tx.png  used on input line 82.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/test/test1/etherscan.png, id=1539, 977.15062pt x 496.85625pt>
+<img/test/test1/etherscan.png, id=1447, 977.15062pt x 496.85625pt>
 File: img/test/test1/etherscan.png Graphic file (type png)
 <use img/test/test1/etherscan.png>
 Package pdftex.def Info: img/test/test1/etherscan.png  used on input line 89.
@@ -1434,7 +1491,7 @@ Package pdftex.def Info: img/test/test1/etherscan.png  used on input line 89.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/test/test2/tx-user-reclothes.png, id=1541, 977.15062pt x 557.83406pt>
+<img/test/test2/tx-user-reclothes.png, id=1449, 977.15062pt x 557.83406pt>
 File: img/test/test2/tx-user-reclothes.png Graphic file (type png)
 <use img/test/test2/tx-user-reclothes.png>
 Package pdftex.def Info: img/test/test2/tx-user-reclothes.png  used on input li
@@ -1443,9 +1500,9 @@ ne 106.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[72 <./img/test/test1/init-tx-RU.png> <./img/test/test1/performed-tx-RU.png>]
-[73 <./img/test/test1/fabrix-tx.png> <./img/test/test1/etherscan.png>]
-<img/test/usecase2/0-send-old-clothes.png, id=1552, 450.9347pt x 242.40562pt>
+[75 <./img/test/test1/init-tx-RU.png> <./img/test/test1/performed-tx-RU.png>]
+[76 <./img/test/test1/fabrix-tx.png> <./img/test/test1/etherscan.png>]
+<img/test/usecase2/0-send-old-clothes.png, id=1460, 450.9347pt x 242.40562pt>
 File: img/test/usecase2/0-send-old-clothes.png Graphic file (type png)
 <use img/test/usecase2/0-send-old-clothes.png>
 Package pdftex.def Info: img/test/usecase2/0-send-old-clothes.png  used on inpu
@@ -1456,10 +1513,10 @@ t line 141.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Reference `fig:1-box-tobe-evaluate.png' on page 74 undefined on 
-input line 148.
+LaTeX Warning: Reference `fig:box-tobe-evaluate.png' on page 77 undefined on in
+put line 148.
 
-<img/test/usecase2/1-box-tobe-evaluate.png, id=1555, 964.35281pt x 532.23843pt>
+<img/test/usecase2/1-box-tobe-evaluate.png, id=1463, 964.35281pt x 532.23843pt>
 
 File: img/test/usecase2/1-box-tobe-evaluate.png Graphic file (type png)
 <use img/test/usecase2/1-box-tobe-evaluate.png>
@@ -1469,7 +1526,7 @@ ut line 158.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/test/usecase2/2-evaluation.png, id=1556, 323.70938pt x 97.86563pt>
+<img/test/usecase2/2-evaluation.png, id=1464, 323.70938pt x 97.86563pt>
 File: img/test/usecase2/2-evaluation.png Graphic file (type png)
 <use img/test/usecase2/2-evaluation.png>
 Package pdftex.def Info: img/test/usecase2/2-evaluation.png  used on input line
@@ -1478,7 +1535,7 @@ Package pdftex.def Info: img/test/usecase2/2-evaluation.png  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/test/usecase2/3-credits-received.png, id=1557, 963.6pt x 287.57437pt>
+<img/test/usecase2/3-credits-received.png, id=1465, 963.6pt x 287.57437pt>
 File: img/test/usecase2/3-credits-received.png Graphic file (type png)
 <use img/test/usecase2/3-credits-received.png>
 Package pdftex.def Info: img/test/usecase2/3-credits-received.png  used on inpu
@@ -1487,8 +1544,8 @@ t line 172.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[74 <./img/test/test2/tx-user-reclothes.png>]
-<img/test/usecase2/4-buy-recycled-clothes.png, id=1565, 539.76656pt x 238.64156
+[77 <./img/test/test2/tx-user-reclothes.png>]
+<img/test/usecase2/4-buy-recycled-clothes.png, id=1474, 539.76656pt x 238.64156
 pt>
 File: img/test/usecase2/4-buy-recycled-clothes.png Graphic file (type png)
 <use img/test/usecase2/4-buy-recycled-clothes.png>
@@ -1498,9 +1555,9 @@ input line 192.
 
 Underfull \vbox (badness 3792) has occurred while \output is active []
 
- [75 <./img/test/usecase2/0-send-old-clothes.png> <./img/test/usecase2/1-box-to
+ [78 <./img/test/usecase2/0-send-old-clothes.png> <./img/test/usecase2/1-box-to
 be-evaluate.png>]
-<img/test/usecase2/5-producer-info-update.png, id=1571, 965.10562pt x 373.395pt
+<img/test/usecase2/5-producer-info-update.png, id=1480, 965.10562pt x 373.395pt
 >
 File: img/test/usecase2/5-producer-info-update.png Graphic file (type png)
 <use img/test/usecase2/5-producer-info-update.png>
@@ -1511,18 +1568,18 @@ input line 199.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [76 <./img/test/usecase2/2-evaluation.png> <./img/test/usecase2/3-credits-rec
-eived.png> <./img/test/usecase2/4-buy-recycled-clothes.png>] [77 <./img/test/us
+) [79 <./img/test/usecase2/2-evaluation.png> <./img/test/usecase2/3-credits-rec
+eived.png> <./img/test/usecase2/4-buy-recycled-clothes.png>] [80 <./img/test/us
 ecase2/5-producer-info-update.png>]
 \openout2 = `conclusion.aux'.
 
  (conclusion.tex
 Chapter 5.
-[78
+[81
 
 
 
-]) [79]
+]) [82]
 Overfull \hbox (1.71394pt too wide) in paragraph at lines 109--109
 \T1/cmtt/m/n/12 blog . ethereum . org / 2015 / 08 / 07 / on -[] public -[] and 
 -[] private -[] blockchains/$[][]\T1/cmr/m/n/12 . 
@@ -1535,7 +1592,7 @@ Overfull \hbox (16.31532pt too wide) in paragraph at lines 109--109
 og . ethereum .
  []
 
-[80
+[83
 
 
 
@@ -1547,6 +1604,12 @@ Overfull \hbox (22.33397pt too wide) in paragraph at lines 109--109
  []
 
 
+Overfull \hbox (3.12436pt too wide) in paragraph at lines 109--109
+\T1/cmtt/m/n/12 readthedocs . io / en / release -[] 1 . 4 / developapps / walle
+t . html ? highlight =
+ []
+
+
 Overfull \hbox (36.2031pt too wide) in paragraph at lines 109--109
 []\T1/cmr/m/it/12 EthGasStation: web-site to track ether and gas prices\T1/cmr/
 m/n/12 . \T1/cmr/m/sc/12 url\T1/cmr/m/n/12 : [][]$\T1/cmtt/m/n/12 https : / / e
@@ -1554,14 +1617,14 @@ thgasstation .
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
-[81]
+[84]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
  (tesi.aux (intro.aux) (state-of-art.aux) (solution.aux) (results.aux)
 (conclusion.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 110.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 110.
 Package rerunfilecheck Info: File `tesi.out' has not changed.
-(rerunfilecheck)             Checksum: E106F6A0C61641BA3D01B080A6FCADBA;3528.
+(rerunfilecheck)             Checksum: 21DA73A7EF9199C3A94F62CBC1A860BC;3721.
 
 
 LaTeX Warning: There were undefined references.
@@ -1571,41 +1634,42 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21015 strings out of 481522
- 358430 string characters out of 2912274
- 1255141 words of memory out of 3000000
- 34925 multiletter control sequences out of 15000+200000
- 552468 words of font info for 65 fonts, out of 3000000 for 9000
+ 20878 strings out of 481522
+ 356793 string characters out of 2912274
+ 1246647 words of memory out of 3000000
+ 34935 multiletter control sequences out of 15000+200000
+ 553922 words of font info for 70 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,13n,98p,1131b,3625s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
-ectt1000.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/
-ec/dpi600\ecrm1000.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts
-/pk/ljfour/jknappen/ec/dpi600\ecit1200.pk> <C:\Users\franz\AppData\Local\MiKTeX
-\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\franz\AppData\Lo
-cal\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0800.pk> <C:\Users\franz\
-AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Us
+ectt1095.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/
+ec/dpi600\ecit1200.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour
+/jknappen/ec/dpi600\ectt0800.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts
+/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\franz\AppData\Local\MiKTeX
+\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\franz\AppData\Lo
+cal\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\franz\
+AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Us
 ers\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.
 pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600
 \ecti1200.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen
 /ec/dpi600\ecbx1728.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfou
-r/jknappen/ec/dpi600\ecsl1000.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\font
-s/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\franz\AppData\Local\MiKTe
-X\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\franz\AppData\L
-ocal\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1728.pk> <C:\Users\franz
-\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\U
-sers\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200
+r/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\font
+s/pk/ljfour/jknappen/ec/dpi600\ecsl1000.pk> <C:\Users\franz\AppData\Local\MiKTe
+X\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\franz\AppData\L
+ocal\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\franz
+\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1728.pk> <C:\U
+sers\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200
 .pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecbx1200.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappe
-n/ec/dpi600\eccc1440.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfo
-ur/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\franz\AppData\Local\MiKT
-eX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\franz\AppData\
-Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk>
-Output written on tesi.pdf (89 pages, 7356258 bytes).
+0\ecrm1200.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappe
+n/ec/dpi600\ecbx1200.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfo
+ur/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\franz\AppData\Local\MiKTeX\2.9\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\franz\AppData\Local\MiKT
+eX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\franz\AppData\
+Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\fran
+z\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk>
+Output written on tesi.pdf (92 pages, 10161133 bytes).
 PDF statistics:
- 2639 PDF objects out of 2984 (max. 8388607)
- 926 named destinations out of 1000 (max. 500000)
- 625 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2570 PDF objects out of 2984 (max. 8388607)
+ 772 named destinations out of 1000 (max. 500000)
+ 679 words of extra memory for PDF output out of 10000 (max. 10000000)
 

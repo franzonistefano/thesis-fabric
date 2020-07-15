@@ -19,6 +19,78 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{blockchain-definition}{online}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labeltitlesource}{title}
+      \field{title}{Blockchain Definition}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Blockchain
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Blockchain
+      \endverb
+    \endentry
+    \entry{bft}{online}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labeltitlesource}{title}
+      \field{title}{Byzantine fault tolerance BFT}
+      \verb{urlraw}
+      \verb https://www.tutorialspoint.com/what-is-byzantine-fault-tolerance#:~:text=The%20concept%20of%20Byzantine%20Fault,values%20to%20misguide%20the%20network
+      \endverb
+      \verb{url}
+      \verb https://www.tutorialspoint.com/what-is-byzantine-fault-tolerance#:~:text=The%20concept%20of%20Byzantine%20Fault,values%20to%20misguide%20the%20network
+      \endverb
+    \endentry
+    \entry{pow}{online}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labeltitlesource}{title}
+      \field{title}{Proof of work}
+      \verb{urlraw}
+      \verb https://en.bitcoin.it/wiki/Proof_of_work
+      \endverb
+      \verb{url}
+      \verb https://en.bitcoin.it/wiki/Proof_of_work
+      \endverb
+    \endentry
+    \entry{pos}{online}{}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labeltitlesource}{title}
+      \field{title}{Proof of stake}
+      \verb{urlraw}
+      \verb https://academy.binance.com/blockchain/proof-of-stake-explained
+      \endverb
+      \verb{url}
+      \verb https://academy.binance.com/blockchain/proof-of-stake-explained
+      \endverb
+    \endentry
+    \entry{attack}{online}{}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labeltitlesource}{title}
+      \field{title}{51\% attack}
+      \verb{urlraw}
+      \verb https://it.cointelegraph.com/explained/proof-of-work-explained
+      \endverb
+      \verb{url}
+      \verb https://it.cointelegraph.com/explained/proof-of-work-explained
+      \endverb
+    \endentry
+    \entry{sc-def}{online}{}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labeltitlesource}{title}
+      \field{title}{Smart Contract Definition}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Smart_contract
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Smart_contract
+      \endverb
+    \endentry
     \entry{private-public}{online}{}
       \name{author}{1}{}{%
         {{hash=850981945102d0f671b6762173c8988a}{%
@@ -33,8 +105,8 @@
       \strng{authorbibnamehash}{850981945102d0f671b6762173c8988a}
       \strng{authornamehash}{850981945102d0f671b6762173c8988a}
       \strng{authorfullhash}{850981945102d0f671b6762173c8988a}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{On Public and Private Blockchains}
@@ -78,8 +150,8 @@
       \strng{authorbibnamehash}{c5fd905434bd21077c94376abed0c2ac}
       \strng{authornamehash}{c5fd905434bd21077c94376abed0c2ac}
       \strng{authorfullhash}{8e8d482e48b5baeca4cc7d4a671a4110}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The State of the Art for Blockchain-EnabledSmart-Contract Applications in the Organization}
@@ -105,8 +177,8 @@
       \strng{authorbibnamehash}{11e794c93fb543db2a569cf99eb55def}
       \strng{authornamehash}{11e794c93fb543db2a569cf99eb55def}
       \strng{authorfullhash}{11e794c93fb543db2a569cf99eb55def}
-      \field{sortinit}{3}
-      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Blockchain Interoperability: The Holy Grail for Cross-Chain Deployment}
@@ -147,8 +219,8 @@
       \strng{authorbibnamehash}{677d67e966526f549b7a7d84fa8f895b}
       \strng{authornamehash}{677d67e966526f549b7a7d84fa8f895b}
       \strng{authorfullhash}{677d67e966526f549b7a7d84fa8f895b}
-      \field{sortinit}{4}
-      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2018 IEEE 38th International Conference on Distributed Computing Systems (ICDCS)}
@@ -156,8 +228,8 @@
       \field{year}{2018}
     \endentry
     \entry{ark}{online}{}
-      \field{sortinit}{5}
-      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labeltitlesource}{title}
       \field{title}{Ark.io}
       \verb{urlraw}
@@ -168,8 +240,8 @@
       \endverb
     \endentry
     \entry{sidechain}{online}{}
-      \field{sortinit}{6}
-      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labeltitlesource}{title}
       \field{title}{Sidechain}
       \verb{urlraw}
@@ -213,8 +285,8 @@
       \strng{authorbibnamehash}{04137ab9d0e630a3f3e5bfbc33735878}
       \strng{authornamehash}{04137ab9d0e630a3f3e5bfbc33735878}
       \strng{authorfullhash}{d100a457ca4a55adf1c69a538e00454e}
-      \field{sortinit}{7}
-      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{ArXiv}
@@ -256,8 +328,8 @@
       \strng{authorbibnamehash}{3a5fcd30fe8cc5ed8fbd790d7f9679f2}
       \strng{authornamehash}{3a5fcd30fe8cc5ed8fbd790d7f9679f2}
       \strng{authorfullhash}{a80d794f587c9f94226017594570e3d0}
-      \field{sortinit}{8}
-      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2018 IEEE International Conference on Internet of Things (iThings) and IEEE Green Computing and Communications (GreenCom) and IEEE Cyber, Physical and Social Computing (CPSCom) and IEEE Smart Data (SmartData)}
@@ -265,8 +337,8 @@
       \field{year}{2018}
     \endentry
     \entry{atomic-swap}{online}{}
-      \field{sortinit}{9}
-      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labeltitlesource}{title}
       \field{title}{Atomic swap}
       \verb{urlraw}
@@ -325,8 +397,8 @@
       \endverb
     \endentry
     \entry{eth2}{online}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labeltitlesource}{title}
       \field{title}{Github repository of ETH2.0}
       \verb{urlraw}
@@ -337,8 +409,8 @@
       \endverb
     \endentry
     \entry{evm-chaincode}{online}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labeltitlesource}{title}
       \field{title}{Github repository of EVM chaincode for Hyperledger Fabric}
       \verb{urlraw}
@@ -349,8 +421,8 @@
       \endverb
     \endentry
     \entry{provenance}{online}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labeltitlesource}{title}
       \field{title}{Provenance whitepaper Blockchain: the solution for transparency in product supply chains}
       \field{year}{2015}
@@ -385,8 +457,8 @@
       \strng{authorbibnamehash}{463481256e4ef46f26ea773d7066bfe5}
       \strng{authornamehash}{463481256e4ef46f26ea773d7066bfe5}
       \strng{authorfullhash}{463481256e4ef46f26ea773d7066bfe5}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{PlasticCoin: an ERC20 Implementation on Hyperledger Fabric for Circular Economy and Plastic Reuse}
@@ -399,8 +471,8 @@
       \endverb
     \endentry
     \entry{ptwist}{online}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labeltitlesource}{title}
       \field{title}{PlasticTwist European Project}
       \verb{urlraw}
@@ -424,8 +496,8 @@
       \strng{authorbibnamehash}{eae0ed77ea6f068f4008d0be3130a55e}
       \strng{authornamehash}{eae0ed77ea6f068f4008d0be3130a55e}
       \strng{authorfullhash}{eae0ed77ea6f068f4008d0be3130a55e}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The ECO coin: a cryptocurrency backed by sustainable assets}
@@ -434,6 +506,30 @@
       \endverb
       \verb{url}
       \verb https://uploads-ssl.webflow.com/5c1b58255c613376879c2558/5c4970105b4d237571564f43_ECOcoin_white_paper_v1.0.pdf
+      \endverb
+    \endentry
+    \entry{fabric-wallet}{online}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labeltitlesource}{title}
+      \field{title}{Hyperledger Fabric Wallet storage}
+      \verb{urlraw}
+      \verb https://hyperledger-fabric.readthedocs.io/en/release-1.4/developapps/wallet.html?highlight=wallet
+      \endverb
+      \verb{url}
+      \verb https://hyperledger-fabric.readthedocs.io/en/release-1.4/developapps/wallet.html?highlight=wallet
+      \endverb
+    \endentry
+    \entry{metamask}{online}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labeltitlesource}{title}
+      \field{title}{Metamask informations}
+      \verb{urlraw}
+      \verb https://metamask.io/
+      \endverb
+      \verb{url}
+      \verb https://metamask.io/
       \endverb
     \endentry
     \entry{remix}{online}{}
@@ -449,8 +545,8 @@
       \endverb
     \endentry
     \entry{merkle}{online}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labeltitlesource}{title}
       \field{title}{Merkle Tree}
       \verb{urlraw}
@@ -461,8 +557,8 @@
       \endverb
     \endentry
     \entry{fabric-sample}{online}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labeltitlesource}{title}
       \field{title}{Hyperledger Fabric samples}
       \verb{urlraw}
@@ -473,8 +569,8 @@
       \endverb
     \endentry
     \entry{fabric-doc}{online}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labeltitlesource}{title}
       \field{title}{Hyperledger Fabric official documentation}
       \verb{urlraw}
@@ -485,8 +581,8 @@
       \endverb
     \endentry
     \entry{aws}{online}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labeltitlesource}{title}
       \field{title}{Amazon Managed Blockchain}
       \verb{urlraw}
@@ -497,8 +593,8 @@
       \endverb
     \endentry
     \entry{gastracker}{online}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labeltitlesource}{title}
       \field{title}{Etherscan Gas Tracker}
       \verb{urlraw}
@@ -509,8 +605,8 @@
       \endverb
     \endentry
     \entry{ethgasstation}{online}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labeltitlesource}{title}
       \field{title}{EthGasStation: website to track ether and gas prices}
       \verb{urlraw}
@@ -521,7 +617,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{fabric-samples}
 \endrefsection
 \endinput
 
